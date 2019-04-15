@@ -1,3 +1,3 @@
 srm-jba
 
-This is the LaTex documents of my Bachelor Thesis
+Those are the LaTex documents for my Bachelor Thesis

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2019.5.14)  14 MAY 2019 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2019.5.15)  15 MAY 2019 12:30
 entering extended mode
 **./Hauptdokument.tex
 (Hauptdokument.tex
@@ -1190,11 +1190,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\hypcap.sty"
 Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 )
-(Hauptdokument.aux (bu.aux))
+(Hauptdokument.aux (bu.aux)
+
+LaTeX Warning: Label `tab: Tabelle231' multiply defined.
+
+)
 \openout1 = `Hauptdokument.aux'.
 
-
-(C:\Users\srm-jba\AppData\Roaming\MiKTeX\2.9\tex\latex\fourier\fmlfutm.fd
+ (C:\Users\srm-jba\AppData\Roaming\MiKTeX\2.9\tex\latex\fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 (C:\Users\srm-jba\AppData\Roaming\MiKTeX\2.9\tex\latex\fourier\fmsfutm.fd
@@ -1402,6 +1405,9 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(C:\Users\srm-jba\AppData\Roaming\MiKTeX\2.9\tex\latex\fourier\ts1futs.fd
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 ))
 \tf@toc=\write5
 \openout5 = `Hauptdokument.toc'.
@@ -1414,18 +1420,15 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 201.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 201.
- [4
+
+[4
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 203.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 203.
-
-(Chapters/Abkuerzungen.tex
-(C:\Users\srm-jba\AppData\Roaming\MiKTeX\2.9\tex\latex\fourier\ts1futs.fd
-File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-)
+ (Chapters/Abkuerzungen.tex
 Overfull \hbox (2.33566pt too wide) in paragraph at lines 31--32
 []|$[]$$[]$\T1/futs/m/n/10.95 ($[]$$ [] $$[]$)| 
  []
@@ -1588,129 +1591,126 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 21.
 
-Overfull \hbox (4.6687pt too wide) in paragraph at lines 21--26
+Overfull \hbox (4.6687pt too wide) in paragraph at lines 24--29
 \T1/futs/m/n/10.95 wur-den die Sta-tis-ti-ken des Zen-sus2011, ei-ner na-tio-na
 -len sta-tis-ti-schen Er-he-bung von pri-va-ten Haus-
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 38.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 38.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 E
-      s sei noch zu erwähnen, dass in dieser Betrachtung den Mikrozensus-Kl...
-[2
+l.38 
+      [2
 
 ]
-<Pictures/GebaeudeAlterDiagramm.jpg, id=176, 390.258pt x 253.1859pt>
+<Pictures/GebaeudeAlterDiagramm.jpg, id=180, 390.258pt x 253.1859pt>
 File: Pictures/GebaeudeAlterDiagramm.jpg Graphic file (type jpg)
 <use Pictures/GebaeudeAlterDiagramm.jpg>
 Package pdftex.def Info: Pictures/GebaeudeAlterDiagramm.jpg  used on input line
- 42.
+ 45.
 (pdftex.def)             Requested size: 390.25703pt x 253.18527pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 60.
  [3 <./Pictures/GebaeudeAlterDiagramm.jpg>]
-<Pictures/GebaeudeGroesse.jpg, id=186, 390.0171pt x 253.1859pt>
+<Pictures/GebaeudeGroesse.jpg, id=190, 390.0171pt x 253.1859pt>
 File: Pictures/GebaeudeGroesse.jpg Graphic file (type jpg)
 <use Pictures/GebaeudeGroesse.jpg>
-Package pdftex.def Info: Pictures/GebaeudeGroesse.jpg  used on input line 67.
+Package pdftex.def Info: Pictures/GebaeudeGroesse.jpg  used on input line 68.
 (pdftex.def)             Requested size: 390.01614pt x 253.18527pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
-
-Underfull \vbox (badness 1210) has occurred while \output is active []
-
+(babel)             in language  on input line 91.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 98.
+(babel)             in language  on input line 99.
  [4 <./Pictures/GebaeudeGroesse.jpg>]
+
+LaTeX Warning: Reference `tab: TabelleA1' on page 5 undefined on input line 130
+.
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 138.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 138.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 138.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 135.
- [5]
+(babel)             in language  on input line 138.
+[5]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 198.
  [6]
-<Pictures/TransmissionswaermekoeffizientBaujahr.jpg, id=217, 362.85562pt x 255.
+<Pictures/TransmissionswaermekoeffizientBaujahr.jpg, id=219, 362.85562pt x 255.
 95625pt>
 File: Pictures/TransmissionswaermekoeffizientBaujahr.jpg Graphic file (type jpg
 )
 <use Pictures/TransmissionswaermekoeffizientBaujahr.jpg>
 Package pdftex.def Info: Pictures/TransmissionswaermekoeffizientBaujahr.jpg  us
-ed on input line 173.
+ed on input line 208.
 (pdftex.def)             Requested size: 362.85474pt x 255.95561pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 183.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 183.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 233.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 233.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 233.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 233.
  [7 <./Pictures/TransmissionswaermekoeffizientBaujahr.jpg>]
-<Pictures/NachtraeglicheSanierung.jpg, id=224, 368.577pt x 256.0767pt>
+<Pictures/NachtraeglicheSanierung.jpg, id=226, 368.577pt x 256.0767pt>
 File: Pictures/NachtraeglicheSanierung.jpg Graphic file (type jpg)
 <use Pictures/NachtraeglicheSanierung.jpg>
 Package pdftex.def Info: Pictures/NachtraeglicheSanierung.jpg  used on input li
-ne 201.
+ne 236.
 (pdftex.def)             Requested size: 368.57608pt x 256.07608pt.
-
-Underfull \vbox (badness 6461) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 271.
  [8 <./Pictures/NachtraeglicheSanierung.jpg>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 273.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 273.
 ) (Chapters/StandDerTechnik.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1785,31 +1785,27 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
+
+Overfull \hbox (23.22955pt too wide) in paragraph at lines 7--30
+ [][] 
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 35.
 [13
 
 ]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 9.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 9.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 9.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 9.
- [14]
 chapter B.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 35.
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 275.
@@ -1819,19 +1815,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 275.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 275.
- [15
-
-]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 275.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 275.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 275.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 275.
- [16
-
+ [14
 
 ] (Chapters/Eigenstaendigkeitserklaerung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
@@ -1863,7 +1847,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 279.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 279.
- [17]
+ [15
+
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
  (Hauptdokument.aux (bu.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
@@ -1872,18 +1859,21 @@ Package rerunfilecheck Info: File `Hauptdokument.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
  ) 
 Here is how much of TeX's memory you used:
- 14843 strings out of 493305
- 260409 string characters out of 3138868
+ 14839 strings out of 493305
+ 260357 string characters out of 3138868
  507874 words of memory out of 3000000
- 17965 multiletter control sequences out of 15000+200000
+ 17962 multiletter control sequences out of 15000+200000
  126703 words of font info for 136 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,20n,71p,9107b,587s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,19n,71p,9107b,587s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\ecsx2074.pk> <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
 pen\ec\dpi600\ectt1095.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.
@@ -1900,9 +1890,9 @@ MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe
 /utopia/putri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8
 a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Hauptdokument.pdf (29 pages, 689502 bytes).
+Output written on Hauptdokument.pdf (27 pages, 686403 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 

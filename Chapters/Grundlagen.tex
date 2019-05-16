@@ -5,8 +5,8 @@ Hierzu wurde in Kapitel \ref{sec:Sektion 21} der Bestand analysiert, um auf dies
 Des Weiteren wurde in \ref{sec:Sektion 22} die historische Entwicklung der deutschen Dämmstandards betrachtet. Daraus wurden Zeiträume der Baualtersklassen mit ähnlichen Wärmeübergangskoeffizienten der Gebäudehülle zusammengefasst. 
 Zuletzt stellt Kapitel \ref{sec:Sektion 23} die Grundlagen der mathematischen Optimierung sowie das im Rahmen dieser Arbeit erweiterte Optimierungsprogramm vor. 
 
-Die Gebäudeklassen sollen für die Bestimmung der Gebäudeenergiesysteme mit dem Optimierungsprogramm benutzt werden. 
-Hieraus soll ein Vergleich zwischen Emissionsoptimum sowie Kostenoptimum gewonnen werden.
+%Die Gebäudeklassen sollen für die Bestimmung der Gebäudeenergiesysteme mit dem Optimierungsprogramm benutzt werden. 
+%Hieraus soll ein Vergleich zwischen Emissionsoptimum sowie Kostenoptimum gewonnen werden.
 
 %Gebäudeenergiesysteme erklären?
 %Was hat das überhaupt mit Grundlagen zu tuen, was ich da schreibe?
@@ -24,7 +24,7 @@ Hieraus soll ein Vergleich zwischen Emissionsoptimum sowie Kostenoptimum gewonne
 Zunächst wurde der Wohngebäudebestand hinsichtlich Alter und Größe ausgewertet.
 Als Daten wurden die Statistiken des Zensus2011, einer nationalen statistischen Erhebung von privaten Haushalten, betrachtet. 
 Besagte Statistiken wurden in verschiedenen wissenschaftlichen Untersuchungen des Institut für Wohnen und Umwelt GmbH (IWU) ausgewertet und evaluiert.
-Weiterhin wurde für die gebäudetypischen Kennwerte die Typgebäude des europaweiten Projekts \glqq Typology Approach for Building Stock Energy Assessment\grqq\,(TABULA) berücksichtigt. Diese Daten wurden wiederum IWU berechnet und erhoben.
+Weiterhin wurde für die gebäudetypischen Kennwerte die Typgebäude des europaweiten Projekts \glqq Typology Approach for Building Stock Energy Assessment\grqq\,(TABULA) berücksichtigt. Diese Daten wurden wiederum vom IWU erhoben und berechnet.
 %Tabula evtl erst im nächsten Kapitel erläutern, da bei der statistischen Betrachtung fast nur Zensus/IWU Daten betrachtet werden
 
 Nach den 2011 veröffentlichten Zensus Daten besteht der deutsche Wohngebäudebestand aus rund 18.368.000 Gebäuden mit 39.432.000 Wohnungen \cite{.2015}.
@@ -73,14 +73,15 @@ Mit 12,5 Millionen Wohnungen und einem Anteil von 32\,\% entfällt die zweitgrö
 Zusammenfassend lassen sich folgende Punkte bei der statistischen Betrachtung des deutschen Gebäudebestandes festhalten:
 
 \begin{itemize}
-	\item $\nicefrac{2}{3}$ aller Gebäude des Bestandes wurden vor der 1. Wärmeschutzverordnung 1978 errichtet.
-	\item Ein- und Zweifamilienhäuser stellen mit 87\,\% den größten Anteil dar.
-	\item Bei einer Betrachtung der Wohneinheiten teilt sich der Bestand in Gebäude mit einer oder zwei Wohnungen (47\,\%) und drei oder mehr Wohnungen (53\,\%) auf.
+	\item $\nicefrac{2}{3}$ aller Gebäude und Wohnungen des Bestandes wurden vor der 1. Wärmeschutzverordnung 1978 errichtet.
+	\item Ein- und Zweifamilienhäuser stellen mit 87\,\% den größten Anteil der Gebäude dar.
+	\item Bei einer Betrachtung der Wohneinheiten halbiert sich der Bestand in Gebäude mit einer oder zwei Wohnungen (47\,\%) und drei oder mehr Wohnungen (53\,\%).
+	\item Gebäude, die nach der Jahrtausendwende gebaut wurden, bilden keinen großen Anteil des Bestandes.
 \end{itemize}
 
 %Wohnobjekte?
 %Zensus näher erläutern?
-%Auf jeden Fall TABULA und Typgebäude näher beschreiben.
+%Typgebäude näher beschreiben?
 %Auf Wohnfläche eingehen?
 
 
@@ -133,69 +134,55 @@ Hier wurde festgehalten, dass sich bis zum Jahr 1957 die Dämmindustrie und der 
 So wurde bevorzugt günstig gebaut und die damit verbunden erhöhten Heizkosten in Kauf genommen.
 Die im Jahr 1952 eingeführte DIN 4108 verkörperte zwar den ersten Ansatz Wärmeschutz normativ zu regulieren, jedoch konnte sie auch zu keiner Veränderung der energetischen Bauweise führen. 
 Trotz deren Name \glqq Wärmeschutz im Hochbau\grqq\,beinhaltete die Norm nur einen Mindestwärmeschutz zur Vermeidung bauphysikalischer Schäden durch Schimmelbildung.
-Als Standard dieser Jahre galt das 38\,cm dicke Vollziegel-Mauerwerk, keine Dämmung der Böden oder Dächer sowie die Einscheiben-Verglasung. \cite{EickeHenning.2011}
-%keine Dämmung klingt doof
+Als Standard dieser Jahre galt das 38\,cm dicke Vollziegel-Mauerwerk, Böden und Dächer ohne Dämmung sowie die Einscheiben-Verglasung. \cite{EickeHenning.2011}
 
 In den folgenden Jahren von \mbox{1958 - 1968} sowie \mbox{1969 - 1978} kam es zu keinen normativen Änderungen des Wärmeschutzes. 
 Dennoch kann durch einen Wandel der Baustoffwahl eine Verbesserung der U-Werte beobachten werden. 
 So verschwand der Vollziegel langsam vom Markt und wurde durch Hochlochziegeln oder Hohlblocksteinen substituiert.
 Weiter wurden vermehrt Trittschalldämmungen in Böden und Dächer installiert. 
-Trotz dessen primären Zweckes, der Lärmvermeidung, erzielten diese dünnen Dämmschichten von \mbox{1 - 4 cm} eine Verbesserung der Wärmedurchgangskoeffizienten der zuvor genannten Bauteile.
-Ab 1965 erreichten vorgefertigte Betonteile mit einem \mbox{3 - 6 Cm} dicken Dämmkern zudem einen besseren Wärmeschutz.
-Bezüglich der Fenster wurde in diesen Jahren keine Veränderung geschaffen, sodass weiterhin die Einscheiben-Verglasung die Konvention bildete.
+Trotz deren primären Zweckes der Lärmvermeidung erzielten diese dünnen Dämmschichten von \mbox{1 - 4 cm} eine Verbesserung der Wärmedurchgangskoeffizienten der zuvor genannten Bauteile.
+Ab 1965 erreichten vorgefertigte Betonteile mit einem \mbox{3 - 6 cm} dicken Dämmkern zudem einen besseren Wärmeschutz.
+Bezüglich der Fenster wurde in diesen Jahren keine Veränderung geschaffen, sodass weiterhin die Einscheiben-Verglasung die Konvention bildete. \cite{EickeHenning.2011}
 
 Nach der Ölkrise von 1974 rückte die Bedeutung des ressourcenschonenden Bauens beziehungsweise Betriebes von Gebäuden in den Vordergrund. 
-Der Gesetzgeber verabschiedete am 11. August 1977 mit der 1. Wärmeschutzverordnung, im Folgenden mit 1. WschV abgekürzt, erstmalig eine Verordnung, in der ein Standard zur Minimierung des Heizwärmebedarfs festgelegt wurde. 
+Der Gesetzgeber verabschiedete am 11. August 1977 mit der 1. Wärmeschutzverordnung, im Folgenden mit WschV abgekürzt, erstmalig eine Verordnung, in der ein Standard zur Minimierung des Heizwärmebedarfs festgelegt wurde. 
 In Folge der 1. WschV verbesserte sich die Dämmeigenschaften der Bauten mit Baujahr \mbox{1979 - 1983}.
-So lässt sich bei den TABULA SFH-Typgebäude dieser Jahrgänge feststellen, dass sowohl das Dach eine 8\,cm Dämmung als auch der Boden eine 4\,cm dicke Dämmschicht besitzen. 
-Dadurch konnten U-Werte von 0,5 XXX für das Dach sowie 0,65 XXX für den Boden erreicht werden (s. Tabelle \ref{tab: TabelleA1}).
+So lässt sich bei den TABULA SFH-Typgebäude dieser Jahrgänge feststellen, dass sowohl das Dach eine 8\,cm als auch der Boden eine 4\,cm dicke Dämmschicht besitzen. 
+Dadurch konnten U-Werte von 0,5\,\(W/(m^2 \cdot K) \) für das Dach sowie 0,65\,\(W/(m^2 \cdot K) \) für den Boden erreicht werden (s. Tabelle \ref{tab: TabelleA1}).
 Weiterhin wurde durch die Verordnung vorgeschrieben, dass \glqq außenliegende Fenster und Fenstertüren von beheizten Räumen (...) mindestens mit Isolier- und Doppelverglasung auszuführen (sind)\grqq \cite{Bundesregierung.1977}.
 Somit ermöglichte die 1. WschV eine Verbesserung des energetischen Standards der Wohngebäuden. 
 Allerdings stellten die ersten normativen Anforderungen an die Gebäudehülle aus heutiger Sicht nur einen Zwischenschritt hin zu einem energetisch sinnvollen Reglement dar.
 Als Beispiel hierfür ist die Anforderung an Fenster zu nennen. 
 Für diese wurde in der 1. WschV festgelegt, dass ein U-Wert von 3,5\,\(W/(m^2 \cdot K) \) nicht überschritten werden darf \cite{Bundesregierung.1977}.
 Nach heutigem Standard der Energieeinsparverordnung 2009, die im folgenden noch weiter erläutert wird, sind für die Fenster im Neubau \(U_w\)-Werte kleiner 1,3\,\(W/(m^2 \cdot K) \) einzuhalten.
-%Unterschied U-Wert U_w-Wert eingehen?
-%Bsp mit EnEV ok?
+Bei diesem Vergleich ist auch noch festzuhalten, dass es sich bei der Vorgabe zum U-Wert der 1. WschV um den \(U_g\)-Wert handelt, der nur den Wärmedurchgang durch die Verglasung beschreibt und somit im Gegensatz zu \(U_w\) weder den Wärmeübergang durch den Rahmen noch die Wärmebrückenbildung beachtet. 
+Daher liegt der von TABULA ermittelte \(U_w\)-Wert für das SFH-Typgebäudenfenster der Jahre \mbox{1979 - 1983} aufgrund dessen energetisch schlechten Metallrahmen mit 4,3\,\(W/(m^2 \cdot K) \) höher als der \(U_g\)-Normwert der 1. WschV. \cite{EickeHenning.2011} 
+%Bsp mit EnEV ok? Zeitstrahl wäre nice
 
-%Wie in \cite{.2015} dargelegt, werden die Gebäude mit Baujahr älter als 1919 von der Epoche der Gründerzeit geprägt.
-%Diese wird durch einen fortschreitenden Städtebau und den Beginn der Industrialisierung des Bauwesens charakterisiert. 
-%Aus wärmetechnischer Sicht lässt sich festhalten, dass es zu dieser Zeit kaum Regulationen bezüglich des Wärmeschutzes gab. 
-%Einzig die Dicke der Mauerschicht wurde mit 38\,cm empfohlen, wobei den Dämmstoffen geringe Relevanz zugeordnet wurde. 
-%Anstatt durch wärmetechnischen Maßnahmen an der Gebäudehülle Heizkosten zu senken, sparte man beim Bau und durch geringes Heizen. \cite{EickeHenning.2011}
+Einen weiteren Schritt hin zu einem besseren Wärmeschutz des Gebäudebestandes markiert die 1982 beschlossene und 1984 in Kraft getretene 2. WschV, die sich auf den Wärmeschutz der Gebäude mit Baujahr \mbox{1984 - 1994} auswirkte.
+Nach Eicke-Henning kann sich \glqq das Niveau von 1984 (...) mit 2-Scheiben-Isolierverglasung, 30\,cm dicken porosierten Außenwänden (...), 8-9\,cm Wärmedämmung im Dach und 4\,cm Kellerdämmung beschreiben (lassen) \grqq\,\cite{EickeHenning.2011}.
+Wie sich aus Tabelle \ref{tab: TabelleA1} lesen lässt, führten die Maßnahmen der 2.\,WschV zu einem durchgehend besseren Verhalten der Bauteile gegenüber Transmissionswärmeverluste. 
+Im Bezug auf die Anforderung der Fensterflächen ergab sich zwar eine Verbesserung im Vergleich zur 1.\,WschV auf \(U_{g, max} = 3,1\,W/(m^2 \cdot K) \), allerdings blieb die im vorangegangenen Abschnitt diskutierte Problematik des \(U_g\)-Wertes erhalten.
+Des Weiteren definierte die 2. WschV Anforderungen an \glqq Bauliche Änderungen bestehender Gebäude\grqq.
+Daraus folgte, dass bei Gebäudeerweiterungen oder Umbaumaßnahmen das betroffene Bauteil den geforderten energetischen Neubaustandard erfüllen musste.
 
-%Zwar kam es in dem Zeitraum von \mbox{1919 - 1948} zur zunehmenden Industrialisierung der Baustoffherstellung, allerdings blieb die zuvor genannte Mentalität des kostengünstigen Bauens anstelle von Maßnahmen zum Wärmeschutz erhalten. 
-%Auch nach Einführung der DIN 4110 \glqq Technische Bestimmungen zur Zulassung neuer Bauweisen\grqq\,behielt das Vollziegel-Mauerwerk mit 38\,cm Dicke den Stand als Standard im Hochbau. 
-%
-%\cite{EickeHenning.2011}
+Einen Paradigmenwechsel des Wärmeschutzes kennzeichnete die 3.\,Verordnung über einen energiesparenden Wärmeschutz bei Gebäuden von 1995.
+Im Gegensatz zu den zuvor vorgestellten Verordnungen begrenzte die 3.\,WschV nicht nur die U-Werte der Bestandteile der Gebäudehülle, sondern beschränkte zudem den Jahres-Heizwärmebedarf.
+Als Folge der neuen Verordnung erhielten die Bauteile im Vergleich zur 2. WschV \mbox{4 - 6 cm} mehr Dämmdicke. 
+Außerdem wurde durch die erhöhten Anforderungen an die Verglasung die Zweischeiben-Wärmeschutzverglasung der Neubaustandard.
+Aufgrund dieser Maßnahmen konnten die U-Werte der Gebäude mit Baujahr \mbox{1995 - 2001} signifikant gesenkt werden.
+Besonders die bessere Verglasung mit wärmetechnisch besseren Rahmen erzielte eine Verbesserung des \(U_g\)-Wertes von \mbox{3 - 3,2 \(W/(m^2 \cdot K) \)} auf 1,9\,\(W/(m^2 \cdot K) \).
 
-%Wie zuvor bereits kurz erläutert, beschreibt die Epoche von \mbox{1949 - 1957} die Nachkriegszeit mit ihrem schnellen Wiederaufbau. 
-%Signifikant für die Nachkriegsbauten, ist die Wiederverwertung von Trümmern. 
-%Die im Jahr 1952 eingeführte DIN 4108 verkörperte den ersten Ansatz Wärmeschutz normativ zu regulieren. 
-%Trotz deren Name \glqq Wärmeschutz im Hochbau\grqq \,beinhaltete die Norm nur einen Mindestwärmeschutz zur Vermeidung bauphysikalischer Schäden durch Schimmelbildung. 
-%Dadurch blieb die Nutzung von Dämmstoffen weiterhin die Ausnahme und es wurde auf das bewährte 38\,cm Mauerwerk zurückgegriffen.
-%Des Weiteren gab es bis dahin auch keine Normierung der Fenster, sodass hier ferner die Einfach-Verglasung die Konvention darstellte. \cite{EickeHenning.2011}
+Die zum 01. Februar 2002 in Kraft getretene Energieeinsparverordnung (EnEV) legte die zuvor genannte 3. WschV sowie die Heizungsanlagenverordnung zusammen. 
+Somit wurden alle Anforderungen an den Energieverbrauch eines Gebäudes in einer Verordnung gebündelt.
+Anstelle der Begrenzung des Jahres-Heizwärmebedarfes wie im Abschnitt zuvor wurde der Jahres-Primärenergiebedarf limitiert.
+Obwohl nicht explizit strengere Regulationen an die Gebäudehülle formuliert wurden, konnte durch die Restriktion des Jahres-Primärenergiebedarfs ein Absinken der Wärmedurchgangskoeffizienten aufgrund dickerer Dämmschichten erzielt werden.
+Nach Tabelle \ref{tab: TabelleA1} sank der U-Wert des Zeitraumes \mbox{2002 - 2009} für alle Komponenten der Gebäudehülle im Rahmen der \mbox{EnEV 2002}.
+Außerdem setzte die Verordnung striktere Anforderungen an den Altbaubestand. 
+So mussten vor dem 01.10.1978 eingebaute Heizkessel mit flüssigem oder gasförmigen Brennstoff ersetzt werden, ungedämmte und zugängliche Wärmeverteilungs- und Warmwasserleitungen nachgedämmt werden sowie nicht begehbar, zugängliche oberste Geschossdecken auf einen U-Wert von 0,3 \(W/(m^2 \cdot K) \) gedämmt werden.
 
-
-%Verglasung erläutern?
-%Die drei Abschnitte in einen zusammenfassen?
-%Zeitstrahl wäre nice
-
-%1958 - 1968: requirements on thermal insulation in force (DIN 4108 – "Wärmeschutz im Hochbau"); further industrialisation of building construction; development of panel buildings (GDR: "Plattenbauten")
-
-%1969 - 1978: new industrial building techniques (sandwich elements); also introduction of pre-fabricated single family houses (lightweight constructions "Fertighaus"); thermal insulation becomes more relevant in consequence of the first oil crisis
-
-
-
-1984 - 1994: 2nd thermal protection ordinance (2. Wärmeschutzverordnung); GDR: further improved insulation ("Rationalisierungsstufe III")
-market introduction of low energy houses, supported by regional grant pro-grammes
-
-1995 - 2001: 3rd thermal protection ordinance (3. Wärmeschutzverordnung); considera-tion of a bonus in the tax in case of realisation of a low energy house
-
-2002 - 2009: energy saving ordinance ("EnEV 2002"), considering building and heat supply system; KfW grant programmes ("KFW-Energiesparhaus 60 and 40”, Passive Houses)
-
-2010 ... : new requirements of energy saving ordinance ("EnEV 2009") on the level of low energy buildings
-new KfW grant programme regulations ("KFW-Effizienzhaus 70, 55 and 40”, Passive Houses)
+Novellierungen 2004 + 2007 + 2009 (+2014, 2016?)
+Stand EnEV 2009 erklären
 
 \begin{figure}[H]
 	\centering
@@ -204,6 +191,12 @@ new KfW grant programme regulations ("KFW-Effizienzhaus 70, 55 and 40”, Passiv
 	\label{fig: Abbildung221} 
 \end{figure}
 
+Zu Tabelle \ref{tab: TabelleA1} ist anzumerken, dass sie sich auf den Zustand der Bauteile im damaligen Neubau bezieht. 
+Einzige Ausnahme hierbei bilden die Fenster der Zeiträume bis 1978. 
+Für diese charakterisierte die Einscheiben-Verglasung den
+%Hier doof
+%Zeitstrahl mit Transmissionswärmeverlusten
+%Auf Grafik Bezug nehmen
 
 
 
@@ -214,7 +207,7 @@ new KfW grant programme regulations ("KFW-Effizienzhaus 70, 55 and 40”, Passiv
 
 In dem vorangegangen Abschnitt wurde die Entwicklung des Dämmstandard vorgestellt. 
 Hierbei wurde sich ausschließlich auf den Neubauzustand bei Fertigstellung des Gebäudes bezogen.
-Dieses Kapitel soll nun die Veränderung aus energetischer Sicht des Gebäudebestandes durch Sanierung veranschaulichen.
+Dieses Kapitel soll nun die Veränderung des Gebäudebestandes aus energetischer Sicht durch Sanierung veranschaulichen.
 
 Abbildung \ref{fig: Abbildung231} zeigt den Anteil der durch nachträgliche Wärmedämmung sanierten Bauteilfläche nach Bauteilen und Gebäudeart.
 Zu erkennen ist der große Anteil an sanierter Dachfläche beziehungsweise obere Geschossdeckenfläche.
@@ -234,38 +227,48 @@ Für diese Bauteile wurden bei beiden Gebäudearten nur circa 10\,\% mit einem b
 
 In Abbildung \ref{fig: Abbildung231} fehlen die Angaben zum Sanierungsstandes der Fenster.
 Hierfür ist die Datenlage der Sanierung schwierig, allerdings bietet \cite{Bigalke.2016} eine Schätzung über den Bestand an Fenstern im Jahre 2015.
-Aus Tabelle \ref{tab: Tabelle231} sind verschiedene Verglasungsarten mit deren \(U_g\)-Wert sowie Anzahl und Anteil am gesamten Fensterbestand in Deutschland zu erkennen.
-Wie in Gleichung \ref{eq:Gleichung223} dargelegt, beschreibt der \(U_g\)-Wert den Wärmedurchgang durch die Verglasung.
+Tabelle \ref{tab: TabelleA2} gibt verschiedene Verglasungsarten mit deren \(U_g\)-Werten sowie Anzahl und Anteil am gesamten Fensterbestand in Deutschland wieder.
+Wie in Gleichung \ref{eq:Gleichung223} dargelegt, beschreibt der \(U_g\)-Wert den Wärmedurchgang durch die Verglasung ohne Berücksichtigung des Fensterrahmens oder der Wärmebrückenbildung.
 
 Obwohl die Einfachverglasung für einen großen Teil des Altbaues den Neubaustandard darstellte, ist deren Anteil am Fensterbestand mit nur noch 3\,\% sehr gering. 
 %Aufgrund dessen enorm hohen Wärmedurchgangskoeffizient in Höhe von 5,8\,\(W/(m^2 \cdot K)\) ist die Rückläufigkeit dieser Fensterart als positiv zu bewerten.
 Der heutige Bestand der Fenster wird durch unbeschichtetes Isolierglas sowie dem Zweischeiben-Wärmedämmglas dominiert, welche mit 34\,\% und 47\,\% vertreten sind.
 Weiterhin ist zu erkennen, dass das Dreischeiben-Wärmeglas bereits 8\,\% des Fensterbestandes stellt, obwohl dieses erst 10 Jahren vor Erhebung der Daten auf den Markt kam.
 
-\begin{table}[H]\centering
-\begin{tabular}{lccc}
-\toprule[1.5pt]
-Verglasungstyp & Anzahl & Anteil am Bestand & \(U_g\)-Wert \\
- & [in Millionen] & [in \%] & [in \(W/(m^2 \cdot K)\)] \\ \addlinespace[5pt]
-\midrule[2pt]
-Einfachverglasung & 19,6 & 3 & 5,8 \\
-\midrule
-Verbund- und Kastenfenster & 44,8 & 7 & 2,8 \\
-\midrule
-Dreischeiben-Wärmedämmglas & 48,9 & 8 & 0,7 \\
-\midrule
-unbeschichtetes Isolierglas & 207,3 & 34 & 2,8 \\
-\midrule
-Zweischeiben-Wärmedämmglas & 284,2 & 47 & 1,4 - 1,1 \\
-\bottomrule[1.5pt] \addlinespace[10pt]
-\end{tabular}
-\caption{Bestand an Fenstern in Deutschland, 2015 \cite{Bigalke.2016}}
-\label{tab: Tabelle231}
-\end{table}
+
 
 
 \section{Optimierungsmodell}
 \label{sec:Sektion 24}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+%Wie in \cite{.2015} dargelegt, werden die Gebäude mit Baujahr älter als 1919 von der Epoche der Gründerzeit geprägt.
+%Diese wird durch einen fortschreitenden Städtebau und den Beginn der Industrialisierung des Bauwesens charakterisiert. 
+%Aus wärmetechnischer Sicht lässt sich festhalten, dass es zu dieser Zeit kaum Regulationen bezüglich des Wärmeschutzes gab. 
+%Einzig die Dicke der Mauerschicht wurde mit 38\,cm empfohlen, wobei den Dämmstoffen geringe Relevanz zugeordnet wurde. 
+%Anstatt durch wärmetechnischen Maßnahmen an der Gebäudehülle Heizkosten zu senken, sparte man beim Bau und durch geringes Heizen. \cite{EickeHenning.2011}
+
+%Zwar kam es in dem Zeitraum von \mbox{1919 - 1948} zur zunehmenden Industrialisierung der Baustoffherstellung, allerdings blieb die zuvor genannte Mentalität des kostengünstigen Bauens anstelle von Maßnahmen zum Wärmeschutz erhalten. 
+%Auch nach Einführung der DIN 4110 \glqq Technische Bestimmungen zur Zulassung neuer Bauweisen\grqq\,behielt das Vollziegel-Mauerwerk mit 38\,cm Dicke den Stand als Standard im Hochbau. 
+%
+%\cite{EickeHenning.2011}
+
+%Wie zuvor bereits kurz erläutert, beschreibt die Epoche von \mbox{1949 - 1957} die Nachkriegszeit mit ihrem schnellen Wiederaufbau. 
+%Signifikant für die Nachkriegsbauten, ist die Wiederverwertung von Trümmern. 
+%Die im Jahr 1952 eingeführte DIN 4108 verkörperte den ersten Ansatz Wärmeschutz normativ zu regulieren. 
+%Trotz deren Name \glqq Wärmeschutz im Hochbau\grqq \,beinhaltete die Norm nur einen Mindestwärmeschutz zur Vermeidung bauphysikalischer Schäden durch Schimmelbildung. 
+%Dadurch blieb die Nutzung von Dämmstoffen weiterhin die Ausnahme und es wurde auf das bewährte 38\,cm Mauerwerk zurückgegriffen.
+%Des Weiteren gab es bis dahin auch keine Normierung der Fenster, sodass hier ferner die Einfach-Verglasung die Konvention darstellte. \cite{EickeHenning.2011}
 

@@ -2,7 +2,7 @@
 
 Ziel dieser Arbeit ist die Ermittlung optimierter Gebäudeenergiesysteme für den deutschen Wohngebäudebestand.
 Hierzu wurde in Kapitel \ref{sec:Sektion 21} der Bestand analysiert, um auf dieser Untersuchung aufbauend die nationale Wohngebäudesituation in einigen wenigen, repräsentativen Klassen abzubilden. 
-Des Weiteren wurde in \ref{sec:Sektion 22} die historische Entwicklung der deutschen Dämmstandards betrachtet. Daraus wurden Zeiträume der Baualtersklassen mit ähnlichen Wärmeübergangskoeffizienten der Gebäudehülle zusammengefasst. 
+Des Weiteren wurde in \ref{sec:Sektion 22} die historische Entwicklung der Gebäudehülle betrachtet. Daraus wurden Zeiträume der Baualtersklassen mit ähnlichen Baustoffen und Dämmdicken zusammengefasst. 
 Zuletzt stellt Kapitel \ref{sec:Sektion 23} die Grundlagen der mathematischen Optimierung sowie das im Rahmen dieser Arbeit erweiterte Optimierungsprogramm vor. 
 
 %Die Gebäudeklassen sollen für die Bestimmung der Gebäudeenergiesysteme mit dem Optimierungsprogramm benutzt werden. 
@@ -24,7 +24,7 @@ Zuletzt stellt Kapitel \ref{sec:Sektion 23} die Grundlagen der mathematischen Op
 Zunächst wurde der Wohngebäudebestand hinsichtlich Alter und Größe ausgewertet.
 Als Daten wurden die Statistiken des Zensus2011, einer nationalen statistischen Erhebung von privaten Haushalten, betrachtet. 
 Besagte Statistiken wurden in verschiedenen wissenschaftlichen Untersuchungen des Institut für Wohnen und Umwelt GmbH (IWU) ausgewertet und evaluiert.
-Weiterhin wurde für die gebäudetypischen Kennwerte die Typgebäude des europaweiten Projekts \glqq Typology Approach for Building Stock Energy Assessment\grqq\,(TABULA) berücksichtigt. Diese Daten wurden wiederum vom IWU erhoben und berechnet.
+Weiterhin wurde für die gebäudetypischen Kennwerte die Typgebäude des europaweiten Projekts \glqq Typology Approach for Building Stock Energy Assessment\grqq\,(TABULA) berücksichtigt. Diese Daten wurden ebenfalls vom IWU erhoben und berechnet.
 %Tabula evtl erst im nächsten Kapitel erläutern, da bei der statistischen Betrachtung fast nur Zensus/IWU Daten betrachtet werden
 
 Nach den 2011 veröffentlichten Zensus Daten besteht der deutsche Wohngebäudebestand aus rund 18.368.000 Gebäuden mit 39.432.000 Wohnungen \cite{.2015}.
@@ -43,7 +43,7 @@ So beschreibt beispielsweise das relativ kurze Zeitintervall von 1979 bis 1983 d
 \begin{figure}[H]
 	\centering
 		\includegraphics{Pictures/GebaeudeAlterDiagramm.jpg}
-	\caption{errichtete Wohngebäude nach Mikrozensus-Klassen  	\cite{StatistischeAmterdesBundesundderLander.2014}}
+	\caption{errichtete Wohngebäude nach Mikrozensus-Klassen sowie deren Anteil am Gebäudebestand\cite{StatistischeAmterdesBundesundderLander.2014}}
 	\label{fig: Abbildung211} 
 \end{figure}
 %Zwanzig Jahre Klassen vorstellen?
@@ -55,7 +55,7 @@ Die größeren Gebäude mit \mbox{7 - 12 Wohnungen} sowie mit 13 und mehr Wohnun
 Allerdings gelten letztere nur bei einer Gebäudebetrachtung als weniger relevant, da sie bei einer Anschauung der Wohneinheiten logischerweise mit größeren Faktoren im Vergleich zu Einfamilienhäusern eingehen. \cite{StatistischeAmterdesBundesundderLander.2014b}
 
 In Abbildung \ref{fig: Abbildung212} sind die Anzahl der Wohneinheiten für die drei Baualtersklassen älter als 1978, \mbox{1979 - 1994} und \mbox{1995 - 2009} sowie deren Anteil an allen Wohneinheiten bis Baujahr 2009 des Gebäudebestandes dargestellt. 
-In Anlehnung an den vorherigen Abschnitt werden Gebäude mit bis zu 2 Wohnungen als Einfamilienhäuser zusammengefasst und nach der englischen Bezeichnung \glqq single family home\grqq\,mit SFH abgekürzt. 
+In Anlehnung an den vorherigen Abschnitt werden Gebäude mit bis zu 2 Wohnungen als Ein- und Zweifamilienhäuser zusammengefasst und nach der englischen Bezeichnung \glqq single family home\grqq\,mit SFH abgekürzt. 
 Wohngebäude mit 3 oder mehr Wohnungen werden als Mehrfamilienhäuser mit der Abkürzung MFH für \glqq multy family home\grqq\,gebündelt. 
 
 Auffallend ist wiederum der enorme Anteil der Gebäude mit Baualter älter als 1978. 
@@ -74,7 +74,7 @@ Zusammenfassend lassen sich folgende Punkte bei der statistischen Betrachtung de
 
 \begin{itemize}
 	\item $\nicefrac{2}{3}$ aller Gebäude und Wohnungen des Bestandes wurden vor der 1. Wärmeschutzverordnung 1978 errichtet.
-	\item Ein- und Zweifamilienhäuser stellen mit 87\,\% den größten Anteil der Gebäude dar.
+	\item Ein- und Zweifamilienhäuser stellen mit 87\,\% den größten Anteil der Gebäude dar. %Das hab ich vorher nicht erläutert
 	\item Bei einer Betrachtung der Wohneinheiten halbiert sich der Bestand in Gebäude mit einer oder zwei Wohnungen (47\,\%) und drei oder mehr Wohnungen (53\,\%).
 	\item Gebäude, die nach der Jahrtausendwende gebaut wurden, bilden keinen großen Anteil des Bestandes.
 \end{itemize}
@@ -89,14 +89,14 @@ Zusammenfassend lassen sich folgende Punkte bei der statistischen Betrachtung de
 
 
 
-\section{Historische Entwicklung der Dämmstandards}
+\section{Historische Entwicklung der Gebäudehülle}
 \label{sec:Sektion 22}
 
-Nachdem im vorherigen Kapitel der Gebäudebestand nach Alter und Größe beschrieben wurde, werden nun die zu den jeweiligen Gebäudealtern und -größen zugehörigen Dämmstandards vorgestellt. 
+Nachdem im vorherigen Kapitel der Gebäudebestand nach Alter und Größe beschrieben wurde, werden nun die zu den jeweiligen Gebäudealtern zugehörigen Baustoffe und Dämmeigenschaften vorgestellt. 
 Hierzu wird zwischen der Isolierung verschiedener Gebäudebauteilen unterschieden. 
-Neben Möglichkeiten zur Dämmung des Daches beziehungsweise der obersten Geschossdecke und der Außenwand werden zudem die Dämmung des Bodens sowie die Fenster betrachtet.
+Neben Möglichkeiten zur Dämmung des Daches beziehungsweise der obersten Geschossdecke und der Außenwand werden zudem die Dämmung des Bodens betrachtet.
+Weiterhin wird auf den Verglasungsstandard verschiedener Epochen eingegangen
 %Warum Dach und oberste Geschossdecke zusammengefasst werden kurz erklären?
-%Näher auf Fenster drauf eingehen? Bzw. Fenster werden nicht gedämmt?
 
 Ein wichtiger Kennwert zur energetischen Bewertung eines Gebäudes und einzelner Gebäudekomponenten beschreibt der U-Wert.
 Hierbei handelt es sich um den Wärmeübergangskoeffizienten, welcher den Wärmestrom durch 1\,m² Bauteilfläche bei 1\,Kelvin Temperaturdifferenz beschreibt. 
@@ -175,14 +175,22 @@ Besonders die bessere Verglasung mit wärmetechnisch besseren Rahmen erzielte ei
 
 Die zum 01. Februar 2002 in Kraft getretene Energieeinsparverordnung (EnEV) legte die zuvor genannte 3. WschV sowie die Heizungsanlagenverordnung zusammen. 
 Somit wurden alle Anforderungen an den Energieverbrauch eines Gebäudes in einer Verordnung gebündelt.
-Anstelle der Begrenzung des Jahres-Heizwärmebedarfes wie im Abschnitt zuvor wurde der Jahres-Primärenergiebedarf limitiert.
-Obwohl nicht explizit strengere Regulationen an die Gebäudehülle formuliert wurden, konnte durch die Restriktion des Jahres-Primärenergiebedarfs ein Absinken der Wärmedurchgangskoeffizienten aufgrund dickerer Dämmschichten erzielt werden.
+Anstelle der Begrenzung des Jahres-Heizwärmebedarfes wie im Abschnitt zuvor wurde der Jahres-Primärenergiebedarf sowie der flächenspezifische Transmissionswärmeverlust (\(H_t'\)) limitiert.
+Obwohl nicht explizit strengere Regulationen an die Gebäudehülle formuliert wurden, konnte durch die Restriktion von \(H_t'\) ein Absinken der Wärmedurchgangskoeffizienten aufgrund dickerer Dämmschichten erzielt werden.
 Nach Tabelle \ref{tab: TabelleA1} sank der U-Wert des Zeitraumes \mbox{2002 - 2009} für alle Komponenten der Gebäudehülle im Rahmen der \mbox{EnEV 2002}.
 Außerdem setzte die Verordnung striktere Anforderungen an den Altbaubestand. 
 So mussten vor dem 01.10.1978 eingebaute Heizkessel mit flüssigem oder gasförmigen Brennstoff ersetzt werden, ungedämmte und zugängliche Wärmeverteilungs- und Warmwasserleitungen nachgedämmt werden sowie nicht begehbar, zugängliche oberste Geschossdecken auf einen U-Wert von 0,3 \(W/(m^2 \cdot K) \) gedämmt werden.
+%Energieausweis
 
-Novellierungen 2004 + 2007 + 2009 (+2014, 2016?)
-Stand EnEV 2009 erklären
+Auf die EnEV 2002 folgten 2004 sowie 2007 Novellierungen.
+Diese stellten keine Verschärfung der energetischen Anforderungen nach EnEV 2002 dar, sondern galten der Beseitigung juristischer Problematiken sowie der Einführung des Energieausweises für Bestandsgebäude \cite{Wild.2015}.
+Eine solche Verschärfung wurde durch die EnEV 2009 vollzogen.
+Zum einen wurde die Berechnung des Jahres-Primärenergiebedarfes umgestaltet.
+Das Berechnungsverfahren nach EnEV 2009 bestimmte einen flächenspezifischen Höchstwert des Jahres-Primärenergiebedarfes, welcher durch ein Referenzgebäude gleicher Geometrie, Gebäudenutzfläche und Ausrichtung kalkuliert wurde.
+Die U-Werte der Referenzgebäudeberechnung wurden von TABULA für die Typgebäude der Baujahre \mbox{2010 - 2015} übernommen und sind in Tabelle \ref{tab: TabelleA1} zu finden.
+Zum anderen wurden die Grenzwerte \(H_{t, max}'\) in weniger Kategorien als EnEV 2002 unterteilt und verschärft.
+%Abbildung mit \(H_{t, max}'\) o.ä.
+%EnEV Zitate
 
 \begin{figure}[H]
 	\centering
@@ -238,8 +246,8 @@ Weiterhin ist zu erkennen, dass das Dreischeiben-Wärmeglas bereits 8\,\% des Fe
 
 
 
-\section{Optimierungsmodell}
-\label{sec:Sektion 24}
+%\section{Optimierungsmodell}
+%\label{sec:Sektion 24}
 
 
 

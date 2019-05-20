@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2019.5.17)  17 MAY 2019 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2019.5.20)  20 MAY 2019 15:18
 entering extended mode
 **./Hauptdokument.tex
 (Hauptdokument.tex
@@ -1467,6 +1467,12 @@ Overfull \hbox (14.1942pt too wide) in paragraph at lines 5--5
 äu-ser (SFH) und Mehr-fa-mi-li-en-häu-ser (MFH) 
  []
 
+
+Overfull \hbox (5.41289pt too wide) in paragraph at lines 7--7
+ [][] [][][]\T1/futs/m/n/10.95 Anteil des Ge-bäu-de-be-stan-des mit nach-träg-l
+i-cher Däm-mung der Bau-tei-le Au-ÿen-wand, 
+ []
+
 )
 \tf@lof=\write6
 \openout6 = `Hauptdokument.lof'.
@@ -1613,7 +1619,7 @@ l.42
       [2
 
 ]
-<Pictures/GebaeudeAlterDiagramm.jpg, id=183, 449.5194pt x 255.8358pt>
+<Pictures/GebaeudeAlterDiagramm.jpg, id=193, 449.5194pt x 255.8358pt>
 File: Pictures/GebaeudeAlterDiagramm.jpg Graphic file (type jpg)
 <use Pictures/GebaeudeAlterDiagramm.jpg>
 Package pdftex.def Info: Pictures/GebaeudeAlterDiagramm.jpg  used on input line
@@ -1622,12 +1628,6 @@ Package pdftex.def Info: Pictures/GebaeudeAlterDiagramm.jpg  used on input line
 
 Overfull \hbox (8.50055pt too wide) in paragraph at lines 45--46
  [][] 
- []
-
-
-Underfull \hbox (badness 3525) in paragraph at lines 46--46
-[][]\T1/futs/m/n/10.95 errichtete Wohn-ge-bäu-de nach Mikrozensus-Klassen so-wi
-e de-ren An-teil am
  []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -1639,46 +1639,48 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 65.
 [3 <./Pictures/GebaeudeAlterDiagramm.jpg>]
-<Pictures/GebaeudeGroesse.jpg, id=193, 390.0171pt x 253.1859pt>
+<Pictures/GebaeudeGroesse.jpg, id=203, 449.5194pt x 255.8358pt>
 File: Pictures/GebaeudeGroesse.jpg Graphic file (type jpg)
 <use Pictures/GebaeudeGroesse.jpg>
 Package pdftex.def Info: Pictures/GebaeudeGroesse.jpg  used on input line 68.
-(pdftex.def)             Requested size: 390.01614pt x 253.18527pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
+(pdftex.def)             Requested size: 449.51828pt x 255.83517pt.
 
-Underfull \vbox (badness 1210) has occurred while \output is active []
+Overfull \hbox (8.50055pt too wide) in paragraph at lines 68--69
+ [][] 
+ []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 100.
+(babel)             in language  on input line 84.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 100.
- [4 <./Pictures/GebaeudeGroesse.jpg>]
+(babel)             in language  on input line 84.
+[4 <./Pictures/GebaeudeGroesse.jpg>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 96.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 142.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 142.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 142.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 142.
  [5]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 161.
+(babel)             in language  on input line 165.
  [6]
-Overfull \hbox (12.14815pt too wide) in paragraph at lines 169--175
+Overfull \hbox (12.14815pt too wide) in paragraph at lines 173--179
 \T1/futs/m/n/10.95 bes-se-ren Rah-men er-ziel-te ei-ne Ver-bes-se-rung des $\FM
 L/futmi/m/it/10.95 U[]$\T1/futs/m/n/10.95 -Wertes von [] auf 1,9$\FML/futmi/m/i
 t/10.95 W\T1/futs/m/n/10.95 /(\FML/futmi/m/it/10.95 m[] [] K\T1/futs/m/n/10.95 
@@ -1686,75 +1688,84 @@ t/10.95 W\T1/futs/m/n/10.95 /(\FML/futmi/m/it/10.95 m[] [] K\T1/futs/m/n/10.95
  []
 
 
-Overfull \hbox (24.03856pt too wide) in paragraph at lines 176--184
+Overfull \hbox (24.03856pt too wide) in paragraph at lines 180--188
 \T1/futs/m/n/10.95 gren-zung des Jahres-Heizwärmebedarfes wie im Ab-schnitt zu-
 vor wur-de der Jahres-Primärenergiebedarf
  []
 
 
-Overfull \hbox (6.29323pt too wide) in paragraph at lines 176--184
+Overfull \hbox (6.29323pt too wide) in paragraph at lines 180--188
 \T1/futs/m/n/10.95 so-wie der flä-chen-spe-zi-fi-sche Trans-mis-si-ons-wär-me-v
 er-lust ($\FML/futmi/m/it/10.95 H[]$\T1/futs/m/n/10.95 ) li-mi-tiert. Ob-wohl n
 icht ex-pli-zit stren-
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 184.
+(babel)             in language  on input line 188.
 [7]
-<Pictures/TransmissionswaermekoeffizientBaujahr.jpg, id=236, 362.85562pt x 255.
-95625pt>
+<Pictures/TransmissionswaermekoeffizientBaujahr.jpg, id=246, 449.5194pt x 255.8
+358pt>
 File: Pictures/TransmissionswaermekoeffizientBaujahr.jpg Graphic file (type jpg
 )
 <use Pictures/TransmissionswaermekoeffizientBaujahr.jpg>
 Package pdftex.def Info: Pictures/TransmissionswaermekoeffizientBaujahr.jpg  us
-ed on input line 197.
-(pdftex.def)             Requested size: 362.85474pt x 255.95561pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 213.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 213.
+ed on input line 200.
+(pdftex.def)             Requested size: 449.51828pt x 255.83517pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (8.50055pt too wide) in paragraph at lines 200--201
+ [][] 
+ []
+
+
+Overfull \hbox (34.13835pt too wide) in paragraph at lines 205--208
+\T1/futs/m/n/10.95 ren ener-ge-ti-schen Ge-stal-tung der Wohn-ge-bäu-de. Wei-te
+r-hin ist fest-zu-stel-len, dass durch die Wärmeschutz-
+ []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 208.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 208.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 219.
+(babel)             in language  on input line 208.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 219.
- [8 <./Pictures/TransmissionswaermekoeffizientBaujahr.jpg>]
-<Pictures/NachtraeglicheSanierung.jpg, id=244, 368.577pt x 256.0767pt>
+(babel)             in language  on input line 208.
+[8 <./Pictures/TransmissionswaermekoeffizientBaujahr.jpg>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 222.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 222.
+<Pictures/NachtraeglicheSanierung.jpg, id=261, 368.577pt x 256.0767pt>
 File: Pictures/NachtraeglicheSanierung.jpg Graphic file (type jpg)
 <use Pictures/NachtraeglicheSanierung.jpg>
 Package pdftex.def Info: Pictures/NachtraeglicheSanierung.jpg  used on input li
-ne 231.
+ne 250.
 (pdftex.def)             Requested size: 368.57608pt x 256.07608pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 240.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 240.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 240.
+(babel)             in language  on input line 254.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 240.
- [9 <./Pictures/NachtraeglicheSanierung.jpg>]) (Chapters/StandDerTechnik.tex
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 254.
+ [9])
+(Chapters/StandDerTechnik.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [10]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [10 <./Pictures/NachtraeglicheSanierung.jpg>]
 chapter 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1823,55 +1834,64 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 4.
+(babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 4.
+(babel)             in language  on input line 3.
 
-Overfull \hbox (22.82956pt too wide) in paragraph at lines 7--34
+Overfull \hbox (15.19019pt too wide) in paragraph at lines 6--34
  [][] 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 40.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 40.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 38.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 38.
+Overfull \hbox (22.82956pt too wide) in paragraph at lines 43--70
+ [][] 
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 73.
  [14
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 74.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 74.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 74.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 97.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 97.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 97.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 97.
 [15]
 chapter B.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 97.
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 275.
@@ -1930,35 +1950,32 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
  ) 
 Here is how much of TeX's memory you used:
- 14877 strings out of 493305
- 260805 string characters out of 3138868
+ 14883 strings out of 493305
+ 260933 string characters out of 3138868
  507874 words of memory out of 3000000
- 17984 multiletter control sequences out of 15000+200000
+ 17988 multiletter control sequences out of 15000+200000
  153491 words of font info for 173 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,20n,71p,9107b,587s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.2.4} has been referenced but does not exi
-st, replaced by a fixed one
-
- <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecsx2074.pk> <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ectt1095.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
-c} <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
-0\ecsx1200.pk> <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecsx1440.pk> <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecsx1095.pk><C:/Users/srm-jba/AppData/Roaming/MiKTeX/
-2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/srm-jba/AppData/Roamin
-g/MiKTeX/2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Users/srm-jba/AppDat
-a/Roaming/MiKTeX/2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Users/srm-
-jba/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/u
-topia/putri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Hauptdokument.pdf (29 pages, 768980 bytes).
+ 50i,19n,71p,9107b,587s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecsx2074.pk> <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ectt1095.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.
+enc} <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
+600\ecsx1200.pk> <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+appen\ec\dpi600\ecsx1440.pk> <C:\Users\srm-jba\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\jknappen\ec\dpi600\ecsx1095.pk><C:/Users/srm-jba/AppData/Roaming/MiKTe
+X/2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/srm-jba/AppData/Roam
+ing/MiKTeX/2.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Users/srm-jba/AppD
+ata/Roaming/MiKTeX/2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Users/sr
+m-jba/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe
+/utopia/putri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8
+a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on Hauptdokument.pdf (29 pages, 1528522 bytes).
 PDF statistics:
- 589 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 612 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 

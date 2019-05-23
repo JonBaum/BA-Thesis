@@ -1,8 +1,8 @@
 \chapter{Grundlagen}
 
 Ziel dieser Arbeit ist die Ermittlung optimierter Gebäudeenergiesysteme für den deutschen Wohngebäudebestand.
-Hierzu wurde in Kapitel \ref{sec:Sektion 21} der Bestand analysiert, um auf dieser Untersuchung aufbauend die nationale Wohngebäudesituation in einigen wenigen, repräsentativen Klassen abzubilden. 
-Des Weiteren wurde in \ref{sec:Sektion 22} die historische Entwicklung der Gebäudehülle betrachtet. Daraus wurden Zeiträume der Baualtersklassen mit ähnlichen Baustoffen und Dämmdicken zusammengefasst. 
+Hierzu wird in Kapitel \ref{sec:Sektion 21} der Bestand analysiert, um auf dieser Untersuchung aufbauend die nationale Wohngebäudesituation in einigen wenigen, repräsentativen Klassen abzubilden. 
+Des Weiteren wird in \ref{sec:Sektion 22} die historische Entwicklung der Gebäudehülle betrachtet. Daraus werden Zeiträume der Baualtersklassen mit ähnlichen Baustoffen und Dämmdicken zusammengefasst. 
 Zuletzt stellt Kapitel \ref{sec:Sektion 23} die Grundlagen der mathematischen Optimierung sowie das im Rahmen dieser Arbeit erweiterte Optimierungsprogramm vor. 
 
 %Die Gebäudeklassen sollen für die Bestimmung der Gebäudeenergiesysteme mit dem Optimierungsprogramm benutzt werden. 
@@ -21,10 +21,10 @@ Zuletzt stellt Kapitel \ref{sec:Sektion 23} die Grundlagen der mathematischen Op
 \section{Deutscher Wohngebäudebestand}
 \label{sec:Sektion 21}
 
-Zunächst wurde der Wohngebäudebestand hinsichtlich Alter und Größe ausgewertet.
-Als Daten wurden die Statistiken des Zensus2011, einer nationalen statistischen Erhebung von privaten Haushalten, betrachtet. 
-Besagte Statistiken wurden in verschiedenen wissenschaftlichen Untersuchungen des Institut für Wohnen und Umwelt GmbH (IWU) ausgewertet und evaluiert.
-Weiterhin wurde für die gebäudetypischen Kennwerte die Typgebäude des europaweiten Projekts \glqq Typology Approach for Building Stock Energy Assessment\grqq\,(TABULA) berücksichtigt. Die nationalen Daten Deutschlands wurden durch das IWU erhoben und berechnet.
+Zunächst wird der Wohngebäudebestand hinsichtlich Alter und Größe ausgewertet.
+Als Daten werden die Statistiken des Zensus2011, einer nationalen statistischen Erhebung von privaten Haushalten, betrachtet. 
+Besagte Statistiken werden in verschiedenen wissenschaftlichen Untersuchungen des Instituts für Wohnen und Umwelt GmbH (IWU) ausgewertet und evaluiert.
+Weiterhin werden für die gebäudetypischen Kennwerte die Typgebäude des europaweiten Projekts \glqq Typology Approach for Building Stock Energy Assessment\grqq\,(TABULA) berücksichtigt. Die nationalen Daten Deutschlands wurden durch das IWU erhoben und berechnet.
 %Tabula evtl erst im nächsten Kapitel erläutern, da bei der statistischen Betrachtung fast nur Zensus/IWU Daten betrachtet werden
 
 Nach den 2011 veröffentlichten Zensus Daten besteht der deutsche Wohngebäudebestand aus rund 18.368.000 Gebäuden mit 39.432.000 Wohnungen \cite{.2015}.
@@ -36,7 +36,7 @@ Eine weitere relevante Klasse beschreiben mit fast \mbox{10 \%} die von 1979 bis
 Zusammen mit den drei Klassen \mbox{1987 - 1990,} \mbox{1991 - 1995} und \mbox{1996 - 2000} werden  durch diese vier Gruppen mehr als ein Viertel des Wohngebäudebestandes in Deutschland abgebildet.
 Im Gegensatz zu den zuvor genannten Gruppen stellen die nach der Jahrtausendwende konstruierten Häuser mit unter \mbox{10 \%} und nur 1,6 Millionen Häusern einen relativ kleinen Anteil des nationalen Bestandes dar. 
 
-Es sei noch zu erwähnen, dass in dieser Betrachtung den Mikrozensus-Klassen gefolgt wurde. 
+Es sei noch zu erwähnen, dass in dieser Betrachtung den Mikrozensus-Klassen gefolgt wird. 
 Diese sind explizit keine gleich langen Zeitintervalle, sondern \glqq orientieren sich an historischen Einschnitten, den Zeitpunkten statistischer Erhebungen und den Veränderungen der wärmetechnisch relevanten Bauvorschriften\grqq \cite{.2015}. 
 So beschreibt beispielsweise das relativ kurze Zeitintervall von 1979 bis 1983 den Zeitraum zwischen erster und zweiter Wärmeschutzverordnung, auf welche in Kapitel \ref{sec:Sektion 22} noch näher eingegangen wird.
 
@@ -50,9 +50,10 @@ So beschreibt beispielsweise das relativ kurze Zeitintervall von 1979 bis 1983 d
 
 Eine weitere Unterteilung des Wohngebäudebestandes erhält man bei der Betrachtung der Anzahl an Wohneinheiten im Gebäude. 
 Hierbei setzt sich der Bestand zu zwei Dritteln aus Wohngebäuden mit nur einer Wohnung zusammen. 
-Weitere \mbox{17 \%} bilden Gebäude mit zwei Wohnungen und die Gebäudeklasse mit \mbox{3 - 6 Wohnungen} ist mit \mbox{12 \%} vertreten. 
+Weitere \mbox{17 \%} bilden Gebäude mit zwei Wohnungen, während die Gebäudeklasse mit \mbox{3 - 6 Wohnungen} mit \mbox{12 \%} vertreten ist. 
 Die größeren Gebäude mit \mbox{7 - 12 Wohnungen} sowie mit 13 und mehr Wohnungen sind anteilig am Gebäudebestand mit jeweils \mbox{5 \%} und \mbox{1 \%} relativ kleine Gruppen. 
-Allerdings gelten letztere nur bei einer Gebäudebetrachtung als weniger relevant, da sie bei einer Anschauung der Wohneinheiten logischerweise mit größeren Faktoren im Vergleich zu Einfamilienhäusern eingehen. \cite{StatistischeAmterdesBundesundderLander.2014b}
+Allerdings gelten letztere nur bei einer Gebäudebetrachtung als weniger relevant, da sie bei einer Anschauung der Wohneinheiten logischerweise mit größeren Faktoren im Vergleich zu Einfamilienhäusern einhergehen. \cite{StatistischeAmterdesBundesundderLander.2014b}
+%einhergehen oder eingehen?
 
 In Abbildung \ref{fig: Abbildung212} sind die Anzahl der Wohneinheiten für die drei Baualtersklassen älter als 1978, \mbox{1979 - 1994} und \mbox{1995 - 2009} sowie deren Anteil an allen Wohneinheiten bis Baujahr 2009 des Gebäudebestandes dargestellt. 
 In Anlehnung an den vorherigen Abschnitt werden Gebäude mit bis zu 2 Wohnungen als Ein- und Zweifamilienhäuser zusammengefasst und nach der englischen Bezeichnung \glqq single family home\grqq\,mit SFH abgekürzt. 
@@ -99,7 +100,7 @@ Zusammenfassend lassen sich folgende Punkte bei der statistischen Betrachtung de
 Nachdem im vorherigen Kapitel der Gebäudebestand nach Alter und Größe beschrieben wurde, werden nun die zu den jeweiligen Gebäudealtern zugehörigen Baustoffe und Dämmeigenschaften vorgestellt. 
 Hierzu wird zwischen der Isolierung verschiedener Gebäudebauteilen unterschieden. 
 Neben Möglichkeiten zur Dämmung des Daches beziehungsweise der obersten Geschossdecke und der Außenwand werden zudem die Dämmung des Bodens betrachtet.
-Weiterhin wird auf den Verglasungsstandard verschiedener Epochen eingegangen
+Weiterhin wird auf den Verglasungsstandard verschiedener Epochen eingegangen.
 %Warum Dach und oberste Geschossdecke zusammengefasst werden kurz erklären?
 
 Ein wichtiger Kennwert zur energetischen Bewertung eines Gebäudes und einzelner Gebäudekomponenten beschreibt der U-Wert.
@@ -146,7 +147,7 @@ So verschwand der Vollziegel langsam vom Markt und wurde durch Hochlochziegeln o
 Weiter wurden vermehrt Trittschalldämmungen in Böden und Dächer installiert. 
 Trotz deren primären Zweckes der Lärmvermeidung erzielten diese dünnen Dämmschichten von \mbox{1 - 4 cm} eine Verbesserung der Wärmedurchgangskoeffizienten der zuvor genannten Bauteile.
 Ab 1965 erreichten vorgefertigte Betonteile mit einem \mbox{3 - 6 cm} dicken Dämmkern zudem einen besseren Wärmeschutz.
-Bezüglich der Fenster wurde in diesen Jahren keine Veränderung geschaffen, sodass weiterhin die Einscheiben-Verglasung die Konvention bildete. \cite{EickeHenning.2011}
+Bezüglich der Fenster wurde in diesen Jahren keine Veränderung geschaffen, so dass weiterhin die Einscheiben-Verglasung die Konvention bildete. \cite{EickeHenning.2011}
 
 Nach der Ölkrise von 1974 rückte die Bedeutung des ressourcenschonenden Bauens beziehungsweise Betriebes von Gebäuden in den Vordergrund. 
 Der Gesetzgeber verabschiedete am 11. August 1977 mit der 1. Wärmeschutzverordnung, im Folgenden mit WschV abgekürzt, erstmalig eine Verordnung, in der ein Standard zur Minimierung des Heizwärmebedarfs festgelegt wurde. 
@@ -158,7 +159,7 @@ Somit ermöglichte die 1. WschV eine Verbesserung des energetischen Standards de
 Allerdings stellten die ersten normativen Anforderungen an die Gebäudehülle aus heutiger Sicht nur einen Zwischenschritt hin zu einem energetisch sinnvollen Reglement dar.
 Als Beispiel hierfür ist die Anforderung an Fenster zu nennen. 
 Für diese wurde in der 1. WschV festgelegt, dass ein U-Wert von 3,5\,\(W/(m^2 \cdot K) \) nicht überschritten werden darf \cite{Bundesregierung.1977}.
-Nach heutigem Standard der Energieeinsparverordnung 2009, die im folgenden noch weiter erläutert wird, sind für die Fenster im Neubau \(U_w\)-Werte kleiner 1,3\,\(W/(m^2 \cdot K) \) einzuhalten.
+Nach heutigem Standard der Energieeinsparverordnung 2009, die im Folgenden noch weiter erläutert wird, sind für die Fenster im Neubau \(U_w\)-Werte kleiner 1,3\,\(W/(m^2 \cdot K) \) einzuhalten.
 Bei diesem Vergleich ist auch noch festzuhalten, dass es sich bei der Vorgabe zum U-Wert der 1. WschV um den \(U_g\)-Wert handelt, der nur den Wärmedurchgang durch die Verglasung beschreibt und somit im Gegensatz zu \(U_w\) weder den Wärmeübergang durch den Rahmen noch die Wärmebrückenbildung beachtet. 
 Daher liegt der von TABULA ermittelte \(U_w\)-Wert für das SFH-Typgebäudenfenster der Jahre \mbox{1979 - 1983} aufgrund dessen energetisch schlechten Metallrahmen mit 4,3\,\(W/(m^2 \cdot K) \) höher als der \(U_g\)-Normwert der 1. WschV. \cite{EickeHenning.2011} 
 %Bsp mit EnEV ok? Zeitstrahl wäre nice
@@ -179,7 +180,7 @@ Besonders die bessere Verglasung mit wärmetechnisch besseren Rahmen erzielte ei
 
 Die zum 01. Februar 2002 in Kraft getretene Energieeinsparverordnung (EnEV) legte die zuvor genannte 3. WschV sowie die Heizungsanlagenverordnung zusammen. 
 Somit wurden alle Anforderungen an den Energieverbrauch eines Gebäudes in einer Verordnung gebündelt.
-Anstelle der Begrenzung des Jahres-Heizwärmebedarfes wie im Abschnitt zuvor wurde der Jahres-Primärenergiebedarf sowie der flächenspezifische Transmissionswärmeverlust (\(H_t'\)) limitiert.
+Anstelle der Begrenzung des Jahres-Heizwärmebedarfes, wie im Abschnitt zuvor, wurde der Jahres-Primärenergiebedarf sowie der flächenspezifische Transmissionswärmeverlust (\(H_t'\)) limitiert.
 Obwohl nicht explizit strengere Regulationen an die Gebäudehülle formuliert wurden, konnte durch die Restriktion von \(H_t'\) ein Absinken der Wärmedurchgangskoeffizienten aufgrund dickerer Dämmschichten erzielt werden.
 Nach Tabelle \ref{tab: TabelleA1} sank der U-Wert des Zeitraumes \mbox{2002 - 2009} für alle Komponenten der Gebäudehülle im Rahmen der \mbox{EnEV 2002}.
 Außerdem setzte die Verordnung striktere Anforderungen an den Altbaubestand. 
@@ -203,7 +204,7 @@ Zum anderen wurden die Grenzwerte \(H_{t, max}'\) in weniger Kategorien als EnEV
 \end{figure}
 
 Abbildung \ref{fig: Abbildung221} zeigt den flächenspezifischen Transmissionswärmeverlust der Gebäudetypen SFH sowie MFH für verschiedene Baujahre. 
-Zu sehen ist zum Einen, dass die Werte der MFH immer über denen der SFH liegen und zum Anderen die kontinuierliche Verbesserung im Zuge der besseren energetischen Gestaltung der Wohngebäude.
+Zu erkennen ist zum Einen, dass die Werte der MFH immer über denen der SFH liegen und zum Anderen die kontinuierliche Verbesserung im Zuge der energetisch günstigeren Gestaltung der Wohngebäude.
 Weiterhin ist festzustellen, dass durch die Wärmeschutz- und Energieeinsparverordnungen der letzten 40 Jahre die flächenspezifische Transmissionswärmeverluste der Neubauten um Vergleich zu einem Altbau um fast 75\,\% gesunken sind.
 
 Zu Tabelle \ref{tab: TabelleA1} ist anzumerken, dass sie sich auf den Zustand der Bauteile im damaligen Neubau bezieht. 
@@ -226,16 +227,16 @@ In dem vorangegangen Abschnitt wurde die Entwicklung der Gebäudehülle vorgeste
 Hierbei wurde sich auf den Neubauzustand bei Fertigstellung des Gebäudes bezogen.
 Dieses Kapitel soll nun die Veränderung des Gebäudebestandes durch energetische Sanierung veranschaulichen.
 
-Abbildung \ref{fig: Abbildung231} zeigt den Anteil der durch nachträgliche Wärmedämmung sanierten Bauteilfläche nach Bauteilen und Gebäudeart.
+Abbildung \ref{fig: Abbildung231} zeigt den Anteil der durch nachträgliche Wärmedämmung sanierten Bauteilflächen nach Bauteilen und Gebäudeart.
 Zu erkennen ist der große Anteil an sanierter Dachfläche beziehungsweise obere Geschossdeckenfläche.
 Dieser liegt für SFH und MFH annähernd gleich bei etwa 57\,\%.
-Folglich wurde mehr als die Hälfte der Dachflächen im Altbau nachträglich gedämmt.
+Folglich wurden mehr als die Hälfte der Dachflächen im Altbau nachträglich gedämmt.
 Einen leichten Unterschied zwischen den Gebäudearten ist bei den nachträglich sanierten Außenwänden zu beobachten. 
 Bei diesem Bauteil wurden bei MFH etwas mehr als 31\,\% mit einer besseren Dämmung versehen, wohingegen es bei den SFH nur etwa ein Viertel waren.
 Deutlich weniger Relevanz bei der nachträglichen Dämmung erhielt die Isolierung des Fußbodens beziehungsweise der Kellerdecke. 
 Für diese Bauteile wurden bei beiden Gebäudearten nur circa 10\,\% mit einem besseren Wärmeschutz versehen. 
 
-In Abbildung \ref{fig: Abbildung231} fehlen die Angaben zum Sanierungsstandes der Fenster.
+In Abbildung \ref{fig: Abbildung231} fehlen die Angaben zum Sanierungsstand der Fenster.
 Hierfür ist die Datenlage der Sanierung schwierig, allerdings bietet das IWU eine Schätzung über den Bestand an Fenstern im Jahre 2015 \cite{Bigalke.2016}.
 Tabelle \ref{tab: TabelleA2} gibt verschiedene Verglasungsarten mit deren \(U_g\)-Werten sowie Anzahl und Anteil am gesamten Fensterbestand in Deutschland wieder.
 Wie in Gleichung \ref{eq:Gleichung223} dargelegt, beschreibt der \(U_g\)-Wert den Wärmedurchgang durch die Verglasung ohne Berücksichtigung des Fensterrahmens oder der Wärmebrückenbildung.
@@ -252,10 +253,64 @@ Weiterhin ist zu erkennen, dass das Dreischeiben-Wärmeglas bereits 8\,\% des Fe
 	\label{fig: Abbildung231} 
 \end{figure}
 
+\section{Förderprogramme}
+\label{sec:Sektion 24}
+
+In Kapitel \ref{sec:Sektion 22} werden diverse Verordnungen zum besseren Wärmeschutz des deutschen Gebäudebestandes beschrieben.
+Diese verkörpern allerdings in den meisten Fällen nur Anforderungen an den Neubau oder Sanierungsmaßnahmen. 
+Zur Steigerung der Wirtschaftlichkeit solcher Sanierungsmaßnahmen verabschiedete die deutsche Bundesregierung einige Förderprogramme, welche Gebäudebesitzer bei Renovierungsvorhaben finanziell unterstützen.
+
+Anreiz für Sanierung
+Vergangenes Förderprogramm mit Fenster Sanierung
+Aktuelle Förderprogramme
 
 
-%\section{Optimierungsmodell}
-%\label{sec:Sektion 24}
+\section{Optimierungsmodell}
+\label{sec:Sektion 25}
+
+Wie zuvor bereits erwähnt, ist das Ziel dieser Arbeit die Bestimmung verschiedener Maßnahmen, welche für repräsentative Gebäudetypen eine optimale, energetische Lösung bieten.
+Hierbei werden neben verschiedenen Möglichkeiten der Energiebereitstellung auch die Qualität und Verbesserung verschiedener Komponenten der Gebäudehülle betrachtet.
+Dadurch ergibt sich eine enorm hohe Anzahl an möglichen Kombinationsmöglichkeiten der Maßnahmen.
+Um aus dieser Komplexität ein Optimum zu bestimmen, ist es unabdingbar ein rechnergestütztes Optimierungsprogramm als Werkzeug zu benutzen.
+
+In einem mathematischen Sinne beschreibt die Optimierung die Lösung einer Zielfunktion.
+Diese Funktion wird mit Variablen beschrieben und mit Rahmenbedingungen, Restriktionen genannt, beschränkt \cite{Schellong.2016}.
+Somit wird mit einem Optimierungsprogramm versucht, eine Problematik mathematisch zu modellieren, um eine rationale Entscheidung über eine beste Lösung zu treffen. 
+
+Im Folgenden stellt Kapitel \ref{subsubsec:Sektion2521} verschiedene Arten der Optimierung sowie diverse Optimierungsprogramme vor, um letztlich das im Rahmen dieser Arbeit verwendete Programm in \ref{subsec:Sektion 252} beschreiben zu können.
+
+\subsection{Arten der Optimierung}
+\label{subsec:Sektion 251}
+
+Zur Einteilung von Optimierungsprogrammen existieren verschiedene Möglichkeiten.
+So kann zunächst die 
+
+LP, NLP, mixed-integer, diskrete/kontinuierliche Variablen, Rechnerzeit, genauigkeitsverluste
+
+Vorstellung Opti.-Programme
+
+\subsection{Referenzmodell}
+\label{subsec:Sektion 252}
+Input, Output, Anlagentechnik, Energiebedarfsprofile
+
+%\subsubsection{Förderprogramme}
+%\label{subsubsec:Sektion2521}
+
+%Förderprogramme, die im Modell enthalten sind + mathematische Darstellung (?) #vorher erläutern und hier nur noch nennen mit mathematischem Zusammenhang
+
+%\subsubsection{Heizlastberechnung/Wärmebedarfsrechnung}
+%\label{subsubsec:Sektion2522}
+Transmissionswärmeverluste
+Gewinne
+Typtage(evtl. schon in 241)
+
+
+
+%\subsubsection{Lüftungswärmeverluste}
+%\label{subsubsec:Sektion2523}
+(eigenes Kapitel?) evtl im nächsten Kapitel Lüftungswärmeverlsute vorstellen und darauf eingehen, wie sie im aktuellen modell modelliert wurden.
+Wie werden die Lüftungswärmeverluste im Modell behandelt?
+
 
 
 

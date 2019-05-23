@@ -1,8 +1,8 @@
 \babel@toc {ngerman}{}
-\contentsline {chapter}{Nomenklatur}{V}{Hilfszaehler.2}
-\contentsline {chapter}{Abbildungsverzeichnis}{VII}{Hilfszaehler.3}
-\contentsline {chapter}{Tabellenverzeichnis}{VIII}{Hilfszaehler.4}
-\contentsline {chapter}{Vorwort}{IX}{Hilfszaehler.5}
+\contentsline {chapter}{Nomenklatur}{VI}{Hilfszaehler.2}
+\contentsline {chapter}{Abbildungsverzeichnis}{VIII}{Hilfszaehler.3}
+\contentsline {chapter}{Tabellenverzeichnis}{IX}{Hilfszaehler.4}
+\contentsline {chapter}{Vorwort}{X}{Hilfszaehler.5}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Aufgabenstellung}{1}{section.1.2}
@@ -10,10 +10,24 @@
 \contentsline {section}{\numberline {2.1}Deutscher Wohngeb\IeC {\"a}udebestand}{2}{section.2.1}
 \contentsline {section}{\numberline {2.2}Historische Entwicklung der Geb\IeC {\"a}udeh\IeC {\"u}lle}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Sanierungsstand des deutschen Wohngeb\IeC {\"a}udebestandes}{9}{section.2.3}
-\contentsline {chapter}{\numberline {3}Stand der Technik}{11}{chapter.3}
-\contentsline {chapter}{Literaturverzeichnis}{12}{Hilfszaehler.6}
-\contentsline {chapter}{\numberline {A}Tabellen}{14}{appendix.A}
-\contentsline {section}{\numberline {A.1}Anzahl an Wohneinheiten nach Alter und Geb\IeC {\"a}udetyp (IWU Berechnungen)}{14}{section.A.1}
-\contentsline {section}{\numberline {A.2}U-Werte nach TABULA}{15}{section.A.2}
-\contentsline {section}{\numberline {A.3}Anzahl, Anteil und \(U_g\)-Werte g\IeC {\"a}ngiger Verglasungsarten}{15}{section.A.3}
-\contentsline {chapter}{\numberline {B}Wichtiger Anhang}{16}{appendix.B}
+\contentsline {section}{\numberline {2.4}F\IeC {\"o}rderprogramme}{10}{section.2.4}
+\contentsline {section}{\numberline {2.5}Optimierungsmodell}{10}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Arten der Optimierung}{11}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Referenzmodell}{11}{subsection.2.5.2}
+\contentsline {chapter}{\numberline {3}Stand der Technik}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}L\IeC {\"u}ftungsw\IeC {\"a}rmeverluste}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Arten der L\IeC {\"u}ftung}{12}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Nat\IeC {\"u}rliche L\IeC {\"u}ftung}{12}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Maschinelle L\IeC {\"u}ftung}{12}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Parameterwahl und -beschaffung}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Kategorisierung des Geb\IeC {\"a}udebestandes}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Fenster\IeC {\"o}ffnungsprofile}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}Windprofile}{13}{section.4.3}
+\contentsline {chapter}{\numberline {5}Modellerweiterung}{14}{chapter.5}
+\contentsline {section}{\numberline {5.1}L\IeC {\"u}ftungsw\IeC {\"a}rmeverluste}{14}{section.5.1}
+\contentsline {chapter}{Literaturverzeichnis}{15}{Hilfszaehler.6}
+\contentsline {chapter}{\numberline {A}Tabellen}{17}{appendix.A}
+\contentsline {section}{\numberline {A.1}Anzahl an Wohneinheiten nach Alter und Geb\IeC {\"a}udetyp (IWU Berechnungen)}{17}{section.A.1}
+\contentsline {section}{\numberline {A.2}U-Werte nach TABULA}{18}{section.A.2}
+\contentsline {section}{\numberline {A.3}Anzahl, Anteil und \(U_g\)-Werte g\IeC {\"a}ngiger Verglasungsarten}{18}{section.A.3}
+\contentsline {chapter}{\numberline {B}Wichtiger Anhang}{19}{appendix.B}

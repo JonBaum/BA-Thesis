@@ -243,8 +243,8 @@ Weiterhin ist zu erkennen, dass das Dreischeiben-Wärmeglas bereits 8\,\% des Fe
 \label{sec:Sektion 24}
 
 In Kapitel \ref{sec:Sektion 22} werden diverse Verordnungen zum besseren Wärmeschutz des deutschen Gebäudebestandes beschrieben.
-Diese verkörpern Anforderungen an den Neubau oder an Einzelsanierungsmaßnahmen und nur wenige Anforderungen an den Bestand.
-Zur Steigerung der Wirtschaftlichkeit solcher Sanierungsmaßnahmen unterstützt die Bundesrepublik Gebäudeeigentümer finanziell bei energetischen Sanierungsvorhaben.
+Diese verkörpern Anforderungen an den Neubau oder Sanierungsmaßnahmen und nur geringe Maßnahmen für den Bestand.
+Zur Steigerung der Wirtschaftlichkeit solcher Sanierungsmaßnahmen verabschiedete die deutsche Bundesregierung einige Förderprogramme, welche Gebäudebesitzer bei Renovierungsvorhaben finanziell unterstützen.
 
 
 
@@ -263,9 +263,9 @@ Um aus dieser Komplexität ein Optimum zu bestimmen, ist es unabdingbar ein rech
 
 In einem mathematischen Sinne beschreibt die Optimierung die Lösung einer Zielfunktion.
 Diese Funktion wird mit Variablen beschrieben und mit Rahmenbedingungen, Restriktionen genannt, beschränkt \cite{Schellong.2016}.
-Somit wird mit einem Optimierungsprogramm versucht, eine Problematik mathematisch zu modellieren, um eine rationale Entscheidung über eine optimale Lösung zu treffen. 
+Somit wird mit einem Optimierungsprogramm versucht, eine Problematik mathematisch zu modellieren, um eine rationale Entscheidung über eine beste Lösung zu treffen. 
 
-Im Folgenden stellt Kapitel \ref{subsec:Sektion 251} verschiedene Arten der Optimierung sowie diverse Optimierungsprogramme vor, um letztlich das im Rahmen dieser Arbeit verwendete Programm in \ref{subsec:Sektion 252} beschreiben zu können.
+Im Folgenden stellt Kapitel \ref{subsubsec:Sektion2521} verschiedene Arten der Optimierung sowie diverse Optimierungsprogramme vor, um letztlich das im Rahmen dieser Arbeit verwendete Programm in \ref{subsec:Sektion 252} beschreiben zu können.
 
 \subsection{Arten der Optimierung}
 \label{subsec:Sektion 251}
@@ -273,50 +273,38 @@ Im Folgenden stellt Kapitel \ref{subsec:Sektion 251} verschiedene Arten der Opti
 Zur Einteilung von Optimierungsprogrammen existieren verschiedene Möglichkeiten.
 Bei der Betrachtung der zu Grunde liegenden Variablen erhält man eine Unterteilung.
 Hierbei wird in einem mathematischen Sinne danach unterschieden, aus welchem Raum die Variablen entstammen.
-So wird zwischen diskreten und kontinuierlichen Variablen unterschieden. 
-Die diskreten entstammen aus \(\mathbb{N}_{0}\) und umfassen unter anderem ganze Zahlen und Binärvariablen.
-Letztere sind die Menge aus [0; 1] und werden im Rahmen der Optimierung oft als Option der Kaufentscheidung genutzt.
+So wird zwischen diskreten	 und kontinuierlichen Variablen unterschieden. 
+Die diskreten entstammen aus \N_{0} und umfassen unter anderem Binärvariablen.
+Letztere sind die Menge aus {0, 1} und werden im Rahmen der Optimierung oft als Option der Kaufentscheidung genutzt.
 Neben den diskreten Variablen werden auch kontinuierliche in Optimierungsprogrammen genutzt. 
-Diese sind als reelle Zahlen \(\mathbb{R}\) definiert und beschreiben beispielsweise Kapazitäten, Heizbedarf oder Wärmeverluste.
-Werden in einem Programm diskrete und kontinuierliche Variablen gemischt, so spricht man von einer gemischt-ganzzahligen Optimierung.
-
-Neben den Variablen stellen die Art der Funktionen eine weitere Unterscheidung der Optimierungsprogramme dar.
-Bestehen die Restriktionen und die Zielfunktion eines Programmes einzig und alleine aus linearen Zusammenhängen, so wird von einem linearen Programm (LP) gesprochen.
+Diese sind als reelle Zahlen \R definiert und beschreiben beispielsweise Kapazitäten, Heizbedarf oder Wärmeverluste.
+Neben den Variablen stellen die Art der Funktionen eine weitere Unterscheidung der Optimierungsprogrammen dar.
+Bestehen die Restriktionen und die Zielfunktionen eines Programmes einzig und alleine aus linearen Zusammenhängen, so wird von einem linearen Programm (LP) gesprochen.
 Dem Gegenüber werden solche Optimierungen, die auch Nichtlinearitäten abbilden, als nicht-lineare Programme (NLP)bezeichnet.
 Oftmals findet man in der Realität nicht-lineare Zusammenhänge, welche mit NLP gut modelliert werden können.
 Jedoch stellt das Lösen von nicht-linearen Gleichungen einen erhöhten Rechenaufwand dar, der mit einer längeren Rechendauer einhergeht.
 Somit kann durch die Linearisierung von nicht-linearen Zusammenhängen Rechenzeit zu Kosten von Genauigkeitsverlusten verkürzt werden. 
-Die gemischt-ganzzahlige lineare Optimierung wird aufgrund ihrer englischen Bezeichnung (\glqq Mixed Integer Linear Programing\grqq)\,mit MILP abgekürzt sowie die nicht-lineare analog mit MINLP.
 
 In Risbeck et al. \cite{Risbeck.2017} wird der optimale Betrieb von Lüftungssystemen zum Kühlen und Wärmen in kommerziellen Gebäuden, also Nichtwohngebäuden, untersucht.
-Hierzu werden diskrete Variablen zum Modellieren des An- und Abschaltens der Komponenten sowie kontinuierliche zur Abbildung der Lasten und Speicherstände genutzt.
-Weiter handelt es sich um ein lineares Programm, sodass durch die relativ kurze Rechenzeit auf Preisänderungen, Bedarfsschwankungen und Wetteränderungen in Echtzeit eingegangen werden kann.
+Hierzu werden diskrete Variablen zum Modellieren des An- und Abschaltens der Komponenten genutzt sowie kontinuierliche zur Abbildung der Lasten und Speicherstände.
+Weiter handelt es sich um ein lineares Programm, sodass durch die relativ kurze Rechenzeit auf Echtzeitpreise und Preisänderungen eingegangen werden kann.
 Als Nebenbedingungen der Optimierungsaufgabe wird neben der Temperierung verschiedener Gebäudezonen auch die optimale Nutzung der zur Verfügung stehenden Speicher beachtet.
 
 Zhu et al. \cite{Zhu.2019} beschäftigen sich mit der Kapazitätsauslegung thermischer und elektrischer Speicher in Gebäudeenergiesystemen mit mehreren Energiebereitstellungsformen. 
-Der Bedarf an elektrische Energie wird hierbei entweder durch Photovoltaik (PV), Netzbezug oder einer Batterie gedeckt. 
+Der Bedarf an elektrische Energie wird hierbei entweder durch Photovoltaik, Netzbezug oder einer Batterie gedeckt. 
 Zur Erfüllung des Wärmebedarfs stehen neben einer Wärmepumpenheizung noch ein sensibler Wasserspeicher zur Verfügung.
-Ein Teil der nicht-linearen Gleichungen werden linearisiert. Da jedoch noch nicht-lineare Zusammenhänge in dem Programm existieren, handelt es sich bei dem Modell um ein MINLP.
+Die Problematik wird mit MILP modelliert.
 
 Eine Betrachtung der Gebäudehülle ist in Asadi et al. zu finden \cite{Asadi.2012}.
 Hierbei handelt es sich zum einen um ein MINLP und zum anderen um eine Parteo-Optimierung, bei welcher dem Programm mehrere Zielfunktionen übergeben werden.
 Das Modell betrachtet neben Dämmarten und -dicken der Außenwand und des Dachs auch den Fenstertyp sowie Solarkollektoren. 
-Hierzu wird für jedes Bauteil zwischen unterschiedlichen Sanierungsmaßnahmen unterschieden, allerdings wird das Programm auf die Wahl eines Szenarios je Bauteil eingeschränkt.
-Weiter wird der Energiebedarf des Gebäudes vereinfacht als Summe des Wärme-, Kälte- und Warmwasserbedarfes berechnet.
 Ziel des Programmes ist die Bestimmung des kosten- und emissionsoptimalen Energiesystem.
 
-In \cite{Wouters.2014} modellieren Wouters et al. Haushalte, die auf Quartiersebene thermische und elektrische Energie untereinander austauschen können.
-An Anlagentechnik stehen neben Brennwertkessel, Blockheizkraftwerken (BHKW), thermischen und elektrischen Speichern auch PV-Anlagen und kleine Windkraftanlagen (WKA) zur Verfügung.
-Als Zielfunktion ist die Minimierung der Annuität durch optimale Anlagenwahl, -auslegung und -betrieb definiert.
-Das Programm wird nur mit linearen Gleichungen modelliert, sodass es sich um ein MILP handelt.
-Weiter werden Einflüsse regulatorischer Maßnahmen untersucht und darauf aufbauend zwei Standorte mit ähnlichen klimatischen Bedingungen in Griechenland und Australien miteinander verglichen.
+....Wouters et al. \cite{Wouters.2014}
 
-Das Optimierungsmodell von Harb et al. \cite{Harb.2016} bestimmt die optimale Anlagenauswahl zur Wärmeerzeugung von Einzelwohngebäuden oder Quartieren.
-Es werden Mikro-BHKWs, Wärmepumpen, Elektroheizstäbe, PV, thermische Speicher, Kessel sowie Nahwärmenetze in Betracht gezogen.
-Besonders an dem Modell von Harb et al. ist weiterhin, dass die Einspeisevergütung von PV-Strom sowie die Förderung von BHKW produzierter Elektrizität in die wirtschaftliche Betrachtung mit eingehen.
+LP, NLP, mixed-integer, diskrete/kontinuierliche Variablen, Rechnerzeit, genauigkeitsverluste
 
-
-
+Vorstellung Opti.-Programme
 
 \subsection{Referenzmodell}
 \label{subsec:Sektion 252}

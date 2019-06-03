@@ -13,21 +13,21 @@
 \contentsline {section}{\numberline {2.4}F\IeC {\"o}rderprogramme}{10}{section.2.4}
 \contentsline {section}{\numberline {2.5}Optimierungsmodell}{10}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Arten der Optimierung}{11}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Referenzmodell}{11}{subsection.2.5.2}
-\contentsline {chapter}{\numberline {3}Stand der Technik}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}L\IeC {\"u}ftungsw\IeC {\"a}rmeverluste}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}Arten der L\IeC {\"u}ftung}{12}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Nat\IeC {\"u}rliche L\IeC {\"u}ftung}{12}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Maschinelle L\IeC {\"u}ftung}{12}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Parameterwahl und -beschaffung}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Kategorisierung des Geb\IeC {\"a}udebestandes}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Fenster\IeC {\"o}ffnungsprofile}{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}Windprofile}{13}{section.4.3}
-\contentsline {chapter}{\numberline {5}Modellerweiterung}{14}{chapter.5}
-\contentsline {section}{\numberline {5.1}L\IeC {\"u}ftungsw\IeC {\"a}rmeverluste}{14}{section.5.1}
-\contentsline {chapter}{Literaturverzeichnis}{15}{Hilfszaehler.6}
-\contentsline {chapter}{\numberline {A}Tabellen}{17}{appendix.A}
-\contentsline {section}{\numberline {A.1}Anzahl an Wohneinheiten nach Alter und Geb\IeC {\"a}udetyp (IWU Berechnungen)}{17}{section.A.1}
-\contentsline {section}{\numberline {A.2}U-Werte nach TABULA}{18}{section.A.2}
-\contentsline {section}{\numberline {A.3}Anzahl, Anteil und \(U_g\)-Werte g\IeC {\"a}ngiger Verglasungsarten}{18}{section.A.3}
-\contentsline {chapter}{\numberline {B}Wichtiger Anhang}{19}{appendix.B}
+\contentsline {subsection}{\numberline {2.5.2}Referenzmodell}{12}{subsection.2.5.2}
+\contentsline {chapter}{\numberline {3}Stand der Technik}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}L\IeC {\"u}ftungsw\IeC {\"a}rmeverluste}{14}{section.3.1}
+\contentsline {section}{\numberline {3.2}Arten der L\IeC {\"u}ftung}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Nat\IeC {\"u}rliche L\IeC {\"u}ftung}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Maschinelle L\IeC {\"u}ftung}{14}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Parameterwahl und -beschaffung}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Kategorisierung des Geb\IeC {\"a}udebestandes}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Fenster\IeC {\"o}ffnungsprofile}{15}{section.4.2}
+\contentsline {section}{\numberline {4.3}Windprofile}{15}{section.4.3}
+\contentsline {chapter}{\numberline {5}Modellerweiterung}{16}{chapter.5}
+\contentsline {section}{\numberline {5.1}L\IeC {\"u}ftungsw\IeC {\"a}rmeverluste}{16}{section.5.1}
+\contentsline {chapter}{Literaturverzeichnis}{17}{Hilfszaehler.6}
+\contentsline {chapter}{\numberline {A}Tabellen}{20}{appendix.A}
+\contentsline {section}{\numberline {A.1}Anzahl an Wohneinheiten nach Alter und Geb\IeC {\"a}udetyp (IWU Berechnungen)}{20}{section.A.1}
+\contentsline {section}{\numberline {A.2}U-Werte nach TABULA}{21}{section.A.2}
+\contentsline {section}{\numberline {A.3}Anzahl, Anteil und \(U_g\)-Werte g\IeC {\"a}ngiger Verglasungsarten}{21}{section.A.3}
+\contentsline {chapter}{\numberline {B}Wichtiger Anhang}{22}{appendix.B}

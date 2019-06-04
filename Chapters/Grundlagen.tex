@@ -256,7 +256,7 @@ Aktuelle Förderprogramme
 \section{Optimierungsmodell}
 \label{sec:Sektion 25}
 
-Wie zuvor bereits erwähnt, ist das Ziel dieser Arbeit die Bestimmung verschiedener Maßnahmen, welche für repräsentative Gebäudetypen eine optimale, energetische Lösung bieten.
+Wie zuvor bereits erwähnt, ist das Ziel dieser Arbeit die Bestimmung verschiedener Maßnahmen, welche für repräsentative Gebäudetypen eine wirtschaftlich und energetisch optimale Lösung bieten.
 Hierbei werden neben verschiedenen Möglichkeiten der Energiebereitstellung auch die Qualität und Verbesserung verschiedener Komponenten der Gebäudehülle betrachtet.
 Dadurch ergibt sich eine enorm hohe Anzahl an möglichen Kombinationsmöglichkeiten der Maßnahmen.
 Um aus dieser Komplexität ein Optimum zu bestimmen, ist es unabdingbar ein rechnergestütztes Optimierungsprogramm als Werkzeug zu benutzen.
@@ -264,7 +264,6 @@ Um aus dieser Komplexität ein Optimum zu bestimmen, ist es unabdingbar ein rech
 In einem mathematischen Sinne beschreibt die Optimierung die Lösung einer Zielfunktion.
 Diese Funktion wird mit Variablen beschrieben und mit Rahmenbedingungen, Restriktionen genannt, beschränkt \cite{Schellong.2016}.
 Somit wird mit einem Optimierungsprogramm versucht, eine Problematik mathematisch zu modellieren, um eine rationale Entscheidung über eine optimale Lösung zu treffen. 
-
 Im Folgenden stellt Kapitel \ref{subsec:Sektion 251} verschiedene Arten der Optimierung sowie diverse Optimierungsprogramme vor, um letztlich das im Rahmen dieser Arbeit verwendete Programm in \ref{subsec:Sektion 252} beschreiben zu können.
 
 \subsection{Arten der Optimierung}
@@ -274,23 +273,42 @@ Zur Einteilung von Optimierungsprogrammen existieren verschiedene Möglichkeiten
 Bei der Betrachtung der zu Grunde liegenden Variablen erhält man eine Unterteilung.
 Hierbei wird in einem mathematischen Sinne danach unterschieden, aus welchem Raum die Variablen entstammen.
 So wird zwischen diskreten und kontinuierlichen Variablen unterschieden. 
-Die diskreten entstammen aus \(\mathbb{N}_{0}\) und umfassen unter anderem ganze Zahlen und Binärvariablen.
-Letztere sind die Menge aus [0; 1] und werden im Rahmen der Optimierung oft als Option der Kaufentscheidung genutzt.
+Die diskreten entstammen aus \(\mathbb{Z	}\) und umfassen unter anderem ganze Zahlen und Binärvariablen.
+Letztere sind die Menge aus [0; 1] und werden im Rahmen der Optimierung oft als Option der Kaufentscheidung oder Schaltzustände genutzt. %Kursiv?
+Dabei beschreibt 0 einen ausgeschalteten, beziehungsweise nicht gekauften Zustand und 1 den eingeschalteten/gekauften.
 Neben den diskreten Variablen werden auch kontinuierliche in Optimierungsprogrammen genutzt. 
 Diese sind als reelle Zahlen \(\mathbb{R}\) definiert und beschreiben beispielsweise Kapazitäten, Heizbedarf oder Wärmeverluste.
-Werden in einem Programm diskrete und kontinuierliche Variablen gemischt, so spricht man von einer gemischt-ganzzahligen Optimierung.
+Werden in einem Programm diskrete und kontinuierliche Variablen gemischt, so spricht man von einer gemischt-ganzzahligen Optimierung. \cite{Schellong.2016}
 
 Neben den Variablen stellen die Art der Funktionen eine weitere Unterscheidung der Optimierungsprogramme dar.
 Bestehen die Restriktionen und die Zielfunktion eines Programmes einzig und alleine aus linearen Zusammenhängen, so wird von einem linearen Programm (LP) gesprochen.
-Dem Gegenüber werden solche Optimierungen, die auch Nichtlinearitäten abbilden, als nicht-lineare Programme (NLP)bezeichnet.
+Dem Gegenüber werden solche Optimierungen, die auch Nichtlinearitäten abbilden, als nicht-lineare Programme (NLP) bezeichnet.
 Oftmals findet man in der Realität nicht-lineare Zusammenhänge, welche mit NLP gut modelliert werden können.
-Jedoch stellt das Lösen von nicht-linearen Gleichungen einen erhöhten Rechenaufwand dar, der mit einer längeren Rechendauer einhergeht.
+Als ein Beispiel sei hier das Teillastverhalten von Wärmeerzeugern genannt.
+Jedoch stellt das Lösen von nicht-linearen Gleichungen einen erhöhten Rechenaufwand dar, welcher mit einer deutlich längeren Rechendauer einhergeht.
 Somit kann durch die Linearisierung von nicht-linearen Zusammenhängen Rechenzeit zu Kosten von Genauigkeitsverlusten verkürzt werden. 
-Die gemischt-ganzzahlige lineare Optimierung wird aufgrund ihrer englischen Bezeichnung (\glqq Mixed Integer Linear Programing\grqq)\,mit MILP abgekürzt sowie die nicht-lineare analog mit MINLP.
+Die gemischt-ganzzahlige lineare Optimierung wird aufgrund ihrer englischen Bezeichnung (\glqq Mixed Integer Linear Programing\grqq)\,mit MILP abgekürzt sowie die nicht-lineare analog mit MINLP. \cite{Samsatli.2018} %Anführungszeichen?
+
+In der Literatur können verschiedene Ansätze und Modelle für Optimierungen gefunden werden, welche im Weiteren kurz vorgestellt werden.
+
+Iturriaga et al. \cite{Iturriaga.2017} erarbeiten ein allgemeines Modell für Gebäudeenergiesysteme auf Gebäudeebene. 
+Dieses soll alle derzeit verfügbaren Technologien der Wärme- und Kältebereitstellung abbilden können.
+Hierzu werden die Anlagen unterteilt in solche, die hohe, mittlere und niedrige Temperaturen erzeugen, sowie Kältemaschinen und elektrische Module.
+Thermische und elektrische Energie kann zwischen den jeweiligen Gruppen ausgetauscht werden, um letztlich den Wärme-, Kälte- und Elektrizitätsbedarf des Gebäudes zu decken.
+Weiterhin berücksichtigt das Modell neben der Energieerzeugung auch Speicher und Interaktionen mit anderen Gebäuden durch Nah-, Fernwärme- sowie Stromnetzen.
+Die stückweise Linearisierung des nicht-linearen Teillastverhaltens der Anlagen führt zu rein linearen Gleichungen und somit einem MILP Problem.
+Als Zielfunktion ist die Minimierung der annualisierten Kosten definiert. 
+Diese setzen sich aus Investitionskosten, jährlichen variablen Kosten, Energiebezugskosten sowie Gewinnen aus dem Verkauf an überschüssiger Wärme, Kälte oder Elektrizität zusammen.
+Als Restriktionen der Optimierung sind technologische Nebenbedingungen der oben genannten Gruppen, die Bedarfserfüllung des Energiesystems, gebäudespezifische Rahmenbedingungen sowie Begrenzungen der Variablen aufgeführt.
+Zuletzt wird das Modell anhand eines Beispielgebäudes im Nordspanischen Bilbao getestet.
+Hierbei werden 13 verschiedenen Technologien der Wärme- und Elektrizitätserzeugung in Betracht gezogen.
+Diese umfassen neben Organic-Rankine-, Gasturbinen- und Verbrennungsmotoren-Blockheizkraftwerke (BHKW) auch verschiedene solarthermische Anlagen (CPC, Vakuumröhrenkollektoren, Flachkollektoren), Biomasse- und Gaskessel, Brennwertkessel, Luft-Wasser-Wärmepumpen und diverse Photovoltaik-Anlagen (amorphe, mono- und polykristalline Solarmodule).
 
 In Risbeck et al. \cite{Risbeck.2017} wird der optimale Betrieb von Lüftungssystemen zum Kühlen und Wärmen in kommerziellen Gebäuden, also Nichtwohngebäuden, untersucht.
 Hierzu werden diskrete Variablen zum Modellieren des An- und Abschaltens der Komponenten sowie kontinuierliche zur Abbildung der Lasten und Speicherstände genutzt.
-Weiter handelt es sich um ein lineares Programm, sodass durch die relativ kurze Rechenzeit auf Preisänderungen, Bedarfsschwankungen und Wetteränderungen in Echtzeit eingegangen werden kann.
+Als Zielfunktion werden minimale Betriebskosten bei Einhaltung des thermischen Komforts im Gebäude formuliert.
+Auch Risbeck et al. wandeln nicht-lineares Geräteverhalten durch stückweise Linearisierung in lineares.
+Dadurch wird die Rechenzeit verkürzt und das Programm kann in Echtzeit auf Preisänderungen, Bedarfsschwankungen und Wetteränderungen eingehen.
 Als Nebenbedingungen der Optimierungsaufgabe wird neben der Temperierung verschiedener Gebäudezonen auch die optimale Nutzung der zur Verfügung stehenden Speicher beachtet.
 
 Zhu et al. \cite{Zhu.2019} beschäftigen sich mit der Kapazitätsauslegung thermischer und elektrischer Speicher in Gebäudeenergiesystemen mit mehreren Energiebereitstellungsformen. 
@@ -306,7 +324,7 @@ Weiter wird der Energiebedarf des Gebäudes vereinfacht als Summe des Wärme-, K
 Ziel des Programmes ist die Bestimmung des kosten- und emissionsoptimalen Energiesystem.
 
 In \cite{Wouters.2014} modellieren Wouters et al. Haushalte, die auf Quartiersebene thermische und elektrische Energie untereinander austauschen können.
-An Anlagentechnik stehen neben Brennwertkessel, Blockheizkraftwerken (BHKW), thermischen und elektrischen Speichern auch PV-Anlagen und kleine Windkraftanlagen (WKA) zur Verfügung.
+An Anlagentechnik stehen neben Brennwertkessel, BHKWs , thermischen und elektrischen Speichern auch PV-Anlagen und kleine Windkraftanlagen (WKA) zur Verfügung.
 Als Zielfunktion ist die Minimierung der Annuität durch optimale Anlagenwahl, -auslegung und -betrieb definiert.
 Das Programm wird nur mit linearen Gleichungen modelliert, sodass es sich um ein MILP handelt.
 Weiter werden Einflüsse regulatorischer Maßnahmen untersucht und darauf aufbauend zwei Standorte mit ähnlichen klimatischen Bedingungen in Griechenland und Australien miteinander verglichen.

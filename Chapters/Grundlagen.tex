@@ -292,7 +292,7 @@ Die gemischt-ganzzahlige lineare Optimierung wird aufgrund ihrer englischen Beze
 In der Literatur können verschiedene Ansätze und Modelle für Optimierungen gefunden werden, welche im Weiteren kurz vorgestellt werden.
 
 Iturriaga et al. \cite{Iturriaga.2017} erarbeiten ein allgemeines Modell für Gebäudeenergiesysteme auf Gebäudeebene. 
-Dieses soll alle derzeit verfügbaren Technologien der Wärme- und Kältebereitstellung abbilden können.
+Dieses soll alle derzeit verfügbaren Technologien der Wärme-, Kälte- und Elektrizitätsbereitstellung abbilden können.
 Hierzu werden die Anlagen unterteilt in solche, die hohe, mittlere und niedrige Temperaturen erzeugen, sowie Kältemaschinen und elektrische Module.
 Thermische und elektrische Energie kann zwischen den jeweiligen Gruppen ausgetauscht werden, um letztlich den Wärme-, Kälte- und Elektrizitätsbedarf des Gebäudes zu decken.
 Weiterhin berücksichtigt das Modell neben der Energieerzeugung auch Speicher und Interaktionen mit anderen Gebäuden durch Nah-, Fernwärme- sowie Stromnetzen.
@@ -303,6 +303,15 @@ Als Restriktionen der Optimierung sind technologische Nebenbedingungen der oben 
 Zuletzt wird das Modell anhand eines Beispielgebäudes im Nordspanischen Bilbao getestet.
 Hierbei werden 13 verschiedenen Technologien der Wärme- und Elektrizitätserzeugung in Betracht gezogen.
 Diese umfassen neben Organic-Rankine-, Gasturbinen- und Verbrennungsmotoren-Blockheizkraftwerke (BHKW) auch verschiedene solarthermische Anlagen (CPC, Vakuumröhrenkollektoren, Flachkollektoren), Biomasse- und Gaskessel, Brennwertkessel, Luft-Wasser-Wärmepumpen und diverse Photovoltaik-Anlagen (amorphe, mono- und polykristalline Solarmodule).
+
+In \cite{Pinzon.23.04.201726.04.2017} wird von Pinzon et al. ein Modell zur Optimierung der Stromkosten unter Berücksichtigung der Behaglichkeit der Bewohner vorgestellt.
+Hierbei werden neben Stromkosten aus Heiz- oder Kühlzwecken, Beleuchtung und Ersparnissen aus Photovoltaik (PV) und Energiespeichern auch thermische Lasten in den modellierten Zonen betrachtet.
+Wie in Iturriaga et al. \cite{Iturriaga.2017} wird zunächst ein MINLP Modell erstellt, dass daraufhin durch stückweise Linearisierung in ein MILP gewandelt wird.
+Als Zielfunktion ist die Minimierung des Strombedarfes und somit der Stromkosten beschrieben.
+Der Bedarf setzt sich aus dem Verbrauch der zuvor genannten Komponenten zusammen.
+Als Nebenbedingungen werden die Nutzung der PV-Anlagen und Energiespeicher, des Klimageräts und der Beleuchtung sowie der Einhaltung des thermischen Komforts definiert.
+Bei Letzterem werden auch die Wärmeträgheit des Luftvolumens im Raum sowie der Wärmeverlust durch den Infiltrationsluftvolumenstrom, also durch Undichtheiten in der Gebäudehülle, berücksichtigt.
+
 
 In Risbeck et al. \cite{Risbeck.2017} wird der optimale Betrieb von Lüftungssystemen zum Kühlen und Wärmen in kommerziellen Gebäuden, also Nichtwohngebäuden, untersucht.
 Hierzu werden diskrete Variablen zum Modellieren des An- und Abschaltens der Komponenten sowie kontinuierliche zur Abbildung der Lasten und Speicherstände genutzt.
@@ -324,7 +333,7 @@ Weiter wird der Energiebedarf des Gebäudes vereinfacht als Summe des Wärme-, K
 Ziel des Programmes ist die Bestimmung des kosten- und emissionsoptimalen Energiesystem.
 
 In \cite{Wouters.2014} modellieren Wouters et al. Haushalte, die auf Quartiersebene thermische und elektrische Energie untereinander austauschen können.
-An Anlagentechnik stehen neben Brennwertkessel, BHKWs , thermischen und elektrischen Speichern auch PV-Anlagen und kleine Windkraftanlagen (WKA) zur Verfügung.
+An Anlagentechnik stehen Brennwertkessel, BHKWs , thermische und elektrische Speicher, PV-Anlagen und kleine Windkraftanlagen (WKA) zur Verfügung.
 Als Zielfunktion ist die Minimierung der Annuität durch optimale Anlagenwahl, -auslegung und -betrieb definiert.
 Das Programm wird nur mit linearen Gleichungen modelliert, sodass es sich um ein MILP handelt.
 Weiter werden Einflüsse regulatorischer Maßnahmen untersucht und darauf aufbauend zwei Standorte mit ähnlichen klimatischen Bedingungen in Griechenland und Australien miteinander verglichen.
@@ -342,7 +351,7 @@ Input, Output, Anlagentechnik, Energiebedarfsprofile
 
 Bei dem der Arbeit zu Grunde liegenden Optimierungsmodell handelt es sich um ein MILP, welches unter Berücksichtigung von Förderprogramme entweder kostenoptimale oder emissionsoptimierte Gebäudeenergiesysteme berechnet.
 Hierbei erfolgt zum einen eine Betrachtung der Gebäudehülle samt Fenstern, Außenwänden, Böden und Dächer und zum anderen der Anlagentechnik.
-Für letztere wählt das Programm zwischen einem Brennwertkessel, Holzpellet, Blockheizkraftwerk (BHKW), Luft oder Erdwärme betriebene Wärmepumpen, Elektroheizstab, Photovoltaik, Solarthermie sowie einem Batterie- oder thermischen Speicher.
+Für letztere wählt das Programm zwischen Brennwertkessel, Holzpellet, BHKW, Luft- oder Sole-Wärmepumpen, Elektroheizstab, Photovoltaik, Solarthermie oder Energiespeichern aus.
 
 %\subsubsection{Förderprogramme}
 %\label{subsubsec:Sektion2521}

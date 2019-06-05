@@ -246,14 +246,15 @@ In Kapitel \ref{sec:Sektion 22} werden diverse Verordnungen zum besseren Wärmes
 Diese verkörpern Anforderungen an den Neubau oder an Einzelsanierungsmaßnahmen und nur wenige Anforderungen an den Bestand.
 Zur Steigerung der Wirtschaftlichkeit solcher Sanierungsmaßnahmen unterstützt die Bundesrepublik Gebäudeeigentümer finanziell bei energetischen Sanierungsvorhaben.
 
+Als Beispiel eines erfolgreichen Förderprogrammes sei der Rückgang der Einfachverglasung genannt.
+Im Rahmen des Energiespar-Förderprogrammes investierte die Bundesregierung ab 1977 4,35 Milliarden DM zur Erneuerung von Heizungen und Fenster \cite{EickeHenning.2011b}.
+Dadurch konnte ein Anreiz zur energetischen Sanierung geschaffen werden, was mit einen Grund darstellt, dass der Anteil an Einfachverglasung heute nur noch etwa 3\,\% beträgt.
 
 
-Anreiz für Sanierung
-Vergangenes Förderprogramm mit Fenster Sanierung
 Aktuelle Förderprogramme
 
 
-\section{Optimierungsmodell}
+\section{Arten der Optimierung}
 \label{sec:Sektion 25}
 
 Wie zuvor bereits erwähnt, ist das Ziel dieser Arbeit die Bestimmung verschiedener Maßnahmen, welche für repräsentative Gebäudetypen eine wirtschaftlich und energetisch optimale Lösung bieten.
@@ -264,10 +265,7 @@ Um aus dieser Komplexität ein Optimum zu bestimmen, ist es unabdingbar ein rech
 In einem mathematischen Sinne beschreibt die Optimierung die Lösung einer Zielfunktion.
 Diese Funktion wird mit Variablen beschrieben und mit Rahmenbedingungen, Restriktionen genannt, beschränkt \cite{Schellong.2016}.
 Somit wird mit einem Optimierungsprogramm versucht, eine Problematik mathematisch zu modellieren, um eine rationale Entscheidung über eine optimale Lösung zu treffen. 
-Im Folgenden stellt Kapitel \ref{subsec:Sektion 251} verschiedene Arten der Optimierung sowie diverse Optimierungsprogramme vor, um letztlich das im Rahmen dieser Arbeit verwendete Programm in \ref{subsec:Sektion 252} beschreiben zu können.
-
-\subsection{Arten der Optimierung}
-\label{subsec:Sektion 251}
+Im Folgenden stellt dieses Kapitel verschiedene Arten der Optimierung sowie diverse Optimierungsprogramme vor, um letztlich das im Rahmen dieser Arbeit verwendete Programm in \ref{subsec:Sektion 26} beschreiben zu können.
 
 Zur Einteilung von Optimierungsprogrammen existieren verschiedene Möglichkeiten.
 Bei der Betrachtung der zu Grunde liegenden Variablen erhält man eine Unterteilung.
@@ -310,13 +308,12 @@ Wie in Iturriaga et al. \cite{Iturriaga.2017} wird zunächst ein MINLP Modell er
 Als Zielfunktion ist die Minimierung des Strombedarfes und somit der Stromkosten beschrieben.
 Der Bedarf setzt sich aus dem Verbrauch der zuvor genannten Komponenten zusammen.
 Als Nebenbedingungen werden die Nutzung der PV-Anlagen und Energiespeicher, des Klimageräts und der Beleuchtung sowie der Einhaltung des thermischen Komforts definiert.
-Bei Letzterem werden auch die Wärmeträgheit des Luftvolumens im Raum sowie der Wärmeverlust durch den Infiltrationsluftvolumenstrom, also durch Undichtheiten in der Gebäudehülle, berücksichtigt.
-
+Bei Letzterem werden auch die Wärmeträgheit des Luftvolumens im Raum, sowie der Wärmeverlust durch den Infiltrationsluftvolumenstrom, also durch Undichtheiten in der Gebäudehülle, berücksichtigt.
 
 In Risbeck et al. \cite{Risbeck.2017} wird der optimale Betrieb von Lüftungssystemen zum Kühlen und Wärmen in kommerziellen Gebäuden, also Nichtwohngebäuden, untersucht.
 Hierzu werden diskrete Variablen zum Modellieren des An- und Abschaltens der Komponenten sowie kontinuierliche zur Abbildung der Lasten und Speicherstände genutzt.
 Als Zielfunktion werden minimale Betriebskosten bei Einhaltung des thermischen Komforts im Gebäude formuliert.
-Auch Risbeck et al. wandeln nicht-lineares Geräteverhalten durch stückweise Linearisierung in lineares.
+Auch Risbeck et al. wandeln nicht-lineare Geräteverhalten durch stückweise Linearisierung in lineare um.
 Dadurch wird die Rechenzeit verkürzt und das Programm kann in Echtzeit auf Preisänderungen, Bedarfsschwankungen und Wetteränderungen eingehen.
 Als Nebenbedingungen der Optimierungsaufgabe wird neben der Temperierung verschiedener Gebäudezonen auch die optimale Nutzung der zur Verfügung stehenden Speicher beachtet.
 
@@ -342,16 +339,61 @@ Das Optimierungsmodell von Harb et al. \cite{Harb.2016} bestimmt die optimale An
 Es werden Mikro-BHKWs, Wärmepumpen, Elektroheizstäbe, PV, thermische Speicher, Kessel sowie Nahwärmenetze in Betracht gezogen.
 Besonders an dem Modell von Harb et al. ist weiterhin, dass die Einspeisevergütung von PV-Strom sowie die Förderung von BHKW produzierter Elektrizität in die wirtschaftliche Betrachtung mit eingehen.
 
+\section{Referenzmodell}
+\label{sec:Sektion 26}
+
+Als Grundlage dieser Arbeit liegt ein Programm zur Kosten- oder Emissionsoptimierung von Gebäudeenergiesystemen vor.
+Neben einer Auswahl an Anlagentechnik zur Energiebereitstellung stehen außerdem Sanierungsmaßnahmen der Gebäudehülle zur Verfügung. 
+Hierbei wird ähnlich wie bei Asadi et al. \cite{Asadi.2012} Außenwände, Fenster und Dächer sowie zusätzlich Böden betrachtet.
+Die Entscheidung für verschiedene Anlagen oder Maßnahmen an der Hülle erfolgt durch diskrete Binärvariablen, wohingegen die Auslegung und der Betrieb durch kontinuierliche Variablen modelliert wird.
+Ähnlich wie in Iturriaga et al. \cite{Iturriaga.2017}, Pinzon et al. \cite{Pinzon.23.04.201726.04.2017} und Risbeck et al. \cite{Risbeck.2017} erfolgt eine Linearisierung des nicht-linearen Teillastverhaltens der Energieerzeuger, sodass es sich um ein MILP handelt.
+Die Zielfunktion der Optimierung kann entweder zur Minimierung der Kosten oder CO\(_2\)-Emissionen gesetzt werden.
+Des Weiteren besteht die Möglichkeit wie bei Asadi et al. \cite{Asadi.2012} eine Pareto-Optimierung durchzuführen, bei welcher ein Gebäudeenergiesystem unter Berücksichtigung der Kosten- und Emissionsoptimierung ermittelt wird.
+In Abbildung \ref{fig: Abbildung261} ist der Programmablauf schematisch skizziert.
+Im Folgenden wird in Kapitel \ref{subsec:Sektion261} die Schritte vor dem Optimierungsprozess vorgestellt und weiter in Kapitel \ref{subsec:Sektion262} die Gleichungen, welche der Optimierung zu Grunde liegen, beschrieben.
+
+
+\begin{figure}[H]
+	\centering
+		\includegraphics{Pictures/ProzessOptiProgramm.jpg}
+	\caption{Schematischer Ablauf des Optimierungsprogrammes}
+	\label{fig: Abbildung261} 
+\end{figure}
+
+\subsection{Parameteraufbereitung}
+\label{subsec:Sektion261}
+
+Zunächst werden dem Programm durch den Nutzer Angaben zum zu berechnenden Gebäude übergeben.
+Hier werden Gebäudetyp, -alter und -lage sowie Wohnungsanzahl, Wohnfläche je Wohnung, Haushaltsgröße und qualitative Angaben zum Strom- und Trinkwarmwasserbedarfs definiert.
+Im Bezug auf den Gebäudetyp stehen die TABULA-Klassen Einfamilien-, Reihen-, Mehrfamilienhaus und Apartment-Block zur Wahl.
+Auch die Baualtersklassen basieren auf den TABULA Klassen und teilen sich in 12 Klassen im Zeitraum von 1859 bis 2010 auf.
+Bei der Gebäudelage stehen dem Nutzer 15 verschiedene Städte aus verschiedenen Klimaregionen Deutschlands zur Auswahl.
+Eine Übersicht über die möglichen Ausprägungen der Inputparameter Gebäudealter und -lage ist Tabelle \ref{tab: TabelleA3} zu entnehmen.
+
+Auf Basis der übergebenen Angaben wird auf eine Datengrundlage zurückgegriffen.
+So werden anhand des Gebäudestandortes entsprechende jährliche Klimaprofile genutzt.
+Diese entsprechen dem Testreferenzjahr des Deutschen Wetterdienstes, welches für den Betrachtungszeitraum von 1981 bis 2010 einen repräsentativen Witterungsverlauf beschreibt.
+Neben einem Umgebungstemperaturverlauf liefern die Profile solare Einstrahlungen und sind stündlich, also in 8760 Zeitpunkte, aufgeteilt.\\
+Weiter werden Strom- und Trinkwarmwasserbedarfsprofile sowie Profile der internen Gewinne eingelesen.
+Im Falle der Einfamilien- und Reihenhäuser hängen diese von der Haushaltsgröße ab und bei den Mehrfamilienhäuser sowie Apartment-Blocks von der Wohnungsanzahl.
+Außerdem bedingen die Angaben zur Höhe des Strom- und Trinkwarmwasserbedarfes die Auswahl der Profile.
+Die eingelesenen Profile basieren auf stochastischen Auswertungen des deutschen Stromspiegels und bilden Grundlasten sowie Lastspitzen ab.
+Wie bei den Klimaprofilen sind auch diese als stündliche Werte über ein Jahr aufgetragen.
+
+Da eine Optimierung über jede Stunde eines Jahres mit einem großen Rechenaufwand einhergeht, werden die eingelesenen Profile in Typtagen zusammengefasst. 
+An Tagen mit vergleichbaren Witterungsverläufen ähneln sich die Energiebedarfsprofile, sodass diese im Rahmen des Programmes mit Hilfe eines Clusteringvorgangs zusammengefasst werden.
+Um Einerseits saisonale Effekte abzubilden und aussagekräftige Ergebnisse zu erhalten und Andererseits die Rechenzeit des Programmes zu verkürzen, werden die 8760 Stunden eines Jahres in 8 Typtagen mit 192 Zeitpunkten zusammengefasst.
+Diese besitzen wiederum Gewichtungen, welche in Summe 365 und somit ein Jahr ergeben.
+
+Neben den bereits erläuterten Klima- und Energiebedarfsprofile werden weitere Parameter an das Programm übergeben.
+So werden für die Bauteile der Gebäudehülle U-Werte für drei Sanierungsszenarien eingelesen.
+Bei diesen handelt es sich zum einen um den Standard-Zustand des parametrisierten Gebäudes im Bestand, einer normalen energetischen Nachrüstung und außerdem einer fortgeschrittenen.
 
 
 
-\subsection{Referenzmodell}
-\label{subsec:Sektion 252}
-Input, Output, Anlagentechnik, Energiebedarfsprofile
 
-Bei dem der Arbeit zu Grunde liegenden Optimierungsmodell handelt es sich um ein MILP, welches unter Berücksichtigung von Förderprogramme entweder kostenoptimale oder emissionsoptimierte Gebäudeenergiesysteme berechnet.
-Hierbei erfolgt zum einen eine Betrachtung der Gebäudehülle samt Fenstern, Außenwänden, Böden und Dächer und zum anderen der Anlagentechnik.
-Für letztere wählt das Programm zwischen Brennwertkessel, Holzpellet, BHKW, Luft- oder Sole-Wärmepumpen, Elektroheizstab, Photovoltaik, Solarthermie oder Energiespeichern aus.
+\subsection{Optimierungsprozess}
+\label{subsec:Sektion262}
 
 %\subsubsection{Förderprogramme}
 %\label{subsubsec:Sektion2521}

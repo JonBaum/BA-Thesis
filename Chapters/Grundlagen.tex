@@ -243,7 +243,7 @@ Weiterhin ist zu erkennen, dass das Dreischeiben-Wärmeglas bereits 8\,\% des Fe
 \label{sec:Sektion 24}
 
 In Kapitel \ref{sec:Sektion 22} werden diverse Verordnungen zum besseren Wärmeschutz des deutschen Gebäudebestandes beschrieben.
-Diese verkörpern Anforderungen an den Neubau oder an Einzelsanierungsmaßnahmen und nur wenige Anforderungen an den Bestand.
+Diese verkörpern Anforderungen an den Neubau oder an Einzelsanierungsmaßnahmen und nur wenige Forderungen an den Bestand.
 Zur Steigerung der Wirtschaftlichkeit solcher Sanierungsmaßnahmen unterstützt die Bundesrepublik Gebäudeeigentümer finanziell bei energetischen Sanierungsvorhaben.
 
 Als Beispiel eines erfolgreichen Förderprogrammes sei der Rückgang der Einfachverglasung genannt.
@@ -287,7 +287,7 @@ Jedoch stellt das Lösen von nicht-linearen Gleichungen einen erhöhten Rechenau
 Somit kann durch die Linearisierung von nicht-linearen Zusammenhängen Rechenzeit zu Kosten von Genauigkeitsverlusten verkürzt werden. 
 Die gemischt-ganzzahlige lineare Optimierung wird aufgrund ihrer englischen Bezeichnung (\glqq Mixed Integer Linear Programing\grqq)\,mit MILP abgekürzt sowie die nicht-lineare analog mit MINLP. \cite{Samsatli.2018} %Anführungszeichen?
 
-In der Literatur können verschiedene Ansätze und Modelle für Optimierungen gefunden werden, welche im Weiteren kurz vorgestellt werden.
+In der Literatur werden verschiedene Ansätze und Modelle für Optimierungen von Energiesystemen verfolgt, welche im Weiteren kurz vorgestellt werden.
 
 Iturriaga et al. \cite{Iturriaga.2017} erarbeiten ein allgemeines Modell für Gebäudeenergiesysteme auf Gebäudeebene. 
 Dieses soll alle derzeit verfügbaren Technologien der Wärme-, Kälte- und Elektrizitätsbereitstellung abbilden können.
@@ -346,12 +346,11 @@ Als Grundlage dieser Arbeit liegt ein Programm zur Kosten- oder Emissionsoptimie
 Neben einer Auswahl an Anlagentechnik zur Energiebereitstellung stehen außerdem Sanierungsmaßnahmen der Gebäudehülle zur Verfügung. 
 Hierbei wird ähnlich wie bei Asadi et al. \cite{Asadi.2012} Außenwände, Fenster und Dächer sowie zusätzlich Böden betrachtet.
 Die Entscheidung für verschiedene Anlagen oder Maßnahmen an der Hülle erfolgt durch diskrete Binärvariablen, wohingegen die Auslegung und der Betrieb durch kontinuierliche Variablen modelliert wird.
-Ähnlich wie in Iturriaga et al. \cite{Iturriaga.2017}, Pinzon et al. \cite{Pinzon.23.04.201726.04.2017} und Risbeck et al. \cite{Risbeck.2017} erfolgt eine Linearisierung des nicht-linearen Teillastverhaltens der Energieerzeuger, sodass es sich um ein MILP handelt.
+Ähnlich wie in Iturriaga et al. \cite{Iturriaga.2017}, Pinzon et al. \cite{Pinzon.23.04.201726.04.2017} und Risbeck et al. \cite{Risbeck.2017} erfolgt eine Linearisierung der nicht-linearen Gleichungen, sodass es sich um ein MILP handelt.
 Die Zielfunktion der Optimierung kann entweder zur Minimierung der Kosten oder CO\(_2\)-Emissionen gesetzt werden.
 Des Weiteren besteht die Möglichkeit wie bei Asadi et al. \cite{Asadi.2012} eine Pareto-Optimierung durchzuführen, bei welcher ein Gebäudeenergiesystem unter Berücksichtigung der Kosten- und Emissionsoptimierung ermittelt wird.
 In Abbildung \ref{fig: Abbildung261} ist der Programmablauf schematisch skizziert.
 Im Folgenden wird in Kapitel \ref{subsec:Sektion261} die Schritte vor dem Optimierungsprozess vorgestellt und weiter in Kapitel \ref{subsec:Sektion262} die Gleichungen, welche der Optimierung zu Grunde liegen, beschrieben.
-
 
 \begin{figure}[H]
 	\centering
@@ -366,7 +365,7 @@ Im Folgenden wird in Kapitel \ref{subsec:Sektion261} die Schritte vor dem Optimi
 Zunächst werden dem Programm durch den Nutzer Angaben zum zu berechnenden Gebäude übergeben.
 Hier werden Gebäudetyp, -alter und -lage sowie Wohnungsanzahl, Wohnfläche je Wohnung, Haushaltsgröße und qualitative Angaben zum Strom- und Trinkwarmwasserbedarfs definiert.
 Im Bezug auf den Gebäudetyp stehen die TABULA-Klassen Einfamilien-, Reihen-, Mehrfamilienhaus und Apartment-Block zur Wahl.
-Auch die Baualtersklassen basieren auf den TABULA Klassen und teilen sich in 12 Klassen im Zeitraum von 1859 bis 2010 auf.
+Auch die Baualtersklassen basieren auf  TABULA Unterteilungen und gliedern sich in 12 Klassen im Zeitraum von 1859 bis 2010.
 Bei der Gebäudelage stehen dem Nutzer 15 verschiedene Städte aus verschiedenen Klimaregionen Deutschlands zur Auswahl.
 Eine Übersicht über die möglichen Ausprägungen der Inputparameter Gebäudealter und -lage ist Tabelle \ref{tab: TabelleA3} zu entnehmen.
 
@@ -377,17 +376,34 @@ Neben einem Umgebungstemperaturverlauf liefern die Profile solare Einstrahlungen
 Weiter werden Strom- und Trinkwarmwasserbedarfsprofile sowie Profile der internen Gewinne eingelesen.
 Im Falle der Einfamilien- und Reihenhäuser hängen diese von der Haushaltsgröße ab und bei den Mehrfamilienhäuser sowie Apartment-Blocks von der Wohnungsanzahl.
 Außerdem bedingen die Angaben zur Höhe des Strom- und Trinkwarmwasserbedarfes die Auswahl der Profile.
-Die eingelesenen Profile basieren auf stochastischen Auswertungen des deutschen Stromspiegels und bilden Grundlasten sowie Lastspitzen ab.
+Die eingelesenen Verläufe basieren auf stochastischen Auswertungen des deutschen Stromspiegels und bilden Grundlasten sowie Lastspitzen ab.
 Wie bei den Klimaprofilen sind auch diese als stündliche Werte über ein Jahr aufgetragen.
 
 Da eine Optimierung über jede Stunde eines Jahres mit einem großen Rechenaufwand einhergeht, werden die eingelesenen Profile in Typtagen zusammengefasst. 
 An Tagen mit vergleichbaren Witterungsverläufen ähneln sich die Energiebedarfsprofile, sodass diese im Rahmen des Programmes mit Hilfe eines Clusteringvorgangs zusammengefasst werden.
-Um Einerseits saisonale Effekte abzubilden und aussagekräftige Ergebnisse zu erhalten und Andererseits die Rechenzeit des Programmes zu verkürzen, werden die 8760 Stunden eines Jahres in 8 Typtagen mit 192 Zeitpunkten zusammengefasst.
-Diese besitzen wiederum Gewichtungen, welche in Summe 365 und somit ein Jahr ergeben.
+Um einerseits saisonale Effekte abzubilden und aussagekräftige Ergebnisse zu erhalten und andererseits die Rechenzeit des Programmes zu verkürzen, werden die 8760 Stunden eines Jahres in 8 Typtagen mit 192 Zeitpunkten zusammengefasst.
+Diese besitzen wiederum Gewichtungen, welche in Summe 365 Tage und somit ein Jahr ergeben.
 
-Neben den bereits erläuterten Klima- und Energiebedarfsprofile werden weitere Parameter an das Programm übergeben.
+Neben den bereits erläuterten Klima- und Energiebedarfsprofilen werden weitere Gebäudeparameter an das Programm übergeben.
 So werden für die Bauteile der Gebäudehülle U-Werte für drei Sanierungsszenarien eingelesen.
-Bei diesen handelt es sich zum einen um den Standard-Zustand des parametrisierten Gebäudes im Bestand, einer normalen energetischen Nachrüstung und außerdem einer fortgeschrittenen.
+Bei diesen handelt es sich um den Standard-Zustand des parametrisierten Gebäudes im Bestand, einer normalen energetischen Nachrüstung und außerdem einer fortgeschrittenen.
+Zudem werden Faktoren zur Dimensionierung der Fenster-, Dach-, Boden- und Außenwandfläche eingelesen.
+In Kapitel \ref{subsec:Sektion262} wird die Berechnung der Wärmeverluste anhand der U-Werte und der Bauteilflächen näher erläutert.
+Schließlich werden auch ökonomische Faktoren zur Bestimmung des Preises einer Sanierungsmaßnahme in das Programm mit aufgenommen. 
+Hierbei werden die Investitionskosten der Gebäudehüllenbestandteile als lineare Funktion ausgedrückt.
+Außer bei den Fenstern berechnen sich diese Kosten anhand der zusätzlichen Dämmdicke im Zuge des Sanierungsszenario.
+Im Falle der Verglasung wird die lineare Funktion anstelle der Dämmdicke in Abhängigkeit der Verbesserung des U-Wertes aufgestellt.
+Die Werte für den y-Achsenabschnitt und die Steigung der linearen Funktionen für die einzelnen Bauteile basieren auf Berechnungen des IWU \cite{Hinz.10.08.2015} und sind in Tabelle \ref{tab: TabelleA4} aufgeführt.
+Zusätzlich sind in dieser Tabelle Angaben zu der Nutzungsdauer der Komponenten zu finden, welche aus derselben Quelle entstammen.
+Diese werden für die Berechnung der annualisierten Kosten benötigt.
+
+Mit den bisher beschriebenen Daten lassen sich die Bedarfe des Gebäudes bestimmen.
+Zur Deckung dieser werden verschiedene Energieerzeuger und -speicher zu dem Modell hinzugefügt.
+Die Dimensionierung der jeweiligen Technologien erfolgt kontinuierlich.
+%noch weiter erläutern
+%ökonomie
+%Förderprogramme
+%EnEV
 
 
 
@@ -395,16 +411,58 @@ Bei diesen handelt es sich zum einen um den Standard-Zustand des parametrisierte
 \subsection{Optimierungsprozess}
 \label{subsec:Sektion262}
 
-%\subsubsection{Förderprogramme}
-%\label{subsubsec:Sektion2521}
+Als Zielfunktion des Optimierungsprogrammes kann zwischen der Minimierung der annualisierten Kosten oder der CO\(_2\)-Emissionen ausgewählt werden.
+Die Kosten setzten sich zusammen aus Investitionskosten durch die Anschaffung der Anlagentechnik und Verbesserung der Gebäudehülle (\(C_{Investition}\)), den Wartungs- und Instandhaltungskosten der Anlagen (\(C_{Variabel}\)), den Kosten aus dem Bedarf an Elektrizität und Brennstoffen (\(C_{Bedarf}\)), den Fixkosten durch Strom- und Gasbezug (\(C_{Fix}\)) sowie den Gewinnen aus dem Verkauf von Strom (\(R_{Erlöse}\)) und die Zuschüsse aus Fördergeldern (\(R_{Fördergelder}\)).
+\begin{equation}
+\label{eq:Gleichung2621}
+C_{total} = \sum C_{Investition} + \sum C_{Variabel} + \sum C_{Bedarf} + \sum C_{Fix} - \sum R_{Erlöse} - \sum R_{Fördergelder}  
+\end{equation}
+Die Berechnung der Investitionskosten unterscheidet sich leicht zwischen Energieerzeugern und Hüllensanierung. 
+Letztlich wird in allen Fällen eine totale Investitionssumme berechnet und unter Beachtung der jeweiligen Nutzungsdauer, dem internen Zinssatz und der Inflationsrate annualisiert.
+Die betriebsgebundenen Kosten für Wartung und Instandhaltung werden anteilig aus den Investitionskosten bestimmt und mit einem Faktor zur Inflationsbereinigung beaufschlagt.
+%weitere Kosten erläutern
 
-%Förderprogramme, die im Modell enthalten sind + mathematische Darstellung (?) #vorher erläutern und hier nur noch nennen mit mathematischem Zusammenhang
+Durch die Verbrennung von Brennstoffen wird CO\(_2\) freigesetzt. 
+Somit kann die Emission beschrieben werden als Summe der CO\(_2\)-Freisetzung, die bei Nutzung der Brennstoffe frei werden.
+Hierbei ist noch zu beachten, dass sich die Emission durch Gutschriften aus Stromeinspeisungen in das Netz reduzieren.
+Somit setzt sich die Berechnung der Emission aus der Verbrennung von Holz-Pellets (\(E_{Pellet}\)) oder Gas (\(E_{Gas}\)), dem Emissionswert des Stromes aus Netzbezug (\(E_{Netz}\)) und den negativen Emissionen der Gutschriften (\(E_{Einspeisung}\)) zusammen.
+\begin{equation}
+\label{eq:Gleichung2622}
+E_{total} = E_{Pellet} + E_{Gas} + E_{Netz} - E_{Einspeisung}
+\end{equation}
 
-%\subsubsection{Heizlastberechnung/Wärmebedarfsrechnung}
-%\label{subsubsec:Sektion2522}
+Neben den Zielfunktionen werden die Möglichkeiten der verschiedenen Lösungen durch Restriktionen eingeschränkt.
+So wird beispielsweise die Anzahl der PV-Module durch die zur Verfügung stehende Dachfläche eingeschränkt.
+Eine zentrale Nebenbedingung stellt die Berechnung der Heizlast dar.
+Als Grundlage dient die DIN EN 12831.
+Diese definiert die Norm-Heizlast \(\Phi_{HL, build}\) als Summe der Transmissionswärmeverlusten \(\Phi_T\) und Lüftungswärmeverlusten \(\Phi_{V, build}\) abzüglich der Aufheizleistung \(\Phi_{hu}\) und der internen Gewinne \(\Phi_{gain}\).
+
+\begin{equation}
+\label{eq:Gleichung2623}
+\Phi_{HL, build} = \Phi_T + \Phi_{V, build} + \Phi_{hu} - \Phi_{gain}
+\end{equation}
+ 
+Die Transmissionswärmeverluste \(\Phi_T\) lassen sich als Produkt der Temperaturdifferenz zwischen der Norm-Innentemperatur (\(\Theta_{int, i}\)) und der Außentemperatur (\(\Theta_e\)) mit dem Transmissionswärmetransferkoeffizienten (\(H_t\)).
+Letzterer lässt sich ausdrücken als die Summe über die Bauteile des Produktes aus Bauteilfläche (\(A_k\)), U-Wert (\(U_k\)) und Temperaturkorrekturfaktor (\(f_{U,k}\)).
+Außerdem werden Wärmebrücken mit dem zusätzlichen Wärmedurchgangskoeffizient (\(\Delta U_{TB}\)) berücksichtigt.
+\begin{equation}
+\label{eq:Gleichung2624}
+\Phi_T = H_t * (\Theta_{int, i} - \Theta_e)
+\end{equation}
+\begin{equation}
+\label{eq:Gleichung2625}
+H_t = \sum_{k} A_k * (U_k + \Delta U_{TB}) * f_{U,k}
+\end{equation}
+Hierbei wird \(\Delta U_{TB}\) laut Norm vereinfacht mit \(\Delta U_{TB} = 0,05 W/(m^2*K)\) angenommen.
+Der Temperaturkorrekturfaktor berücksichtigt einen Unterschied zwischen Norm-Innentemperatur und Außentemperatur.
+Da in dem Programm keine Unterteilung keine Unterscheidung der Räume geschieht, gibt es nur im Falle des Bodens aufgrund des Kontaktes mit dem Erdreich einen solchen Unterschied.
+Daher wird \(f_{U, Boden}\) mit 0,6 angenommen.
+
+
+
 Transmissionswärmeverluste
 Gewinne
-Typtage(evtl. schon in 241)
+
 
 
 

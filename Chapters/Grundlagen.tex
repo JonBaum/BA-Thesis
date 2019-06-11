@@ -239,20 +239,41 @@ Weiterhin ist zu erkennen, dass das Dreischeiben-Wärmeglas bereits 8\,\% des Fe
 	\label{fig: Abbildung231} 
 \end{figure}
 
+\newpage
+
 
 \section{Förderprogramme}
 \label{sec:Sektion 24}
 
 In Kapitel \ref{sec:Sektion 22} werden diverse Verordnungen zum besseren Wärmeschutz des deutschen Gebäudebestandes beschrieben.
-Diese verkörpern Anforderungen an den Neubau oder an Einzelsanierungsmaßnahmen und nur wenige Forderungen an den Bestand.
-Zur Steigerung der Wirtschaftlichkeit solcher Sanierungsmaßnahmen unterstützt die Bundesrepublik Gebäudeeigentümer finanziell bei energetischen Sanierungsvorhaben.
+Diese verkörpern Anforderungen an den Neubau oder an Einzelsanierungsmaßnahmen und nur wenige Forderungen richten sich an den Gebäudebestand.
+Zur Steigerung der Wirtschaftlichkeit solcher Sanierungsmaßnahmen unterstützt die Bundesregierung Gebäudeeigentümer finanziell bei energetischen Sanierungsvorhaben.
 
-Als Beispiel eines erfolgreichen Förderprogrammes sei der Rückgang der Einfachverglasung genannt.
+Als Beispiel eines erfolgreichen Anreizprogrammes sei der Rückgang der Einfachverglasung genannt.
 Im Rahmen des Energiespar-Förderprogrammes investierte die Bundesregierung ab 1977 4,35 Milliarden DM zur Erneuerung von Heizungen und Fenster \cite{EickeHenning.2011b}.
-Dadurch konnte ein Anreiz zur energetischen Sanierung geschaffen werden, was mit einen Grund darstellt, dass der Anteil an Einfachverglasung heute nur noch etwa 3\,\% beträgt.
+Dadurch konnte ein Anreiz zur energetischen Sanierung geschaffen werden, was mit einen Grund dafür darstellt, dass der Anteil an Einfachverglasung heute nur etwa 3\,\% beträgt.
 
+Heute existieren verschiedene Fördermöglichkeiten, welche die Energieeffizienz der Heizungstechnik, den Einsatz erneuerbarer Energien zur Wärmeerzeugung und die energetische Verbesserung der Gebäudehülle subventionieren.
+Die Auszahlung der öffentlichen Geldern erfolgt größtenteils durch das Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA) und das Kreditinstitut für Wiederaufbau (KfW).
+Letztere hat im Jahr 2018 insgesamt 12 Milliarden Euro an Krediten und Zuschüssen im Bereich Energiewende für circa 220.000 Anträge verteilt \cite{KfW_Report18}. 
+Tabelle \ref{tab: Tabelle241} listet einige Förder- und Anreizprogramme mit dem zu fördernden Technologien beziehungsweise Maßnahmen auf.
 
-%Aktuelle Förderprogramme ergänzen
+\begin{table}[H]\centering
+\begin{tabular}{|l|r|r|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Programmbezeichnung & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}Fördertyp} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}Geförderte Technologie/\\ Maßnahme\end{tabular}} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Erneuerbare-Energien-\\ Gesetz (EEG)\end{tabular} & Einspeisevergütung & Photovoltaik \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\begin{tabular}[c]{@{}l@{}}Kraft-Wärme-Kopplung- \\ Gesetz (KWKG)\end{tabular} & \begin{tabular}[c]{@{}r@{}}Einspeise-/Eigenverbrauch-\\ vergütung\end{tabular} & BHKWs \\ \hline
+\begin{tabular}[c]{@{}l@{}}Mini-KWK-Zuschuss\\ (durch BAFA)\end{tabular} & Investitionszuschuss & BHKWs \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\begin{tabular}[c]{@{}l@{}}Anreizprogramm \\ Energieeffizienz (APEE)\end{tabular} & Investitionszuschuss & \begin{tabular}[c]{@{}r@{}}Wärmepumpen\\ Solarthermie\\ Pelletkessel\end{tabular} \\ \hline
+KfW-Programm 430 & Investitionszuschuss & \begin{tabular}[c]{@{}r@{}}Sanierung von einzelnen Bauteilen \\ oder KfW-Effizienzhausstandard\end{tabular} \\ \hline
+\end{tabular}
+\caption{Übersicht über verschiedene Förder- und Anreizprogramme zur energetischen Verbesserung von Wohngebäuden}
+\label{tab: Tabelle241}
+\end{table}
 
 
 \section{Arten der Optimierung}
@@ -260,10 +281,10 @@ Dadurch konnte ein Anreiz zur energetischen Sanierung geschaffen werden, was mit
 
 Ziel dieser Arbeit ist die Bestimmung verschiedener Maßnahmen, welche für repräsentative Gebäudetypen eine wirtschaftlich und ökologisch optimale Lösung bieten.
 Hierbei werden neben verschiedenen Möglichkeiten der Energiebereitstellung auch die Qualität und Verbesserung verschiedener Komponenten der Gebäudehülle betrachtet.
-Dadurch ergibt sich eine enorm hohe Anzahl an möglichen Kombinationsmöglichkeiten der Maßnahmen.
-Um aus dieser Komplexität ein Optimum zu bestimmen, ist es unabdingbar ein rechnergestütztes Optimierungsprogramm als Werkzeug zu benutzen.
+Dadurch ergibt sich eine hohe Anzahl an möglichen Kombinationsmöglichkeiten der Maßnahmen.
+Um aus dieser Komplexität ein Optimum zu bestimmen, ist es unabdingbar, ein rechnergestütztes Optimierungsprogramm als Werkzeug zu nutzen.
 
-In einem mathematischen Sinne beschreibt die Optimierung die Lösung einer Zielfunktion.
+Im mathematischen Sinne beschreibt die Optimierung die Lösung einer Zielfunktion.
 Diese Funktion wird mit Variablen beschrieben und mit Rahmenbedingungen, Restriktionen genannt, beschränkt \cite{Schellong.2016}.
 Somit wird mit einem Optimierungsprogramm versucht, eine Problematik mathematisch zu modellieren, um eine rationale Entscheidung über eine optimale Lösung zu treffen. 
 Im Folgenden stellt dieses Kapitel verschiedene Arten der Optimierung sowie diverse Optimierungsprogramme vor, um letztlich das im Rahmen dieser Arbeit verwendete Programm in \ref{sec:Sektion 26} beschreiben zu können.
@@ -280,22 +301,22 @@ Diese sind als reelle Zahlen \(\mathbb{R}\) definiert und beschreiben beispielsw
 Werden in einem Programm diskrete und kontinuierliche Variablen gemischt, so spricht man von einer gemischt-ganzzahligen Optimierung. \cite{Schellong.2016}
 
 Neben den Variablen stellt die Art der Funktionen eine weitere Unterscheidung der Optimierungsprogramme dar.
-Bestehen die Restriktionen und die Zielfunktion eines Programmes einzig und alleine aus linearen Zusammenhängen, so wird von einem linearen Programm (LP) gesprochen.
-Dem Gegenüber werden solche Optimierungen, die auch Nichtlinearitäten abbilden, als nicht-lineare Programme (NLP) bezeichnet.
+Bestehen die Restriktionen und die Zielfunktion eines Programmes einzig und allein aus linearen Zusammenhängen, so wird von einem linearen Programm (LP) gesprochen.
+Dem gegenüber werden solche Optimierungen, die auch Nichtlinearitäten abbilden, als nicht-lineare Programme (NLP) bezeichnet.
 Oftmals findet man in der Realität nicht-lineare Zusammenhänge, welche mit NLP gut modelliert werden können.
 Als ein Beispiel sei hier das Teillastverhalten von Wärmeerzeugern genannt.
 Jedoch stellt das Lösen von nicht-linearen Gleichungen einen erhöhten Rechenaufwand dar, welcher mit einer deutlich längeren Rechendauer einhergeht.
-Somit kann durch die Linearisierung von nicht-linearen Zusammenhängen Rechenzeit zu Kosten von Genauigkeitsverlusten verkürzt werden. 
-Die gemischt-ganzzahlige lineare Optimierung wird aufgrund ihrer englischen Bezeichnung (\glqq Mixed Integer Linear Programing\grqq)\,mit MILP abgekürzt sowie die nicht-lineare analog mit MINLP. \cite{Samsatli.2018} %Anführungszeichen?
+Somit kann durch die Linearisierung von nicht-linearen Zusammenhängen Rechenzeit zu Kosten von Genauigkeit verkürzt werden. 
+Die gemischt-ganzzahlige lineare Optimierung wird aufgrund ihrer englischen Bezeichnung (\glqq Mixed Integer Linear Programing\grqq)\,mit MILP abgekürzt, die nicht-lineare analog mit MINLP. \cite{Samsatli.2018} %Anführungszeichen?
 
 In der Literatur werden verschiedene Ansätze und Modelle für Optimierungen von Energiesystemen verfolgt, welche im Weiteren kurz vorgestellt werden.
 
 Iturriaga et al. \cite{Iturriaga.2017} erarbeiten ein allgemeines Modell für Gebäudeenergiesysteme auf Gebäudeebene. 
 Dieses soll alle derzeit verfügbaren Technologien der Wärme-, Kälte- und Elektrizitätsbereitstellung abbilden können.
-Hierzu werden die Anlagen unterteilt in solche, die hohe, mittlere und niedrige Temperaturen erzeugen, sowie Kältemaschinen und elektrische Module.
+Hierzu werden die Anlagen unterteilt in solche, welche hohe, mittlere und niedrige Temperaturen erzeugen, Kältemaschinen und elektrische Module.
 Thermische und elektrische Energie kann zwischen den jeweiligen Gruppen ausgetauscht werden, um letztlich den Wärme-, Kälte- und Elektrizitätsbedarf des Gebäudes zu decken.
 Weiterhin berücksichtigt das Modell neben der Energieerzeugung auch Speicher und Interaktionen mit anderen Gebäuden durch Nah-, Fernwärme- sowie Stromnetzen.
-Die stückweise Linearisierung des nicht-linearen Teillastverhaltens der Anlagen führt zu rein linearen Gleichungen und somit einem MILP Problem.
+Die stückweise Linearisierung des nicht-linearen Teillastverhaltens der Anlagen führt zu rein linearen Gleichungen und somit zu einem MILP Problem.
 Als Zielfunktion ist die Minimierung der annualisierten Kosten definiert. 
 Diese setzen sich aus Investitionskosten, jährlichen variablen Kosten, Energiebezugskosten sowie Gewinnen aus dem Verkauf an überschüssiger Wärme, Kälte oder Elektrizität zusammen.
 Als Restriktionen der Optimierung sind technologische Nebenbedingungen der oben genannten Gruppen, die Bedarfserfüllung des Energiesystems, gebäudespezifische Rahmenbedingungen sowie Begrenzungen der Variablen aufgeführt.
@@ -304,22 +325,22 @@ Hierbei werden 13 verschiedenen Technologien der Wärme- und Elektrizitätserzeu
 Diese umfassen neben Organic-Rankine-, Gasturbinen- und Verbrennungsmotoren-Blockheizkraftwerke (BHKW) auch verschiedene solarthermische Anlagen (CPC, Vakuumröhrenkollektoren, Flachkollektoren), Biomasse-, Gas- und Brennwertkessel, Luft-Wasser-Wärmepumpen und diverse Photovoltaik-Anlagen (amorphe, mono- und polykristalline Solarmodule).
 
 In \cite{Pinzon.23.04.201726.04.2017} wird von Pinzon et al. ein Modell zur Optimierung der Stromkosten unter Berücksichtigung der Behaglichkeit der Bewohner vorgestellt.
-Hierbei werden neben Stromkosten aus Heiz- oder Kühlzwecken, Beleuchtung und Ersparnissen aus Photovoltaik (PV) und Energiespeichern auch thermische Lasten in den modellierten Zonen betrachtet.
+Hierbei werden neben Stromkosten aus Heiz- oder Kühlzwecken, Beleuchtung, Ersparnissen aus Photovoltaik (PV) und Energiespeichern auch thermische Lasten in den modellierten Zonen betrachtet.
 Wie in Iturriaga et al. \cite{Iturriaga.2017} wird zunächst ein MINLP Modell erstellt, dass daraufhin durch stückweise Linearisierung in ein MILP gewandelt wird.
 Als Zielfunktion ist die Minimierung des Strombedarfes und somit der Stromkosten beschrieben.
 Der Bedarf setzt sich aus dem Verbrauch der zuvor genannten Komponenten zusammen.
 Als Nebenbedingungen werden die Nutzung der PV-Anlagen und Energiespeicher, des Klimageräts und der Beleuchtung sowie der Einhaltung des thermischen Komforts definiert.
-Bei Letzterem werden auch die Wärmeträgheit des Luftvolumens im Raum, sowie der Wärmeverlust durch den Infiltrationsluftvolumenstrom, also durch Undichtheiten in der Gebäudehülle, berücksichtigt.
+Bei letzterem werden auch die Wärmeträgheit des Luftvolumens im Raum, sowie der Wärmeverlust durch den Infiltrationsluftvolumenstrom, also durch Undichtheiten in der Gebäudehülle, berücksichtigt.
 
 In Risbeck et al. \cite{Risbeck.2017} wird der optimale Betrieb von Lüftungssystemen zum Kühlen und Wärmen in kommerziellen Gebäuden, also Nichtwohngebäuden, untersucht.
 Hierzu werden diskrete Variablen zum Modellieren des An- und Abschaltens der Komponenten sowie kontinuierliche zur Abbildung der Lasten und Speicherstände genutzt.
 Als Zielfunktion werden minimale Betriebskosten bei Einhaltung des thermischen Komforts im Gebäude formuliert.
 Auch Risbeck et al. wandeln nicht-lineare Geräteverhalten durch stückweise Linearisierung in lineare um.
 Dadurch wird die Rechenzeit verkürzt und das Programm kann in Echtzeit auf Preisänderungen, Bedarfsschwankungen und Wetteränderungen eingehen.
-Als Nebenbedingungen der Optimierungsaufgabe wird neben der Temperierung verschiedener Gebäudezonen auch die optimale Nutzung der zur Verfügung stehenden Speicher beachtet.
+Als Nebenbedingungen der Optimierungsaufgabe werden neben der Temperierung verschiedener Gebäudezonen auch die optimale Nutzung der zur Verfügung stehenden Speicher beachtet.
 
 Zhu et al. \cite{Zhu.2019} beschäftigen sich mit der Kapazitätsauslegung thermischer und elektrischer Speicher in Gebäudeenergiesystemen mit mehreren Energiebereitstellungsformen. 
-Der Bedarf an elektrische Energie wird hierbei entweder durch Photovoltaik (PV), Netzbezug oder einer Batterie gedeckt. 
+Der Bedarf an elektrischer Energie wird hierbei entweder durch Photovoltaik (PV), Netzbezug oder einer Batterie gedeckt. 
 Zur Erfüllung des Wärmebedarfs stehen neben einer Wärmepumpenheizung noch ein sensibler Wasserspeicher zur Verfügung.
 Ein Teil der nicht-linearen Gleichungen werden linearisiert. Da jedoch noch nicht-lineare Zusammenhänge in dem Programm existieren, handelt es sich bei dem Modell um ein MINLP.
 
@@ -338,18 +359,19 @@ Weiter werden Einflüsse regulatorischer Maßnahmen untersucht und darauf aufbau
 
 Das Optimierungsmodell von Harb et al. \cite{Harb.2016} bestimmt die optimale Anlagenauswahl zur Wärmeerzeugung von Einzelwohngebäuden oder Quartieren.
 Es werden Mikro-BHKWs, Wärmepumpen, Elektroheizstäbe, PV, thermische Speicher, Kessel sowie Nahwärmenetze in Betracht gezogen.
-Besonders an dem Modell von Harb et al. ist weiterhin, dass die Einspeisevergütung von PV-Strom sowie die Förderung von BHKW produzierter Elektrizität in die wirtschaftliche Betrachtung mit eingehen.
+Besonders an dem Modell von Harb et al. ist weiterhin, dass die Einspeisevergütung von PV-Strom sowie die Förderung von BHKW produzierter Elektrizität in die wirtschaftliche Betrachtung mit einfließen.
+
 
 \section{Referenzmodell}
 \label{sec:Sektion 26}
 
 Als Grundlage dieser Arbeit liegt ein Programm zur Kosten- oder Emissionsoptimierung von Gebäudeenergiesystemen vor.
-Neben einer Auswahl an Anlagentechnik zur Energiebereitstellung stehen außerdem Sanierungsmaßnahmen der Gebäudehülle zur Verfügung. 
-Hierbei wird ähnlich wie bei Asadi et al. \cite{Asadi.2012} Außenwände, Fenster und Dächer sowie zusätzlich Böden betrachtet.
+Neben einer Auswahl an Anlagentechniken zur Energiebereitstellung stehen außerdem Sanierungsmaßnahmen der Gebäudehülle zur Verfügung. 
+Hierbei werden ähnlich wie bei Asadi et al. \cite{Asadi.2012} Außenwände, Fenster und Dächer sowie zusätzlich Böden betrachtet.
 Die Entscheidung für verschiedene Anlagen oder Maßnahmen an der Hülle erfolgt durch diskrete Binärvariablen, wohingegen die Auslegung und der Betrieb durch kontinuierliche Variablen modelliert wird.
 Wie in Iturriaga et al. \cite{Iturriaga.2017}, Pinzon et al. \cite{Pinzon.23.04.201726.04.2017} und Risbeck et al. \cite{Risbeck.2017} erfolgt eine Linearisierung der nicht-linearen Gleichungen, sodass es sich um ein MILP handelt.
 Die Zielfunktion der Optimierung kann entweder zur Minimierung der Kosten oder CO\(_2\)-Emissionen gesetzt werden.
-Des Weiteren besteht die Möglichkeit wie bei Asadi et al. \cite{Asadi.2012} eine Pareto-Optimierung durchzuführen, bei welcher ein Gebäudeenergiesystem unter Berücksichtigung der Kosten- und Emissionsoptimierung ermittelt wird.
+Des weiteren besteht die Möglichkeit wie bei Asadi et al. \cite{Asadi.2012} eine Pareto-Optimierung durchzuführen, bei welcher ein Gebäudeenergiesystem unter Berücksichtigung der Kosten- und Emissionsoptimierung ermittelt wird.
 
 Nach einer Parametrisierung des Gebäudes durch den Nutzer greift das Programm auf verschiedene hinterlegte Daten zurück, welche zum einen die Umweltbedingungen simulieren und zum anderen das Gebäude und die Anlagentechnik näher beschreiben.
 Weiter werden die 365 Tage eines Jahres in einigen wenigen, repräsentativen Typtagen zusammengefasst, um somit die Komplexität des Problems zu reduzieren.
@@ -371,12 +393,12 @@ Im Folgenden wird in Kapitel \ref{subsec:Sektion261} die Schritte vor dem Optimi
 Zunächst werden dem Programm durch den Nutzer Angaben zum zu berechnenden Gebäude übergeben.
 Hier werden Gebäudetyp, -alter und -lage sowie Wohnungsanzahl, Wohnfläche je Wohnung, Haushaltsgröße und qualitative Angaben zum Strom- und Trinkwarmwasserbedarfs definiert.
 In Bezug auf den Gebäudetyp stehen die TABULA-Klassen Einfamilien-, Reihen-, Mehrfamilienhaus und Apartment-Block zur Wahl.
-Auch die Baualtersklassen basieren auf TABULA-Unterteilungen und gliedern sich in 12 Klassen im Zeitraum von 1859 bis 2010.
+Auch die Baualtersklassen basieren auf TABULA-Unterteilungen und gliedern sich in 12 Klassen im Zeitraum von 1860 bis 2010.
 Bei der Gebäudelage stehen dem Nutzer 15 verschiedene Städte aus verschiedenen Klimaregionen Deutschlands zur Auswahl.
 Eine Übersicht über die möglichen Ausprägungen der Inputparameter Gebäudealter und -lage ist Tabelle \ref{tab: TabelleA3} zu entnehmen.
 
 Auf Basis der übergebenen Angaben wird auf eine Datengrundlage zurückgegriffen.
-So werden anhand des Gebäudestandortes entsprechende jährliche Klimaprofile genutzt.
+So werden anhand des Gebäudestandortes entsprechend jährliche Klimaprofile genutzt.
 Diese entsprechen dem Testreferenzjahr des Deutschen Wetterdienstes, welches für den Betrachtungszeitraum von 1981 bis 2010 einen repräsentativen Witterungsverlauf beschreibt.
 Neben einem Umgebungstemperaturverlauf liefern die Profile solare Einstrahlungen und sind stündlich, also in 8760 Zeitpunkte, aufgeteilt.
 Weiter werden Strom- und Trinkwarmwasserbedarfsprofile sowie Profile der internen Gewinne eingelesen.
@@ -392,9 +414,9 @@ Diese besitzen wiederum Gewichtungen, welche in Summe 365 Tage und somit ein Jah
 
 Neben den bereits erläuterten Klima- und Energiebedarfsprofilen werden weitere Gebäudeparameter an das Programm übergeben.
 So werden für die Bauteile der Gebäudehülle U-Werte für drei Sanierungsszenarien eingelesen.
-Bei diesen handelt es sich um den Standard-Zustand des parametrisierten Gebäudes im Bestand (standard), einer normalen energetischen Nachrüstung (retrofit) und außerdem einer fortgeschrittenen (advanced retrofit).
+Bei diesen handelt es sich um den Standard-Zustand des parametrisierten Gebäudes im Bestand (\glqq standard \grqq), einer normalen energetischen (\glqq retrofit\grqq) und einer fortgeschrittenen energetischen Nachrüstung (\glqq advanced retrofit \grqq).
 Zudem werden Faktoren zur Dimensionierung der Fenster-, Dach-, Boden- und Außenwandfläche eingelesen.
-In Kapitel \ref{subsec:Sektion262} wird die Berechnung der Wärmeverluste anhand der U-Werte und der Bauteilflächen näher erläutert.
+In Kapitel \ref{subsec:Sektion262} wird die Berechnung der Wärmeverluste anhand der U-Werte und der Bauteilflächen näher erläutert.\\
 Schließlich werden auch ökonomische Faktoren zur Bestimmung des Preises einer Sanierungsmaßnahme in das Programm mit aufgenommen. 
 Hierbei werden die Investitionskosten der Gebäudehüllenbestandteile als lineare Funktion ausgedrückt.
 Außer bei den Fenstern berechnen sich diese Kosten anhand der zusätzlichen Dämmdicke im Zuge des Sanierungsszenario.
@@ -406,7 +428,7 @@ Diese werden für die Berechnung der annualisierten Kosten benötigt.
 Mit den bisher beschriebenen Daten lassen sich die Bedarfe des Gebäudes bestimmen.
 Zur Deckung dieser werden verschiedene Energieerzeuger und -speicher zu dem Modell hinzugefügt.
 Die Dimensionierung der jeweiligen Technologien erfolgt kontinuierlich.
-Um die Investitionskosten der Anlagen zu berechnen, existieren Installationskosten mit einer Unterscheidung zwischen Einfamilienhauses- oder Mehrfamilienhaus.
+Um die Investitionskosten der Anlagen zu berechnen, existieren Installationskosten mit einer Unterscheidung zwischen Einfamilien- oder Mehrfamilienhaus.
 Zudem werden die Steigung und der y-Achsenabschnitt einer linearen Funktion zur Preiskalkulation an das Programm übergeben oder anhand von empirischen Herstellerangaben generiert.
 Tabelle \ref{tab: Tabelle2611} führt die verschiedenen Technologien, welche im Modell Beachtung finden, sowie deren Nutzungsdauer auf.
 
@@ -414,7 +436,7 @@ Tabelle \ref{tab: Tabelle2611} führt die verschiedenen Technologien, welche im 
 \begin{tabular}{|l|c|l|c|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-Technologie     & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}Nutzungsdauer\\ in Jahren\end{tabular}} & Technologie          & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}Nutzungsdauer\\ in Jahren\end{tabular}} \\ \hline
+Technologie & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}Nutzungsdauer\\ in Jahren\end{tabular}} & Technologie & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}Nutzungsdauer\\ in Jahren\end{tabular}} \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Brennwertkessel & 20 & Solarthermie & 20 \\ \hline
 Luft-Wärmepumpe & 18 & PV & 20 \\ \hline
@@ -428,9 +450,38 @@ BHKW & 15 & Elektroheizstab & 20 \\ \hline
 \label{tab: Tabelle2611}
 \end{table}
 
-%ökonomie
-%Förderprogramme
-%EnEV
+Weiter werden betriebswirtschaftliche Parameter eingelesen.
+Hierbei werden neben allgemeinen Faktoren wie dem Betrachtungszeitraum, der Mehrwertsteuer, dem internen Zinssatz und der Inflationsrate auch energieträgerspezifische Kennwerte übergeben.
+Bei letzteren handelt es sich um Preisänderungsfaktoren, welche zukünftige Preisänderungen der Energieträger abbilden, sowie  der Einspeisevergütung und der Energiesteuer.
+In Tabelle \ref{tab: TabelleA6} sind die Parameter mit ihren jeweiligen Werten aufgeführt.
+
+Zudem werden Daten zur Modellierung von Förderprogrammen mitaufgenommen.
+Die Fördergelder beeinflussen die Wirtschaftlichkeit verschiedener Technologien und Maßnahmen.
+Somit werden die leistungsabhängigen Förderhöhen mit in das Modell aufgenommen.
+Außerdem gibt es für alle Programme Bedingungen, welche für eine Auszahlung erfüllt seien müssen und monetäre Grenzen, in denen sich die Fördersumme minimal und maximal bewegt.
+Einen Überblick über die Forderkonditionen und -grenzen werden in Tabelle XXXX dargelegt.
+
+Um die Förderungen im Rahmen des KfW-Effizienzhaus-Programms zu erhalten, wird die Sanierungsmaßnahme mit einem EnEV-Referenzgebäude verglichen.
+Hierbei entspricht ein KfW-Effizienzhaus 85 einem Gebäude, welches 85\,\% der Energie eines EnEV-Referenzgebäudes benötigt.
+Für die Berechnung des EnEV-Referenzgebäudes werden weitere Daten eingelesen.
+Das Referenzgebäude besitzt dieselbe Geometrie wie die des zu berechnenden Gebäudes und eine nach EnEV vorgegebene energetische Qualität der Hülle.
+Diese sind in Tabelle \ref{tab: Tabelle2612} aufgeführt.
+
+\begin{table}[H]\centering
+\begin{tabular}{|l|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Bauteil & U-Werte {[}\(\frac{\text{W}}{m^2 \cdot K}\){]} \\ \hline
+Außenwand & 0,28 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Boden & 0,35 \\ \hline
+Dach & 0,20 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Fenster & 1,30 \\ \hline
+\end{tabular}
+\caption{U-Werte der Gebäudehülle für ein EnEV-Referenzgebäude nach EnEV 2009}
+\label{tab: Tabelle2612}
+\end{table}
 
 \subsection{Optimierungsprozess}
 \label{subsec:Sektion262}
@@ -443,13 +494,17 @@ C_{total} = \sum C_{Investition} + \sum C_{Variabel} + \sum C_{Bedarf} + \sum C_
 \end{equation}
 Die Berechnung der Investitionskosten unterscheidet sich leicht zwischen Energieerzeugern und Hüllensanierung. 
 Es ist zu erwähnen, dass das Standard-Szenario den Bestandszustand beschreibt und somit nicht mit Kosten verbunden ist.
-Letztlich wird in allen Fällen eine totale Investitionssumme berechnet und unter Beachtung der jeweiligen Nutzungsdauer, dem internen Zinssatz und der Inflationsrate annualisiert.
-Die betriebsgebundenen Kosten für Wartung und Instandhaltung werden anteilig aus den Investitionskosten bestimmt und mit einem Faktor zur Inflationsbereinigung beaufschlagt.
-%weitere Kosten erläutern
+Letztlich wird in allen Fällen eine totale Investitionssumme berechnet und unter Beachtung der jeweiligen Nutzungsdauer, dem internen Zinssatz und der Inflationsrate annualisiert.\\
+Die betriebsgebundenen Kosten für Wartung und Instandhaltung werden anteilig aus den Investitionskosten bestimmt und mit einem Faktor zur Inflationsbereinigung multipliziert.\\
+Zur Bestimmung der bedarfsspezifischen Kosten wird die Summe aus verschiedenen Energiequellen gebildet. Jeder Summand besteht hierfür aus dem Bedarf des Energieträgers multipliziert mit den leistungsspezifischen Kosten, dem Preisänderungsfaktor der Bezugsgröße und dem Faktor zur Annualisierung der Kosten. 
+Eine Ausnahme bilden die BHKWs, da bei diesen der Gaspreis um die Energiesteuer reduziert wird.
+Dies ist eine Folge der Förderung durch das KWK-Gesetz.\\
+Im Falle der Fixkosten liest das Programm Grundpreise für die Nutzung von Gas und Strom ein.
+Für Erdgas betragen diese 138 \(\frac{\text{\euro}}{\text{a}}\) und für den Strombezug 73 \(\frac{\text{\euro}}{\text{a}}\). \\
 
 Durch die Verbrennung von Brennstoffen wird CO\(_2\) freigesetzt. 
-Somit kann die Emission beschrieben werden als Summe der CO\(_2\)-Freisetzung, die durch den Bedarf an Brennstoffe frei werden.
-Hierbei ist noch zu beachten, dass sich die Emission durch Gutschriften aus Stromeinspeisungen in das Netz reduzieren lassen. %laut Norm?
+Somit kann die Emission beschrieben werden als Summe der CO\(_2\)-Freisetzung, die durch den Bedarf an Brennstoffen entstehen.
+Hierbei ist zu beachten, dass sich die Emission durch Gutschriften aus Stromeinspeisungen in das Netz reduzieren lassen. %laut Norm?
 Somit setzt sich die Berechnung der Emission aus der Verbrennung von Holz-Pellets (\(E_{Pellet}\)) oder Gas (\(E_{Gas}\)), dem Emissionswert des Stromes aus Netzbezug (\(E_{Netz}\)) und den negativen Emissionen der Gutschriften (\(E_{Einspeisung}\)) zusammen.
 \begin{equation}
 \label{eq:Gleichung2622}
@@ -463,18 +518,21 @@ In Tabelle \ref{tab: Tabelle2621} sind die Werte für die Energiequellen Holz-Pe
 \begin{tabular}{|l|c|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-Energiequelle                                                                                & \begin{tabular}[c]{@{}c@{}}CO\(_2\)-Emission\\ in {[}kg\(_{CO_2}\)/kWh{]}\end{tabular} \\ \hline
+Energiequelle & \begin{tabular}[c]{@{}c@{}}CO\(_2\)-Emission\\ in {[}kg\(_{CO_2}\)/kWh{]}\end{tabular} \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Holz-Pellets                                                                          & 0,025                                                                        \\ \hline
-Gas                                                                                   & 0,25                                                                         \\ \hline
+Holz-Pellets & 0,025 \\ 
+\hline
+Gas & 0,25 \\ 
+\hline
 \rowcolor[HTML]{EFEFEF} 
-Strom                                                                                 & 0,566                                                                        \\ \hline
+Strom & 0,566 \\ 
+\hline
 \end{tabular}
 \caption{Leistungsspezifische Emission der Energieträger}
 \label{tab: Tabelle2621}
 \end{table}
 
-Die Kombinationsmöglichkeiten zur Erfüllung der Zielfunktionen wird durch den Lösungraum, welcher durch Restriktionen definiert wird, beschränkt.
+Die Kombinationsmöglichkeiten zur Erfüllung der Zielfunktionen wird durch den Lösungsraum, welcher durch Restriktionen definiert wird, beschränkt.
 So wird beispielsweise die Anzahl der PV-Module durch die zur Verfügung stehende Dachfläche limitiert.
 Eine zentrale Nebenbedingung stellt die Berechnung der Heizlast dar.
 Diese beschreibt die Wärmemenge, welche durch die Anlagentechnik bereitgestellt werden muss, um das Gebäude auf die Norm-Innentemperatur in Höhe von 20\,°C zu heizen.
@@ -501,9 +559,9 @@ Die Formel zur Berechnung von \(H_t\) ist in \ref{eq:Gleichung2625} zu finden.
 \label{eq:Gleichung2625}
 H_t = \sum_{k} A_k \cdot (U_k + \Delta U_{TB}) \cdot f_{U,k} \qquad \text{mit k }\in \{\text{Außenwand, Boden, Fenster, Dach}\}
 \end{equation}
-Hierbei wird \(\Delta U_{TB}\) laut Norm vereinfacht mit 0,05 \(W/(m^2\cdot K)\) angenommen.
+Hierbei wird \(\Delta U_{TB}\) laut Norm vereinfacht mit 0,05 \(\frac{W}{m^2\cdot K}\) angenommen.
 Der Temperaturkorrekturfaktor berücksichtigt einen Unterschied zwischen Norm-Innentemperatur und Außentemperatur.
-Da in dem Programm keine Unterscheidung der Räume geschieht, gibt es nur im Falle des Bodens aufgrund des Kontaktes mit dem Erdreich einen solchen Unterschied.
+Da in dem Programm keine Unterscheidung der Raumnutzung erfolgt, gibt es nur im Falle des Bodens aufgrund des Kontakts mit dem Erdreich einen solchen Unterschied.
 Daher wird \(f_{U, Boden}\) nach Norm mit 0,6 bestimmt.
 Die verschiedenen Kombinationsmöglichkeiten der Sanierungsszenarien werden durch Multiplikation mit einer binären Entscheidungsvariablen (\(x_{k, i}\)) in das Programm mit aufgenommen, wobei k \(\in\) \{Außenwand, Boden, Dach Fenster\} und i \(\in\) \{standard, retrofit, advanced retrofit\}.
 \begin{equation}
@@ -522,9 +580,9 @@ beschränkt wird.
 Schließlich wird die Heizlast auch durch die Lüftungswärmeverluste beeinflusst.
 Diese werden durch das Heizperiodenverfahren in DIN V 4108-6 modelliert.
 Hierzu wird laut Norm von einer Luftwechselrate (n) für ein nicht luftdichtheitsgeprüftes Gebäude von 0,7\,h\(^{-1}\) ausgegangen. 
-Die Luftwechselrate beschreibt, wie oft pro Stunde das Volumen des Gebäudes mit Frischlust ausgetauscht wird.
+Die Luftwechselrate beschreibt, wie oft pro Stunde das Volumen des Gebäudes mit Frischluft ausgetauscht wird.
 Des Weiteren wird das Netto-Volumen (V) in der Norm als 0,76-fachen des Brutto-Volumens (V\(_e\)) bestimmt.
-Somit ergibt sich mit der Wärmekapazität der Luft (c\(_{p, Luft}\)) und der Luftdichte (\(\rho_{Luft}\)) die spezifische Lüftungswärmeverluste (\(H_V\)) zu
+Somit ergibt sich mit der Wärmekapazität der Luft (c\(_{p, Luft}\)) und der Luftdichte (\(\rho_{Luft}\)) die spezifische Lüftungswärmeverluste (H\(_V\)) zu
 \begin{equation}
 \label{eq:Gleichung2628}
 H_V = 0,76 \cdot V_e \cdot \rho_{Luft} \cdot c_{p, Luft} \cdot n \quad \text{.}

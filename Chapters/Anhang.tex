@@ -8,7 +8,7 @@
 \rowcolor[HTML]{C0C0C0} 
 \cellcolor[HTML]{C0C0C0} & \multicolumn{9}{c|}{\cellcolor[HTML]{C0C0C0}Baualtersklasse} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}} \\ \cline{2-11}
 \rowcolor[HTML]{C0C0C0} 
-\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}Gebäude-\\ typ\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}-1856} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1857\\ -1918\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1919\\ -1948\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1949\\ -1957\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1958\\ -1968\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1969\\ -1978\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1979\\ -1983\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1984\\ -1994\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1995\\ -2006\end{tabular}} &  \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\(\sum\)}} \\ \hline
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}Gebäude-\\ typ\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}-1859} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1860\\ -1918\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1919\\ -1948\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1949\\ -1957\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1958\\ -1968\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1969\\ -1978\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1979\\ -1983\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1984\\ -1994\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}l@{}}1995\\ -2006\end{tabular}} &  \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\(\sum\)}} \\ \hline
 EFH & 916 & 1707 & 2010 & 1915 & 2274 & 1867 & 936 & 2055 & 2665 & 16345 \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 RH & -- & 145 & 326 & 231 & 348 & 517 & 202 & 281 & 368 & 2418 \\ \hline
@@ -73,6 +73,31 @@ Zweischeiben-Wärmedämmglas & 284,2 & 47 & 1,4 - 1,1 \\ \hline
 \label{tab: TabelleA2}
 \end{table}
 
+\begin{table}[H]\centering
+\begin{tabular}{|l|r|l|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Parameter & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Wert} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Einheit} \\ \hline
+Betrachtungszeitraum & 15 & Jahre \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Mehrwertsteuer & 19 & \% \\ \hline
+Interner Zinssatz & 2 & \% \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Inflationsrate & 1,4 & \% \\ \hline
+\begin{tabular}[c]{@{}l@{}}Preisänderungsfaktor\\ Elektrizität\end{tabular} & 1,0388 & --- \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\begin{tabular}[c]{@{}l@{}}Preisänderungsfaktor\\ Gas\end{tabular} & 1,001 & --- \\ \hline
+\begin{tabular}[c]{@{}l@{}}Preisänderungsfaktor\\ Holz-Pellets\end{tabular} & 1,0158 & --- \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\begin{tabular}[c]{@{}l@{}}Preisänderungsfaktor\\ EEX-Kompensierung\end{tabular} & 1,0268 & --- \\ \hline
+\begin{tabular}[c]{@{}l@{}}Einspeisevergütung\\ BHKW-Strom\end{tabular} & 0,03307 & \(\frac{\text{\euro}}{\text{kWh}}\) \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Energiesteuer & 0,0055 & \(\frac{\text{\euro}}{\text{kWh}}\) \\ \hline
+\end{tabular}
+\caption{.....}
+\label{tab: TabelleA6}
+\end{table}
+
 \section{Inputparameter Gebäudealter und -lage}
 
 \begin{table}[H]\centering
@@ -123,24 +148,24 @@ Fenster & -242 & 785 & 30 \\ \hline
 \begin{tabular}{|l|c|c|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-\cellcolor[HTML]{C0C0C0}                              & Nutzungsdauer & Betriebskosten               \\ \cline{2-3} 
+\cellcolor[HTML]{C0C0C0} & Nutzungsdauer & Betriebskosten \\ \cline{2-3} 
 \rowcolor[HTML]{C0C0C0} 
-\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Technologie} & in Jahren     & in \% der Anfangsinvestition \\ \hline
-Gas-Brennwertkessel                                   & 20            & 2,5                          \\ \hline
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Technologie} & in Jahren & in \% der Anfangsinvestition \\ \hline
+Gas-Brennwertkessel & 20 & 2,5 \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Pellet-Kessel                                         & 15            & 5,0                          \\ \hline
-BHKW                                                  & 15            & 1,25                         \\ \hline
+Pellet-Kessel & 15 & 5,0 \\ \hline
+BHKW & 15 & 1,25 \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Luft-Wärmepumpe                                       & 18            & 2,5                          \\ \hline
-Sole-Wärmpumpe                                        & 20            & 2,5                          \\ \hline
+Luft-Wärmepumpe & 18 & 2,5 \\ \hline
+Sole-Wärmpumpe & 20 & 2,5 \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Elektroheizstab                                       & 20            & 3,0                          \\ \hline
-Photovoltaik                                          & 20            & 1,0                          \\ \hline
+Elektroheizstab & 20 & 3,0 \\ \hline
+Photovoltaik & 20 & 1,0 \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Solarthermie                                          & 20            & 1,5                          \\ \hline
-Thermischer Speicher                                  & 20            & 2,0                          \\ \hline
+Solarthermie & 20 & 1,5 \\ \hline
+Thermischer Speicher & 20 & 2,0 \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Batteriespeicher                                      & 15            & 1,0                          \\ \hline
+Batteriespeicher & 15 & 1,0 \\ \hline
 \end{tabular}
 \caption{Nutzungsdauer und Betriebskosten verschiedener Technologien}
 \label{tab: TabelleA5}

@@ -1,10 +1,87 @@
 \chapter{Parameterwahl und -beschaffung}
 
+Im Rahmen dieser Arbeit wird das in Kapitel \ref{sec:Sektion 26} vorgestellte Optimierungsprogramm im Hinblick auf Lüftungswärmeverluste untersucht und um die Möglichkeit einer maschinellen Lüftung erweitert.
+Weiter sollen besonders effiziente Maßnahmen zur energetischen Sanierung des deutschen Wohngebäudebestandes analysiert werden.
+Hierfür wird der Gebäudebestand in Kapitel \ref{sec:Sektion 41} in Klassen unterteilt, um für die Analyse der Maßnahmen weniger Kombinationsmöglichkeiten zu erhalten.
+Zudem wird in \ref{sec:Sektion 42} und \ref{sec:Sektion 43} die Generierung verschiedener Daten erläutert, die zum Modellieren der Lüftungswärmeverlusten von Nöten sind.
+
 \section{Kategorisierung des Gebäudebestandes}
-\label{sec:Sektion41}
+\label{sec:Sektion 41}
+
+Wird der deutsche Wohngebäudebestand nach der Einteilung von TABULA betrachtet, lassen sich 43 Klassen erkennen.
+Diese sind nach Baujahr und Gebäudeart unterteilt.
+Wie in Tabelle \ref{tab: TabelleA0} zu sehen, existieren nicht für alle Klassen Daten zur Wohneinheitenanzahl bei verschiedenen Baujahren.
+Außerdem unterscheiden sich die Anteile der einzelnen Gruppen am gesamten Wohneinheitenbestand.
+So bilden beispielsweise die Klasse der Hochhäuser in den alten Bundesländer nur 1\,\% des Bestandes ab, wohingegen sich der Anteil bei den Mehrfamilienhäuser zu 38\,\% ergibt.
+Um aus dieser inhomogenen Verteilung eine einfachere Kategorisierung zu gewinnen, mit welcher sich Gebäudeenergiesysteme für wenige Klassen bestimmen lassen, wird eine ABC-Analyse des Bestandes durchgeführt.
+Hierbei handelt es sich um ein betriebswirtschaftlichen Analyseverfahren zur Bewertung von Objekten einer Menge.
+Es stehen die drei Kategorien A, B und C zur Auswahl, welche nach absteigender Reihenfolge dem Objekt eine Wertung zuteilen.
+Im Falle des Gebäudebestandes werden die TABULA-Klassen danach untersucht, inwieweit diese den Bestand repräsentieren und Potenzial für eine energetische Verbesserung besitzen.
+Betrachtet wird daher die Wohneinheintenanzahl, beziehungsweise der Anteil am Bestand, sowie die U-Werte als Kriterium des energetischen Einsparpotenzials.
+Weiter werden anhand des Wärmedurchgangskoeffizient ähnliche Klassen zusammengefasst.
+Da die Analyse darauf abzielt eine Entscheidung zu treffen, ob die Klasse für die Optimierung relevant ist oder nicht, wird auf eine Bewertung mit B verzichtet.
+Eine Bewertung mit A bedeutet schließlich, dass die Klasse repräsentativ wichtig für den Bestand ist.
+Analog dazu werden C-gewertete Typen nicht weiter untersucht.
+
+Zunächst werden die Hochhäuser in neuen und alten Bundesländern betrachtet. 
+Deren Anteil am gesamten Wohnungsbestand ist mit unter 2\,\% gering.
+Zudem weicht die Geometrie der Gebäude stark von anderen Klassen ab, sodass ein Zusammenfassen der Hochhäuser mit einem anderen Gebäudetypen  Schwierigkeit bereitet.
+Somit erhalten die Hochhäuser ein C-Wertung.\\
+Weiterhin werden für die Gebäudetypen der Einfamilien- und Mehrfamilienhäuser die Baualtersklassen der Gebäuden vor 1856 angeschaut.
+Hier ist auffällig, dass die U-Werte für alle Bauteile deutlich von denen der nächsten Baualtersklasse abweichen.
+So verbessern sich beispielsweise die Dächer in dem Zeitraum vor 1856 im Vergleich zu den Baujahren von 1857 bis 1919 von 2,60 auf 1,30 \(\frac{W}{m^2 \cdot K}\).
+Außerdem handelt es sich bei diesen oftmals um denkmalgeschützte Bauten, bei denen nicht jede energetische Sanierung aufgrund des Denkmalschutz zulässig ist.
+Daher erhalten auch die Klassen der Einfamilien- und Mehrfamilienhäuser vor 1856 eine C-Wertung.\\
+Bei den Baujahren nach 1994 weicht die energetische Qualität der Hülle im Vergleich zu denen der Baujahre zuvor ebenfalls ab.
+Im Zuge der 3. WschV wurden die Anforderungen an die Gebäudehülle verschärft.
+Daher lässt sich eine sprunghafte Verbesserung der U-Werte beobachten.
+Zwar handelt es sich bei dieser Klasse um Gebäude, welche mitunter 20 Jahre  oder älter sind und somit Sanierungsbedarf aufweisen, allerdings ist deren energetisches Einsparpotenzial nicht sehr hoch, weswegen Gebäude mit Baujahr jünger als 1994 ebenfalls eine C-Wertung erhalten.\\
+Somit verbleiben die Gebäudetypen der Einfamilien-, Reihen-, Mehrfamilien- und großen Mehrfamilienhäuser der Jahrgänge von 1856 bis 1994, welche eine A-Wertung erhalten.
+
+Bei einem Vergleich der Einfamilien- und Reihenhäuser fällt auf, dass alle U-Werte außer dem des Daches nahezu identisch sind.
+Da auch die Größe und Dimensionierung der beiden Gebäudetypen Ähnlichkeiten aufweisen, werden diese zusammengefasst und im Weiteren als kleinen Gebäuden (KG) bezeichnet.\\
+Ebenso lassen sich vergleichbare Wärmedurchgangskoeffizienten bei den Mehrfamilien- und großen Mehrfamilienhäuser erkennen.
+Sogar bei einem Vergleich der alten und neuen Bundesländer weichen U-Werte der TABULA-Typgebäuden nur leicht voneinander ab.
+So besitzen beispielsweise die Fenster der Mehrfamilienhäuser von 1919 bis bis 1994 einen U\(_g\)-Wert von 3 \(\frac{W}{m^2 \cdot K}\) und die der großen Mehrfamilienhäuser von 1969 bis 1983 aufgrund des vorteilhafteren Holzrahmens 2,7 \(\frac{W}{m^2 \cdot K}\).
+Daher werden diese Gebäudetypen unter der Bezeichnung große Gebäude (GG) zusammengefasst.
+
+Im Bezug auf die Baujahre lassen sich ebenfalls Jahrgänge mit ähnlichen energetischen Eigenschaften der Gebäudehülle erkennen.
+Nach Eicke-Henning \cite{EickeHenning.2011} und Tabelle \ref{tab: TabelleA0} weisen die U-Werte der Bauteile mit Jahrgang 1856 bis 1957 aufgrund ähnliche Baustoffe und Bauweisen Ähnlichkeiten auf.
+Nach 1957 verbessern sich diese bis zur 1. WschV 1978 aufgrund der Wahl anderer Baustoffe und dem Fortschritt im Hochbau.
+Im Zuge der 1. und 2. WschV lassen sich Verbesserungen der energetischen Qualität der Hülle im Zeitraum von 1978 bis 1994 erkennen.
+Somit werden die Jahrgänge von 1856 bis 1994 in drei Epochen unterteilt.
+Die Älteste umfasst alle Baujahre inklusive der Nachkriegszeit und daher 1856 - 1957.
+Die nächste beschreibt die Jahrgänge von 1958 bis 1978 und beinhaltet somit den Zeitraum nach der Nachkriegszeit, in der ohne Regulation durch den Gesetzgeber die Gebäudehülle verbessert wurde.
+Zuletzt charakterisieren die dritte Epoche von 1979 bis 1994 Bauten mit Baustandard der 1. und 2. WschV.
+Zur Bestimmung der U-Werte der neu generierten Klassen werden die Wärmedurchgangskoeffizienten der ursprünglichen Gebäudetypen anhand ihrer Anzahl linear interpoliert.
+In Tabelle \ref{tab: TabelleA411} sind die neuen Klassen mitsamt der jeweiligen U-Werte der Hüllenbestandteile aufgeführt.
+
+\begin{table}[H]\centering
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \multicolumn{3}{c|}{\cellcolor[HTML]{9B9B9B}Baualtersklasse} \\ \cline{3-5} 
+\rowcolor[HTML]{9B9B9B} 
+\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}Gebäudetyp} & \multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}Bauteil} & \multicolumn{1}{l|}{\cellcolor[HTML]{9B9B9B}\begin{tabular}[c]{@{}l@{}}1856\\ -1957\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{9B9B9B}\begin{tabular}[c]{@{}l@{}}1957\\ -1978\end{tabular}} & \multicolumn{1}{l|}{\cellcolor[HTML]{9B9B9B}\begin{tabular}[c]{@{}l@{}}1979\\ -1994\end{tabular}} \\ \hline
+\cellcolor[HTML]{c0c0c0} & Dach & 1,29 & 0,64 & 0,43 \\ \cline{2-5} 
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{c0c0c0} & Außenwand & 1,59 & 1,1 & 0,61 \\ \cline{2-5} 
+\cellcolor[HTML]{c0c0c0} & Fenster & 2,8 & 2,8 & 2,8 \\ \cline{2-5} 
+\rowcolor[HTML]{EFEFEF} 
+\multirow{-4}{*}{\cellcolor[HTML]{c0c0c0}Kleine Gebäude} & Boden & 0,82 & 0,93 & 0,56 \\ \hline
+\cellcolor[HTML]{c0c0c0} & Dach & 1,24 & 0,51 & 0,39 \\ \cline{2-5} 
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{c0c0c0} & Außenwand & 1,61 & 1,11 & 0,68 \\ \cline{2-5} 
+\cellcolor[HTML]{c0c0c0} & Fenster & 3 & 3 & 3 \\ \cline{2-5} 
+\rowcolor[HTML]{EFEFEF} 
+\multirow{-4}{*}{\cellcolor[HTML]{c0c0c0}Große Gebäude} & Boden & 1,03 & 0,93 & 0,56 \\ \hline
+\end{tabular}
+\caption{U-Werte der neuen Gebäudeklassen KG und GG in \(\frac{W}{m^2 \cdot K}\)}
+\label{tab: TabelleA411}
+\end{table}
 
 \section{Fensteröffnungsprofile}
-\label{sec:Sektion42}
+\label{sec:Sektion 42}
 
 \section{Windprofile}
-\label{sec:Sektion43}
+\label{sec:Sektion 43}

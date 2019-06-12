@@ -239,8 +239,6 @@ Weiterhin ist zu erkennen, dass das Dreischeiben-Wärmeglas bereits 8\,\% des Fe
 	\label{fig: Abbildung231} 
 \end{figure}
 
-\newpage
-
 
 \section{Förderprogramme}
 \label{sec:Sektion 24}
@@ -459,10 +457,10 @@ Zudem werden Daten zur Modellierung von Förderprogrammen mitaufgenommen.
 Die Fördergelder beeinflussen die Wirtschaftlichkeit verschiedener Technologien und Maßnahmen.
 Somit werden die leistungsabhängigen Förderhöhen mit in das Modell aufgenommen.
 Außerdem gibt es für alle Programme Bedingungen, welche für eine Auszahlung erfüllt seien müssen und monetäre Grenzen, in denen sich die Fördersumme minimal und maximal bewegt.
-Einen Überblick über die Forderkonditionen und -grenzen werden in Tabelle XXXX dargelegt.
+Einen Überblick über die Förderkonditionen und -grenzen werden in Tabelle XXXX dargelegt.
 
 Um die Förderungen im Rahmen des KfW-Effizienzhaus-Programms zu erhalten, wird die Sanierungsmaßnahme mit einem EnEV-Referenzgebäude verglichen.
-Hierbei entspricht ein KfW-Effizienzhaus 85 einem Gebäude, welches 85\,\% der Energie eines EnEV-Referenzgebäudes benötigt.
+Hierbei entspricht beispielsweise ein KfW-Effizienzhaus 85 einem Gebäude, welches 85\,\% der Energie eines EnEV-Referenzgebäudes benötigt.
 Für die Berechnung des EnEV-Referenzgebäudes werden weitere Daten eingelesen.
 Das Referenzgebäude besitzt dieselbe Geometrie wie die des zu berechnenden Gebäudes und eine nach EnEV vorgegebene energetische Qualität der Hülle.
 Diese sind in Tabelle \ref{tab: Tabelle2612} aufgeführt.
@@ -479,7 +477,7 @@ Dach & 0,20 \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Fenster & 1,30 \\ \hline
 \end{tabular}
-\caption{U-Werte der Gebäudehülle für ein EnEV-Referenzgebäude nach EnEV 2009}
+\caption{U-Werte der Gebäudehülle für ein EnEV-Referenzgebäude nach EnEV 2009.}
 \label{tab: Tabelle2612}
 \end{table}
 
@@ -493,7 +491,7 @@ Die Kosten setzten sich zusammen aus Investitionskosten durch die Anschaffung de
 C_{total} = \sum C_{Investition} + \sum C_{Variabel} + \sum C_{Bedarf} + \sum C_{Fix} - \sum R_{Erlöse} - \sum R_{Fördergelder}  
 \end{equation}
 Die Berechnung der Investitionskosten unterscheidet sich leicht zwischen Energieerzeugern und Hüllensanierung. 
-Es ist zu erwähnen, dass das Standard-Szenario den Bestandszustand beschreibt und somit nicht mit Kosten verbunden ist.
+Es sei zu erwähnen, dass das Standard-Szenario den Bestandszustand beschreibt und somit nicht mit Kosten verbunden ist.
 Letztlich wird in allen Fällen eine totale Investitionssumme berechnet und unter Beachtung der jeweiligen Nutzungsdauer, dem internen Zinssatz und der Inflationsrate annualisiert.\\
 Die betriebsgebundenen Kosten für Wartung und Instandhaltung werden anteilig aus den Investitionskosten bestimmt und mit einem Faktor zur Inflationsbereinigung multipliziert.\\
 Zur Bestimmung der bedarfsspezifischen Kosten wird die Summe aus verschiedenen Energiequellen gebildet. Jeder Summand besteht hierfür aus dem Bedarf des Energieträgers multipliziert mit den leistungsspezifischen Kosten, dem Preisänderungsfaktor der Bezugsgröße und dem Faktor zur Annualisierung der Kosten. 
@@ -542,15 +540,15 @@ Diese definiert die Norm-Heizlast \(\Phi_{HL, build}\) als Summe der Transmissio
 \label{eq:Gleichung2623}
 \Phi_{HL, build} = \Phi_T + \Phi_{V, build} + \Phi_{hu} - \Phi_{gain}
 \end{equation}
-Die internen Gewinne werden aufgeteilt in solare Gewinne aus Sonneneinstrahlung und internen Wärmequellen wie beispielsweise Küchengeräte oder anwesende Personen.
+Die internen Gewinne werden aufgeteilt in solare Gewinne aus Sonneneinstrahlung und internen Wärmequellen wie beispielsweise Küchengeräte oder anwesenden Personen.
 Diese werden durch eingelesene Profile bestimmt und sind somit für das parametrisierte Gebäude für einen Zeitabschnitt konstant.
 Da das Modell keine Gebäudemasse abbildet, kann die Aufheizleistung nicht berechnet werden.
 Laut Norm ist \(\Phi_{hu}\) optional und wird somit vernachlässigt.
 
-Die Transmissionswärmeverluste \(\Phi_T\) beschreiben Wärmeverluste aufgrund des Wärmeüberganges an der Gebäudehülle und lassen sich als Produkt der Temperaturdifferenz zwischen der Norm-Innentemperatur (\(\Theta_{int, i}\)) und der Außentemperatur (\(\Theta_e\)) mit dem Transmissionswärmetransferkoeffizienten (\(H_t\)) bestimmen und sind in Gleichung \ref{eq:Gleichung2624} wiedergegeben.
-Letzterer wird als die Summe über die Bauteile der Produkte aus Bauteilfläche (\(A_k\)), U-Wert (\(U_k\)) und Temperaturkorrekturfaktor (\(f_{U,k}\)) ausgedrückt.
-Außerdem werden Wärmebrücken mit dem zusätzlichen Wärmedurchgangskoeffizient (\(\Delta U_{TB}\)) berücksichtigt.
-Die Formel zur Berechnung von \(H_t\) ist in \ref{eq:Gleichung2625} zu finden.
+Die Transmissionswärmeverluste \(\Phi_T\) beschreiben Wärmeverluste aufgrund des Wärmeüberganges an der Gebäudehülle und lassen sich als Produkt der Temperaturdifferenz zwischen der Norm-Innen- (\(\Theta_{int, i}\)) und Außentemperatur (\(\Theta_e\)) mit dem Transmissionswärmetransferkoeffizienten (H\(_t\)) bestimmen und sind in Gleichung \ref{eq:Gleichung2624} wiedergegeben.
+Zur Berechnung von H\(_t\) werden die Bauteilfläche (A\(_k\)), der U-Wert (U\(_k\)) und der Temperaturkorrekturfaktor (f\(_{U,k}\)) für jedes Bauteil k multipliziert und die Summe der Produkte gebildet.
+Außerdem werden Wärmebrücken mit dem zusätzlichen Wärmedurchgangskoeffizient (\(\Delta\) U\(_{TB}\)) berücksichtigt.
+Die Formel zur Berechnung von H\(_t\) ist in \ref{eq:Gleichung2625} zu finden.
 \begin{equation}
 \label{eq:Gleichung2624}
 \Phi_T = H_t \cdot (\Theta_{int, i} - \Theta_e)
@@ -579,7 +577,7 @@ beschränkt wird.
 
 Schließlich wird die Heizlast auch durch die Lüftungswärmeverluste beeinflusst.
 Diese werden durch das Heizperiodenverfahren in DIN V 4108-6 modelliert.
-Hierzu wird laut Norm von einer Luftwechselrate (n) für ein nicht luftdichtheitsgeprüftes Gebäude von 0,7\,h\(^{-1}\) ausgegangen. 
+Hierzu wird laut Norm von einer Luftwechselrate (n) für ein nicht-luftdichtheitsgeprüftes Gebäude von 0,7\,h\(^{-1}\) ausgegangen. 
 Die Luftwechselrate beschreibt, wie oft pro Stunde das Volumen des Gebäudes mit Frischluft ausgetauscht wird.
 Des Weiteren wird das Netto-Volumen (V) in der Norm als 0,76-fachen des Brutto-Volumens (V\(_e\)) bestimmt.
 Somit ergibt sich mit der Wärmekapazität der Luft (c\(_{p, Luft}\)) und der Luftdichte (\(\rho_{Luft}\)) die spezifische Lüftungswärmeverluste (H\(_V\)) zu

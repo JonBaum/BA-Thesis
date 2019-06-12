@@ -1,12 +1,41 @@
 \chapter{Stand der Technik}
 
-
-
 \section{Lüftungswärmeverluste}
 \label{sec:Sektion 31}
 
 Lüftungswärmeverluste entstehen durch den Austausch von warmer Raumluft mit kälterer Außenluft.
-%Auf Bedeutung der Lüftung eingehen
+Dies kann durch Fensteröffnung, durch maschinelle Lüftung und durch Infiltration, also durch Fugen oder Undichtheiten an der Gebäudehülle, geschehen.
+Somit sind die Verluste auch vom Nutzerverhalten bezüglich des Fensteröffnens, der Dichtheit der Gebäudehülle und dem Lüftungskonzept abhängig.
+Je nach Ausprägung dieser Faktoren stellen die Lüftungswärmeverlusten zwischen 20 bis 40\,\% der Gesamtwärmeverluste eines Gebäudes. 
+Den niedrigen Wert findet man im Altbau. 
+Durch die schlechte energetische Qualität der Hülle weicht hier zwar viel Luft durch Fugen und kleine Öffnungen, wodurch der Infiltrationsluftvolumenstrom hoch ist, allerdings dominieren die Transmissionswärmeverluste aufgrund der schlechten Dämmeigenschaften der Hüllenbauteile.
+Analog hierzu liegt der relative Anteil der Lüftungs- an den Gesamtwärmeverlusten in solchen Gebäuden höher, welche durch gute Isolationseigenschaften der Bauteile geringe Transmissionswärmeverluste besitzen.
+So beispielsweise in Neubauten oder Altbauten mit sanierter Gebäudehülle.
+
+Zur Bestimmung der Lüftungswärmeverluste wird die DIN EN 12831 betrachtet.
+Hier werden diese Verluste des Gebäudes (\(\Phi_{V,build}\)) in z Zonen aufgeteilt.
+\begin{equation}
+\label{eq:Gleichung311}
+\Phi_{V,build} = \sum_{z} \Bigl\langle \Phi_{V,z} \Bigr\rangle
+\end{equation}
+Die Zonen umfassen jeweils beheizte Räume (i), womit sich die Lüftungswärmeverluste der Zone (z) zu
+\begin{equation}
+\label{eq:Gleichung312}
+\Phi_{V,z} = \rho \cdot c_p \cdot \sum_{i} \Bigl\langle f_{i-z} \cdot q_{v,min,i} \cdot (\Theta_{int,i} - \Theta_e) \Bigr\rangle
+\end{equation}
+berechnen lassen.
+Hier fließen neben der Luftdichte (\(\rho\)), der spezifischen Wärmekapazität der Luft (c\(_p\)) und der Temperaturdifferenz zwischen Norm-Innnen- (\(\Theta_{int,i}\)) und Außentemperatur (\(\Theta_{e}\)) auch der Mindest-Luftvolumenstrom des Raums i (q\(_{v,min,i}\)) und das Verhältnis zwischen dem Mindestwert des Luftvolumenstroms und des sich ergebenden Luftvolumenstroms (f\(_i-z\)) ein.
+Das Produkt aus q\(_{v,min,i}\) und f\(_i-z\) ergibt somit den eintretenden Luftvolumenstrom.
+Vereinfacht kann dieser als
+\begin{equation}
+\label{eq:Gleichung313}
+\Phi_{V,z} = \rho \cdot c_p \cdot \sum_{i} \Bigl\langle f_{i-z} \cdot q_{v,min,i} \cdot (\Theta_{int,i} - \Theta_e) \Bigr\rangle
+\end{equation}
+
+
+
+
+
 Hierbei wird zwischen Verlusten durch Fensterlüftung, durch Undichtigkeiten der Gebäudehülle und maschinellen Lüftungsverlusten unterschieden.
 %Hier schon Norm bringen
 

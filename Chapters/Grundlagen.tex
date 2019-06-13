@@ -545,13 +545,13 @@ Diese werden durch eingelesene Profile bestimmt und sind somit für das parametr
 Da das Modell keine Gebäudemasse abbildet, kann die Aufheizleistung nicht berechnet werden.
 Laut Norm ist \(\Phi_{hu}\) optional und wird somit vernachlässigt.
 
-Die Transmissionswärmeverluste \(\Phi_T\) beschreiben Wärmeverluste aufgrund des Wärmeüberganges an der Gebäudehülle und lassen sich als Produkt der Temperaturdifferenz zwischen der Norm-Innen- (\(\Theta_{int, i}\)) und Außentemperatur (\(\Theta_e\)) mit dem Transmissionswärmetransferkoeffizienten (H\(_t\)) bestimmen und sind in Gleichung \ref{eq:Gleichung2624} wiedergegeben.
+Die Transmissionswärmeverluste \(\Phi_T\) beschreiben Wärmeverluste aufgrund des Wärmeüberganges an der Gebäudehülle und lassen sich als Produkt der Temperaturdifferenz zwischen der Norm-Innen- (\(\theta_{int, i}\)) und Außentemperatur (\(\theta_e\)) mit dem Transmissionswärmetransferkoeffizienten (H\(_t\)) bestimmen und sind in Gleichung \ref{eq:Gleichung2624} wiedergegeben.
 Zur Berechnung von H\(_t\) werden die Bauteilfläche (A\(_k\)), der U-Wert (U\(_k\)) und der Temperaturkorrekturfaktor (f\(_{U,k}\)) für jedes Bauteil k multipliziert und die Summe der Produkte gebildet.
 Außerdem werden Wärmebrücken mit dem zusätzlichen Wärmedurchgangskoeffizient (\(\Delta\) U\(_{TB}\)) berücksichtigt.
 Die Formel zur Berechnung von H\(_t\) ist in \ref{eq:Gleichung2625} zu finden.
 \begin{equation}
 \label{eq:Gleichung2624}
-\Phi_T = H_t \cdot (\Theta_{int, i} - \Theta_e)
+\Phi_T = H_t \cdot (\theta_{int, i} - \theta_e)
 \end{equation}
 \begin{equation}
 \label{eq:Gleichung2625}

@@ -6,13 +6,17 @@
 Lüftungswärmeverluste entstehen durch den Austausch von warmer Raumluft mit kälterer Außenluft.
 Dies kann durch Fensteröffnung, durch maschinelle Lüftung und durch Infiltration, also durch Fugen oder Undichtheiten an der Gebäudehülle, geschehen.
 Somit sind die Verluste auch vom Nutzerverhalten bezüglich des Fensteröffnens, der Dichtheit der Gebäudehülle und dem Lüftungskonzept abhängig.
-Je nach Ausprägung dieser Faktoren stellen die Lüftungswärmeverlusten zwischen 20 bis 40\,\% der Gesamtwärmeverluste eines Gebäudes. 
+Je nach Ausprägung dieser Faktoren stellen die Lüftungswärmeverluste zwischen 20 bis 40\,\% der Gesamtwärmeverluste eines Gebäudes. 
 Den niedrigen Wert findet man im Altbau. 
 Durch die schlechte energetische Qualität der Hülle weicht hier zwar viel Luft durch Fugen und kleine Öffnungen, wodurch der Infiltrationsluftvolumenstrom hoch ist, allerdings dominieren die Transmissionswärmeverluste aufgrund der schlechten Dämmeigenschaften der Hüllenbauteile.
 Analog hierzu liegt der relative Anteil der Lüftungs- an den Gesamtwärmeverlusten in solchen Gebäuden höher, welche durch gute Isolationseigenschaften der Bauteile geringe Transmissionswärmeverluste besitzen.
 So beispielsweise in Neubauten oder Altbauten mit sanierter Gebäudehülle.
 
-Zur Bestimmung der Lüftungswärmeverluste wird die DIN EN 12831 betrachtet.
+Den Lüftungswärmeverlusten stehen hygienische Aspekte und die Luftqualität gegenüber.
+Einerseits muss in einem Gebäude ein Luftaustausch geschehen um Luftfeuchtigkeit und Kohlenstoffdioxid aus den Räumen abzutransportieren.
+Andererseits steigen mit zunehmen Luftwechsel die Wärmeverluste, wodurch ökologisch und ökonomisch Nachteilhaft mehr geheizt werden muss. 
+
+Einen Ansatz zur Bestimmung der Lüftungswärmeverluste bietet die DIN EN 12831.
 Hier werden diese Verluste des Gebäudes (\(\Phi_{V,build}\)) in z Zonen aufgeteilt.
 \begin{equation}
 \label{eq:Gleichung311}
@@ -21,31 +25,115 @@ Hier werden diese Verluste des Gebäudes (\(\Phi_{V,build}\)) in z Zonen aufgete
 Die Zonen umfassen jeweils beheizte Räume (i), womit sich die Lüftungswärmeverluste der Zone (z) zu
 \begin{equation}
 \label{eq:Gleichung312}
-\Phi_{V,z} = \rho \cdot c_p \cdot \sum_{i} \Bigl\langle f_{i-z} \cdot q_{v,min,i} \cdot (\Theta_{int,i} - \Theta_e) \Bigr\rangle
+\Phi_{V,z} = \rho \cdot c_p \cdot \sum_{i} \Bigl\langle f_{i-z} \cdot q_{v,min,i} \cdot (\theta_{int,i} - \theta_e) \Bigr\rangle
 \end{equation}
 berechnen lassen.
-Hier fließen neben der Luftdichte (\(\rho\)), der spezifischen Wärmekapazität der Luft (c\(_p\)) und der Temperaturdifferenz zwischen Norm-Innnen- (\(\Theta_{int,i}\)) und Außentemperatur (\(\Theta_{e}\)) auch der Mindest-Luftvolumenstrom des Raums i (q\(_{v,min,i}\)) und das Verhältnis zwischen dem Mindestwert des Luftvolumenstroms und des sich ergebenden Luftvolumenstroms (f\(_i-z\)) ein.
+Hier fließen neben der Luftdichte (\(\rho\)), der spezifischen Wärmekapazität der Luft (c\(_p\)) und der Temperaturdifferenz zwischen Norm-Innnen- (\(\theta_{int,i}\)) und Außentemperatur (\(\theta_{e}\)) auch der Mindest-Luftvolumenstrom des Raums i (q\(_{v,min,i}\)) und das Verhältnis zwischen dem Mindestwert des Luftvolumenstroms und des sich ergebenden Luftvolumenstroms (f\(_i-z\)) ein.
 Das Produkt aus q\(_{v,min,i}\) und f\(_i-z\) ergibt somit den eintretenden Luftvolumenstrom.
-Vereinfacht kann dieser als
+Wird das Gebäude als eine Zone modelliert, erhält man mit q\(_V\) als Produkt von q\(_{v,min,i}\) und f\(_i-z\) 
 \begin{equation}
 \label{eq:Gleichung313}
-\Phi_{V,z} = \rho \cdot c_p \cdot \sum_{i} \Bigl\langle f_{i-z} \cdot q_{v,min,i} \cdot (\Theta_{int,i} - \Theta_e) \Bigr\rangle
+\Phi_{V} = \rho \cdot c_p \cdot q_V \cdot (\theta_{int} - \theta_e) \quad \text{.}
+\end{equation}
+Dies entspricht einer Energiebilanz um die Gebäudehülle, bei welcher der eintretende Volumenstrom dem austretenden entspricht.
+
+Zur Berechnung des eintretenden Luftvolumenstroms q\(_V\) wird dieser in Fensteröffnungsvolumenstrom (q\(_{V, Fenster}\)), Infiltrationsvolumenstrom (q\(_{V, Infiltration}\)) und maschineller Lüftungsvolumenstrom (q\(_{V, Maschinell}\)) aufgeteilt.
+Somit ergibt sich q\(_V\) zu
+\begin{equation}
+\label{eq:Gleichung314}
+q_V = q_{V, Fenster} + q_{V, Infiltration} + q_{V, Maschinell}
+\end{equation}
+Im Folgenden werden die jeweiligen Komponenten mitsamt ihrer Berechnungsansätze vorgestellt.
+
+\subsection{Fensterlüftung}
+\label{subsec:Sektion 311}
+
+Durch das Öffnen eines Fensters kann ein Bewohner direkt Einfluss auf die Qualität der Raumluft ausüben.
+Somit stellt das Nutzerverhalten des Bewohners einen wichtigen Faktor bezüglich der Lüftungswärmeverluste durch die Fenster dar.
+Gründe für das Fensteröffnen sind in Fabi et al. \cite{Fabi.2012} wiedergegeben.
+Hier erfolgt eine Unterscheidung der ausschlaggebenden Faktoren in die Kategorien \glqq Physische Umweltfaktoren\grqq , \glqq Kontextabhängige Faktoren\grqq , \glqq Psychologische Faktoren\grqq , \glqq Physiologische Faktoren\grqq\, und \glqq Soziale Faktoren\grqq .
+Beispiele für die einzelnen Kategorien sind in Tabelle \ref{tab: Tabelle3111} dargelegt.
+
+\begin{table}[H]\centering
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Einflussfaktor & Beispiele \\ \hline
+Physische Umweltfaktoren & \begin{tabular}[c]{@{}l@{}}Temperatur\\ Luftfeuchte\\ Lärm\end{tabular} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Kontextabhängige Faktoren & \begin{tabular}[c]{@{}l@{}}Dämmstärke der Gebäudehülle\\ Fassadenorientierung\\ Heizsystem\end{tabular} \\ \hline
+Psychologische Faktoren & \begin{tabular}[c]{@{}l@{}}Thermischer Komfort\\ Sicherheit\\ Ökologisches und\\ ökonomisches Bewusstsein\end{tabular} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Physiologische Faktoren & \begin{tabular}[c]{@{}l@{}}Alter\\ Geschlecht\\ Gesundheit\end{tabular} \\ \hline
+Soziale Faktoren & \begin{tabular}[c]{@{}l@{}}Interaktionen zwischen Bewohnern\\ Kollektive Präferenzen\end{tabular} \\ \hline
+\end{tabular}
+\label{tab: Tabelle3111}
+\caption{Kategorien der Einflussfaktoren zum Fensteröffnen/-schließen \cite{Fabi.2012}}
+\end{table}
+
+Aufgrund der zuvor genannten Faktoren entscheidet ein Bewohner, ob und wie ein Fenster geöffnet wird.
+Die Position der Fensteröffnung beeinflusst die effektive geöffnete Fensterfläche und somit den Volumenstrom der Luft, welcher durch das Fenster ein- beziehungsweise austritt.
+
+Weiter zählen neben dem Nutzereinfluss auch die Triebkräfte der Luftbewegung zu wichtigen Faktoren der Fensterlüftung.
+Zu diesen gehören zum einen die Temperaturdifferenz zwischen Innen- und Außen und zum anderen die Windgeschwindigkeit.
+Durch den Wind entsteht ein Druckgefälle zwischen Innerem des Gebäudes und Umgebung.
+Oftmals kommt es zu einer Überlagerung dieser beiden Kräfte.
+Außerdem existiert eine Wechselwirkung zwischen den Triebkräften und dem Nutzerverhalten.
+So besteht beispielsweise bei winterlichen Außentemperaturen eine große Temperaturdifferenz, wodurch der eintretende Volumenstrom größer wird.
+Gleichzeitig reagiert ein Nutzer mit kurzen Fensteröffnungszeiten aufgrund des thermischen Diskomforts. \cite{Maas.2017}
+
+Zur Bestimmung des Volumenstromes durch ein Fenster existieren verschiedene Ansätze in der Literatur.
+
+Auf Basis von experimentellen Untersuchungen unter realen meteorologischen Bedingungen ermittelt Maas eine Formel zur Berechnung des Luftvolumenstroms durch ein Fenster.
+Hierbei werden neben der Windgeschwindigkeit (u) und der Temperaturdifferenz zwischen Innen und Außen (\(\Delta \theta\)) auch die lichte Fensteröffnungsfläche (A\(_l\)) und das Durchflussverhältnis (\(\Theta\)) beachtet. 
+Letzteres ist abhängig von der Öffnungsweite des Fensters und bildet Turbulenzeffekte ab.
+Somit ergibt sich nach Maas der Volumenstrom zu
+\begin{equation}
+\label{eq:Gleichung3111}
+q_{V, Fenster} = 3600 \cdot \frac{1}{2} \cdot A_l \cdot \Theta \cdot \sqrt{(C_1 \cdot u^2 + C_2 \cdot H \cdot \Delta \theta + C_3)} \quad \text{.}
+\end{equation}
+Hierbei wird A\(_l\) halbiert, da sich bei einem geöffneten Fenster ein ein- und ausströmender Volumenstrom bildet, welche sich die Öffnungsfläche des Fensters teilen.
+Der Faktor 3600 wird zum Umrechnen des sekündlichen Volumenstroms in einen stündlichen genutzt.
+Die Koeffizienten C\(_1\), C\(_2\) und C\(_3\) werden experimentell bestimmt.
+Ihre nummerischen Ausprägungen sind Tabelle \ref{tab: Tabelle3112} zu entnehmen.
+
+\begin{table}[H] \centering
+\begin{tabular}{|l|l|r|l|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Größe & Bedeutung & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}Nummerischer Wert} & Einheit \\ \hline
+C\(_1\) & Geschwindigkeitskoeffizient & 0,0056 & --- \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+C\(_2\) & Temperaturkoeffizient & 0,0037 & \(\frac{m}{s^2 \cdot K}\) \\ \hline
+C\(_2\) & Turbulenzkoeffizient & 0,012 & \(\frac{m^2}{s^2}\) \\ \hline
+\end{tabular}
+\label{tab: Tabelle3112}
+\caption{Nummerische Werte der Fitkoeffizienten nach Maas \cite{Maas.1995}}
+\end{table}
+
+Einen weiteren Modellierungsansatz liefert Hall \cite{Hall.2004}.
+Hierbei werden die Einflüsse des Windes vernachlässigt und die Temperaturabhängigkeit des Luftwechsels betrachtet.
+Weiter werden sich auf Kippfenster bezogen und verschiedene Kippwinkel untersucht.
+Die effektive Fensteröffnungsfläche des Fensters (A\(_{eff}\)) ergibt sich in Abhängigkeit des Öffnungswinkels und der Laibung.
+Ein weiterer Parameter beschreibt die neutrale Höhe (h\(_n\)). 
+Diese ist als der Abstand von Fußpunkt des Fensters zu der Linie, in welcher von einströmender zu ausströmender Luft gewechselt wird, definiert.
+Das Verhältnis zwischen h\(_n\) und Fensterhöhe (H) wird mit Z bezeichnet.
+Außerdem berücksichtigt Hall Reibungsverluste mit dem Koeffizienten C\(_d\) und die Art der Strömung mit dem Strömungsexponenten (n). 
+Letzterer kann Werte zwischen 0,5 und 1 annehmen, wobei 0,5 eine turbulente und 1 eine laminare Strömung beschreibt.
+Mit der Erdbeschleunigung (g) ergibt sich der einströmende Luftvolumenstrom zu 
+
+\begin{equation}
+\label{eq:Gleichung3112}
+q_{V, Fenster} = C_d \cdot A_{eff} \cdot \Biggl( 2 \cdot g \cdot H \cdot Z \cdot \frac{\Delta\theta}{\theta_i}\Biggr)^n \quad \text{.}
 \end{equation}
 
+DIN EN 12831
 
 
-
-
-Hierbei wird zwischen Verlusten durch Fensterlüftung, durch Undichtigkeiten der Gebäudehülle und maschinellen Lüftungsverlusten unterschieden.
-%Hier schon Norm bringen
-
-\section{Arten der Lüftung}
-\label{sec:Sektion 32}
-
-\subsection{Natürliche Lüftung}
-\label{subsec:Sektion 321}
+\subsection{Infiltration}
+\label{subsec:Sektion 312}
 
 %Infiltration?
 
 \subsection{Maschinelle Lüftung}
-\label{subsec:sektion 322}
+\label{subsec:Sektion 313}

@@ -385,11 +385,13 @@ Den niedrigen Wert findet man im Altbau.
 Durch die schlechte energetische Qualität der Hülle weicht hier zwar viel Luft durch Fugen und kleine Öffnungen, wodurch der Infiltrationsluftvolumenstrom hoch ist, allerdings dominieren die Transmissionswärmeverluste aufgrund der schlechten Dämmeigenschaften der Hüllenbauteile.
 Analog hierzu liegt der relative Anteil der Lüftungs- an den Gesamtwärmeverlusten in solchen Gebäuden höher, welche durch gute Isolationseigenschaften der Bauteile geringe Transmissionswärmeverluste besitzen.
 In diesen Fällen steigt der Anteil der Lüftungswärmeverlusten an den Gesamtwärmeverlusten des Gebäudes auf 50 bis 70\,\% \cite{Milles.2011}.
-So beispielsweise in Neubauten oder Altbauten mit energetisch sanierter Gebäudehülle.
+So beispielsweise in Niedrigenergiehäusern oder Altbauen mit energetisch aufgerüsteter Gebäudehülle. \cite{BorschLaaks.2011}
+
+XXXX Grafik: Lüftung im Wohngebäude XXXX
 
 Den Lüftungswärmeverlusten stehen hygienische Aspekte und die Luftqualität gegenüber.
 Einerseits muss in einem Gebäude ein Luftaustausch geschehen um Luftfeuchtigkeit und Kohlenstoffdioxid aus den Räumen abzutransportieren.
-Andererseits steigen mit zunehmendem Luftaustausch die Wärmeverluste, wodurch ökologisch und ökonomisch Nachteilhaft mehr geheizt werden muss. 
+Andererseits steigen mit zunehmendem Luftaustausch die Wärmeverluste, wodurch ökologisch und ökonomisch nachteilig mehr geheizt werden muss. 
 
 Einen Ansatz zur Bestimmung der Lüftungswärmeverluste bietet die DIN EN 12831.
 Hier werden diese Verluste des Gebäudes (\(\Phi_{V,build}\)) in z Zonen aufgeteilt.
@@ -412,13 +414,13 @@ Wird das Gebäude als eine Zone modelliert, erhält man mit q\(_V\) als Produkt 
 \end{equation}
 Dies entspricht einer Energiebilanz um die Gebäudehülle, bei welcher der eintretende Volumenstrom dem austretenden entspricht.
 
-Zur Berechnung des eintretenden Luftvolumenstroms q\(_V\) wird dieser in Fensteröffnungsvolumenstrom (q\(_{V, Fenster}\)), Infiltrationsvolumenstrom (q\(_{V, Infiltration}\)) und maschineller Lüftungsvolumenstrom (q\(_{V, Maschinell}\)) aufgeteilt.
+Zur Berechnung des eintretenden Luftvolumenstroms q\(_V\) wird dieser in Fensteröffnungsvolumenstrom (q\(_{V, Fenster}\)), Infiltrationsvolumenstrom (q\(_{V, Inf}\)) und maschineller Lüftungsvolumenstrom (q\(_{V, Maschinell}\)) aufgeteilt.
 Somit ergibt sich q\(_V\) zu
 \begin{equation}
 \label{eq:Gleichung334}
-q_V = q_{V, Fenster} + q_{V, Infiltration} + q_{V, Maschinell}
+q_V = q_{V, Fenster} + q_{V, Inf} + q_{V, Maschinell}
 \end{equation}
-Im Folgenden werden die jeweiligen Komponenten mitsamt ihrer Berechnungsansätze vorgestellt.
+Im Folgenden werden die jeweiligen Komponenten mitsamt ihrer Berechnungsansätzen in der Literatur vorgestellt.
 
 \subsection{Fensterlüftung}
 \label{subsec:Sektion 331}
@@ -427,33 +429,44 @@ Durch das Öffnen eines Fensters kann ein Bewohner direkt Einfluss auf die Quali
 Somit stellt das Nutzerverhalten einen wichtigen Faktor bezüglich der Lüftungswärmeverluste durch die Fenster dar.
 Gründe für das Fensteröffnen sind in Fabi et al. \cite{Fabi.2012} wiedergegeben.
 Hier erfolgt eine Unterscheidung der ausschlaggebenden Faktoren in die Kategorien \glqq Physische Umweltfaktoren\grqq , \glqq Kontextabhängige Faktoren\grqq , \glqq Psychologische Faktoren\grqq , \glqq Physiologische Faktoren\grqq\, und \glqq Soziale Faktoren\grqq .
-Beispiele für die einzelnen Kategorien sind in Tabelle \ref{tab: Tabelle3311} dargelegt.
+Beispiele für die einzelnen Faktoren sind in Tabelle \ref{tab: Tabelle3311} dargelegt.
 
 \begin{table}[H]\centering
 \begin{tabular}{|l|l|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-Einflussfaktor & Beispiele \\ \hline
-Physische Umweltfaktoren & \begin{tabular}[c]{@{}l@{}}Temperatur\\ Luftfeuchte\\ Lärm\end{tabular} \\ \hline
+Einflussfaktoren & Beispiele \\ \hline
+ & Temperatur \\ \cline{2-2} 
+ & \cellcolor[HTML]{EFEFEF}Luftfeuchte \\ \cline{2-2} 
+\multirow{-3}{*}{Physische Umweltfaktoren} & Lärm \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Kontextabhängige Faktoren & \begin{tabular}[c]{@{}l@{}}Dämmstärke der Gebäudehülle\\ Fassadenorientierung\\ Heizsystem\end{tabular} \\ \hline
-Psychologische Faktoren & \begin{tabular}[c]{@{}l@{}}Thermischer Komfort\\ Sicherheit\\ Ökologisches und\\ ökonomisches Bewusstsein\end{tabular} \\ \hline
+\cellcolor[HTML]{EFEFEF} & Dämmstärke der Gebäudehülle \\ \cline{2-2} 
+\cellcolor[HTML]{EFEFEF} & Fassadenorientierung \\ \cline{2-2} 
 \rowcolor[HTML]{EFEFEF} 
-Physiologische Faktoren & \begin{tabular}[c]{@{}l@{}}Alter\\ Geschlecht\\ Gesundheit\end{tabular} \\ \hline
-Soziale Faktoren & \begin{tabular}[c]{@{}l@{}}Interaktionen zwischen Bewohnern\\ Kollektive Präferenzen\end{tabular} \\ \hline
+\multirow{-3}{*}{\cellcolor[HTML]{EFEFEF}Kontextabhängige Faktoren} & Heizsystem \\ \hline
+ & Thermischer Komfort \\ \cline{2-2} 
+ & \cellcolor[HTML]{EFEFEF}Sicherheit \\ \cline{2-2} 
+\multirow{-3}{*}{Psychologische Faktoren} & \begin{tabular}[c]{@{}l@{}}Ökologisches und\\ ökonomisches Bewusstsein\end{tabular} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\cellcolor[HTML]{EFEFEF} & Alter \\ \cline{2-2} 
+\cellcolor[HTML]{EFEFEF} & Geschlecht \\ \cline{2-2} 
+\rowcolor[HTML]{EFEFEF} 
+\multirow{-3}{*}{\cellcolor[HTML]{EFEFEF}Physiologische Faktoren} & Gesundheit \\ \hline
+ & Interaktionen zwischen Bewohnern \\ \cline{2-2} 
+\multirow{-2}{*}{Soziale Faktoren} & \cellcolor[HTML]{EFEFEF}Kollektive Präferenzen \\ \hline
 \end{tabular}
 \label{tab: Tabelle3311}
 \caption{Kategorien der Einflussfaktoren zum Fensteröffnen/-schließen \cite{Fabi.2012}}
 \end{table}
 
-Eine weitere Untersuchung des Nutzerverhaltens im Bezug auf das Öffnen und SChließen von Fenstern ist in Calì et al. \cite{Cali.2016b} beschrieben.
-Hier werden die Unterschiede zwischen berechnetem Energiebedarf und gemessenem Energieverbrauch mitunter dem Einfluss der Bewohner auf die Lüftungswärmeverluste zugerechnet.
-Die genannte Diskrepanz zwischen Verbrauch und Bedarf wird als Rebound-Effekt bezeichnet und in \cite{Haas.2000} näher erläutert.
+Eine weitere Untersuchung des Nutzerverhaltens im Bezug auf das Öffnen und Schließen von Fenstern ist in Calì et al. \cite{Cali.2016b} beschrieben.
+Der Unterschiede zwischen berechnetem Energiebedarf und gemessenem Energieverbrauch wird unter anderem dem Einfluss der Bewohner auf die Lüftungswärmeverluste zugeschrieben.
+Die genannte Diskrepanz zwischen Verbrauch und Bedarf wird als Rebound-Effekt bezeichnet und in \cite{Haas.2000} sowie in \cite{Cali.2016} näher erläutert.
 Zur Bewertung von Faktoren, welche das Fensteröffnen oder -schließen durch die Bewohner bestimmen, werden auf umfangreiche Daten eines Forschungsprojekts an drei Mehrfamilienhäusern in Karlsruhe-Rintheim zurückgegriffen.
-Eine detaillierte Beschreibung dieser Gebäude wird in \cite{Cali.Holistic} vorgestellt.
-Auf Basis der Monitoring Daten aus diesem Projekt bestimmen Calì et al. Triebkräfte, welche dazu führen den Fensterzustand zu ändern.
-In Tabelle XXXX sind diese Triebkräfte für das Schließen und Öffnen aufgeführt.
-Hierbei sind die Gründe nach Wichtigkeit geordnet und beginnen mit den am häufigsten anzutreffenden.
+Eine detaillierte Beschreibung dieser Gebäude und des Daten-Monitorings wird in \cite{Cali.Holistic} vorgestellt.
+Auf Basis der erhobenen Werte aus diesem Projekt bestimmen Calì et al. Triebkräfte, welche dazu führen den Fensterzustand zu ändern.
+In Tabelle \ref{tab: Tabelle3312} sind die Einflussfaktoren für das Schließen und Öffnen eines Fensters aufgeführt.
+Hierbei sind die Gründe nach Wichtigkeit geordnet und beginnen mit dem am häufigst anzutreffenden.
 
 \begin{table}[H]\centering
 \begin{tabular}{|l|r|}
@@ -472,21 +485,24 @@ Außentemperatur & Luftfeuchtigkeit Außen \\ \hline
 \caption{Triebkräfte zum Öffnen und Schließen eines Fensters \cite{Cali.2016b}}
 \end{table}
 
-Aufgrund der zuvor erläuterten Faktoren entscheidet ein Bewohner ein Fenster zu öffnen.
-Hier muss noch auf den Öffnungswinkel, die Fenstergeometrie und die Öffnungsdauer berück
-Die Position der Fensteröffnung beeinflusst die effektive geöffnete Fensterfläche und somit den Volumenstrom der Luft, welcher durch das Fenster ein- beziehungsweise austritt.
+Aufgrund der zuvor erläuterten Faktoren entscheidet ein Bewohner ein Fenster zu öffnen beziehungsweise zu schließen.
+Dadurch lässt sich eine Öffnungsdauer ableiten.
+Weiter wird der einströmende Volumenstrom durch den Öffnungswinkel und die Fenstergeometrie beeinflusst.
+Aus diesen beiden Faktoren wird die Fensterfläche berechnet, welche effektiv an dem Luftaustausch beteiligt ist.\cite{Hall.2004}
 
-Weiter zählen neben dem Nutzereinfluss auch die Triebkräfte der Luftbewegung zu wichtigen Faktoren der Fensterlüftung.
+Außerdem zählen neben dem Nutzereinfluss und der Fenstergemoetrie auch die Triebkräfte der Luftbewegung zu wichtigen Faktoren der Fensterlüftung.
 Zu diesen gehören zum einen die Temperaturdifferenz zwischen Innen- und Außen und zum anderen die Windgeschwindigkeit.
 Durch den Wind entsteht ein Druckgefälle zwischen Innerem des Gebäudes und Umgebung.
+Durch den Ausgleich dieses Gefälles kommt es zum Luftaustausch zwischen dem Gebäude und der Umgebung.
+Analog induziert die Temperaturdifferenz eine Luftbewegung zum Ausgleich des thermischen Gefälles. \cite{Maas.2017} \\
 Oftmals kommt es zu einer Überlagerung dieser beiden Kräfte.
-Außerdem existiert eine Wechselwirkung zwischen den Triebkräften und dem Nutzerverhalten.
+Zudem existiert eine Wechselwirkung zwischen den Triebkräften und dem Nutzerverhalten.
 So besteht beispielsweise bei winterlichen Außentemperaturen eine große Temperaturdifferenz, wodurch der eintretende Volumenstrom größer wird.
-Gleichzeitig reagiert ein Nutzer mit kurzen Fensteröffnungszeiten aufgrund des thermischen Diskomforts. \cite{Maas.2017}
+Gleichzeitig reagiert ein Nutzer mit kurzen Fensteröffnungszeiten aufgrund des thermischen Unbehaglichkeit. 
 
 Zur Bestimmung des Volumenstromes durch ein Fenster existieren verschiedene Ansätze in der Literatur.
 
-Auf Basis von experimentellen Untersuchungen unter realen meteorologischen Bedingungen ermittelt Maas eine Formel zur Berechnung des Luftvolumenstroms durch ein Fenster.
+Auf Basis von experimentellen Untersuchungen unter realen meteorologischen Bedingungen ermittelt Maas \cite{Maas.1995} eine Formel zur Berechnung des Luftvolumenstroms durch ein Fenster.
 Hierbei werden neben der Windgeschwindigkeit (u) und der Temperaturdifferenz zwischen Innen und Außen (\(\Delta \theta\)) auch die lichte Fensteröffnungsfläche (A\(_l\)) und das Durchflussverhältnis (\(\Theta\)) beachtet. 
 Letzteres ist abhängig von der Öffnungsweite des Fensters und bildet Turbulenzeffekte ab.
 Somit ergibt sich nach Maas der Volumenstrom zu
@@ -514,22 +530,51 @@ C\(_2\) & Turbulenzkoeffizient & 0,012 & \(\frac{m^2}{s^2}\) \\ \hline
 \end{table}
 
 Einen weiteren Ansatz zur Modellierung des Luftvolumenstroms durch ein Fenster liefert Hall \cite{Hall.2004}.
-Hierbei werden die Einflüsse des Windes vernachlässigt und die Temperaturabhängigkeit des Luftwechsels betrachtet.
+Hierbei werden die Einflüsse des Windes vernachlässigt und nur die Temperaturabhängigkeit des Luftwechsels betrachtet.
+Zwar bildet der durch Wind induzierte Luftvolumenstrom durch ein Fenster den größeren Anteil des Gesamtvolumenstroms ab, allerdings wird gezielt ein minimaler Volumenstrom ermittelt, der aus bauphysikalischer und hygienischer Sicht sichergestellt werden muss.
+Zudem wird laut Hall ein Fenster bei zunehmendem Wind schnell geschlossen und es kann weiterhin in der Realität zu Windstille kommen.\\
 Weiter werden sich auf Kippfenster bezogen und verschiedene Kippwinkel untersucht.
-Die effektive Fensteröffnungsfläche des Fensters (A\(_{eff}\)) ergibt sich in Abhängigkeit des Öffnungswinkels und der Laibung.
+Die effektive Fensteröffnungsfläche (A\(_{eff}\)) ergibt sich in Abhängigkeit des Öffnungswinkels und der Laibung als die Summe zweier Dreiecke und eines Rechtecks.
+Das Rechteck beschreibt hierbei die Fläche oberhalb des geöffneten Fensters und die Dreiecke die Seiten.\\
 Ein weiterer Parameter beschreibt die neutrale Höhe (h\(_n\)). 
 Diese ist als der Abstand von Fußpunkt des Fensters zu der Linie, in welcher von einströmender zu ausströmender Luft gewechselt wird, definiert.
-Das Verhältnis zwischen h\(_n\) und Fensterhöhe (H) wird mit Z bezeichnet.
+Das Verhältnis zwischen h\(_n\) und Fensterhöhe (H) wird mit Z bezeichnet.\\
 Außerdem berücksichtigt Hall Reibungsverluste mit dem Koeffizienten C\(_d\) und die Art der Strömung mit dem Strömungsexponenten (n). 
 Letzterer kann Werte zwischen 0,5 und 1 annehmen, wobei 0,5 eine turbulente und 1 eine laminare Strömung beschreibt.
-Mit der Erdbeschleunigung (g) ergibt sich der einströmende Luftvolumenstrom zu 
-
+Mit der Erdbeschleunigung (g) ergibt sich der einströmende Luftvolumenstrom zu
 \begin{equation}
 \label{eq:Gleichung3312}
 q_{V, Fenster} = C_d \cdot A_{eff} \cdot \Biggl( 2 \cdot g \cdot H \cdot Z \cdot \frac{\Delta\theta}{\theta_i}\Biggr)^n \quad \text{.}
 \end{equation}
+Der Parameter C\(_d\) wird durch Messungen bestimmt und nimmt dimensionslose Werte zwischen 0,39 und 0,65 an. 
 
-XXXX DIN EN 12831 XXXX
+Ein weiterer Berechnungsansatz zur Bestimmung des Luftvolumenstroms durch ein geöffnetes Fenster bietet die DIN EN 12831.
+Hierbei wird nach ein- oder zweiseitiger Lüftung und der Fassadenausrichtung des Fensters unterschieden.
+Bei zweiseitiger Lüftung wird von zwei sich gegenüber befindenden Fenstern ausgegangen.
+Unter Vernachlässigung der Fassadenausrichtung ergibt sich der Volumenstrom zu
+\begin{equation}
+\label{eq:Gleichung3313}
+q_{V,open} = \sqrt{q_{V,open,th}^2 + q_{V,open,w}^2}\quad\text{,}
+\end{equation}
+wobei mit Index \textit{th} der thermisch induzierte und mit Index \textit{w} der durch Wind verursachte Luftvolumenstrom berücksichtigt wird.
+Zur Berechnung des thermisch induzierten Anteils wird ein dimensionsloser Durchflusskoeffizient (C\(_D\)) zu 0,61 festgelegt.
+Somit ergibt sich q\(_{V,open,th}\) zu
+\begin{equation}
+\label{eq:Gleichung3314}
+q_{V,open,th} = \frac{1}{3} \cdot C_D \cdot A_{eff} \cdot \sqrt{\frac{g \cdot h_m \cdot \Delta \theta}{\theta_e}} \cdot 3600 \quad\text{.}
+\end{equation}
+Außer dem Faktor h\(_m\), welcher die mittlere Höhe der Fensteröffnung beschreibt, sind alle anderen Parameter bereits bekannt.
+In die Gleichung des durch Wind verursachten Volumenstroms wird die Windgeschwindigkeit in Fassadenhöhe (v\(_{fac}\)) benötigt.
+Mit der Windgeschwindigkeit in 10\,m Höhe (v\(_{meteo}\)), der mittleren Höhe (H\(_g\)) und dem Rauheitsparameter (z\(_0\)) lässt sich v\(_{fac}\) mit
+\begin{equation}
+\label{eq:Gleichung3315}
+v_{fac} = 1,36 \cdot v_{meteo} \cdot \frac{\ln{\biggl\langle\frac{H_g}{z_0}\biggr\rangle}}{\ln{\biggl\langle\frac{80}{z_0}\biggr\rangle}}
+\end{equation}
+berechnen und somit 
+\begin{equation}
+\label{eq:Gleichung3316}
+q_{V,open,w} = 0,05 \cdot A_{eff} \cdot v_{fac} \cdot 3600 \quad \text{.}
+\end{equation}
 
 
 \subsection{Infiltration}

@@ -9,7 +9,7 @@ Hierbei werden neben verschiedenen Möglichkeiten der Energiebereitstellung auch
 Dadurch ergibt sich eine hohe Anzahl an möglichen Kombinationsmöglichkeiten der Maßnahmen und Technologien.
 Um aus dieser Komplexität ein Optimum zu bestimmen, ist es sinnvoll, ein rechnergestütztes Optimierungsprogramm als Werkzeug zu nutzen.
 
-Eine Optimierung wird immer durch ein Ziel charakterisiert .
+Eine Optimierung wird immer durch ein Ziel charakterisiert.
 In einem mathematischen Sinne wird dieses als Zielfunktion beschrieben, welches es zu minimieren oder maximieren gilt.
 Durch Rahmenbedingungen, auch Nebenbedingungen oder Restriktionen genannt, wird die Menge der zulässigen Lösungen beschränkt.
 Dieser Lösungsraum wird durch Gleichungen oder Ungleichungen formuliert.
@@ -23,7 +23,7 @@ Zur Einteilung von Optimierungsprogrammen existieren verschiedene Möglichkeiten
 Bei der Betrachtung der zu Grunde liegenden Variablen erhält man eine Unterteilung.
 Hierbei werden die Programme in einer mathematischen Anschauung danach unterteilt, aus welchem Raum die Variablen entstammen.
 So wird zwischen diskreten und kontinuierlichen Variablen unterschieden. 
-Die diskreten entstammen aus \(\mathbb{Z}\) und umfassen unter anderem ganze Zahlen und Binärvariablen.
+Die diskreten entstammen dem Raum der ganzen Zahlen \(\mathbb{Z}\) und umfassen unter anderem Binärvariablen.
 Letztere sind die Menge aus [0; 1] und werden im Rahmen der Energiesystemoptimierung oft als Option der Kaufentscheidung Energiesystemen oder Schaltzustände der Anlagentechnik genutzt. 
 Dabei beschreibt 0 einen ausgeschalteten, beziehungsweise nicht gekauften Zustand und 1 den eingeschalteten/gekauften.
 Neben den diskreten Variablen werden auch kontinuierliche in Optimierungsprogrammen genutzt. 
@@ -40,7 +40,7 @@ Somit kann durch die Linearisierung von nicht-linearen Zusammenhängen Rechenzei
 Die gemischt-ganzzahlige lineare Optimierung wird aufgrund ihrer englischen Bezeichnung (\glqq Mixed Integer Linear Programing\grqq)\,mit MILP abgekürzt, die nicht-lineare analog mit MINLP. \cite{Samsatli.2018} 
 
 In der Literatur werden verschiedene Ansätze und Modelle für die Optimierung von Energiesystemen verfolgt.
-Diese werden durch die betrachtete Gebäude- oder Quartiersebene, der Zielfunktion, dem zu optimierenden Energiesystem und der Betrachtung von Auslegung oder Betrieb unterteilt
+Diese werden durch die betrachtete Gebäude- oder Quartiersebene, der Zielfunktion, den zu Grunde liegenden Energiesystemen und der Betrachtung von Auslegungs- oder Betriebsoptimierung des Systems charakterisiert
 
 Iturriaga et al. \cite{Iturriaga.2017} erarbeiten ein allgemeines Modell zur Auslegung von Energiesysteme auf Gebäudeebene. 
 Dieses soll alle derzeit verfügbaren Technologien der Wärme-, Kälte- und Elektrizitätsbereitstellung abbilden können.
@@ -49,7 +49,7 @@ Thermische und elektrische Energie kann zwischen den jeweiligen Energiebereitste
 Weiterhin berücksichtigt das Modell neben der Energieerzeugung auch Speicher und Interaktionen mit anderen Gebäuden durch Nah-, Fernwärme- sowie Stromnetze.
 Das Modell wird anhand eines Beispielgebäudes im nordspanischen Bilbao getestet.
 Hierbei werden 13 verschiedenen Technologien der Wärme- und Elektrizitätserzeugung in Betracht gezogen.
-Diese umfassen neben Organic-Rankine-, Gasturbinen- und Verbrennungsmotoren-Blockheizkraftwerke (BHKW) auch verschiedene solarthermische Anlagen (CPC, Vakuumröhrenkollektoren, Flachkollektoren), Biomasse-, Gas- und Brennwertkessel, Luft-Wasser-Wärmepumpen und diverse Photovoltaik-Anlagen (PV) (amorphe, mono- und polykristalline Solarmodule).
+Diese umfassen neben Organic-Rankine-, Gasturbinen- und Verbrennungsmotoren-Blockheizkraftwerke (BHKW) auch verschiedene solarthermische Anlagen (CPC, Vakuumröhrenkollektoren, Flachkollektoren), Biomasse-, Gas- und Brennwertkessel, Luft-Wasser-Wärmepumpen (WP) und diverse Photovoltaik-Anlagen (PV) (amorphe, mono- und polykristalline Solarmodule).
 Die stückweise Linearisierung des nicht-linearen Teillastverhaltens der Anlagen führt zu rein linearen Gleichungen und somit zu einem MILP Problem.
 Als Zielfunktion ist die Minimierung der annualisierten Kosten definiert. 
 Diese setzen sich aus Investitionen, jährlichen variablen Kosten, Energiebezugskosten sowie Gewinnen aus dem Verkauf an überschüssiger Wärme, Kälte oder Elektrizität zusammen.
@@ -58,11 +58,11 @@ Als Restriktionen der Optimierung sind technologische Nebenbedingungen der Anlag
 In \cite{Pinzon.23.04.201726.04.2017} wird ein Modell von Pinzon et al. zur Optimierung der jährlichen Elektrizitätskosten unter Berücksichtigung der Behaglichkeit der Bewohner vorgestellt.
 Die Berechnung dieser Kosten berücksichtigt den Strombedarf zu Heiz- oder Kühlzwecken, zur Beleuchtung sowie Ersparnisse aus PV.
 Weiter existiert die Option erzeugten Strom, Wärme oder Kälte in einem Energiespeicher (ES) zu lagern.
-Wie in Iturriaga et al. \cite{Iturriaga.2017} werden nicht-lineare Gleichungen durch stückweise Linearisierung in linear gewandelt.
+Wie in Iturriaga et al. \cite{Iturriaga.2017} werden nicht-lineare Gleichungen durch stückweise Linearisierung in lineare gewandelt.
 Dadurch handelt sich bei dem Programm von Pinzon et al. um ein betriebsoptimierendes MILP Problem.
 Als Zielfunktion ist die Minimierung des Strombedarfes und somit der Stromkosten beschrieben.
 Der Bedarf setzt sich aus dem Verbrauch der zuvor genannten Komponenten zusammen.
-Als Nebenbedingungen werden die Nutzung der PV-Anlagen und ES, des Klimageräts und der Beleuchtung sowie der Einhaltung des thermischen Komforts definiert.
+Als Nebenbedingungen werden die Nutzung der PV-Anlagen, des ES, des Klimageräts und der Beleuchtung sowie die Einhaltung des thermischen Komforts definiert.
 Bei letzterem werden auch die Wärmeträgheit des Luftvolumens im Raum, sowie der Wärmeverlust durch den Infiltrationsluftvolumenstrom, also durch Undichtheiten in der Gebäudehülle, berücksichtigt.
 
 In Risbeck et al. \cite{Risbeck.2017} wird der optimale Betrieb von Lüftungssystemen zum Kühlen und Wärmen in kommerziellen Gebäuden, also Nichtwohngebäuden, untersucht.
@@ -75,12 +75,12 @@ Als Nebenbedingungen der Optimierungsaufgabe werden neben der Temperierung versc
 Zhu et al. stellen in \cite{Zhu.2019} eine multikriterielle Energsystemoptimierung vor.
 Hierbei werden thermische und elektrische Speicher zur optimalen Kapazitätsauslegung untersucht und als übergeordnetes Modell definiert.
 Weiter wird hierfür der Betrieb der Energieerzeuger optimiert, was das untergeordnete Modell umschreibt.
-Zur Deckung des Wärme- und Elektrizitätsbedarfs werden eine Sole-Wärmepumpe, PV und Strombezug aus dem Netz modelliert.
+Zur Deckung des Wärme- und Elektrizitätsbedarfs werden eine Sole-WP, PV und Strombezug aus dem Netz modelliert.
 Die Energiespeicherung erfolgt durch einen sensibler Wasserspeicher und eine Batterie.
 Ein Teil der nicht-linearen Gleichungen werden linearisiert. 
-Da jedoch noch nicht-lineare Zusammenhänge in dem Programm existieren, handelt es sich bei dem Modell um ein MINLP, welches Energiesysteme auf Gebäudeebene optimiert.
+Da jedoch weiterhin nicht-lineare Zusammenhänge in dem Programm existieren, handelt es sich bei dem Modell um ein MINLP, welches Energiesysteme auf Gebäudeebene optimiert.
 Als Zielfunktion des übergeordneten Modells wird die Minimierung der jährlichen Gesamtkosten festgelegt.
-Als Ziel der untergeordneten Optimierung werden die jährlichen Betriebskosten der Energieerzeuger minimiert.
+und als das der untergeordneten Optimierung die jährlichen Betriebskosten der Energieerzeuger.
 
 Eine glechzeitige Betrachtung von Anlagentechnik und Gebäudehülle ist in Asadi et al. zu finden \cite{Asadi.2012}.
 Hierbei handelt es sich zum einen um ein MINLP und zum anderen um eine multikriterielle Optimierung, bei welcher dem Programm mehrere Zielfunktionen übergeben werden.
@@ -90,7 +90,7 @@ Weiter wird der Energiebedarf des Gebäudes vereinfacht als Summe des Wärme-, K
 Ziel des Programmes ist die Bestimmung des kosten- und emissionsoptimalen Energiesystems.
 
 In \cite{Wouters.2014} modellieren Wouters et al. Haushalte, die auf Quartiersebene thermische und elektrische Energie untereinander austauschen können.
-An Anlagentechnik stehen Brennwertkessel, BHKWs , thermische und elektrische Speicher, PV-Anlagen und kleine Windkraftanlagen (WKA) zur Verfügung.
+An Anlagentechnik stehen Brennwertkessel, BHKWs, ES, PV-Anlagen und kleine Windkraftanlagen (WKA) zur Verfügung.
 Als Zielfunktion ist die Minimierung der Annuität durch optimale Anlagenwahl, -auslegung und -betrieb definiert.
 Das Programm wird nur mit linearen Gleichungen modelliert, sodass es sich um ein MILP handelt.
 Weiter werden Einflüsse regulatorischer Maßnahmen untersucht und darauf aufbauend zwei Standorte mit ähnlichen klimatischen Bedingungen in Griechenland und Australien miteinander verglichen.
@@ -102,8 +102,8 @@ Das Modell von Harb et al. zeichnet aus, dass die Einspeisevergütung von PV-Str
 
 Eine simultane Betrachtung der Energieerzeuger und der Gebäudehülle liegt in Schütz et al. \cite{Schutz.2017} vor.
 Hier werden sowohl der Betrieb als auch die Auslegung des Gebäudeenergiesystems optimiert.
-Das Programm berücksichtigt neben Energieerzeugern und -speichern wie Kessel, BHKW, Elektroheizstäbe, Wärmepumpen, Solarthermie, PV und thermischen sowie elektrischen Speichern auch energetische Ertüchtigungen der Außenwand, der Fenster, des Daches und der Bodenplatte.
-Als Optimierungsziel kann zwischen Jahres-Kosten- und Emissionsminimierung gewählt werden.
+Das Programm berücksichtigt neben Energieerzeugern und -speichern wie Kessel, BHKW, Elektroheizstäbe (EHS), WP, Solarthermie, PV und ES auch energetische Ertüchtigungen der Außenwand, der Fenster, des Daches und der Bodenplatte.
+Als Optimierungsziel kann zwischen Jahres-Kosten- und Emissionsoptimierung gewählt werden.
 Weiter besteht die Möglichkeit einer Pareto-Optimierung, bei welcher die nicht gewählte Zielfunktion als Nebenbedingung das Modell beschränkt.
 
 In Tabelle \ref{tab: Tabelle311} sind die zuvor vorgestellten Programme der Energiesystemoptimierung mitsamt ihren charakteristischen Eigenschaften aufgeführt.
@@ -122,7 +122,7 @@ Zhu et al. & MINLP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung und\\ Betri
 Asadi et al. & MINLP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Sanierung von Wand, \\ Dach, Fenster/\\ Solarkollektoren\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kosten und\\ Emissionen\end{tabular} \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Wouters et al. & MILP & \begin{tabular}[c]{@{}l@{}}Quartier\\ Auslegung und \\ Betrieb\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kessel, BHKW, ES, \\ PV, WKA\end{tabular} & Jährliche Kosten \\ \hline
-Harb et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude/\\ Quartier\\Auslegung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mikro-BHKW, WP,\\ Elektroheizstäbe, PV, \\ thermische ES, Kessel, \\ Nahwärmenetz\end{tabular} & Jährliche Kosten \\ \hline
+Harb et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude/\\ Quartier\\Auslegung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mikro-BHKW, WP,\\ EHS, PV, \\ thermische ES, Kessel, \\ Nahwärmenetz\end{tabular} & Jährliche Kosten \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Schütz et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung und \\ Betrieb\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kessel, BHKW, \\ EHS, WP, Solarthermie, \\ PV, ES/\\ Sanierung von Wand, \\ Dach, Fenster, Boden\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kosten und/\\ oder Emissionen\end{tabular} \\ \hline
 \end{tabular}
@@ -184,12 +184,11 @@ Diese besitzen wiederum Gewichtungen, welche in Summe 365 Tage und somit ein Jah
 Neben den bereits erläuterten Klima- und Energiebedarfsprofilen wird als nächster Vorgang des Programmablaufes weitere Parameter eingelesen.
 So werden für die Bauteile der Gebäudehülle U-Werte für drei Sanierungsszenarien in das Modell mit aufgenommen.
 Bei diesen handelt es sich um den Standard-Zustand des parametrisierten Gebäudes im Bestand (\glqq standard \grqq), einer Aufrüstung auf den Standard nach EnEV 2014 (\glqq retrofit\grqq) und einer energetischen Nachrüstung nach heutigem Passivhaus-Standard (\glqq advanced retrofit \grqq) \cite{.2015}.
-Zudem werden Faktoren zur Dimensionierung der Fenster-, Dach-, Boden- und Außenwandfläche eingelesen.
-In Kapitel \ref{subsec:Sektion322} wird die Berechnung der Wärmeverluste anhand der U-Werte und der Bauteilflächen näher erläutert.\\
+Zudem werden Faktoren zur Dimensionierung der Fenster-, Dach-, Boden- und Außenwandfläche eingelesen.\\
 Schließlich werden auch ökonomische Faktoren zur Bestimmung des Preises einer Sanierungsmaßnahme in das Programm mit aufgenommen. 
 Hierbei werden die Investitionen der Gebäudehüllenbestandteile als lineare Funktion ausgedrückt.
 Außer bei den Fenstern berechnen sich diese Kosten anhand der zusätzlichen Dämmdicke im Zuge des Sanierungsszenario.
-Im Falle der Verglasung wird die lineare Funktion anstelle der Dämmdicke in Abhängigkeit der Verbesserung des U-Wertes aufgestellt.
+Im Falle der Verglasung wird die lineare Funktion anstelle der Dämmstärke in Abhängigkeit der Verbesserung des U-Wertes aufgestellt.
 Die Werte für den y-Achsenabschnitt und die Steigung der linearen Funktionen für die einzelnen Bauteile basieren auf Berechnungen des IWU \cite{Hinz.10.08.2015} und sind in Tabelle \ref{tab: TabelleA4} aufgeführt.
 Zusätzlich sind in dieser Tabelle Angaben zu der Nutzungsdauer der Komponenten zu finden, welche aus derselben Quelle entstammen.
 Diese werden für die Berechnung der annualisierten Kosten benötigt.\\
@@ -210,8 +209,8 @@ Daher werden die leistungsabhängigen Förderhöhen mit in das Modell aufgenomme
 Ferner gibt es für alle Programme Bedingungen, welche für eine Auszahlung erfüllt seien müssen und monetäre Grenzen, in denen sich die Fördersumme minimal und maximal bewegt.
 Einen Überblick über die Förderkonditionen und -grenzen werden in Tabelle XXXX dargelegt.\\
 Um die Förderungen im Rahmen des KfW-Effizienzhaus-Programms zu erhalten, wird die Sanierungsmaßnahme mit einem EnEV-Referenzgebäude verglichen.
-Das Referenzgebäude wird mit derselben Geometrie wie die des parametrisierten Gebäudes ausgeführt, besitzt allerdings eine Gebäudehülle nach EnEV-Vorgaben.
-Diese sind in Tabelle \ref{tab: Tabelle322} aufgeführt.
+Das Referenzgebäude wird mit derselben Geometrie wie die des parametrisierten Gebäudes ausgeführt, die Gebäudehülle besitzt allerdings eine energetische Qualität nach EnEV-Vorgaben.
+Die U-Werte der jeweiligen Bauteile nach EnEV sind in Tabelle \ref{tab: Tabelle322} aufgeführt.
 
 \begin{table}[H]\centering
 \begin{tabular}{|l|c|}
@@ -268,7 +267,7 @@ Außenwand & 50 & Dach & 50 \\ \hline
 \rowcolor[HTML]{EFEFEF}
 Fenster & 50 & Bodenplatte & 50\\ \hline
 \end{tabular}
-\caption{Anlagentechnik und deren Nutzungsdauer im Optimierungsmodell}
+\caption{Anlagentechnik und Maßnahmen der energetischen Ertüchtigung der Gebäudehülle sowie deren Nutzungsdauer im Optimierungsmodell}
 \label{tab: Tabelle321}
 \end{table}
 
@@ -286,7 +285,7 @@ In Tabelle \ref{tab: Tabelle321} sind die Werte für die Energiequellen Holz-Pel
 \begin{tabular}{|l|c|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-Energiequelle & \begin{tabular}[c]{@{}c@{}}CO\(_2\)-Emission\\ in {[}kg\(_{CO_2}\)/kWh{]}\end{tabular} \\ \hline
+Energiequelle & \begin{tabular}[c]{@{}c@{}}CO\(_2\)-Emission\\ in {[}\(\frac{kg_{CO_2}}{kWh}\){]}\end{tabular} \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Holz-Pellets & 0,025 \\ 
 \hline
@@ -346,7 +345,7 @@ Logischerweise können je Gebäudehüllenkomponente nicht mehr als eine Sanierun
 beschränkt wird.
 
 Schließlich wird die Heizlast auch durch die Lüftungswärmeverluste beeinflusst.
-Eine wichtige Kenngröße der Lüftungswärmeverluste stellt die Luftwechselrate n dar.
+Eine wichtige Kenngröße der Lüftungswärmeverluste stellt die Luftwechselrate (n) dar.
 Diese beschreibt, wie oft pro Stunde das Volumen einer Zone durch Frischluft ausgetauscht wird.
 Die Luftwechselrate ist definiert als
 \begin{equation}
@@ -356,7 +355,7 @@ n = \frac{\Dot{V}_{Luft}}{V_z} \cdot 3600\frac{s}{h} \quad,
 wobei \(\Dot{V}_{Luft}\) den eintretenden Luftvolumenstrom und V\(_Z\) das Volumen der Zone beschreibt.
 
 Die Lüftungswärmeverluste werden in dem Optimierungsprogramm durch das Heizperiodenverfahren in DIN V 4108-6 modelliert.
-Hierzu wird laut Norm von einer Luftwechselrate für ein nicht-luftdichtheitsgeprüftes Gebäude von n = 0,7\, ausgegangen. 
+Hierzu wird laut Norm von einer Luftwechselrate für ein nicht-luftdichtheitsgeprüftes Gebäude von n = 0,7\,h\(^{-1}\) ausgegangen. 
 Des Weiteren wird das Netto-Volumen (V) in der Norm als 0,76-fachen des Brutto-Volumens (V\(_e\)) bestimmt.
 Somit ergibt sich mit der Wärmekapazität der Luft (c\(_{p, Luft}\)) und der Luftdichte (\(\rho_{Luft}\)) die spezifische Lüftungswärmeverluste (H\(_V\)) zu
 \begin{equation}
@@ -371,7 +370,7 @@ Zuletzt wird durch Berücksichtigung des Korrekturfaktor aufgrund von Nachtabsch
 berechnet.
 
 Diese jährliche Energiemenge der Lüftungswärmeverluste wird gleichmäßig auf die 8760 betrachteten Zeitpunkte des Jahres aufgeteilt.
-Somit sind diese Verluste in dem Modell konstant und als statisch betrachtet werden.
+Somit sind diese Verluste in dem Modell konstant und werden als statisch betrachtet.
 
 \section{Lüftungswärmeverluste in Wohngebäuden}
 \label{sec:Sektion 33}
@@ -414,7 +413,7 @@ Wird das Gebäude als eine Zone modelliert, erhält man mit q\(_V\) als Produkt 
 \end{equation}
 Dies entspricht einer Energiebilanz um die Gebäudehülle, bei welcher der eintretende Volumenstrom dem austretenden entspricht.
 
-Zur Berechnung des eintretenden Luftvolumenstroms q\(_V\) wird dieser in Fensteröffnungsvolumenstrom (q\(_{V, Fenster}\)), Infiltrationsvolumenstrom (q\(_{V, Inf}\)) und maschineller Lüftungsvolumenstrom (q\(_{V, Maschinell}\)) aufgeteilt.
+Zur Berechnung des eintretenden Luftvolumenstroms q\(_V\) wird dieser in Fensterluftvolumenstrom (q\(_{V, Fenster}\)), Infiltrationsluftvolumenstrom (q\(_{V, Inf}\)) und maschineller Lüftungsvolumenstrom (q\(_{V, Maschinell}\)) aufgeteilt.
 Somit ergibt sich q\(_V\) zu
 \begin{equation}
 \label{eq:Gleichung334}
@@ -476,7 +475,7 @@ Triebkraft zum Fensteröffnen & Triebkraft zum Fensterschließen \\ \hline
 Tageszeit & Außentemperatur \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 CO\(_2\)-Konzentration im Raum & Tageszeit \\ \hline
-Raumtemperatur & CO\(_2\)-Konzentration \\ \hline
+Raumtemperatur & CO\(_2\)-Konzentration im Raum\\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Luftfeuchte im Raum & Raumtemperatur \\ \hline
 Außentemperatur & Luftfeuchtigkeit Außen \\ \hline
@@ -508,7 +507,7 @@ Letzteres ist abhängig von der Öffnungsweite des Fensters und bildet Turbulenz
 Somit ergibt sich nach Maas der Volumenstrom zu
 \begin{equation}
 \label{eq:Gleichung3311}
-q_{V, Fenster} = 3600 \cdot \frac{1}{2} \cdot A_l \cdot \Theta \cdot \sqrt{(C_1 \cdot u^2 + C_2 \cdot H \cdot \Delta \theta + C_3)} \quad \text{.}
+q_{V, Fenster} = 3600 \cdot \frac{A_l}{2} \cdot \Theta \cdot \sqrt{(C_1 \cdot u^2 + C_2 \cdot H \cdot \Delta \theta + C_3)} \quad \text{.}
 \end{equation}
 Hierbei wird A\(_l\) halbiert, da sich bei einem geöffneten Fenster der ein- und ausströmender Volumenstrom die Öffnungsfläche des Fensters teilen.
 Der Faktor 3600 wird zum Umrechnen des sekündlichen Volumenstroms in einen stündlichen genutzt.
@@ -558,11 +557,12 @@ q_{V,open} = \sqrt{q_{V,open,th}^2 + q_{V,open,w}^2}\quad\text{,}
 \end{equation}
 wobei mit Index \textit{th} der thermisch induzierte und mit Index \textit{w} der durch Wind verursachte Luftvolumenstrom berücksichtigt wird.
 Zur Berechnung des thermisch induzierten Anteils wird ein dimensionsloser Durchflusskoeffizient (C\(_D\)) zu 0,61 festgelegt.
-Mit diesem ergibt sich q\(_{V,open,th}\) zu
+Mit diesem lässt sich q\(_{V,open,th}\) durch
 \begin{equation}
 \label{eq:Gleichung3314}
 q_{V,open,th} = \frac{1}{3} \cdot C_D \cdot A_{eff} \cdot \sqrt{\frac{g \cdot h_m \cdot \Delta \theta}{\theta_e}} \cdot 3600 \quad\text{.}
 \end{equation}
+ausdrücken.
 Außer dem Faktor h\(_m\), welcher die mittlere Höhe der Fensteröffnung beschreibt, sind alle anderen Parameter bereits bekannt.
 Für die Gleichung des durch Wind verursachten Volumenstroms wird die Windgeschwindigkeit in Fassadenhöhe (v\(_{fac}\)) benötigt.
 Mit der Windgeschwindigkeit in 10\,m Höhe (v\(_{meteo}\)), der mittleren Höhe (H\(_g\)) und dem Rauheitsparameter (z\(_0\)) lässt sich v\(_{fac}\) mit
@@ -580,10 +580,8 @@ Werden Gleichung \ref{eq:Gleichung3316} und \ref{eq:Gleichung3314} in \ref{eq:Gl
 \label{eq:Gleichung3317}
 q_{V,open} = A_{eff} \cdot 3600 \cdot \sqrt{\frac{C_{D}^2 \cdot g \cdot h_m \cdot \Delta \theta}{9 \cdot \theta_e} + 0,05 \cdot v_{fac}} \quad \text{.}
 \end{equation}
-
 Die vorgestellten Berechnungsansätze von Maas, Hall und der DIN EN 12831 sind in Tabelle \ref{tab: Tabelle3313} zu finden.
-
-\begin{table}[H]\centering
+\begin{table}[h]\centering
 \begin{tabular}{|l|c|l|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
@@ -606,39 +604,24 @@ Neben den Wärmeverlusten können bei einem hohen Infiltrationsluftwechsel auch 
 Weiterhin kann es durch das Auskondensieren der Luftfeucht beim Übergang durch die Gebäudehülle zu bauphysikalischen Schäden kommen. \cite{Schild.2013}
 
 Wie bei der Fensterlüftung sind die Triebkräfte der Infiltration durch die Temperaturdifferenz zwischen Gebäudeinnerem und Umgebung sowie durch das von Wind verursachte Druckgefälle charakterisiert.
-Allerdings kann in diesem Fall keine absolute Öffnungsfläche benannt werden, welche an der Infiltration beteiligt ist.
+Allerdings kann in diesem Fall keine absolute Öffnungsfläche identifiziert werden, welche an der Infiltration beteiligt ist.
 Einzig bei großen Undichtheiten können die Fugen vermessen werden.
 Zur Bestimmung des Infiltrationsluftvolumen wird daher ein \textit{Blower-Door-Test} durchgeführt.
 Hierbei wird dem zu vermessenden Gebäude durch ein Ventilator Frischluft zugeführt, sodass sich ein Überdruck in dem Gebäude bildet.
+Alternativ wird auch die Richtung des Ventilators gewechselt, wodurch sich anstatt eines Überdrucks im Gebäude ein Unterdruck bildet
 Anhand des zugeführten Volumenstroms kann auf die durch Undichtheiten entweichende Luft Rückschlüsse gezogen werden. 
-Somit wird eine Luftwechselrate bei 50\,Pa Überdruck (n\(_{50}\)) bestimmt. \cite{Schild.2013} \\
+Somit wird eine Luftwechselrate bei 50\,Pa Über- oder Unterdruck (n\(_{50}\)) bestimmt. \cite{Schild.2013} \\
 Dieser Kennwert gibt Aufschluss über die Dichtheit des Gebäudes und wird durch die DIN 4108-7 von einem wärmeschutztechnischen Blickpunkt aus für Neubauten und energetisch sanierte Albauten reglementiert. 
 Hierbei wird zwischen Gebäuden mit und ohne istallierter raumlufttechnischer Anlage (RLT) unterschieden.
-Tabelle \ref{tab: Tabelle3121} gibt die maximalen Norm-Werte n\(_{50, max}\) wieder.
+Tabelle \ref{tab: TabelleA6} gibt die maximalen Norm-Werte n\(_{50, max}\) wieder.
 
 Dem Wärmeschutz stehen hygienische und bauphysikalische Anforderungen gegenüber.
 Nach DIN 1946-6 muss in einem energetisch sanierten Wohngebäude ein nutzerunabhängiger Luftwechsel zum Bautenschutz gewährleistet sein.
 Diese Norm trifft auf lüftungstechnisch relevante Ertüchtigungen zu.
 Als solche sind Maßnahmen an den Fenstern und dem Dach definiert.
-Die minimalen Norm-Werte n\(_{50, min}\) sind für verschiedene Gebäudeausführungen in Tabelle \ref{tab: Tabelle3121} aufgeführt.
+Die minimalen Norm-Werte n\(_{50, min}\) sind für verschiedene Gebäudeausführungen in Tabelle \ref{tab: TabelleA6} aufgeführt.
 
-\begin{table}[H]\centering
-\begin{tabular}{|l|c|l|c|}
-\hline
-\rowcolor[HTML]{C0C0C0} 
-\multicolumn{2}{|c|}{\cellcolor[HTML]{C0C0C0} Feuchteschutz nach DIN 1946-6} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0} Wärmeschutz nach DIN 4108-7} \\ \hline
-\rowcolor[HTML]{C0C0C0} 
-Gebäudeausführung & \begin{tabular}[c]{@{}c@{}}n\(_{50,min}\)\\ {[}h\(^{-1}\){]}\end{tabular} & Gebäudeausführung & \begin{tabular}[c]{@{}c@{}}n\(_{50,max}\)\\ {[}h\(^{-1}\){]}\end{tabular} \\ \hline
-\begin{tabular}[c]{@{}l@{}}Ventilatorgestütze Lüftung in\\ Ein- und Mehrfamilienhäusern\end{tabular} & 1,0 & ohne RLT & 3,0 \\ \hline
-\rowcolor[HTML]{EFEFEF} 
-\begin{tabular}[c]{@{}l@{}}Freie Lüftung in modernisierten\\ Mehrfamilienhäusern\end{tabular} & 1,5 & mit RLT & 1,5 \\ \hline
-\begin{tabular}[c]{@{}l@{}}Freie Lüftung in modernisierten\\ Einfamilienhäusern\end{tabular} & 2,0 &  & \multicolumn{1}{l|}{} \\ \hline
-\end{tabular}
-\caption{Mindest- und Maximalluftwechsel durch Infiltration nach DIN 1946-6 und \mbox{DIN 4108-7}}
-\label{tab: Tabelle3121}
-\end{table}
-
-Im Gegensatz zu der Lüftung durch Fenster kann aufgrund der schwierigen nummerischen Festlegung der Dichtheit eines Bestandsgebäudes keine analytische Lösung zur Bestimmung des Infiltrationsluftvolumenstroms herangezogen werden.
+Im Gegensatz zu der Lüftung durch Fenster kann aufgrund der schwierigen nummerischen Parametrierung der Dichtheit eines Bestandsgebäudes keine analytische Lösung zur Bestimmung des Infiltrationsluftvolumenstroms herangezogen werden.
 Ebenso sind in der Literatur keine analytischen Lösungsansätze zu finden. 
 Allerdings schlägt Maas \cite{Maas.2017} einen Richtwerte des durchschnittlich auftretenden Luftwechsels durch Infiltration (n\(_{Inf}\)) in Höhe von 0,07 bis 0,7 h\(^{-1}\) vor.\\
 Eine Abschätzung des Luftvolumenstroms durch Infiltration für Bestandsgebäude liefert DIN V 4108-6.
@@ -660,5 +643,15 @@ Druckdifferenz nach DIN V 4108-6}
 \label{tab: Tabelle3122}
 \end{table}
 
+Zur Umwandlung der unter Über- oder Unterdruck gemessenen n\(_{50}\) Luftwechselrate wird diese nach DIN 1946-6 mit einem Volumenstromkoeffizienten (e\(_Z\)) verrechnet.
+Dieser nimmt in Abhängigkeit der Geschossanzahl des Gebäudes und der Windstärke des Standortes werte zwischen 0,04 und 0,09 an.
+
 \subsection{Maschinelle Lüftung}
 \label{subsec:Sektion 313}
+
+Bei der maschinellen Lüftung wird eine RLT-Anlage genutzt
+
+\cite{Bohne.2019} Rückwarmegewinnugn 80 - 90 \%; erklärung zentrale/dezentrale RLT
+\cite{Asdrubali.2015} Wirkungsgrad in Abhängigkeit des geförderten Volumenstromes zw 96 - 88 \% (drei Tests)
+\cite{Milles.2011} Wärmerückgewinnugn 90\% Angaben zum elektrischen Verbauch der Ventilatoren in Abhängigkeit der rückgewonnenen Wärme
+\cite{Kamendere.2015} minimal 71 \%, maximal – 86 \%, average – 77 \% (Litauen --> Winter)

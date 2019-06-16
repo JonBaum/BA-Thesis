@@ -14,10 +14,10 @@ In einem mathematischen Sinne wird dieses als Zielfunktion beschrieben, welches 
 Durch Rahmenbedingungen, auch Nebenbedingungen oder Restriktionen genannt, wird die Menge der zulässigen Lösungen beschränkt.
 Dieser Lösungsraum wird durch Gleichungen oder Ungleichungen formuliert.
 Sowohl die Zielfunktion als auch die Nebenbedingungen werden durch Variablen abgebildet.
-Diese können anschaulich als Stellschrauben beschrieben werden.\\
-Zusammenfassend kann eine Optimierung als das Lösen einer Zielfunktion in einem von Restriktionen beschränkten Lösungsraum durch eine Kombination von Variablen umschrieben werden. \cite{Schellong.2016}
+Diese können anschaulich als Stellschrauben beschrieben werden.\cite{Schellong.2016}\\
+Zusammenfassend kann eine Optimierung als das Lösen einer Zielfunktion in einem von Restriktionen beschränkten Lösungsraum durch eine Kombination von Variablen umschrieben werden. 
 
-Im Folgenden stellt dieses Kapitel verschiedene Arten der Energiesystemoptimierung sowie diverse Optimierungsprogramme vor, um letztlich das im Rahmen dieser Arbeit verwendete Programm in \ref{sec:Sektion 32} zu beschreiben.
+Im Folgenden stellt dieses Kapitel verschiedene Arten der Energiesystemoptimierung sowie diverse Beispiele an Optimierungsprogramme aus der Literatur vor, um letztlich das im Rahmen dieser Arbeit verwendete Programm in \ref{sec:Sektion 32} zu beschreiben.
 
 Zur Einteilung von Optimierungsprogrammen existieren verschiedene Möglichkeiten.
 Bei der Betrachtung der zu Grunde liegenden Variablen erhält man eine Unterteilung.
@@ -112,22 +112,22 @@ In Tabelle \ref{tab: Tabelle311} sind die zuvor vorgestellten Programme der Ener
 \begin{tabular}{|l|l|l|l|l|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-Autor &\begin{tabular}[c]{@{}l@{}}Art der\\ Optimierung/ \\ Betrachtung \end{tabular} & Ebene & Energiesysteme & \begin{tabular}[c]{@{}l@{}}Zielfunktion\\ (Minimierung von...)\end{tabular} \\ \hline
-Iturriaga et al. & \begin{tabular}[c]{@{}l@{}}MILP\\ Auslegung\end{tabular} & Gebäude &  & Jährliche Kosten \\ \hline
+Autor & \begin{tabular}[c]{@{}l@{}}Art der\\ Optimierung \end{tabular} & \begin{tabular}[c]{@{}l@{}}Ebene/ \\ Betrachtung \end{tabular} & Energiesysteme & \begin{tabular}[c]{@{}l@{}}Zielfunktion\\ (Minimierung von...)\end{tabular} \\ \hline
+Iturriaga et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung\end{tabular} & XXXX & Jährliche Kosten \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Pinzon et al. & \begin{tabular}[c]{@{}l@{}}MILP\\ Betrieb\end{tabular} & Gebäude & PV, ES,Klimageräte & \begin{tabular}[c]{@{}l@{}}Jährliche Elektri-\\ zitätskosten\end{tabular} \\ \hline
-Risbeck et al. & \begin{tabular}[c]{@{}l@{}}MILP\\ Betrieb\end{tabular} & Gebäude & Lüftungssysteme & \begin{tabular}[c]{@{}l@{}}Jährliche Betriebs-\\ kosten\end{tabular} \\ \hline
+Pinzon et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Betrieb\end{tabular} & PV, ES,Klimageräte & \begin{tabular}[c]{@{}l@{}}Jährliche Elektri-\\ zitätskosten\end{tabular} \\ \hline
+Risbeck et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Betrieb\end{tabular} & Lüftungssysteme & \begin{tabular}[c]{@{}l@{}}Jährliche Betriebs-\\ kosten\end{tabular} \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Zhu et al. & \begin{tabular}[c]{@{}l@{}}MINLP\\ Auslegung und \\ Betrieb \end{tabular} & Gebäude & PV, WP, ES & \begin{tabular}[c]{@{}l@{}}Jährliche Betriebs-\\ kosten\end{tabular} \\ \hline
-Asadi et al. & \begin{tabular}[c]{@{}l@{}}MINLP\\ Auslegung\end{tabular} & Gebäude & \begin{tabular}[c]{@{}l@{}}Sanierung von Wand, \\ Dach, Fenster/\\ Solarkollektoren\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kosten und\\ Emissionen\end{tabular} \\ \hline
+Zhu et al. & MINLP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung und\\ Betrieb\end{tabular} & PV, WP, ES & \begin{tabular}[c]{@{}l@{}}Jährliche Betriebs-\\ kosten\end{tabular} \\ \hline
+Asadi et al. & MINLP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Sanierung von Wand, \\ Dach, Fenster/\\ Solarkollektoren\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kosten und\\ Emissionen\end{tabular} \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Wouters et al. & \begin{tabular}[c]{@{}l@{}}MILP\\ Auslegung und \\ Betrieb\end{tabular} & Quartier & \begin{tabular}[c]{@{}l@{}}Kessel, BHKW, ES, \\ PV, WKA\end{tabular} & Jährliche Kosten \\ \hline
-Harb et al. & \begin{tabular}[c]{@{}l@{}}MILP\\ Auslegung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Gebäude/\\ Quartier\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mikro-BHKW, WP,\\ Elektroheizstäbe, PV, \\ thermische ES, Kessel, \\ Nahwärmenetz\end{tabular} & Jährliche Kosten \\ \hline
+Wouters et al. & MILP & \begin{tabular}[c]{@{}l@{}}Quartier\\ Auslegung und \\ Betrieb\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kessel, BHKW, ES, \\ PV, WKA\end{tabular} & Jährliche Kosten \\ \hline
+Harb et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude/\\ Quartier\\Auslegung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mikro-BHKW, WP,\\ Elektroheizstäbe, PV, \\ thermische ES, Kessel, \\ Nahwärmenetz\end{tabular} & Jährliche Kosten \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Schütz et al. & \begin{tabular}[c]{@{}l@{}}MILP\\ Auslegung und \\ Betrieb\end{tabular} & Gebäude & \begin{tabular}[c]{@{}l@{}}Kessel, BHKW, \\ EHS, WP, Solarthermie, \\ PV, ES/\\ Sanierung von Wand, \\ Dach, Fenster, Boden,\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kosten und/\\ oder Emissionen\end{tabular} \\ \hline
+Schütz et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung und \\ Betrieb\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kessel, BHKW, \\ EHS, WP, Solarthermie, \\ PV, ES/\\ Sanierung von Wand, \\ Dach, Fenster, Boden\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kosten und/\\ oder Emissionen\end{tabular} \\ \hline
 \end{tabular}
-\label{tab: Tabelle311}
 \caption{Übersicht diverser Ansätze der Energiesystemoptimierung in der Literatur}
+\label{tab: Tabelle311}
 \end{table}
 
 
@@ -303,7 +303,7 @@ Strom & 0,566 \\
 Die Kombinationsmöglichkeiten zur Erfüllung der Zielfunktionen wird durch den Lösungsraum, welcher durch Restriktionen definiert wird, beschränkt.
 So wird beispielsweise die Anzahl der PV-Module durch die zur Verfügung stehende Dachfläche limitiert.
 Eine zentrale Nebenbedingung stellt die Berechnung der Heizlast dar.
-Diese beschreibt die Wärmemenge, welche durch die Anlagentechnik bereitgestellt werden muss, um das Gebäude auf die Norm-Innentemperatur in Höhe von 20\,°C zu heizen.
+Diese beschreibt die Wärmemenge, welche durch die Anlagentechnik bereitgestellt werden muss, um das Gebäude auf die Innentemperatur in Höhe von 20\,°C zu heizen.
 Als Berechnungsgrundlage dient die DIN EN 12831.
 Diese definiert die Norm-Heizlast \(\Phi_{HL, build}\) als Summe der Transmissionswärmeverlusten \(\Phi_T\), Lüftungswärmeverlusten \(\Phi_{V, build}\), der Aufheizleistung \(\Phi_{hu}\) und abzüglich der internen Gewinne \(\Phi_{gain}\).
 \begin{equation}
@@ -315,7 +315,7 @@ Diese werden durch eingelesene Profile bestimmt und sind somit für das parametr
 Da das Modell keine Gebäudemasse abbildet, kann die Aufheizleistung nicht berechnet werden.
 Laut Norm ist \(\Phi_{hu}\) optional und wird somit vernachlässigt.
 
-Die Transmissionswärmeverluste \(\Phi_T\) beschreiben Wärmeverluste aufgrund des Wärmeüberganges an der Gebäudehülle und lassen sich als Produkt der Temperaturdifferenz zwischen der Norm-Innen- (\(\theta_{int, i}\)) und Außentemperatur (\(\theta_e\)) mit dem Transmissionswärmetransferkoeffizienten (H\(_t\)) bestimmen und sind in Gleichung \ref{eq:Gleichung324} wiedergegeben.
+Die Transmissionswärmeverluste \(\Phi_T\) beschreiben Wärmeverluste aufgrund des Wärmeüberganges an der Gebäudehülle und lassen sich als Produkt der Temperaturdifferenz zwischen der Innen- (\(\theta_{int, i}\)) und Außentemperatur (\(\theta_e\)) mit dem Transmissionswärmetransferkoeffizienten (H\(_t\)) bestimmen und sind in Gleichung \ref{eq:Gleichung324} wiedergegeben.
 Zur Berechnung von H\(_t\) werden die Bauteilfläche (A\(_k\)), der U-Wert (U\(_k\)) und der Temperaturkorrekturfaktor (f\(_{U,k}\)) für jedes Bauteil k multipliziert und die Summe der Produkte gebildet.
 Außerdem werden Wärmebrücken mit dem zusätzlichen Wärmedurchgangskoeffizient (\(\Delta\) U\(_{TB}\)) berücksichtigt.
 Die Formel zur Berechnung von H\(_t\) ist in \ref{eq:Gleichung325} zu finden.
@@ -328,7 +328,7 @@ Die Formel zur Berechnung von H\(_t\) ist in \ref{eq:Gleichung325} zu finden.
 H_t = \sum_{k} A_k \cdot (U_k + \Delta U_{TB}) \cdot f_{U,k} \qquad \text{mit k }\in \{\text{Außenwand, Boden, Fenster, Dach}\}
 \end{equation}
 Hierbei wird \(\Delta U_{TB}\) laut Norm vereinfacht mit 0,05 \(\frac{W}{m^2\cdot K}\) angenommen.
-Der Temperaturkorrekturfaktor berücksichtigt einen Unterschied zwischen Norm-Innentemperatur und Außentemperatur.
+Der Temperaturkorrekturfaktor berücksichtigt einen Unterschied zwischen Innentemperatur und Außentemperatur.
 Da in dem Programm keine Unterscheidung der Raumnutzung erfolgt, gibt es nur im Falle des Bodens aufgrund des Kontakts mit dem Erdreich einen solchen Unterschied.
 Daher wird \(f_{U, Boden}\) nach Norm mit 0,6 bestimmt.
 Die verschiedenen Kombinationsmöglichkeiten der Sanierungsszenarien werden durch Multiplikation mit einer binären Entscheidungsvariablen (\(x_{k, i}\)) in das Programm mit aufgenommen, wobei k \(\in\) \{Außenwand, Boden, Dach Fenster\} und i \(\in\) \{standard, retrofit, advanced retrofit\}.
@@ -356,7 +356,7 @@ n = \frac{\Dot{V}_{Luft}}{V_z} \cdot 3600\frac{s}{h} \quad,
 wobei \(\Dot{V}_{Luft}\) den eintretenden Luftvolumenstrom und V\(_Z\) das Volumen der Zone beschreibt.
 
 Die Lüftungswärmeverluste werden in dem Optimierungsprogramm durch das Heizperiodenverfahren in DIN V 4108-6 modelliert.
-Hierzu wird laut Norm von einer Luftwechselrate für ein nicht-luftdichtheitsgeprüftes Gebäude von n = 0,7\,h\(^{-1}\) ausgegangen. 
+Hierzu wird laut Norm von einer Luftwechselrate für ein nicht-luftdichtheitsgeprüftes Gebäude von n = 0,7\, ausgegangen. 
 Des Weiteren wird das Netto-Volumen (V) in der Norm als 0,76-fachen des Brutto-Volumens (V\(_e\)) bestimmt.
 Somit ergibt sich mit der Wärmekapazität der Luft (c\(_{p, Luft}\)) und der Luftdichte (\(\rho_{Luft}\)) die spezifische Lüftungswärmeverluste (H\(_V\)) zu
 \begin{equation}
@@ -377,13 +377,13 @@ Somit sind diese Verluste in dem Modell konstant und als statisch betrachtet wer
 \label{sec:Sektion 33}
 
 Lüftungswärmeverluste entstehen durch den Austausch von warmer Raumluft mit kälterer Außenluft.
-Man unterscheidet hierbei zwischen natürlicher Lüftung, welche durch Temperatur- und Windeinwirkung hervorgerufen wird und maschineller Lüftung\cite{Maas.2017}.
+Man unterscheidet hierbei zwischen maschineller und natürlicher Lüftung, welche durch Temperatur- und Windeinwirkung hervorgerufen wird \cite{Maas.2017}.
 Bei der natürlichen kann weiterhin zwischen Infiltration und Fensterlüftung unterschieden werden.
-Somit sind die Verluste auch vom Nutzerverhalten bezüglich des Fensteröffnens, der Dichtheit der Gebäudehülle und dem Lüftungskonzept abhängig.
+Somit sind die Verluste vom Nutzerverhalten, der Dichtheit der Gebäudehülle und dem Lüftungskonzept abhängig.
 Je nach Ausprägung dieser Faktoren stellen die Lüftungswärmeverluste zwischen 20 bis 70\,\% der Gesamtwärmeverluste eines Gebäudes. 
 Den niedrigen Wert findet man im Altbau. 
 Durch die schlechte energetische Qualität der Hülle weicht hier zwar viel Luft durch Fugen und kleine Öffnungen, wodurch der Infiltrationsluftvolumenstrom hoch ist, allerdings dominieren die Transmissionswärmeverluste aufgrund der schlechten Dämmeigenschaften der Hüllenbauteile.
-Analog hierzu liegt der relative Anteil der Lüftungs- an den Gesamtwärmeverlusten in solchen Gebäuden höher, welche durch gute Isolationseigenschaften der Bauteile geringe Transmissionswärmeverluste besitzen.
+Analog hierzu liegt der relative Anteil der Lüftungs- an den Gesamtwärmeverlusten in solchen Gebäuden höher, welche durch gute Isolationseigenschaften der Gebäudehülle geringe Transmissionswärmeverluste besitzen.
 In diesen Fällen steigt der Anteil der Lüftungswärmeverlusten an den Gesamtwärmeverlusten des Gebäudes auf 50 bis 70\,\% \cite{Milles.2011}.
 So beispielsweise in Niedrigenergiehäusern oder Altbauen mit energetisch aufgerüsteter Gebäudehülle. \cite{BorschLaaks.2011}
 
@@ -405,7 +405,7 @@ Die Zonen umfassen jeweils beheizte Räume (i), womit sich die Lüftungswärmeve
 \Phi_{V,z} = \rho \cdot c_p \cdot \sum_{i} \Bigl\langle f_{i-z} \cdot q_{v,min,i} \cdot (\theta_{int,i} - \theta_e) \Bigr\rangle
 \end{equation}
 berechnen lassen.
-Hier fließen neben der Luftdichte (\(\rho\)), der spezifischen Wärmekapazität der Luft (c\(_p\)) und der Temperaturdifferenz zwischen Norm-Innnen- (\(\theta_{int,i}\)) und Außentemperatur (\(\theta_{e}\)) auch der Mindest-Luftvolumenstrom des Raums i (q\(_{v,min,i}\)) und das Verhältnis zwischen dem Mindestwert des Luftvolumenstroms und des sich ergebenden Luftvolumenstroms (f\(_i-z\)) ein.
+Hier fließen neben der Luftdichte (\(\rho\)), der spezifischen Wärmekapazität der Luft (c\(_p\)) und der Temperaturdifferenz zwischen Innnen- (\(\theta_{int,i}\)) und Außentemperatur (\(\theta_{e}\)) auch der Mindest-Luftvolumenstrom des Raums i (q\(_{v,min,i}\)) und das Verhältnis zwischen dem Mindestwert des Luftvolumenstroms und des sich ergebenden Luftvolumenstroms (f\(_i-z\)) ein.
 Das Produkt aus q\(_{v,min,i}\) und f\(_i-z\) ergibt somit den eintretenden Luftvolumenstrom.
 Wird das Gebäude als eine Zone modelliert, erhält man mit q\(_V\) als Produkt von q\(_{v,min,i}\) und f\(_i-z\) 
 \begin{equation}
@@ -455,12 +455,12 @@ Einflussfaktoren & Beispiele \\ \hline
  & Interaktionen zwischen Bewohnern \\ \cline{2-2} 
 \multirow{-2}{*}{Soziale Faktoren} & \cellcolor[HTML]{EFEFEF}Kollektive Präferenzen \\ \hline
 \end{tabular}
-\label{tab: Tabelle3311}
 \caption{Kategorien der Einflussfaktoren zum Fensteröffnen/-schließen \cite{Fabi.2012}}
+\label{tab: Tabelle3311}
 \end{table}
 
 Eine weitere Untersuchung des Nutzerverhaltens im Bezug auf das Öffnen und Schließen von Fenstern ist in Calì et al. \cite{Cali.2016b} beschrieben.
-Der Unterschiede zwischen berechnetem Energiebedarf und gemessenem Energieverbrauch wird unter anderem dem Einfluss der Bewohner auf die Lüftungswärmeverluste zugeschrieben.
+Der Unterschied zwischen berechnetem Energiebedarf und gemessenem Energieverbrauch wird unter anderem dem Einfluss der Bewohner auf die Lüftungswärmeverluste zugeschrieben.
 Die genannte Diskrepanz zwischen Verbrauch und Bedarf wird als Rebound-Effekt bezeichnet und in \cite{Haas.2000} sowie in \cite{Cali.2016} näher erläutert.
 Zur Bewertung von Faktoren, welche das Fensteröffnen oder -schließen durch die Bewohner bestimmen, werden auf umfangreiche Daten eines Forschungsprojekts an drei Mehrfamilienhäusern in Karlsruhe-Rintheim zurückgegriffen.
 Eine detaillierte Beschreibung dieser Gebäude und des Daten-Monitorings wird in \cite{Cali.Holistic} vorgestellt.
@@ -481,8 +481,8 @@ Raumtemperatur & CO\(_2\)-Konzentration \\ \hline
 Luftfeuchte im Raum & Raumtemperatur \\ \hline
 Außentemperatur & Luftfeuchtigkeit Außen \\ \hline
 \end{tabular}
-\label{tab: Tabelle3312}
 \caption{Triebkräfte zum Öffnen und Schließen eines Fensters \cite{Cali.2016b}}
+\label{tab: Tabelle3312}
 \end{table}
 
 Aufgrund der zuvor erläuterten Faktoren entscheidet ein Bewohner ein Fenster zu öffnen beziehungsweise zu schließen.
@@ -491,14 +491,14 @@ Weiter wird der einströmende Volumenstrom durch den Öffnungswinkel und die Fen
 Aus diesen beiden Faktoren wird die Fensterfläche berechnet, welche effektiv an dem Luftaustausch beteiligt ist.\cite{Hall.2004}
 
 Außerdem zählen neben dem Nutzereinfluss und der Fenstergemoetrie auch die Triebkräfte der Luftbewegung zu wichtigen Faktoren der Fensterlüftung.
-Zu diesen gehören zum einen die Temperaturdifferenz zwischen Innen- und Außen und zum anderen die Windgeschwindigkeit.
+Zu diesen gehören zum einen die Temperaturdifferenz zwischen Innen- und Außen und zum anderen die Windgeschwindigkeit \cite{Schild.2013b}.
 Durch den Wind entsteht ein Druckgefälle zwischen Innerem des Gebäudes und Umgebung.
-Durch den Ausgleich dieses Gefälles kommt es zum Luftaustausch zwischen dem Gebäude und der Umgebung.
-Analog induziert die Temperaturdifferenz eine Luftbewegung zum Ausgleich des thermischen Gefälles. \cite{Maas.2017} \\
+Aufgrund des Ausgleichs dieses Gefälles kommt es zum Luftaustausch zwischen dem Gebäude und der Umgebung.
+Analog induziert die Temperaturdifferenz eine Luftbewegung zum Ausgleich des thermischen Unterschiedes. \cite{Maas.2017} \\
 Oftmals kommt es zu einer Überlagerung dieser beiden Kräfte.
 Zudem existiert eine Wechselwirkung zwischen den Triebkräften und dem Nutzerverhalten.
 So besteht beispielsweise bei winterlichen Außentemperaturen eine große Temperaturdifferenz, wodurch der eintretende Volumenstrom größer wird.
-Gleichzeitig reagiert ein Nutzer mit kurzen Fensteröffnungszeiten aufgrund des thermischen Unbehaglichkeit. 
+Gleichzeitig reagiert ein Nutzer mit kurzen Fensteröffnungszeiten aufgrund der thermischen Unbehaglichkeit. 
 
 Zur Bestimmung des Volumenstromes durch ein Fenster existieren verschiedene Ansätze in der Literatur.
 
@@ -510,7 +510,7 @@ Somit ergibt sich nach Maas der Volumenstrom zu
 \label{eq:Gleichung3311}
 q_{V, Fenster} = 3600 \cdot \frac{1}{2} \cdot A_l \cdot \Theta \cdot \sqrt{(C_1 \cdot u^2 + C_2 \cdot H \cdot \Delta \theta + C_3)} \quad \text{.}
 \end{equation}
-Hierbei wird A\(_l\) halbiert, da sich bei einem geöffneten Fenster ein ein- und ausströmender Volumenstrom bildet, welche sich die Öffnungsfläche des Fensters teilen.
+Hierbei wird A\(_l\) halbiert, da sich bei einem geöffneten Fenster der ein- und ausströmender Volumenstrom die Öffnungsfläche des Fensters teilen.
 Der Faktor 3600 wird zum Umrechnen des sekündlichen Volumenstroms in einen stündlichen genutzt.
 Die Koeffizienten C\(_1\), C\(_2\) und C\(_3\) werden experimentell bestimmt.
 Ihre nummerischen Ausprägungen sind Tabelle \ref{tab: Tabelle3312} zu entnehmen.
@@ -525,19 +525,19 @@ C\(_1\) & Geschwindigkeitskoeffizient & 0,0056 & --- \\ \hline
 C\(_2\) & Temperaturkoeffizient & 0,0037 & \(\frac{m}{s^2 \cdot K}\) \\ \hline
 C\(_2\) & Turbulenzkoeffizient & 0,012 & \(\frac{m^2}{s^2}\) \\ \hline
 \end{tabular}
-\label{tab: Tabelle3312}
 \caption{Nummerische Werte der Fitkoeffizienten nach Maas \cite{Maas.1995}}
+\label{tab: Tabelle3312}
 \end{table}
 
 Einen weiteren Ansatz zur Modellierung des Luftvolumenstroms durch ein Fenster liefert Hall \cite{Hall.2004}.
 Hierbei werden die Einflüsse des Windes vernachlässigt und nur die Temperaturabhängigkeit des Luftwechsels betrachtet.
-Zwar bildet der durch Wind induzierte Luftvolumenstrom durch ein Fenster den größeren Anteil des Gesamtvolumenstroms ab, allerdings wird gezielt ein minimaler Volumenstrom ermittelt, der aus bauphysikalischer und hygienischer Sicht sichergestellt werden muss.
-Zudem wird laut Hall ein Fenster bei zunehmendem Wind schnell geschlossen und es kann weiterhin in der Realität zu Windstille kommen.\\
+Zwar bildet der durch Wind induzierte Luftvolumenstrom durch ein Fenster den größeren Anteil des Gesamtvolumenstroms ab, allerdings wird gezielt ein minimaler Volumenstrom ermittelt, der aus bauphysikalischer und hygienischer Sicht sichergestellt werden muss, um Schäden der Bausubstanz zu vermeiden.
+Zudem wird laut Hall ein Fenster bei zunehmendem Wind schnell geschlossen und es kann weiterhin in der Realität zu Windstille kommen, sodass das Modell keinen unwahrscheinlichen Fall abbildet.\\
 Weiter werden sich auf Kippfenster bezogen und verschiedene Kippwinkel untersucht.
 Die effektive Fensteröffnungsfläche (A\(_{eff}\)) ergibt sich in Abhängigkeit des Öffnungswinkels und der Laibung als die Summe zweier Dreiecke und eines Rechtecks.
 Das Rechteck beschreibt hierbei die Fläche oberhalb des geöffneten Fensters und die Dreiecke die Seiten.\\
 Ein weiterer Parameter beschreibt die neutrale Höhe (h\(_n\)). 
-Diese ist als der Abstand von Fußpunkt des Fensters zu der Linie, in welcher von einströmender zu ausströmender Luft gewechselt wird, definiert.
+Diese ist als der Abstand vom Fußpunkt des Fensters zu der Linie, in welcher von einströmender zu ausströmender Luft gewechselt wird, definiert.
 Das Verhältnis zwischen h\(_n\) und Fensterhöhe (H) wird mit Z bezeichnet.\\
 Außerdem berücksichtigt Hall Reibungsverluste mit dem Koeffizienten C\(_d\) und die Art der Strömung mit dem Strömungsexponenten (n). 
 Letzterer kann Werte zwischen 0,5 und 1 annehmen, wobei 0,5 eine turbulente und 1 eine laminare Strömung beschreibt.
@@ -546,25 +546,25 @@ Mit der Erdbeschleunigung (g) ergibt sich der einströmende Luftvolumenstrom zu
 \label{eq:Gleichung3312}
 q_{V, Fenster} = C_d \cdot A_{eff} \cdot \Biggl( 2 \cdot g \cdot H \cdot Z \cdot \frac{\Delta\theta}{\theta_i}\Biggr)^n \quad \text{.}
 \end{equation}
-Der Parameter C\(_d\) wird durch Messungen bestimmt und nimmt dimensionslose Werte zwischen 0,39 und 0,65 an. 
+Der dimensionslose Parameter C\(_d\) wird durch Messungen bestimmt und nimmt Werte zwischen 0,39 und 0,65 an. 
 
 Ein weiterer Berechnungsansatz zur Bestimmung des Luftvolumenstroms durch ein geöffnetes Fenster bietet die DIN EN 12831.
 Hierbei wird nach ein- oder zweiseitiger Lüftung und der Fassadenausrichtung des Fensters unterschieden.
 Bei zweiseitiger Lüftung wird von zwei sich gegenüber befindenden Fenstern ausgegangen.
-Unter Vernachlässigung der Fassadenausrichtung ergibt sich der Volumenstrom zu
+Unter Vernachlässigung der Fassadenausrichtung ergibt sich der Volumenstrom bei einseitiger Lüftung zu
 \begin{equation}
 \label{eq:Gleichung3313}
 q_{V,open} = \sqrt{q_{V,open,th}^2 + q_{V,open,w}^2}\quad\text{,}
 \end{equation}
 wobei mit Index \textit{th} der thermisch induzierte und mit Index \textit{w} der durch Wind verursachte Luftvolumenstrom berücksichtigt wird.
 Zur Berechnung des thermisch induzierten Anteils wird ein dimensionsloser Durchflusskoeffizient (C\(_D\)) zu 0,61 festgelegt.
-Somit ergibt sich q\(_{V,open,th}\) zu
+Mit diesem ergibt sich q\(_{V,open,th}\) zu
 \begin{equation}
 \label{eq:Gleichung3314}
 q_{V,open,th} = \frac{1}{3} \cdot C_D \cdot A_{eff} \cdot \sqrt{\frac{g \cdot h_m \cdot \Delta \theta}{\theta_e}} \cdot 3600 \quad\text{.}
 \end{equation}
 Außer dem Faktor h\(_m\), welcher die mittlere Höhe der Fensteröffnung beschreibt, sind alle anderen Parameter bereits bekannt.
-In die Gleichung des durch Wind verursachten Volumenstroms wird die Windgeschwindigkeit in Fassadenhöhe (v\(_{fac}\)) benötigt.
+Für die Gleichung des durch Wind verursachten Volumenstroms wird die Windgeschwindigkeit in Fassadenhöhe (v\(_{fac}\)) benötigt.
 Mit der Windgeschwindigkeit in 10\,m Höhe (v\(_{meteo}\)), der mittleren Höhe (H\(_g\)) und dem Rauheitsparameter (z\(_0\)) lässt sich v\(_{fac}\) mit
 \begin{equation}
 \label{eq:Gleichung3315}
@@ -575,12 +575,90 @@ berechnen und somit
 \label{eq:Gleichung3316}
 q_{V,open,w} = 0,05 \cdot A_{eff} \cdot v_{fac} \cdot 3600 \quad \text{.}
 \end{equation}
+Werden Gleichung \ref{eq:Gleichung3316} und \ref{eq:Gleichung3314} in \ref{eq:Gleichung3313} zusammengefasst, wird der einströmende Luftvolumenstrom nach DIN EN 12831 ausgedrückt als
+\begin{equation}
+\label{eq:Gleichung3317}
+q_{V,open} = A_{eff} \cdot 3600 \cdot \sqrt{\frac{C_{D}^2 \cdot g \cdot h_m \cdot \Delta \theta}{9 \cdot \theta_e} + 0,05 \cdot v_{fac}} \quad \text{.}
+\end{equation}
 
+Die vorgestellten Berechnungsansätze von Maas, Hall und der DIN EN 12831 sind in Tabelle \ref{tab: Tabelle3313} zu finden.
+
+\begin{table}[H]\centering
+\begin{tabular}{|l|c|l|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Autor & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0} Formel für q\(_{V,open}\)} & Besonderheit \\ \hline
+Maas & \(3600 \cdot \frac{1}{2} \cdot A_l \cdot \Theta \cdot \sqrt{(C_1 \cdot u^2 + C_2 \cdot H \cdot \Delta \theta + C_3)}\) & \begin{tabular}[c]{@{}l@{}}Ergebnis experimenteller \\ Untersuchungen\end{tabular} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Hall & \(C_d \cdot A_{eff} \cdot \Biggl( 2 \cdot g \cdot H \cdot Z \cdot \frac{\Delta\theta}{\theta_i}\Biggr)^n\) & \begin{tabular}[c]{@{}l@{}}Nur thermisch induzierter \\ Volumenstrom\end{tabular} \\ \hline
+DIN EN 12831 & \(A_{eff} \cdot 3600 \cdot \sqrt{\frac{C_{D}^2 \cdot g \cdot h_m \cdot \Delta \theta}{9 \cdot \theta_e} + 0,05 \cdot v_{fac}}\) & \begin{tabular}[c]{@{}l@{}}XXXX \\ XXXX\end{tabular} \\ \hline
+\end{tabular}
+\caption{Berechnungsansätze zur Bestimmung des Luftvolumenstroms durch ein geöffnetes Fenster}
+\label{tab: Tabelle3313}
+\end{table}
 
 \subsection{Infiltration}
 \label{subsec:Sektion 312}
 
-%Infiltration?
+Der unkontrollierte Luftaustausch durch Undichtheiten in der Gebäudehülle wird Infiltration genannt.
+Die Raumluft kann durch kleine Öffnungen, welche beispielsweise über einen schlecht abgedichteten Fensterrahmen oder über die Verbindung zwischen Dach und Außenwand entstehen, vom Gebäudeinneren an die Umgebung entweichen.
+Neben den Wärmeverlusten können bei einem hohen Infiltrationsluftwechsel auch Zugerscheinungen und somit Unbehaglichkeiten der Bewohner auftreten. 
+Weiterhin kann es durch das Auskondensieren der Luftfeucht beim Übergang durch die Gebäudehülle zu bauphysikalischen Schäden kommen. \cite{Schild.2013}
+
+Wie bei der Fensterlüftung sind die Triebkräfte der Infiltration durch die Temperaturdifferenz zwischen Gebäudeinnerem und Umgebung sowie durch das von Wind verursachte Druckgefälle charakterisiert.
+Allerdings kann in diesem Fall keine absolute Öffnungsfläche benannt werden, welche an der Infiltration beteiligt ist.
+Einzig bei großen Undichtheiten können die Fugen vermessen werden.
+Zur Bestimmung des Infiltrationsluftvolumen wird daher ein \textit{Blower-Door-Test} durchgeführt.
+Hierbei wird dem zu vermessenden Gebäude durch ein Ventilator Frischluft zugeführt, sodass sich ein Überdruck in dem Gebäude bildet.
+Anhand des zugeführten Volumenstroms kann auf die durch Undichtheiten entweichende Luft Rückschlüsse gezogen werden. 
+Somit wird eine Luftwechselrate bei 50\,Pa Überdruck (n\(_{50}\)) bestimmt. \cite{Schild.2013} \\
+Dieser Kennwert gibt Aufschluss über die Dichtheit des Gebäudes und wird durch die DIN 4108-7 von einem wärmeschutztechnischen Blickpunkt aus für Neubauten und energetisch sanierte Albauten reglementiert. 
+Hierbei wird zwischen Gebäuden mit und ohne istallierter raumlufttechnischer Anlage (RLT) unterschieden.
+Tabelle \ref{tab: Tabelle3121} gibt die maximalen Norm-Werte n\(_{50, max}\) wieder.
+
+Dem Wärmeschutz stehen hygienische und bauphysikalische Anforderungen gegenüber.
+Nach DIN 1946-6 muss in einem energetisch sanierten Wohngebäude ein nutzerunabhängiger Luftwechsel zum Bautenschutz gewährleistet sein.
+Diese Norm trifft auf lüftungstechnisch relevante Ertüchtigungen zu.
+Als solche sind Maßnahmen an den Fenstern und dem Dach definiert.
+Die minimalen Norm-Werte n\(_{50, min}\) sind für verschiedene Gebäudeausführungen in Tabelle \ref{tab: Tabelle3121} aufgeführt.
+
+\begin{table}[H]\centering
+\begin{tabular}{|l|c|l|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{2}{|c|}{\cellcolor[HTML]{C0C0C0} Feuchteschutz nach DIN 1946-6} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0} Wärmeschutz nach DIN 4108-7} \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+Gebäudeausführung & \begin{tabular}[c]{@{}c@{}}n\(_{50,min}\)\\ {[}h\(^{-1}\){]}\end{tabular} & Gebäudeausführung & \begin{tabular}[c]{@{}c@{}}n\(_{50,max}\)\\ {[}h\(^{-1}\){]}\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Ventilatorgestütze Lüftung in\\ Ein- und Mehrfamilienhäusern\end{tabular} & 1,0 & ohne RLT & 3,0 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+\begin{tabular}[c]{@{}l@{}}Freie Lüftung in modernisierten\\ Mehrfamilienhäusern\end{tabular} & 1,5 & mit RLT & 1,5 \\ \hline
+\begin{tabular}[c]{@{}l@{}}Freie Lüftung in modernisierten\\ Einfamilienhäusern\end{tabular} & 2,0 &  & \multicolumn{1}{l|}{} \\ \hline
+\end{tabular}
+\caption{Mindest- und Maximalluftwechsel durch Infiltration nach DIN 1946-6 und \mbox{DIN 4108-7}}
+\label{tab: Tabelle3121}
+\end{table}
+
+Im Gegensatz zu der Lüftung durch Fenster kann aufgrund der schwierigen nummerischen Festlegung der Dichtheit eines Bestandsgebäudes keine analytische Lösung zur Bestimmung des Infiltrationsluftvolumenstroms herangezogen werden.
+Ebenso sind in der Literatur keine analytischen Lösungsansätze zu finden. 
+Allerdings schlägt Maas \cite{Maas.2017} einen Richtwerte des durchschnittlich auftretenden Luftwechsels durch Infiltration (n\(_{Inf}\)) in Höhe von 0,07 bis 0,7 h\(^{-1}\) vor.\\
+Eine Abschätzung des Luftvolumenstroms durch Infiltration für Bestandsgebäude liefert DIN V 4108-6.
+Hier wird zwischen den Gebäudeklassen der Ein- und Mehrfamiliehäusern sowie zwischen den drei Dichtheitsklassen \textit{wenig dicht}, \textit{mittel dicht} und \textit{sehr dicht} unterteilt und Angaben zu den n\(_{50}\)-Werten gemacht. 
+Die nummerischen Ausprägungen sind in Tabelle \ref{tab: Tabelle3122} aufgeführt.
+
+\begin{table}[H]\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}Luftdichtheit des Gebäudes} & \begin{tabular}[c]{@{}c@{}}Mehrfamilienhaus\\ n\(_{50}\)\\ {[}h\(^{-1}\){]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}Einfamilienhaus\\ n\(_{50}\)\\ {[}h\(^{-1}\){]}\end{tabular} \\ \hline
+sehr dicht & 0,5 bis 2,0 & 1,0 bis 3,0 \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+mittel dicht & 2,0 bis 4,0 & 3,0 bis 8,0 \\ \hline
+wenig dicht & 4,0 bis 10,0 & 8,0 bis 20,0 \\ \hline
+\end{tabular}
+\caption{Richtwerte für Luftdichtheit von Gebäuden bei einer Druckprüfung mit 50 Pa
+Druckdifferenz nach DIN V 4108-6}
+\label{tab: Tabelle3122}
+\end{table}
 
 \subsection{Maschinelle Lüftung}
 \label{subsec:Sektion 313}

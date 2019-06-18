@@ -10,24 +10,25 @@
 \contentsline {section}{\numberline {2.1}Deutscher Wohngeb\IeC {\"a}udebestand}{2}{section.2.1}
 \contentsline {section}{\numberline {2.2}Historische Entwicklung der Geb\IeC {\"a}udeh\IeC {\"u}lle}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Sanierungsstand des deutschen Wohngeb\IeC {\"a}udebestandes}{9}{section.2.3}
-\contentsline {section}{\numberline {2.4}F\IeC {\"o}rderprogramme zur energetischen Sanierung}{10}{section.2.4}
-\contentsline {chapter}{\numberline {3}Stand der Technik}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}Arten der Optimierung}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}Referenzmodell als Grundlage dieser Arbeit}{15}{section.3.2}
-\contentsline {section}{\numberline {3.3}L\IeC {\"u}ftungsw\IeC {\"a}rmeverluste}{22}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Fensterl\IeC {\"u}ftung}{23}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Infiltration}{25}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Maschinelle L\IeC {\"u}ftung}{25}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Parameterwahl und -beschaffung}{26}{chapter.4}
-\contentsline {section}{\numberline {4.1}Kategorisierung des Geb\IeC {\"a}udebestandes}{26}{section.4.1}
-\contentsline {chapter}{\numberline {5}Modellerweiterung}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}L\IeC {\"u}ftungsw\IeC {\"a}rmeverluste}{29}{section.5.1}
-\contentsline {chapter}{Literaturverzeichnis}{30}{Hilfszaehler.6}
-\contentsline {chapter}{\numberline {A}Tabellen}{34}{appendix.A}
-\contentsline {section}{\numberline {A.1}Anzahl an Wohneinheiten nach Alter und Geb\IeC {\"a}udetyp (IWU Berechnungen)}{34}{section.A.1}
-\contentsline {section}{\numberline {A.2}U-Werte nach TABULA}{35}{section.A.2}
-\contentsline {section}{\numberline {A.3}Anzahl, Anteil und \(U_g\)-Werte g\IeC {\"a}ngiger Verglasungsarten}{36}{section.A.3}
-\contentsline {section}{\numberline {A.4}Inputparameter Geb\IeC {\"a}udealter und -lage}{37}{section.A.4}
-\contentsline {section}{\numberline {A.5}Kostenkennlinie und Nutzungsdauer der Geb\IeC {\"a}udeh\IeC {\"u}llenkomponenten}{37}{section.A.5}
-\contentsline {section}{\numberline {A.6}Nutzungskosten und Betriebskosten der Anlagentechnik}{38}{section.A.6}
-\contentsline {chapter}{\numberline {B}Wichtiger Anhang}{39}{appendix.B}
+\contentsline {section}{\numberline {2.4}F\IeC {\"o}rderprogramme zur energetischen Sanierung}{11}{section.2.4}
+\contentsline {chapter}{\numberline {3}Stand der Technik}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Arten der Optimierung}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Referenzmodell als Grundlage dieser Arbeit}{17}{section.3.2}
+\contentsline {section}{\numberline {3.3}L\IeC {\"u}ftungsw\IeC {\"a}rmeverluste in Wohngeb\IeC {\"a}uden}{24}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Fensterl\IeC {\"u}ftung}{26}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Infiltration}{30}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Maschinelle L\IeC {\"u}ftung}{31}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Parameterwahl und -beschaffung}{34}{chapter.4}
+\contentsline {section}{\numberline {4.1}Kategorisierung des Geb\IeC {\"a}udebestandes}{34}{section.4.1}
+\contentsline {section}{\numberline {4.2}Fenster\IeC {\"o}ffnungsprofile}{36}{section.4.2}
+\contentsline {section}{\numberline {4.3}Windprofile}{36}{section.4.3}
+\contentsline {chapter}{\numberline {5}Modellerweiterung}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}L\IeC {\"u}ftungsw\IeC {\"a}rmeverluste}{37}{section.5.1}
+\contentsline {chapter}{Literaturverzeichnis}{38}{Hilfszaehler.6}
+\contentsline {chapter}{\numberline {A}Tabellen}{44}{appendix.A}
+\contentsline {section}{\numberline {A.1}Anzahl an Wohneinheiten nach Alter und Geb\IeC {\"a}udetyp (IWU Berechnungen)}{44}{section.A.1}
+\contentsline {section}{\numberline {A.2}U-Werte nach TABULA}{45}{section.A.2}
+\contentsline {section}{\numberline {A.3}Anzahl, Anteil und \(U_g\)-Werte g\IeC {\"a}ngiger Verglasungsarten}{46}{section.A.3}
+\contentsline {section}{\numberline {A.4}Inputparameter Geb\IeC {\"a}udealter und -lage}{47}{section.A.4}
+\contentsline {section}{\numberline {A.5}Kostenkennlinie und Nutzungsdauer der Geb\IeC {\"a}udeh\IeC {\"u}llenkomponenten}{47}{section.A.5}
+\contentsline {section}{\numberline {A.6}Nutzungskosten und Betriebskosten der Anlagentechnik}{48}{section.A.6}

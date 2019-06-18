@@ -1,22 +1,27 @@
 \babel@toc {ngerman}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces \IeC {\"U}bersicht \IeC {\"u}ber verschiedene F\IeC {\"o}rder- und Anreizprogramme zur energetischen Verbesserung von Wohngeb\IeC {\"a}uden}}{11}{table.2.1}
+\contentsline {table}{\numberline {2.1}{\ignorespaces \IeC {\"U}bersicht \IeC {\"u}ber verschiedene F\IeC {\"o}rder- und Anreizprogramme zur energetischen Verbesserung von Wohngeb\IeC {\"a}uden}}{12}{table.2.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Anlagentechnik und deren Nutzungsdauer im Optimierungsmodell}}{18}{table.3.1}
-\contentsline {table}{\numberline {3.2}{\ignorespaces U-Werte der Geb\IeC {\"a}udeh\IeC {\"u}lle f\IeC {\"u}r ein EnEV-Referenzgeb\IeC {\"a}ude nach EnEV 2009.}}{19}{table.3.2}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Leistungsspezifische Emission der Energietr\IeC {\"a}ger}}{20}{table.3.3}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Kategorien der Einflussfaktoren zum Fenster\IeC {\"o}ffnen/-schlie\IeC {\ss }en \cite {Fabi.2012}}}{24}{table.3.4}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Nummerische Werte der Fitkoeffizienten nach Maas \cite {Maas.1995}}}{25}{table.3.5}
+\contentsline {table}{\numberline {3.1}{\ignorespaces \IeC {\"U}bersicht diverser Ans\IeC {\"a}tze der Energiesystemoptimierung in der Literatur}}{17}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces U-Werte der Geb\IeC {\"a}udeh\IeC {\"u}lle f\IeC {\"u}r ein EnEV-Referenzgeb\IeC {\"a}ude nach EnEV 2009.}}{21}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Anlagentechnik und Ma\IeC {\ss }nahmen der energetischen Ert\IeC {\"u}chtigung der Geb\IeC {\"a}udeh\IeC {\"u}lle sowie deren Nutzungsdauer im Optimierungsmodell}}{22}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Leistungsspezifische Emission der Energietr\IeC {\"a}ger \cite {InstitutfurTechnischeGebaudeausrustungDresden.2017}}}{22}{table.3.4}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Kategorien der Einflussfaktoren zum Fenster\IeC {\"o}ffnen/-schlie\IeC {\ss }en \cite {Fabi.2012}}}{26}{table.3.5}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Triebkr\IeC {\"a}fte zum \IeC {\"O}ffnen und Schlie\IeC {\ss }en eines Fensters \cite {Cali.2016b}}}{27}{table.3.6}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Nummerische Werte der Fitkoeffizienten nach Maas \cite {Maas.1995}}}{28}{table.3.7}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Berechnungsans\IeC {\"a}tze zur Bestimmung des Luftvolumenstroms durch ein ge\IeC {\"o}ffnetes Fenster}}{29}{table.3.8}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Richtwerte f\IeC {\"u}r Luftdichtheit von Geb\IeC {\"a}uden bei einer Druckpr\IeC {\"u}fung mit 50 Pa Druckdifferenz nach DIN V 4108-6}}{31}{table.3.9}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Literaturwerte der R\IeC {\"u}ckw\IeC {\"a}rmezahl in W\IeC {\"a}rmetauschern }}{32}{table.3.10}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces U-Werte der neuen Geb\IeC {\"a}udeklassen KG und GG in \(\frac {W}{m^2 \tmspace +\thinmuskip {.1667em}\unhbox \voidb@x \hbox {\textperiodcentered }\tmspace +\thinmuskip {.1667em}K}\)}}{28}{table.4.1}
+\contentsline {table}{\numberline {4.1}{\ignorespaces U-Werte der neuen Geb\IeC {\"a}udeklassen Cluster A und Cluster B in \(\frac {W}{m^2 \tmspace +\thinmuskip {.1667em}\unhbox \voidb@x \hbox {\textperiodcentered }\tmspace +\thinmuskip {.1667em}K}\)}}{36}{table.4.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Anzahl an Wohneinheiten [in Tausend] nach Baualtersklasse und Geb\IeC {\"a}udetyp. \cite {Diefenbach.12.11.2007}}}{34}{table.A.1}
-\contentsline {table}{\numberline {A.2}{\ignorespaces W\IeC {\"a}rmedurchgangskoeffizienten der Bauteile Dach, Au\IeC {\ss }enwand, Fenster (U\(_w\)) und Boden nach Geb\IeC {\"a}udeart und Baualtersklasse [in \(\frac {W}{m^2 \tmspace +\thinmuskip {.1667em}\unhbox \voidb@x \hbox {\textperiodcentered }\tmspace +\thinmuskip {.1667em}K}\)]}}{35}{table.A.2}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Bestand an Fenstern in Deutschland im Jahr 2015. \cite {Bigalke.2016}}}{36}{table.A.3}
-\contentsline {table}{\numberline {A.4}{\ignorespaces .....}}{36}{table.A.4}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Auspr\IeC {\"a}gungen der Inputparameter Geb\IeC {\"a}udealter und -lage}}{37}{table.A.5}
-\contentsline {table}{\numberline {A.6}{\ignorespaces y-Achsenabschnitt und Steigung der Kostenkennlinie sowie Nutzungsdauer der Bauteile Au\IeC {\ss }enwand, Boden, Dach und Fenster \cite {Hinz.10.08.2015}}}{37}{table.A.6}
-\contentsline {table}{\numberline {A.7}{\ignorespaces Nutzungsdauer und Betriebskosten verschiedener Technologien}}{38}{table.A.7}
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Anzahl an Wohneinheiten [in Tausend] nach Baualtersklasse und Geb\IeC {\"a}udetyp. \cite {Diefenbach.12.11.2007}}}{44}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces W\IeC {\"a}rmedurchgangskoeffizienten der Bauteile Dach, Au\IeC {\ss }enwand, Fenster (U\(_w\)) und Boden nach Geb\IeC {\"a}udeart und Baualtersklasse [in \(\frac {W}{m^2 \tmspace +\thinmuskip {.1667em}\unhbox \voidb@x \hbox {\textperiodcentered }\tmspace +\thinmuskip {.1667em}K}\)]}}{45}{table.A.2}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Bestand an Fenstern in Deutschland im Jahr 2015. \cite {Bigalke.2016}}}{46}{table.A.3}
+\contentsline {table}{\numberline {A.4}{\ignorespaces .....}}{46}{table.A.4}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Auspr\IeC {\"a}gungen der Inputparameter Geb\IeC {\"a}udealter und -lage}}{47}{table.A.5}
+\contentsline {table}{\numberline {A.6}{\ignorespaces y-Achsenabschnitt und Steigung der Kostenkennlinie sowie Nutzungsdauer der Bauteile Au\IeC {\ss }enwand, Boden, Dach und Fenster \cite {Hinz.10.08.2015}}}{47}{table.A.6}
+\contentsline {table}{\numberline {A.7}{\ignorespaces Nutzungsdauer und Betriebskosten verschiedener Technologien}}{48}{table.A.7}
+\contentsline {table}{\numberline {A.8}{\ignorespaces Mindest- und Maximalluftwechsel durch Infiltration nach DIN 1946-6 und \unhbox \voidb@x \hbox {DIN 4108-7}}}{48}{table.A.8}

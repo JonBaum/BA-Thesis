@@ -649,9 +649,61 @@ Dieser nimmt in Abhängigkeit der Geschossanzahl des Gebäudes und der Windstär
 \subsection{Maschinelle Lüftung}
 \label{subsec:Sektion 313}
 
-Bei der maschinellen Lüftung wird eine RLT-Anlage genutzt
+Als maschinelle Lüftung wird ein erzwungener Luftaustausch mit Hilfe eines Ventilator bezeichnet.
+Diese wird in zentrale und dezentrale Systeme unterteilt.
+Bei den zentralen wird die Außenluft durch einen Ventilator angesaugt und über Luftschächte in der Wohnung verteilt.
+Die thermische Behandlung sowie die Luftaufbereitung anhand von Filtern erfolgt ebenfalls über eine einzelne Einheit, durch welche der gesamte Luftvolumenstrom in das Gebäude ein- oder ausströmt.
+Dahingegen handelt es sich bei den deutlich kleineren dezentralen Anlagen, auch Einzelraum-Lüftungsgerät genannt, um Geräte, die für einen kleinen Bereich des Gebäudes, meist einzelne Räume, die Frischluft zur Verfügung stellt.
+Oftmals werden daher mehrere Einheiten mit jeweils einer Ausstattung zur Luftbehandlung in ein Gebäude verbaut, um die Frischluftversorgung sicher zu stellen. \cite{Hinz.10.08.2015} \cite{Bohne.2019}
 
-\cite{Bohne.2019} Rückwarmegewinnugn 80 - 90 \%; erklärung zentrale/dezentrale RLT
-\cite{Asdrubali.2015} Wirkungsgrad in Abhängigkeit des geförderten Volumenstromes zw 96 - 88 \% (drei Tests)
-\cite{Milles.2011} Wärmerückgewinnugn 90\% Angaben zum elektrischen Verbauch der Ventilatoren in Abhängigkeit der rückgewonnenen Wärme
-\cite{Kamendere.2015} minimal 71 \%, maximal – 86 \%, average – 77 \% (Litauen --> Winter)
+Im Gegensatz zu zentralen Anlagen wird für die dezentralen kein Luftleitsystem benötigt, da die Geräte direkt in der Außenwand verbaut sind.
+Daher eignen sich die Einzelraum-Lüftungsgeräte zur Nachrüstung in Bestandsgebäuden, da auf die kostspielige Baumaßnahme zur Leitungsverlegung verzichtet werden kann \cite{Manz.2000}.
+Dies vereinfacht weiterhin die Dauer der Sanierungsmaßnahme und die Raumplanung. 
+Ein Vorteil der zentralen Ausführung ist der geringere Wartungsaufwand, da jede Komponente dieses maschinellen Lüftungskonzepts nur einfach vorliegt und nicht mehrfach wie bei den dezentralen \cite{Horner.2014}.
+
+Im Bezug auf die Betriebsweise der Lüftungsanlage lassen sich kontinuierlich arbeitende von bedarfsgeregelten unterscheiden.
+Bei letzterem werden verschiedene hygienische Daten der Luft anhand von kontinuierlichen Messungen im Gebäude evaluiert und daraus abgeleitet ein Volumenstrom eingestellt.
+Dadurch verbessern diese maschinellen Lüftungsanlagen die Raumluftqualität und eignen sich für Haushalte mit Allergikern \cite{Fechner.2014}.
+Weiter wird der CO\(_2\)-Gehalt in der Luft durch maschinelle Lüftung im Vergleich zur freien Fensterlüftung besser geregelt und kontinuierlich unter dem empfohlenen Höchstwert von 1000\,ppm gehalten \cite{Suszanowicz.2018}.
+Im Rahmen dieser Arbeit werden ausschließlich energetische Vorteile der maschinellen Lüftung betrachtet und hygienische Qualitätsmerkmale im Weiteren nicht näher berücksichtigt.
+
+Zur Minimierung der Lüftungswärmeverluste und zur besseren Nutzung der in der Abluft enthaltene Wärme werden in maschinelle Lüftungsanlagen Wärmetauscher zur Wärmerückgewinnung eingesetzt.
+Es wird zwischen rekuperativen und regenerativen Verfahren sowie Kombinationen mit Wärmepumpen unterschieden \cite{Kamendere.2015}.
+Ein wichtiger Kennwert zur Bewertung der Wärmetauscher stellt die Rückwärmezahl (\(\Phi\)) dar.
+Diese ist definiert als das Verhältnis der Temperaturdifferenz zwischen Zuluft und Abluft vor und nach dem Wärmetausch.
+Die Rückwärmezahl wird durch
+\begin{equation}
+\label{eq:Gleichung3131}
+\Phi = \frac{\theta_{12} - \theta_{11}}{\theta_{21} - \theta_{11}}
+\end{equation}
+beschrieben, wobei mit dem Index \textit{11} die Umgebungstemperatur, mit \textit{21} die Temperatur der Abluft vor dem Wärmetauscher und mit \textit{12} die Zulufttemperatur nach der thermischen Behandlung beschrieben wird \cite{Pech.2006b}.
+Als Einflussfaktoren der Rückwärmezahl gelten die geförderte Volumenstrommenge, die Witterungsbedingungen des Standorts sowie die Ausführung des Wärmetauschers \cite{Kamendere.2015}.
+In der Literatur bewegen sich die Angaben zu \(\Phi\) zwischen 77 und 90\,\%.
+In Tabelle \ref{tab: Tabelle3131} ist eine Übersicht der Werte für die Rückwärmezahl in verschiedenen Quellen gegeben.
+
+\begin{table}[H]\centering
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Autor & Rückwärmezahl \\ \hline
+Kamendere et al. \cite{Kamendere.2015} & \begin{tabular}[c]{@{}l@{}}minimal: 71 \%\\ maximal: 86 \%\\ Durchschnitt: 77 \%\end{tabular} \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Milles \cite{Milles.2011} & 75 bis 90 \% \\ \hline
+Asdrubali et al. \cite{Asdrubali.2015} & 90 \% \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Bohne \cite{Bohne.2019} & \begin{tabular}[c]{@{}l@{}}75 bis 90 \% für\\ Rotationswärmetauscher\end{tabular} \\ \hline
+\end{tabular}
+\caption{Literaturwerte der Rückwärmezahl in Wärmetauschern }
+\label{tab: Tabelle3131}
+\end{table}
+
+Wird ein maschinelles Lüftungskonzept in ein Gebäude installiert, muss nach Vorgabe der EnEV der Nutzer eine Möglichkeit zur Beeinflussung des Luftvolumenstroms besitzen.
+Zudem kann es zu einer Überlagerung der Fensterlüftung mit der maschinellen kommen.
+Somit kann der Luftvolumenstrom, welcher mit einer Lüftungsanlage gefördert wird, nur bedingt berechnet werden und es existieren wenig Angaben in der Literatur, welche das Zusammenwirken von natürlicher und maschineller Lüftung charakterisieren.
+In \cite{Osterhage.2018} stellt Osterhage keine Änderung des Nutzerverhaltens nach Einbau einer maschinellen Lüftungsanlage bezüglich der Fensterlüftung im Rahmen des zugrunde liegenden Forschungsprojekts fest. 
+Dies wird mit geringer Akzeptanz und fehlender Sensibilisierung der Bewohner begründet.
+Dahingegen wird nach Milles \cite{Milles.2011} in Gebäuden mit raumlufttechnischen Anlagen aufgrund der besseren Luftqualität weniger Fenster geöffnet.
+
+Im Hinblick auf die Wirtschaftlichkeit einer maschinellen Lüftungsanlage wird zwischen der Installation in einem Einfamilienhaus mit einer solchen in einem Mehrfamilienhaus unterschieden. 
+Bei einer Betrachtung der flächenspezifischen Kosten einer Lüftungsanlage kommt den Mehrfamilienhäuser wegen deren kompakten Bauweise ein Nachteil zu Gute.
+Außerdem sind die dezentralen Geräte im Vergleich zu den zentralen zwischen 40 un 50\,\% günstiger. \cite{Hinz.10.08.2015}

@@ -1,27 +1,33 @@
 \chapter{Parameterwahl und -beschaffung}
 
-Im Rahmen dieser Arbeit wird das in Kapitel \ref{sec:Sektion 26} vorgestellte Optimierungsprogramm im Hinblick auf Lüftungswärmeverluste untersucht und um die Möglichkeit einer maschinellen Lüftung erweitert.
-Weiter sollen besonders effiziente Maßnahmen zur energetischen Sanierung des deutschen Wohngebäudebestandes analysiert werden.
-Hierfür wird der Gebäudebestand in Kapitel \ref{sec:Sektion 41} in Klassen unterteilt, um für die Analyse der Maßnahmen weniger Kombinationsmöglichkeiten zu erhalten.
-Zudem wird in \ref{sec:Sektion 42} und \ref{sec:Sektion 43} die Generierung verschiedener Daten erläutert, die zum Modellieren der Lüftungswärmeverlusten von Nöten sind.
+Zur Bestimmung einer besonders effizienter Strategie, um den deutschen Wohngebäudebestand emissionsärmer zu gestalten, wird das in Kapitel \ref{sec:Sektion 32} vorgestellte Optimierungsmodell erweitert.
+Hierbei werden in \ref{sec:Sektion 41} die Gebäudeklassen des Bestandes möglichst repräsentativ zusammengefasst.
+Weiterhin wird die Berechnung der Lüftungswärmeverluste des Programms in einen dynamischen Ansatz überführt, um diese somit genauer abzubilden.
+Hierfür werden in \ref{sec:Sektion 42} die Generierung weiterer Daten, welche zur dynamischen Modellierung der Wärmeverluste durch Lüftung benötigt werden, beschrieben.
 
 \section{Kategorisierung des Gebäudebestandes}
 \label{sec:Sektion 41}
 
-Wird der deutsche Wohngebäudebestand nach der Einteilung von TABULA betrachtet, lassen sich 43 Klassen erkennen.
-Diese sind nach Baujahr und Gebäudeart unterteilt.
-Wie in Tabelle \ref{tab: TabelleA0} zu sehen, existieren nicht für alle Klassen Daten zur Wohneinheitenanzahl bei verschiedenen Baujahren.
+Wird der deutsche Wohngebäudebestand nach der Einteilung von TABULA betrachtet, lassen sich insgesamt 43 Klassen erkennen.
+Diese unterscheiden sich nach Baujahr und Gebäudeart.
+Wie in Tabelle \ref{tab: TabelleA0} zu sehen ist, existieren nicht für alle Klassen Daten zur Wohneinheitenanzahl bei verschiedenen Baujahren.
 Außerdem unterscheiden sich die Anteile der einzelnen Gruppen am gesamten Wohneinheitenbestand.
 So bilden beispielsweise die Klasse der Hochhäuser in den alten Bundesländer nur 1\,\% des Bestandes ab, wohingegen sich der Anteil bei den Mehrfamilienhäuser zu 38\,\% ergibt.
-Um aus dieser inhomogenen Verteilung eine einfachere Kategorisierung zu gewinnen, mit welcher sich Gebäudeenergiesysteme für wenige Klassen bestimmen lassen, wird eine ABC-Analyse des Bestandes durchgeführt.
+
+Um aus dieser inhomogenen Verteilung eine vereinfachte Kategorisierung zu generieren, mit welcher sich Gebäudeenergiesysteme für wenige Klassen bestimmen lassen, wird eine ABC-Analyse des Bestandes durchgeführt.
 Hierbei handelt es sich um ein betriebswirtschaftlichen Analyseverfahren zur Bewertung von Objekten einer Menge.
-Es stehen die drei Kategorien A, B und C zur Auswahl, welche nach absteigender Reihenfolge dem Objekt eine Wertung zuteilen.
+Es stehen die drei Kategorien A, B und C zur Auswahl, welche nach absteigender Reihenfolge den Objekten eine Wertung zuteilen.
+
 Im Falle des Gebäudebestandes werden die TABULA-Klassen danach untersucht, inwieweit diese den Bestand repräsentieren und Potenzial für eine energetische Verbesserung besitzen.
 Betrachtet wird daher die Wohneinheintenanzahl, beziehungsweise der Anteil am Bestand, sowie die U-Werte als Kriterium des energetischen Einsparpotenzials.
 Weiter werden anhand des Wärmedurchgangskoeffizient ähnliche Klassen zusammengefasst.
-Da die Analyse darauf abzielt eine Entscheidung zu treffen, ob die Klasse für die Optimierung relevant ist oder nicht, wird auf eine Bewertung mit B verzichtet.
-Eine Bewertung mit A bedeutet schließlich, dass die Klasse repräsentativ wichtig für den Bestand ist.
+Da die Analyse darauf abzielt eine Entscheidung zu treffen, ob die Klasse zur Repräsentation des Bestandes relevant ist, wird auf eine Bewertung mit B verzichtet.
+Eine A-Wertung bedeutet schließlich, dass die Klasse repräsentativ wichtig für den Bestand ist.
 Analog dazu werden C-gewertete Typen nicht weiter untersucht.
+
+Aus der Analyse des deutschen Wohngebäudebestandes in Kapitel \ref{sec:Sektion 21} geht hervor, dass der größte Anteil der Gebäude vor 1978 errichtet wurde.
+XXXX
+
 
 Zunächst werden die Hochhäuser in neuen und alten Bundesländern betrachtet. 
 Deren Anteil am gesamten Wohnungsbestand ist mit unter 2\,\% gering.
@@ -80,8 +86,50 @@ In Tabelle \ref{tab: TabelleA411} sind die neuen Klassen mitsamt der jeweiligen 
 \label{tab: TabelleA411}
 \end{table}
 
-\section{Fensteröffnungsprofile}
+\section{Parameter zur Modellierung von Lüftungswärmeverlusten}
 \label{sec:Sektion 42}
 
-\section{Windprofile}
-\label{sec:Sektion 43}
+Aus der Darstellung der Lüftungswärmeverluste in Kapitel \ref{sec:Sektion 33} geht hervor, dass diese zum einen vom Lüftungsverhalten der Bewohner und zum anderen durch thermische und Wind abhängige Triebkräfte charakterisiert werden.
+Diese Faktoren werden in dem zu Grunde liegenden Optimierungsprogramm nicht abgebildet, weshalb das Modell dahingehend erweitert wird.
+Zur besseren Abbildung des Nutzereinflusses werden zunächst Fensteröffnungsprofile erstellt.
+
+Um das Nutzerverhalten bezüglich der Fensterlüftung zu modellieren, werden Parameter, welche den Bewohner animieren ein Fenster zu öffnen oder zu schließen, festgelegt.
+Nach Calí et al. beeinflussen den Nutzer die Tageszeit, die CO\(_2\)-Konzentration im Raum, die Innen- und Außentemperatur und die Luftfeuchtigkeit im Inneren des Gebäudes und der Umgebung (s. Tabelle \ref{tab: Tabelle3312}).
+Da im Rahmen dieses Optimierungsprogramms weder Kohlenstoffdioxid noch Luftfeuchtigkeit modelliert werden, können diese Einflussfaktoren nicht abgebildet werden.
+Außerdem erfolgt keine Unterteilung zwischen der Raumnutzung und es wird eine konstanten Innentemperatur von 20°C angenommen.
+Somit verbleiben die Tageszeit und die Außentemperatur als relevante Faktoren, welche den Nutzereinfluss auf die Lüftungswärmeverluste beschreiben.
+
+Als Grundlage der Fensteröffnungsprofile dienen die Monitoring-Daten eines Forschungsprojekts an drei Mehrfamilienhäuser in Karlsruhe-Rintheim.
+Bei diesem Projekt wurden die Auswirkungen von Sanierungsmaßnahmen und unterschiedlicher Anlagentechnik auf den Energieverbrauch analysiert.
+XXXX Projektbeschreibung XXXX
+
+An zwei der drei Untersuchungsobjekten wurden Daten der Fenster und Außentemperatur erhoben.
+Bei diesen handelt es sich um minütlich aufgezeichneten Binärvariablen, welche pro Fenster und Wohnung angeben, ob das Fenster zu dem Zeitpunkt offen (1) oder geschlossen (0) war.
+Da nach Osterhage \cite{Osterhage.2018} kein signifikanter Unterschied des Nutzerverhaltens in den Wohnungen mit maschinellen Lüftungsanlagen im Vergleich zu denen mit freier Lüftung besteht, werden die Daten aller Wohnungen in Betracht gezogen.
+
+Als Ziel der Fensteröffnungsprofile werden eine Temperatur- und Tageszeitabhängigkeit definiert.
+Um dies zu erreichen, werden zunächst die pro Minute aufgenommenen Werte in stündliche umgewandelt.
+
+Hierfür werden je Fenster die Binärvariablen einer Stunde addiert und durch 60 geteilt.
+Die Variable wird hierbei als Dauer angenommen, wobei eine 1 bedeutet, dass das Fenster eine Minute lang geöffnet ist.
+Das Ergebnis dieses Rechenschritts ist keine Binärvariable mehr, sondern eine reelle Zahl zwischen 0 und 1, welche die Öffnungsdauer des Fensters zu dem stündlichen Zeitpunkt beschreibt.
+Beispielsweise wird durch den Wert 0,5 beschrieben, dass das Fenster in der betrachteten Stunde 30 Minuten geöffnet ist.\\
+Als nächsten Schritt werden die Fenster der Wohnung zusammengefasst.
+Wie in \cite{Osterhage.2018} beschrieben, werden die Räume einer Wohnung je nach Nutzung unterschiedlich belüftet.
+Da in dem Referenzmodell jedoch keine Unterteilung in Räume geschieht, werden die Fensteröffnungszeiten auf Wohnungsebene betrachtet.
+Hierzu werden die Öffnungsdauern der Fenster einer Wohnung pro Stunde aufsummiert.
+Die daraus erhaltene Größe ist rein hypothetisch und kann als Dauer einer unbekannten Menge an geöffneten Fenster interpretiert werden.
+Als Beispiel sagt der Wert 1 aus, dass ein Fenster die ganze Stunde geöffnet ist oder aber zwei Fenster jeweils eine halbe Stunde.
+Da von Fenstern mit gleicher Geometrie und nur einem möglichen Öffnungswinkel ausgegangen wird, gibt es zwischen den zwei Beispielfällen keinen Unterschied im Bezug auf die Lüftungswärmeverluste.
+Das Ergebnis dieser Rechenschritte beschreibt stundenweise Fensteröffnungsprofile einer Wohnung, die über ein Jahr aufgetragen sind.\\
+Die stündlichen Werte werden über alle Wohnungen des Datensatzes gemittelt.
+Um sowohl die Abhängigkeit des Nutzerverhaltens bezüglich der Außentemperatur und Tageszeit zu berücksichtigen werden Temperaturintervalle gebildet.
+Für Tage mit einer durchschnittlichen Außentemperatur in demselben Intervall werden schließlich die Werte je Tageszeitpunkt aufsummiert und gemittelt.
+Somit werden Tagesprofile der Fensteröffnungszeiten für unterschiedliche Temperaturintervalle einer Wohnung erzeugt.
+
+
+
+
+
+
+

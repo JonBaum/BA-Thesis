@@ -1,0 +1,1336 @@
+% This file was created with Citavi 6.3.0.0
+
+@book{.,
+ title = {wksb}
+}
+
+
+@book{.2015,
+ year = {2015},
+ title = {Deutsche Wohngeb{\"a}udetypologie: Beispielhafte Ma{\ss}nahmen zur Verbesserung der Energieeffizienz von typischen Wohngeb{\"a}uden},
+ address = {Darmstadt},
+ edition = {Neue Ausg},
+ publisher = {{Wohnen und Umwelt}},
+ isbn = {978-3-941140-47-9}
+}
+
+
+@proceedings{.23.04.201726.04.2017,
+ year = {23.04.2017 - 26.04.2017},
+ title = {2017 IEEE Power {\&} Energy Society Innovative Smart Grid Technologies Conference (ISGT)},
+ publisher = {IEEE},
+ isbn = {978-1-5386-2890-4}
+}
+
+
+@book{.b,
+ title = {ECEE}
+}
+
+
+@book{.c,
+ title = {Rethink, renew, restart: ECEEE 2013 summer study}
+}
+
+
+@book{.d,
+ title = {Rethink, renew, restart: ECEEE 2013 summer study}
+}
+
+
+@proceedings{AbuSiada.2014,
+ year = {2014},
+ title = {Australasian Universities Power Engineering Conference (AUPEC), 2014: Sept. 28, 2014 - Oct. 1, 2014, Perth, Australia},
+ keywords = {Elektrische Energietechnik},
+ address = {Piscataway, NJ},
+ publisher = {IEEE},
+ isbn = {978-0-6469-2375-8},
+ editor = {Abu-Siada, A.},
+ institution = {{Australasian Committee for Power Engineering} and {Australasian Universities Power Engineering Conference} and AUPEC}
+}
+
+
+@article{Allard.2018,
+ author = {Allard, Ingrid and Olofsson, Thomas and Nair, Gireesh},
+ year = {2018},
+ title = {Energy evaluation of residential buildings: Performance gap analysis incorporating uncertainties in the evaluation methods},
+ pages = {725--737},
+ volume = {11},
+ number = {4},
+ issn = {1996-3599},
+ journal = {Building Simulation},
+ doi = {10.1007/s12273-018-0439-7}
+}
+
+
+@article{Asadi.2012,
+ author = {Asadi, Ehsan and {da Silva}, Manuel Gameiro and Antunes, Carlos Henggeler and Dias, Luis},
+ year = {2012},
+ title = {Multi-objective optimization for building retrofit strategies: A model and an application},
+ pages = {81--87},
+ volume = {44},
+ issn = {03787788},
+ journal = {Energy and Buildings},
+ doi = {10.1016/j.enbuild.2011.10.016}
+}
+
+
+@article{Asdrubali.2015,
+ abstract = {Nowadays the increasing trend to make buildings more and more energetically efficient leads to an improvement of the  thermal  performance  of  the  elements  such us walls,  windows  and  doors,  making  the envelope a strong barrier between the indoor and outdoor environment, also for air infiltrations. If this circumstance results useful for energy consumption reduction, it constitutes a problem for  indoor air quality and comfort. Mechanical ventilation systems are often provided, and, at the aim of abating the thermal (or cooling) loads linked to the inlet of air from the external environment, heat recovery systems became more and more popular; for high values of air mass flow treated, many national regulations make the installation of heat recovery systems compulsory. An experimental test bench was built at the Thermal Engineering Laboratory of the University of Perugia, aimed at evaluating  the  performance  of  air  heat  recovery devices. The first  measurements were carried out on a commercial  plate-type heat exchanger, made of polystyrene.  This plastic material  is characterized  by  a  low  value  of  thermal  conductivity,  but  its  easiness of  workability  allows  to  increase  the  heat  exchange  surface, overcoming also  issues  linked to the weight and the cost of the product.  The flowrates, the pressure drops, and all temperatures of interest for the heat exchanger were acquired. The energy efficiency  index  of  the  heat  recovery  system was  assessed  with  several  tests  conducted  with  different  boundary  conditions of the indoor and outdoor ambient, as well as different air flow rates. Results  were  compared  with  data  gathered  from  the manufacturer, highlighting  the  points  of  contact  and  the  differences between the experimental outcomes and the company information sheet, providing further details that are commonly not available.},
+ author = {Asdrubali, Francesco and Baldinelli, Giorgio and Bianchi, Francesco and Cornicchia, Matteo},
+ year = {2015},
+ title = {Experimental Performance Analyses of a Heat Recovery System for Mechanical Ventilation in Buildings},
+ keywords = {efficiency;mechanical ventilation;test bench setup},
+ pages = {465--471},
+ volume = {82},
+ issn = {18766102},
+ journal = {Energy Procedia},
+ doi = {10.1016/j.egypro.2015.11.845}
+}
+
+
+@book{Awbi.1991,
+ author = {Awbi, Hazim B.},
+ year = {1991},
+ title = {Ventilation of buildings},
+ address = {London},
+ edition = {1. ed.},
+ publisher = {Spon},
+ isbn = {0419156909}
+}
+
+
+@article{Awbi.2017,
+ abstract = {Energy Procedia, 112 (2017) 277-286. doi:10.1016/j.egypro.2017.03.1098},
+ author = {Awbi, Hazim B.},
+ year = {2017},
+ title = {Ventilation for Good Indoor Air Quality and Energy Efficiency},
+ keywords = {indoor air quality;room air distribution;ventilation system},
+ pages = {277--286},
+ volume = {112},
+ issn = {18766102},
+ journal = {Energy Procedia},
+ doi = {10.1016/j.egypro.2017.03.1098}
+}
+
+
+@article{Ballarini.2014,
+ abstract = {Energy Policy, 68 + (2014) 273-284. doi:10.1016/j.enpol.2014.01.027},
+ author = {Ballarini, Ilaria and Corgnati, Stefano Paolo and Corrado, Vincenzo},
+ year = {2014},
+ title = {Use of reference buildings to assess the energy saving potentials of the residential building stock: The experience of TABULA project},
+ keywords = {energy saving;reference building;residential building stock},
+ pages = {273--284},
+ volume = {68},
+ issn = {03014215},
+ journal = {Energy Policy},
+ doi = {10.1016/j.enpol.2014.01.027}
+}
+
+
+@article{Baranova.2017,
+ author = {Baranova, Daria and Sovetnikov, Daniil and Semashkina, Daria and Borodinecs, Anatolijs},
+ year = {2017},
+ title = {Correlation of energy efficiency and thermal comfort depending on the ventilation strategy},
+ keywords = {building energy simulation;energy saving;IDA-ICE;thermal comfort;ventilation system},
+ pages = {503--510},
+ volume = {205},
+ issn = {18777058},
+ journal = {Procedia Engineering},
+ doi = {10.1016/j.proeng.2017.10.403}
+}
+
+
+@book{Bauer.2013,
+ year = {2013},
+ title = {Green Building},
+ address = {Berlin, Heidelberg},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-642-38296-3},
+ editor = {Bauer, Michael and M{\"o}sle, Peter and Schwarz, Michael},
+ doi = {10.1007/978-3-642-38297-0}
+}
+
+
+@incollection{Bauer.2013b,
+ author = {Bauer, Michael and M{\"o}sle, Peter and Schwarz, Michael},
+ title = {Konzeption, Bau und Betriebsoptimierung von Green Buildings},
+ pages = {64--143},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-642-38296-3},
+ editor = {Bauer, Michael and M{\"o}sle, Peter and Schwarz, Michael},
+ booktitle = {Green Building},
+ year = {2013},
+ address = {Berlin, Heidelberg},
+ doi = {10.1007/978-3-642-38297-0{\textunderscore }3}
+}
+
+
+@misc{Bigalke.2016,
+ author = {Bigalke, Uwe and Armbruster, Aline and Lukas, Franziska and Krieger, Oliver and Schuch, Cornelia and Kunde, Jan},
+ date = {2016},
+ title = {dena-Geb{\"a}udereport 2016: Statistiken und Analysen zur Energieeffizienz im Geb{\"a}udebestand},
+ url = {www.dena.de},
+ editor = {{Deutsche Energie-Agentur GmbH}},
+ institution = {{Deutsche Energie-Agentur GmbH}}
+}
+
+
+@incollection{Bohne.2019,
+ author = {Bohne, Dirk},
+ title = {Raumlufttechnik},
+ keywords = {decentralized ventilation;heat recovery;mechanical ventilation;natural ventilation;window ventilation},
+ pages = {337--431},
+ publisher = {{Springer Vieweg}},
+ isbn = {978-3-658-21436-4},
+ editor = {Bohne, Dirk},
+ booktitle = {Technischer Ausbau von Geb{\"a}uden: Und nachhaltige Geb{\"a}udetechnik},
+ year = {2019},
+ address = {Wiesbaden}
+}
+
+
+@book{Bohne.2019b,
+ abstract = {Grundlagen -- Sanit{\"a}rr{\"a}ume -- Abwasser- und Wassertechnik -- W{\"a}rme- und K{\"a}lteversorgungsanlagen -- Raumlufttechnik -- Elektrotechnik -- F{\"o}rderanlagen -- Energiekonzepte
+
+Auf dem neuesten Stand der Technik pr{\"a}sentiert sich das vollst{\"a}ndig {\"u}berarbeitete Grundlagenwerk. In dem neuen Kapitel {\glq}qEnergiekonzepte{\grq}q werden die zahlreichen Erl{\"a}uterungen zu nachhaltigen Geb{\"a}udesystemen zusammengef{\"u}hrt. Die Fachinhalte sind entsprechend den f{\"u}r Architekten und Bauingenieuren relevanten Sachverhalten und Zusammenh{\"a}ngen komprimiert. Der umfangreiche Abbildungsteil mit detaillierten Zeichnungen zur bildhaften Kommentierung des Textes wurden {\"u}berarbeitet und aktualisiert. Der {\glq}qBohne{\grq}q bleibt somit weiterhin ein unverzichtbares Grundlagenwerk, um beim Technischen Ausbau mit der dynamischen technologischen Entwicklung, den steigenden Komfortanspr{\"u}chen und den Erfordernissen an einen wirtschaftlichen und umweltfreundlichen Umgang mit Energie Schritt zu halten. Der Inhalt Grundlagen - Sanit{\"a}rr{\"a}ume - Abwasser- und Wassertechnik - W{\"a}rme- und K{\"a}lteversorgungsanlagen - Raumlufttechnik - Elektrotechnik - F{\"o}rderanlagen - Energiekonzepte Die Zielgruppe Architekten und Bauingenieure in Studium und Praxis Der Autor Univ.-Prof. Dr.-Ing. Dirk Bohne lehrt an der Leibniz Universit{\"a}t Hannover Geb{\"a}udetechnik und ist Gesellschafter von Ingenieurgesellschaften f{\"u}r Technische Geb{\"a}udeausr{\"u}stung in D{\"u}sseldorf, Siegen und Berlin},
+ year = {2019},
+ title = {Technischer Ausbau von Geb{\"a}uden: Und nachhaltige Geb{\"a}udetechnik},
+ url = {https://doi.org/10.1007/978-3-658-21437-1},
+ address = {Wiesbaden},
+ edition = {11., aktualisierte Auflage},
+ publisher = {{Springer Vieweg}},
+ isbn = {978-3-658-21436-4},
+ editor = {Bohne, Dirk}
+}
+
+
+@book{Born.2012,
+ author = {Born, Rolf and Gro{\ss}klos, Marc},
+ year = {2012},
+ title = {Kontrollierte Wohnungsl{\"u}ftung: Wissenswertes {\"u}ber Abluftanlagen und Anlagen mit W{\"a}rmer{\"u}ckgewinnung},
+ address = {Wiesbaden},
+ edition = {Ausgabe: 05/2008, {\"U}berarb.: 11/2012},
+ volume = {09},
+ publisher = {{Hessisches Ministerium f{\"u}r Umwelt, Energie, Landwirtschaft und Verbraucherschutz}},
+ isbn = {978-3-89274-305-7},
+ series = {Energiesparinformationen}
+}
+
+
+@misc{BorschLaaks.2011,
+ author = {Borsch-Laaks, Robert},
+ date = {2011},
+ title = {L{\"u}ftung im Wohngeb{\"a}ude: Wissenswertes {\"u}ber den Luftwechsel und moderne L{\"u}ftungsmethoden},
+ url = {http://www.iwu.de/fileadmin/user_upload/dateien/energie/espi/espi8.pdf},
+ address = {Wiesbaden},
+ urldate = {15.06.2019},
+ editor = {{Hessisches Ministerium f{\"u}r Umwelt, Energie, Landwirtschaft und Verbraucherschutz}},
+ institution = {{Institut Wohnen und Umwelt GmbH}}
+}
+
+
+@misc{Bundesregierung.1977,
+ author = {Bundesregierung},
+ title = {1. Verordnung {\"u}ber einen energiesparenden W{\"a}rmeschutz bei Geb{\"a}uden: 1. WschV},
+ year = {1977},
+ url = {https://de.wikipedia.org/wiki/W%C3%A4rmeschutzverordnung},
+ urldate = {14.05.2019}
+}
+
+
+@book{Cali.2016,
+ abstract = {field tests show discrepancy between expected and meaured energy consumption; modelling of impact of occupants' behavior on the energy performance of buildings with a particular focus on natural evaluation; heating consumption via EnEV; dynamic simulation},
+ author = {Cali, Davide},
+ year = {2016},
+ title = {Occupants' behavior and its impact upon the energy performance of buildings: = Auswirkung des Nutzerverhaltens auf die Energieeffizienz von Geb{\"a}uden},
+ keywords = {building renovation;energy efficiency;energy performance;heating energy consumption;occupants' behavior;rebound effect;window ventilation},
+ address = {Aachen},
+ edition = {1. Auflage},
+ volume = {Band 38 : EBC, Energy efficient buildings and indoor climate},
+ publisher = {{E.ON Energy Research Center, RWTH Aachen University}},
+ isbn = {3942789361},
+ series = {E.On Energy Research Center}
+}
+
+
+@article{Cali.2016b,
+ author = {Cal{\`i}, Davide and Andersen, Rune Korsholm and M{\"u}ller, Dirk and Olesen, Bjarne W.},
+ year = {2016},
+ title = {Analysis of occupants' behavior related to the use of windows in German households},
+ pages = {54--69},
+ volume = {103},
+ issn = {03601323},
+ journal = {Building and Environment},
+ doi = {10.1016/j.buildenv.2016.03.024}
+}
+
+
+@incollection{Cali.Holistic,
+ author = {Cali, D. and Streblow, R. and M{\"u}ller, D. and Osterhage, T.},
+ title = {Holistic Renovation and Monitoring of Residential Buildings: Contribution to a conference proceedings},
+ volume = {2},
+ booktitle = {Rethink, renew, restart: ECEEE 2013 summer study}
+}
+
+
+@book{Chong.,
+ abstract = {Explore the latest applications of optimization theory and methods. Optimization is central to any problem involving decision making in many disciplines, such as engineering, mathematics, statistics, economics, and computer science. Now, more than ever, it is increasingly vital to have a firm grasp of the topic due to the rapid progress in computer technology, including the development and availability of user-friendly software, high-speed and parallel processors, and networks. Fully updated to reflect modern developments in the field, An Introduction to Optimization, Third Edition fills the need for an accessible, yet rigorous, introduction to optimization theory and methods.
+
+
+
+The book begins with a review of basic definitions and notations and also provides the related fundamental background of linear algebra, geometry, and calculus. With this foundation, the authors explore the essential topics of unconstrained optimization problems, linear programming problems, and nonlinear constrained optimization. An optimization perspective on global search methods is featured and includes discussions on genetic algorithms, particle swarm optimization, and the simulated annealing algorithm. In addition, the book includes an elementary introduction to artificial neural networks, convex optimization, and multi-objective optimization, all of which are of tremendous interest to students, researchers, and practitioners.
+
+
+
+Additional features of the Third Edition include: *New discussions of semidefinite programming and Lagrangian algorithms. *A new chapter on global search methods. *A new chapter on multipleobjective optimization. *New and modified examples and exercises in each chapter as well as an updated bibliography containing new references. *An updated Instructor's Manual with fully worked-out solutions to the exercises.
+
+
+
+Numerous diagrams and figures found throughout the text complement the written presentation of key concepts, and each chapter is followed by MATLAB exercises and drill problems that reinforce the discussed theory and algorithms. With innovative coverage and a straightforward approach, An Introduction to Optimization, Third Edition is an excellent book for courses in optimization theory and methods at the upper-undergraduate and graduate levels. It also serves as a useful, self-contained reference for researchers and professionals in a wide array of fields.},
+ author = {Chong, Edwin Kah Pin and Zak, Stanislaw H.},
+ title = {An introduction to optimization},
+ url = {http://site.ebrary.com/lib/alltitles/docDetail.action?docID=10504174},
+ edition = {Third edition},
+ isbn = {978-0-471-75800-6},
+ series = {Wiley-Interscience series in discrete mathematics and optimization},
+ doi = {10.1002/9781118033340}
+}
+
+
+@misc{DeutschesInstitutfurNormunge.V..Juni2003,
+ year = {Juni 2003},
+ title = {Thermal protection and energy economy in buildings  Part 6: Calculation of annual heat and annual energy use},
+ number = {DIN~V~4108-6},
+ author = {{Deutsches Institut f{\"u}r Normung e. V.}}
+}
+
+
+@misc{Diefenbach.12.11.2007,
+ author = {Diefenbach, Nikolaus and Born, Rolf},
+ date = {12.11.2007},
+ title = {Basisdaten f{\"u}r Hochrechnungen mit der Deutschen Geb{\"a}udetypologie des IWU},
+ editor = {{Institut Wohnen und Umwelt GmbH}},
+ institution = {{Institut Wohnen und Umwelt GmbH}}
+}
+
+
+@book{Diefenbach.2010,
+ author = {Diefenbach, Nikolaus},
+ year = {2010},
+ title = {Datenbasis Geb{\"a}udebestand: Datenerhebung zur energetischen Qualit{\"a}t und zu den Modernisierungstrends im deutschen Wohngeb{\"a}udebestand},
+ address = {Darmstadt},
+ edition = {1. Aufl.},
+ publisher = {{Inst. Wohnen und Umwelt GmbH}},
+ isbn = {978-3-941140-16-5}
+}
+
+
+@book{Diekmann.2014,
+ year = {2014},
+ title = {Energie},
+ address = {Wiesbaden},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-00500-9},
+ editor = {Diekmann, Bernd and Rosenthal, Eberhard},
+ doi = {10.1007/978-3-658-00501-6}
+}
+
+
+@incollection{Diekmann.2014b,
+ author = {Diekmann, Bernd and Rosenthal, Eberhard},
+ title = {Geb{\"a}ude},
+ keywords = {efficiency;heat recovery;mechanical ventilation;natural ventilation},
+ pages = {339--376},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-00500-9},
+ editor = {Diekmann, Bernd and Rosenthal, Eberhard},
+ booktitle = {Energie},
+ year = {2014},
+ address = {Wiesbaden},
+ doi = {10.1007/978-3-658-00501-6{\textunderscore }9}
+}
+
+
+@misc{DINDeutschesInstitutfurNormunge.V..September2017,
+ year = {September 2017},
+ title = {DIN EN 12831-1 Energetische Bewertung von Gebaeuden -- Verfahren zur Berechnung der Norm-Heizlast},
+ number = {DIN EN 12831-1},
+ author = {{Deutsches Institut f{\"u}r Normung e. V.}}
+}
+
+
+@book{Dubielzig.2007,
+ author = {Dubielzig, Guido},
+ year = {2007},
+ title = {Referenzlastprofile von Ein- und Mehrfamilienh{\"a}usern f{\"u}r den Einsatz von KWK-Anlagen},
+ address = {D{\"u}sseldorf},
+ volume = {560},
+ publisher = {VDI-Verl.},
+ isbn = {978-3-18-356006-6},
+ series = {Fortschritt-Berichte VDI Reihe 6, Energietechnik}
+}
+
+
+@article{EickeHenning.2011,
+ author = {Eicke-Henning, Werner},
+ year = {2011},
+ title = {Kleine Geschichte der D{\"a}mmstoffe: {\textquotedbl}Erster Teil{\textquotedbl}},
+ pages = {6--27},
+ volume = {2011},
+ number = {65},
+ journal = {wksb}
+}
+
+
+@article{EickeHenning.2011b,
+ author = {Eicke-Henning, Werner},
+ year = {2011},
+ title = {Kleine Geschichte der D{\"a}mmstoffe: {\textquotedbl}Zweiter~Teil{\textquotedbl}},
+ pages = {6--34},
+ volume = {2011},
+ number = {66},
+ journal = {wksb}
+}
+
+
+@article{Fabi.2012,
+ author = {Fabi, Valentina and Andersen, Rune Vinther and Corgnati, Stefano and Olesen, Bjarne W.},
+ year = {2012},
+ title = {Occupants' window opening behaviour: A literature review of factors influencing occupant behaviour and models},
+ pages = {188--198},
+ volume = {58},
+ issn = {03601323},
+ journal = {Building and Environment},
+ doi = {10.1016/j.buildenv.2012.07.009}
+}
+
+
+@article{Fabi.2013,
+ author = {Fabi, Valentina and Andersen, Rune Vinther and Corgnati, Stefano P. and Olesen, Bjarne W.},
+ year = {2013},
+ title = {A methodology for modelling energy-related human behaviour: Application to window opening behaviour in residential buildings},
+ pages = {415--427},
+ volume = {6},
+ number = {4},
+ issn = {1996-3599},
+ journal = {Building Simulation},
+ doi = {10.1007/s12273-013-0119-6}
+}
+
+
+@article{Falke.2016,
+ author = {Falke, Tobias and Krengel, Stefan and Meinerzhagen, Ann-Kathrin and Schnettler, Armin},
+ year = {2016},
+ title = {Multi-objective optimization and simulation model for the design of distributed energy systems},
+ pages = {1508--1516},
+ volume = {184},
+ issn = {03062619},
+ journal = {Applied Energy},
+ doi = {10.1016/j.apenergy.2016.03.044}
+}
+
+
+@book{Fitzner.2012,
+ author = {Fitzner, Klaus and Finke, Ulrich},
+ year = {2012},
+ title = {L{\"u}ftungsregeln f{\"u}r freie L{\"u}ftung: Projekt F 2072},
+ keywords = {CO2 concentration;continous ventilation;pivot-hung window;Sto{\ss}l{\"u}ftung;thermal comfort;window ventilation},
+ address = {Dortmund [u.a.] and Dortmund [u.a.]},
+ publisher = {BAuA},
+ isbn = {3882611057},
+ series = {Forschung}
+}
+
+
+@incollection{Fitzner.2013,
+ author = {Fitzner, Klaus},
+ title = {C. Durchstr{\"o}mung von Geb{\"a}uden},
+ keywords = {natural ventilation;pivot-hung window;ventilation system;window ventilation},
+ pages = {27--64},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-540-57181-0},
+ editor = {Fitzner, Klaus},
+ booktitle = {Raumklimatechnik},
+ year = {2013},
+ address = {Berlin, Heidelberg},
+ doi = {10.1007/978-3-540-68213-4{\textunderscore }3}
+}
+
+
+@book{Fitzner.2013b,
+ year = {2013},
+ title = {Raumklimatechnik},
+ address = {Berlin, Heidelberg},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-540-57181-0},
+ editor = {Fitzner, Klaus},
+ doi = {10.1007/978-3-540-68213-4}
+}
+
+
+@book{Franzke.2003,
+ author = {Franzke, Uwe and Heidenreich, Ralf and Ehle, Angelika and Ziller, Falko},
+ year = {2003},
+ title = {Wirtschaftlichkeit der dezentralen Klimatisierung im Vergleich zu zentralen RLT-Anlagen},
+ address = {Dresden},
+ institution = {{Institut f{\"u}r Luft- und K{\"a}ltetechnik}}
+}
+
+
+@book{Friedrichsen.2018,
+ year = {2018},
+ title = {Nachhaltiges Planen, Bauen und Wohnen},
+ address = {Berlin, Heidelberg},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-662-56552-0},
+ editor = {Friedrichsen, Stefanie},
+ doi = {10.1007/978-3-662-56553-7}
+}
+
+
+@incollection{Friedrichsen.2018b,
+ author = {Friedrichsen, Stefanie},
+ title = {{\"O}kologische Qualit{\"a}t},
+ keywords = {fan power;heat recovery;mechanical ventilation;ventilation system},
+ pages = {93--180},
+ volume = {39},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-662-56552-0},
+ editor = {Friedrichsen, Stefanie},
+ booktitle = {Nachhaltiges Planen, Bauen und Wohnen},
+ year = {2018},
+ address = {Berlin, Heidelberg},
+ doi = {10.1007/978-3-662-56553-7{\textunderscore }5}
+}
+
+
+@book{Grote.2014,
+ year = {2014},
+ title = {Dubbel},
+ address = {Berlin, Heidelberg},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-642-38890-3},
+ editor = {Grote, Karl-Heinrich and Feldhusen, J{\"o}rg},
+ doi = {10.1007/978-3-642-38891-0}
+}
+
+
+@book{Grotschel.2009,
+ year = {2009},
+ title = {Produktionsfaktor Mathematik},
+ address = {Berlin, Heidelberg},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-540-89434-6},
+ editor = {Gr{\"o}tschel, Martin and Lucas, Klaus and Mehrmann, Volker},
+ doi = {10.1007/978-3-540-89435-3}
+}
+
+
+@article{Haas.2000,
+ author = {Haas, Reinhard and Biermayr, Peter},
+ year = {2000},
+ title = {The rebound effect for space heating Empirical evidence from Austria},
+ pages = {403--410},
+ volume = {28},
+ number = {6-7},
+ issn = {03014215},
+ journal = {Energy Policy},
+ doi = {10.1016/S0301-4215(00)00023-9}
+}
+
+
+@book{Hall.2004,
+ abstract = {calculation of volume flow of air through windows},
+ author = {Hall, Monika},
+ year = {2004},
+ title = {Untersuchungen zum thermisch induzierten Luftwechselpotential von Kippfenstern},
+ keywords = {natural ventilation;window ventilation},
+ address = {Kassel},
+ publisher = {{Universit{\"a}t Kassel}}
+}
+
+
+@article{Harb.2016,
+ author = {Harb, Hassan and Reinhardt, Jan and Streblow, Rita and M{\"u}ller, Dirk},
+ year = {2016},
+ title = {MIP approach for designing heating systems in residential buildings and neighbourhoods},
+ pages = {316--330},
+ volume = {9},
+ number = {3},
+ issn = {1940-1493},
+ journal = {Journal of Building Performance Simulation},
+ doi = {10.1080/19401493.2015.1051113}
+}
+
+
+@book{Haupl.2017,
+ year = {2017},
+ title = {Lehrbuch der Bauphysik},
+ address = {Wiesbaden},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-16073-9},
+ editor = {H{\"a}upl, Peter and H{\"o}fker, Gerrit and Homann, Martin and K{\"o}lzow, Christian and Maas, Anton and Nocke, Christian and Riese, Olaf and Willems, Wolfgang M.},
+ doi = {10.1007/978-3-658-16074-6}
+}
+
+
+@book{Heidemann.2014,
+ year = {2014},
+ title = {Integrale Planung der Geb{\"a}udetechnik},
+ address = {Berlin, Heidelberg},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-662-44747-5},
+ editor = {Heidemann, Achim and Kistemann, Thomas and Stolbrink, Marc and Kasperkowiak, Frank and Heikrodt, Klaus},
+ doi = {10.1007/978-3-662-44748-2}
+}
+
+
+@incollection{Heikrodt.2014,
+ author = {Heikrodt, Klaus},
+ title = {EnEV 2014},
+ keywords = {building laws;EEG;EEW{\"a}rmeG;EnEG;EnEV;Technische Regeln},
+ pages = {265--395},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-662-44747-5},
+ editor = {Heidemann, Achim and Kistemann, Thomas and Stolbrink, Marc and Kasperkowiak, Frank and Heikrodt, Klaus},
+ booktitle = {Integrale Planung der Geb{\"a}udetechnik},
+ year = {2014},
+ address = {Berlin, Heidelberg},
+ doi = {10.1007/978-3-662-44748-2{\textunderscore }5}
+}
+
+
+@book{Hinz.10.08.2015,
+ author = {Hinz, Eberhard},
+ year = {10.08.2015},
+ title = {Kosten energierelevanter Bau- und Anlagenteile bei der energetischen Modernisierung von Altbauten: Endbericht},
+ keywords = {building renovation;building ventilation;costs for ventilation systems;decentralized ventilation;Energie{\"o}konomik;heat recovery;operating energy cost},
+ address = {Darmstadt},
+ edition = {1. Auflage},
+ publisher = {{Institut Wohnen und Umwelt}},
+ isbn = {978-3-941140-50-9}
+}
+
+
+@book{Horner.2014,
+ year = {2014},
+ title = {Handbuch der Klimatechnik},
+ price = {EUR 69.00 (DE)},
+ address = {Berlin},
+ edition = {6., {\"u}berarb. Aufl.},
+ publisher = {VDE-Verl.},
+ isbn = {9783800735549},
+ editor = {H{\"o}rner, Berndt and Schmidt, Manfred}
+}
+
+
+@misc{InstitutfurTechnischeGebaudeausrustungDresden.2017,
+ author = {{Institut f{\"u}r Technische Geb{\"a}udeausr{\"u}stung Dresden}},
+ date = {2017},
+ title = {BDEW-Heizkostenvergleich Altbau 2017},
+ url = {https://www.bdew.de/media/documents/Heizkostenvergleich_Altbau.pdf},
+ address = {Berlin},
+ urldate = {14.06.2019},
+ edition = {3},
+ editor = {{BDEW Bundesverband der Energie- und Wasserwirtschaft e.V.}},
+ institution = {{Institut f{\"u}r Technische Geb{\"a}udeausr{\"u}stung Dresden}}
+}
+
+
+@article{Iturriaga.2017,
+ author = {Iturriaga, E. and Aldasoro, U. and Campos-Celador, A. and Sala, J. M.},
+ year = {2017},
+ title = {A general model for the optimization of energy supply systems of buildings},
+ pages = {954--966},
+ volume = {138},
+ issn = {03605442},
+ journal = {Energy},
+ doi = {10.1016/j.energy.2017.07.094}
+}
+
+
+@incollection{Jochum.2010,
+ abstract = {Einem Geb{\"a}ude kommen verschiedene Funktionen zu. Das Geb{\"a}ude muss die Nutzerbed{\"u}rfnisse (behagliches Wohnen, Schlafen, Arbeiten, etc.) erf{\"u}llen und es sollte gleichzeitig {\"a}sthetisch ansprechend sein. Au{\ss}erdem muss es eine Schutzfunktion hinsichtlich K{\"a}lte und Frost, Hitze und Sonnenstrahlung, Luft- und Bodenfeuchte und Niederschl{\"a}gen, aber auch Wind-, Schall- und Brandschutz aus{\"u}ben (Bauer und Hertle 2005).},
+ author = {Jochum, Patrick and Pehnt, Martin},
+ title = {Energieeffizienz in Geb{\"a}uden},
+ url = {https://doi.org/10.1007/978-3-642-14251-2_6},
+ pages = {197--226},
+ publisher = {Springer},
+ isbn = {978-3-642-14251-2},
+ editor = {Pehnt, Martin},
+ booktitle = {Energieeffizienz},
+ year = {2010},
+ address = {Berlin},
+ doi = {10.1007/978-3-642-14251-2{\textunderscore }6}
+}
+
+
+@article{Kamendere.2015,
+ abstract = {Energy Procedia, 72 (2015) 27-33. doi:10.1016/j.egypro.2015.06.005},
+ author = {Kamendere, Edite and Zogla, Gatis and Kamenders, Agris and Ikaunieks, Janis and Rochas, Claudio},
+ year = {2015},
+ title = {Analysis of Mechanical Ventilation System with Heat Recovery in Renovated Apartment Buildings},
+ keywords = {building renovation;energy efficiency;heat recovery;mechanical ventilation},
+ pages = {27--33},
+ volume = {72},
+ issn = {18766102},
+ journal = {Energy Procedia},
+ doi = {10.1016/j.egypro.2015.06.005}
+}
+
+
+@misc{KfW_Report18,
+ author = {{KfW Bankengruppe}},
+ title = {F{\"o}rderreport 2018},
+ url = {https://www.kfw.de/PDF/Unternehmen/Zahlen-und-Fakten/KfW-auf-einen-Blick/F%C3%B6rderreport/KfW-F%C3%B6rderreport_2018.pdf},
+ urldate = {11.06.2019}
+}
+
+
+@article{Kim.2016,
+ abstract = {Energy {\&} Buildings, 111 (2016) 424-433. doi:10.1016/j.enbuild.2015.11.044},
+ author = {Kim, Moon Keun and Baldini, Luca},
+ year = {2016},
+ title = {Energy analysis of a decentralized ventilation system compared with centralized ventilation systems in European climates: Based on review of analyses},
+ keywords = {decentralized ventilation;energy analysis;European climates;hybrid ventilation;natural ventilation},
+ pages = {424--433},
+ volume = {111},
+ issn = {03787788},
+ journal = {Energy and Buildings},
+ doi = {10.1016/j.enbuild.2015.11.044}
+}
+
+
+@article{Kowener.2012,
+ author = {K{\"o}wener, Dirk and Mai, Michael and Ernst, Carsten and Kubin, Kirsten and Feihl, Michael},
+ year = {2012},
+ title = {Investitionsberechnungshilfen und deren Gesamtoberfl{\"a}che: Vereinfachung der Initialberatung},
+ pages = {55--59},
+ volume = {20},
+ number = {1},
+ issn = {0943-3481},
+ journal = {uwf UmweltWirtschaftsForum},
+ doi = {10.1007/s00550-012-0246-z}
+}
+
+
+@book{Laasch.2013,
+ year = {2013},
+ title = {Haustechnik},
+ address = {Wiesbaden},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-8348-1260-5},
+ editor = {Laasch, Thomas and Laasch, Erhard},
+ doi = {10.1007/978-3-8348-9900-2}
+}
+
+
+@incollection{Laasch.2013b,
+ author = {Laasch, Thomas and Laasch, Erhard},
+ title = {L{\"u}ftungsanlagen},
+ keywords = {heat recovery;natural ventilation;ventilation system;window ventilation},
+ pages = {757--808},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-8348-1260-5},
+ editor = {Laasch, Thomas and Laasch, Erhard},
+ booktitle = {Haustechnik},
+ year = {2013},
+ address = {Wiesbaden},
+ doi = {10.1007/978-3-8348-9900-2{\textunderscore }11}
+}
+
+
+@article{Laverge.2012,
+ abstract = {Energy {\&} Buildings, 50 (2012) 315-323. 10.1016/j.enbuild.2012.04.005},
+ author = {Laverge, J. and Janssens, A.},
+ year = {2012},
+ title = {Heat recovery ventilation operation traded off against natural and simple exhaust ventilation in Europe by primary energy factor, carbon dioxide emission, household consumer price and exergy},
+ keywords = {carbon dioxide emission;climate;degree days;exergy;heat recovery;operating energy cost;primary energy;ventilation system},
+ pages = {315--323},
+ volume = {50},
+ issn = {03787788},
+ journal = {Energy and Buildings},
+ doi = {10.1016/j.enbuild.2012.04.005}
+}
+
+
+@misc{Loga.102012,
+ author = {Loga, Tobias and Diefenbach, Nikolaus and Stein, Britta},
+ date = {10/2012},
+ title = {Typology Approach for Building Stock Energy Assessment. Main Results of the TABULA project: Final Project Report: Appendix Volume},
+ editor = {{Institut Wohnen und Umwelt GmbH}}
+}
+
+
+@book{Maas.1995,
+ author = {Maas, Anton},
+ year = {1995},
+ title = {Experimentelle Quantifizierung des Luftwechsels von~Fensterl{\"u}ftung},
+ address = {Kassel},
+ publisher = {{Universit{\"a}t Gesamthochschule Kassel}}
+}
+
+
+@incollection{Maas.2017,
+ author = {Maas, Anton},
+ title = {L{\"u}ftung},
+ keywords = {air flow calculation;infiltration;natural ventilation;pivot-hung window;window ventilation},
+ pages = {51--60},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-16073-9},
+ editor = {H{\"a}upl, Peter and H{\"o}fker, Gerrit and Homann, Martin and K{\"o}lzow, Christian and Maas, Anton and Nocke, Christian and Riese, Olaf and Willems, Wolfgang M.},
+ booktitle = {Lehrbuch der Bauphysik},
+ year = {2017},
+ address = {Wiesbaden},
+ doi = {10.1007/978-3-658-16074-6{\textunderscore }4}
+}
+
+
+@article{Manz.2000,
+ abstract = {DV are fitting for retrofitting use; Recuperative and regenerative ventilation unit were investigated by means of expermients and numerical simulations with reference to ventilation efficiency, thermal comfort, heat recovery, electric energy input and acoustics},
+ author = {Manz, H. and Huber, H. and Sch{\"a}lin, A. and Weber, A. and Ferrazzini, M. and Studer, M.},
+ year = {2000},
+ title = {Performance of single room ventilation units with recuperative or regenerative heat recovery},
+ keywords = {decentralized ventilation;heat recovery;performance criteria;residential ventilation},
+ pages = {37--47},
+ volume = {31/32},
+ number = {1},
+ issn = {03787788},
+ journal = {Energy and Buildings}
+}
+
+
+@book{Milles.2011,
+ author = {Milles, Uwe},
+ year = {2011},
+ title = {L{\"u}ften und Energiesparen},
+ institution = {{FIZ Karlsruhe}}
+}
+
+
+@incollection{Muller.2009,
+ author = {M{\"u}ller, Dirk},
+ title = {Planungswerkzeuge f{\"u}r Energieeffiziente Geb{\"a}ude},
+ pages = {423--432},
+ volume = {77},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-540-89434-6},
+ editor = {Gr{\"o}tschel, Martin and Lucas, Klaus and Mehrmann, Volker},
+ booktitle = {Produktionsfaktor Mathematik},
+ year = {2009},
+ address = {Berlin, Heidelberg},
+ doi = {10.1007/978-3-540-89435-3{\textunderscore }18}
+}
+
+
+@book{Nguyen.2013,
+ author = {Nguyen, Xuan-Man},
+ year = {2013},
+ title = {2013 International Conference on Control, Automation and Information Sciences (ICCAIS 2013): Nha Trang, Vietnam, 25 - 28 November 2013 ; [including papers of the Workshop on Intelligent Systems (IWIS)},
+ address = {Piscataway, NJ},
+ publisher = {IEEE},
+ isbn = {978-1-4799-0572-0},
+ institution = {{Dai Hoc Quoc Gia Thanh pho Ho Chi Minh} and {International Conference on Control, Automation and Information Sciences} and ICCAIS and {Workshop on Intelligent Systems (IWIS)}}
+}
+
+
+@book{Oehler.2018,
+ author = {Oehler, Stefan},
+ year = {2018},
+ title = {Emissionsfreie Geb{\"a}ude},
+ address = {Wiesbaden},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-16055-5},
+ doi = {10.1007/978-3-658-16056-2}
+}
+
+
+@book{Osterhage.2018,
+ author = {Osterhage, T.},
+ year = {2018},
+ title = {Messdatengest{\"u}tzte Analyse und~Interpretation sanierungsbedingter Effizienzsteigerungen im Wohnungsbau},
+ address = {Aachen},
+ publisher = {{E.ON Energy Research Center, RWTH Aachen University}},
+ isbn = {978-3-942789-57-8},
+ institution = {{Institute for Energy Efficient Buildings and Indoor Climate}}
+}
+
+
+@book{Pech.2006,
+ abstract = {Dieser Band der Fachbuchserie 'Baukonstruktionen' tr{\"a}gt zur angemessenen und zeitgerechten Ber{\"u}cksichtigung von L{\"u}ftungs- und Klimaanlagen und Sanit{\"a}rinstallationen bei der Geb{\"a}udeplanung bei. Beschreibungen von Anlagenkomponenten und deren Funktionsweise erleichtern das Verst{\"a}ndnis f{\"u}r die Vielfalt der Kombinationsm{\"o}glichkeiten. Sie liefern Hinweise zur angemessenen Ber{\"u}cksichtigung baulicher Vorkehrungen. Die Autoren zeigen vielf{\"a}ltige technische M{\"o}glichkeiten der Rauml{\"u}ftung und bieten Entscheidungshilfen f{\"u}r den Einsatz von W{\"a}rmer{\"u}ckgewinnungsanlagen. Auszugsweise: Rechenwerte zur Grobbemessung von Entw{\"a}sserungsanlagen nach EN- Normen.},
+ year = {2006},
+ title = {L{\"u}ftung und Sanit{\"a}r},
+ url = {http://dx.doi.org/10.1007/3-211-38042-6},
+ address = {Vienna},
+ volume = {16},
+ publisher = {Springer-Verlag/Wien},
+ isbn = {978-3-211-38042-0},
+ series = {Baukonstruktionen},
+ editor = {Pech, Anton and Jens, Klaus},
+ doi = {10.1007/3-211-38042-6}
+}
+
+
+@incollection{Pech.2006b,
+ author = {Pech, Anton and Jens, Klaus},
+ title = {W{\"a}rmer{\"u}ckgewinnung},
+ keywords = {heat recovery;regenerative heat recovery},
+ publisher = {Springer-Verlag/Wien},
+ isbn = {978-3-211-38042-0},
+ series = {Baukonstruktionen},
+ editor = {Pech, Anton and Jens, Klaus},
+ booktitle = {L{\"u}ftung und Sanit{\"a}r},
+ year = {2006},
+ address = {Vienna}
+}
+
+
+@book{Pech.2012,
+ year = {2012},
+ title = {Bauphysik --- Erweiterung 1},
+ address = {Vienna},
+ publisher = {{Springer Vienna}},
+ isbn = {978-3-211-89236-7},
+ series = {Baukonstruktionen},
+ editor = {Pech, Anton and P{\"o}hn, Christian and Pech, Anton and Bednar, Thomas and Streicher, Wolfgang},
+ doi = {10.1007/978-3-211-89237-4}
+}
+
+
+@book{Pehnt.2010,
+ year = {2010},
+ title = {Energieeffizienz: Ein Lehr- und Handbuch},
+ keywords = {Civil engineering;Electric engineering;Energieeffizienz;Energietechnik;Engineering;Environmental law;Environmental management;Haustechnik;Verkehrstechnik},
+ address = {Berlin},
+ edition = {1., korrigierter Nachdr},
+ publisher = {Springer},
+ isbn = {978-3-642-14251-2},
+ editor = {Pehnt, Martin}
+}
+
+
+@inproceedings{Pinzon.23.04.201726.04.2017,
+ author = {Pinzon, Jerson A. and Vergara, Pedro P. and {da Silva}, Luiz C. P. and Rider, Marcos J.},
+ title = {An MILP model for optimal management of energy consumption and comfort in smart buildings},
+ pages = {1--5},
+ publisher = {IEEE},
+ isbn = {978-1-5386-2890-4},
+ booktitle = {2017 IEEE Power {\&} Energy Society Innovative Smart Grid Technologies Conference (ISGT)},
+ year = {23.04.2017 - 26.04.2017},
+ doi = {10.1109/ISGT.2017.8085956}
+}
+
+
+@incollection{Pohn.2012,
+ author = {P{\"o}hn, Christian and Pech, Anton and Bednar, Thomas and Streicher, Wolfgang},
+ title = {Raumlufttechnikenergiebedarf},
+ pages = {83--95},
+ volume = {1/1},
+ publisher = {{Springer Vienna}},
+ isbn = {978-3-211-89236-7},
+ series = {Baukonstruktionen},
+ editor = {Pech, Anton and P{\"o}hn, Christian and Pech, Anton and Bednar, Thomas and Streicher, Wolfgang},
+ booktitle = {Bauphysik --- Erweiterung 1},
+ year = {2012},
+ address = {Vienna},
+ doi = {10.1007/978-3-211-89237-4{\textunderscore }6}
+}
+
+
+@article{Risbeck.2017,
+ author = {Risbeck, Michael J. and Maravelias, Christos T. and Rawlings, James B. and Turney, Robert D.},
+ year = {2017},
+ title = {A mixed-integer linear programming model for real-time cost optimization of building heating, ventilation, and air conditioning equipment},
+ pages = {220--235},
+ volume = {142},
+ issn = {03787788},
+ journal = {Energy and Buildings},
+ doi = {10.1016/j.enbuild.2017.02.053}
+}
+
+
+@article{Samsatli.2018,
+ author = {Samsatli, Sheila and Samsatli, Nouri J.},
+ year = {2018},
+ title = {A general mixed integer linear programming model for the design and operation of integrated urban energy systems},
+ pages = {458--479},
+ volume = {191},
+ issn = {09596526},
+ journal = {Journal of Cleaner Production},
+ doi = {10.1016/j.jclepro.2018.04.198}
+}
+
+
+@book{Sauer.2016,
+ author = {Sauer, Alexander and Bauernhansl, Thomas},
+ year = {2016},
+ title = {Energieeffizienz in Deutschland - eine Metastudie},
+ address = {Berlin, Heidelberg},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-662-48882-9},
+ doi = {10.1007/978-3-662-48883-6}
+}
+
+
+@incollection{Schadlich.2014,
+ author = {Sch{\"a}dlich, Sylvia},
+ title = {Klimatechnik},
+ pages = {880--924},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-642-38890-3},
+ editor = {Grote, Karl-Heinrich and Feldhusen, J{\"o}rg},
+ booktitle = {Dubbel},
+ year = {2014},
+ address = {Berlin, Heidelberg},
+ doi = {10.1007/978-3-642-38891-0{\textunderscore }82}
+}
+
+
+@book{Schellong.2016,
+ author = {Schellong, Wolfgang},
+ year = {2016},
+ title = {Analyse und Optimierung von Energieverbundsystemen},
+ address = {Berlin, Heidelberg},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-662-48527-9},
+ doi = {10.1007/978-3-662-49463-9}
+}
+
+
+@incollection{Schild.2013,
+ author = {Schild, Kai and Willems, Wolfgang M.},
+ title = {L{\"u}ftung und Luftdichtheit},
+ keywords = {air quality;building ventilation;CO2 concentration;decentralized ventilation;goals of ventilation;heat recovery;infiltration;infiltration calculation;Luftwechselzahlen im Winterfall;natural ventilation;pivot-hung window;regenerative heat recovery;ventilation system;window ventilation},
+ pages = {253--291},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-02570-0},
+ editor = {Schild, Kai and Willems, Wolfgang M.},
+ booktitle = {W{\"a}rmeschutz},
+ year = {2013},
+ address = {Wiesbaden},
+ doi = {10.1007/978-3-658-02571-7{\textunderscore }8}
+}
+
+
+@book{Schild.2013b,
+ year = {2013},
+ title = {W{\"a}rmeschutz},
+ address = {Wiesbaden},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-02570-0},
+ editor = {Schild, Kai and Willems, Wolfgang M.},
+ doi = {10.1007/978-3-658-02571-7}
+}
+
+
+@article{Schutz.2017,
+ author = {Sch{\"u}tz, Thomas and Schiffer, Lutz and Harb, Hassan and Fuchs, Marcus and M{\"u}ller, Dirk},
+ year = {2017},
+ title = {Optimal design of energy conversion units and envelopes for residential building retrofits using a comprehensive MILP model},
+ pages = {1--15},
+ volume = {185},
+ issn = {03062619},
+ journal = {Applied Energy},
+ doi = {10.1016/j.apenergy.2016.10.049}
+}
+
+
+@book{Stahr.2015,
+ year = {2015},
+ title = {Bausanierung},
+ address = {Wiesbaden},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-07455-5},
+ editor = {Stahr, Michael},
+ doi = {10.1007/978-3-658-07456-2}
+}
+
+
+@misc{StatistischeAmterdesBundesundderLander.2014,
+ author = {{Statistische {\"A}mter des Bundes und der L{\"a}nder}},
+ year = {2014},
+ title = {Geb{\"a}ude mit Wohnraum nach Art des Geb{\"a}udes und Baujahr (Mikrozensus-Klassen)},
+ url = {https://ergebnisse.zensus2011.de/#StaticContent:00,GWZ_10_2,m,table}
+}
+
+
+@misc{StatistischeAmterdesBundesundderLander.2014b,
+ author = {{Statistische {\"A}mter des Bundes und der L{\"a}nder}},
+ year = {2014},
+ title = {Geb{\"a}ude mit Wohnraum nach Art des Geb{\"a}udes, Zahl der Wohnungen und Baujahr (Mikrozensus-Klassen)},
+ url = {https://ergebnisse.zensus2011.de/#StaticContent:00,GWZ_10_8,m,table}
+}
+
+
+@misc{stromspiegel,
+ author = {{co2online gemeinn{\"u}tzige Beratungsgesellschaft mbH}},
+ url = {https://www.stromspiegel.de/},
+ urldate = {14.06.2019}
+}
+
+
+@article{Suszanowicz.2018,
+ abstract = {This study presents the results of research on heat loss from various types of residential buildings through ventilation systems. Experimental research was done to analyse the effectiveness of ventilation systems of different types and determine the parameters of air discharged via the ventilation ducts. A model of heat loss from the discharge of exhaust air outside through air ducts has since been developed. Experiments were conducted on three experimental systems of building ventilation: gravitational, mechanical, and supply-exhaust ventilation systems with heat recovery. The proposed model dependencies were used to chart the daily fluctuations of the optimum multiplicity of air exchange for precise control of the parameters of mechanical ventilation systems in residential buildings. This study proves that natural ventilation in residential buildings fulfils its function only by increasing the air flow into the building, and that this incurs significant heat loss from buildings during the heating season.},
+ author = {Suszanowicz, Dariusz},
+ year = {2018},
+ title = {Optimisation of Heat Loss through Ventilation for Residential Buildings},
+ keywords = {air quality;carbon dioxide concentration;heat loss;optimisation;residential building;ventilation system},
+ pages = {95},
+ volume = {9},
+ number = {3},
+ journal = {Atmosphere},
+ doi = {10.3390/atmos9030095}
+}
+
+
+@misc{try,
+ author = {{Deutscher Wetterdienst}},
+ title = {Testreferenzjahr (TRY)},
+ url = {https://www.dwd.de/DE/leistungen/testreferenzjahre/testreferenzjahre.html},
+ urldate = {14.06.2019}
+}
+
+
+@book{vanTreeck.2016,
+ abstract = {Vorwort  -- Building Information Modeling -- Die Auswirkungen von Building Information Modeling auf Planervertr{\"a}ge am Bau -- BIM f{\"u}r die Trinkwasser-Installation - Quo Vadis Systemauslegung? -- Energie - Geb{\"a}udeperformance in Planung und Betrieb optimieren -- Brandschutz -- Index
+
+
+
+BIM ist nach dem Stufenplan f{\"u}r Deutschland {\frqq}eine kooperative Arbeitsmethodik, mit der auf der Grundlage digitaler Modelle eines Bauwerks die f{\"u}r seinen Lebenszyklus relevanten Informationen und Daten konsistent erfasst, verwaltet und in einer transparenten Kommunikation zwischen den Beteiligten ausgetauscht oder f{\"u}r die weitere Bearbeitung {\"u}bergeben werden{\flqq}. Vor diesem Hintergrund hilft virtuelles Bauen, Zeitpl{\"a}ne und Kosten einzuhalten und Risiken zu minimieren. Plan{\"a}nderungen k{\"o}nnen zeit- und kosteneffizient {\"u}ber s{\"a}mtliche Realisierungsebenen hinweg interpretations- und fehlerfrei realisiert werden. Schlie{\ss}lich profitiert das Facility Management durch die konsequente Weiternutzung der digitalen Gesamtdokumentation in der Betriebs- und Nutzungsphase. Dieses Fachbuch beschreibt den Status Quo dieser neuen Disziplin, die sich zunehmend z.B. bei {\"o}ffentlichen Ausschreibungen - auch international - zu einer verbindlichen Konvention entwickelt. In diesem Kontext werden neueste Erkenntnisse und Trends f{\"u}r die Anwendung der Methode BIM in der Praxis in den Gewerken Trinkwasser, Energie und Brandschutz reflektiert sowie auch die rechtlichen Aspekte zukunftsweisend erl{\"a}utert},
+ author = {{van Treeck}, Christoph and Elixmann, Robert and Rudat, Klaus and Hiller, Sven and Herkel, Sebastian and Berger, Markus},
+ year = {2016},
+ title = {Geb{\"a}ude.Technik.Digital: Building Information Modeling},
+ url = {http://dx.doi.org/10.1007/978-3-662-52825-9},
+ keywords = {BIM Building Information Modeling;building laws;Energiemanagement},
+ address = {Berlin and Heidelberg},
+ publisher = {{Springer Vieweg}},
+ isbn = {9783662528242},
+ series = {VDI-Buch},
+ doi = {10.1007/978-3-662-52825-9}
+}
+
+
+@article{Wang.2015,
+ abstract = {Energy Procedia, 78 (2015) 1081-1086. doi:10.1016/j.egypro.2015.11.055},
+ author = {Wang, Qian and Holmberg, Sture},
+ year = {2015},
+ title = {Combined Retrofitting with Low Temperature Heating and Ventilation Energy Savings},
+ keywords = {energy saving;low temperature heating;retrofitting;simulation;ventilation system},
+ pages = {1081--1086},
+ volume = {78},
+ issn = {18766102},
+ journal = {Energy Procedia},
+ doi = {10.1016/j.egypro.2015.11.055}
+}
+
+
+@book{Weglage.2010,
+ year = {2010},
+ title = {Energieausweis -- Das gro{\ss}e Kompendium},
+ address = {Wiesbaden},
+ publisher = {Vieweg+Teubner},
+ isbn = {978-3-8348-0862-2},
+ editor = {Weglage, Andreas},
+ doi = {10.1007/978-3-8348-9390-1}
+}
+
+
+@incollection{Weglage.2010b,
+ author = {Weglage, Andreas},
+ title = {Geb{\"a}udetechnik},
+ pages = {129--165},
+ publisher = {Vieweg+Teubner},
+ isbn = {978-3-8348-0862-2},
+ editor = {Weglage, Andreas},
+ booktitle = {Energieausweis -- Das gro{\ss}e Kompendium},
+ year = {2010},
+ address = {Wiesbaden},
+ doi = {10.1007/978-3-8348-9390-1{\textunderscore }5}
+}
+
+
+@book{Weller.2012,
+ year = {2012},
+ title = {Denkmal und Energie},
+ address = {Wiesbaden},
+ publisher = {{Vieweg+Teubner Verlag}},
+ isbn = {978-3-8348-1619-1},
+ editor = {Weller, Bernhard and Fahrion, Marc-Steffen and Jakubetz, Sven},
+ doi = {10.1007/978-3-8348-8205-9}
+}
+
+
+@incollection{Weller.2012b,
+ author = {Weller, Bernhard and Fahrion, Marc-Steffen and Jakubetz, Sven},
+ title = {Geb{\"a}udeh{\"u}lle},
+ keywords = {heat loss;infiltration;natural ventilation},
+ pages = {177--252},
+ publisher = {{Vieweg+Teubner Verlag}},
+ isbn = {978-3-8348-1619-1},
+ editor = {Weller, Bernhard and Fahrion, Marc-Steffen and Jakubetz, Sven},
+ booktitle = {Denkmal und Energie},
+ year = {2012},
+ address = {Wiesbaden},
+ doi = {10.1007/978-3-8348-8205-9{\textunderscore }6}
+}
+
+
+@incollection{Weller.2012c,
+ author = {Weller, Bernhard and Fahrion, Marc-Steffen and Jakubetz, Sven},
+ title = {Geb{\"a}udetechnik},
+ keywords = {efficiency;energy analysis;energy efficiency;energy performance;energy saving;mechanical ventilation},
+ pages = {253--310},
+ publisher = {{Vieweg+Teubner Verlag}},
+ isbn = {978-3-8348-1619-1},
+ editor = {Weller, Bernhard and Fahrion, Marc-Steffen and Jakubetz, Sven},
+ booktitle = {Denkmal und Energie},
+ year = {2012},
+ address = {Wiesbaden},
+ doi = {10.1007/978-3-8348-8205-9{\textunderscore }7}
+}
+
+
+@incollection{Weller.2012d,
+ author = {Weller, Bernhard and Fahrion, Marc-Steffen and Jakubetz, Sven},
+ title = {Wirtschaftlichkeit},
+ keywords = {economic basics;economic evaluation;Energie{\"o}konomik},
+ pages = {311--330},
+ publisher = {{Vieweg+Teubner Verlag}},
+ isbn = {978-3-8348-1619-1},
+ editor = {Weller, Bernhard and Fahrion, Marc-Steffen and Jakubetz, Sven},
+ booktitle = {Denkmal und Energie},
+ year = {2012},
+ address = {Wiesbaden},
+ doi = {10.1007/978-3-8348-8205-9{\textunderscore }8}
+}
+
+
+@book{Weller.2016,
+ year = {2016},
+ title = {Baukonstruktion im Klimawandel},
+ address = {Wiesbaden},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-13010-7},
+ editor = {Weller, Bernhard and Fahrion, Marc-Steffen and Horn, Sebastian and Naumann, Thomas and Nikolowski, Johannes},
+ doi = {10.1007/978-3-658-13011-4}
+}
+
+
+@incollection{Weller.2016b,
+ author = {Weller, Bernhard and Fahrion, Marc-Steffen and Horn, Sebastian and Naumann, Thomas and Nikolowski, Johannes},
+ title = {Wirtschaftlichkeit von Anpassungsma{\ss}nahmen},
+ pages = {301--333},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-13010-7},
+ editor = {Weller, Bernhard and Fahrion, Marc-Steffen and Horn, Sebastian and Naumann, Thomas and Nikolowski, Johannes},
+ booktitle = {Baukonstruktion im Klimawandel},
+ year = {2016},
+ address = {Wiesbaden},
+ doi = {10.1007/978-3-658-13011-4{\textunderscore }10}
+}
+
+
+@incollection{Wesselak.2017,
+ author = {Wesselak, Viktor and Schabbach, Thomas and Link, Thomas and Fischer, Joachim},
+ title = {Energieeffizienz},
+ keywords = {efficiency;Energiemanagement;Energie{\"o}konomik;energy analysis;energy efficiency;energy performance;energy saving;investition},
+ pages = {37--110},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-662-53072-6},
+ editor = {Wesselak, Viktor and Schabbach, Thomas and Link, Thomas and Fischer, Joachim},
+ booktitle = {Handbuch Regenerative Energietechnik},
+ year = {2017},
+ address = {Berlin, Heidelberg},
+ doi = {10.1007/978-3-662-53073-3{\textunderscore }2}
+}
+
+
+@book{Wesselak.2017b,
+ year = {2017},
+ title = {Handbuch Regenerative Energietechnik},
+ address = {Berlin, Heidelberg},
+ publisher = {{Springer Berlin Heidelberg}},
+ isbn = {978-3-662-53072-6},
+ editor = {Wesselak, Viktor and Schabbach, Thomas and Link, Thomas and Fischer, Joachim},
+ doi = {10.1007/978-3-662-53073-3}
+}
+
+
+@incollection{Wild.2015,
+ author = {Wild, Uwe},
+ title = {EnEV und Energetische Sanierung},
+ pages = {85--109},
+ publisher = {{Springer Fachmedien Wiesbaden}},
+ isbn = {978-3-658-07455-5},
+ editor = {Stahr, Michael},
+ booktitle = {Bausanierung},
+ year = {2015},
+ address = {Wiesbaden},
+ doi = {10.1007/978-3-658-07456-2{\textunderscore }3}
+}
+
+
+@inproceedings{Wouters.2014,
+ author = {Wouters, Carmen and Fraga, Eric S. and James, Adrian M. and Polykarpou, Eleftheria M.},
+ title = {Mixed-integer optimisation based approach for design and operation of distributed energy systems},
+ pages = {1--6},
+ publisher = {IEEE},
+ isbn = {978-0-6469-2375-8},
+ editor = {Abu-Siada, A.},
+ booktitle = {Australasian Universities Power Engineering Conference (AUPEC), 2014},
+ year = {2014},
+ address = {Piscataway, NJ},
+ doi = {10.1109/AUPEC.2014.6966501}
+}
+
+
+@article{Younes.2012,
+ author = {Younes, Chadi and Shdid, Caesar Abi and Bitsuamlak, Girma},
+ year = {2012},
+ title = {Air infiltration through building envelopes: A review},
+ pages = {267--302},
+ volume = {35},
+ number = {3},
+ issn = {1744-2591},
+ journal = {Journal of Building Physics},
+ doi = {10.1177/1744259111423085}
+}
+
+
+@article{ZenderSwiercz.2016,
+ abstract = {Procedia Engineering, 161 (2016) 1731-1737. doi:10.1016/j.proeng.2016.08.766},
+ author = {Zender-Swiercz, Ewa and Telejko, Marek},
+ year = {2016},
+ title = {Impact of Insulation Building on the Work of Ventilation},
+ keywords = {air quality;building ventilation;CO2 concentration;thermomodernization},
+ pages = {1731--1737},
+ volume = {161},
+ issn = {18777058},
+ journal = {Procedia Engineering},
+ doi = {10.1016/j.proeng.2016.08.766}
+}
+
+
+@article{Zhu.2019,
+ author = {Zhu, Qianwen and Li, Qiqiang and Zhang, Bingying and Wang, Luhao and Li, Guanguan and Wang, Rui},
+ year = {2019},
+ title = {Capacity Optimization for Electrical and Thermal Energy Storage in Multi-energy Building Energy System},
+ pages = {6425--6430},
+ volume = {158},
+ issn = {18766102},
+ journal = {Energy Procedia},
+ doi = {10.1016/j.egypro.2019.01.183}
+}
+
+
+@book{Ziesing.2012,
+ author = {Ziesing, Hans-Joachim},
+ year = {2012},
+ title = {Energie in Zahlen: Arbeit und Leistungen der AG Energiebilanzen},
+ address = {Berlin},
+ publisher = {{AG Energiebilanzen e. V}},
+ isbn = {978-3-9814271-2-7}
+}
+
+

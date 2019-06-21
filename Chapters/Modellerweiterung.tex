@@ -23,7 +23,7 @@ Allerdings werden Fitkoeffizienten benutzt, welche experimentell bestimmt werden
 Dies ist schwer in dem Optimierungsprogramm zu modellieren, weshalb der Berechnungsansatz des Fensterluftvolumenstroms nach Maas keine Berücksichtigung findet.\\
 Folglich verbleibt der Berechnungsansatz der DIN EN 12831 zur Bestimmung des Luftvolumenstroms durch ein geöffnetes Fenster.
 Nach Gleichung \ref{eq:Gleichung3317} und \ref{eq:Gleichung3315} werden hierzu mehrere Parameter benötigt. 
-Ausgehend von einem Fenster mit Breite 1\,m und Höhe 1,2\,m ergibt sich die effektive Fensteröffnungsfläche (A\(_{eff}\)) bei einem Öffnungswinkel von 10° zu etwa 0,15\,m\(^2\).
+Ausgehend von einem Fenster mit 1\,m Breite und 1,2\,m Höhe ergibt sich die effektive Fensteröffnungsfläche (A\(_{eff}\)) bei einem Öffnungswinkel von 10° zu etwa 0,15\,m\(^2\).
 Die meteorologischen Parameter der Temperaturdifferenz (\(\Delta \theta\)) und der Windgeschwindigkeit in 10\,m Höhe (v\(_{meteo}\)) werden über die standortabhängigen Klimaprofile eingelesen.
 Für den Rauheitsparameter z\(_0\) wird eine mittlere Abschirmung angenommen, womit sich der Wert zu 0,25 ergibt.
 Mit den bisher erläuterten Parametern wird der Luftvolumenstrom durch ein geöffnetes Fenster ohne Beachtung der Fassadenausrichtung berechnet.
@@ -37,8 +37,8 @@ q_{V,open}(t) = F(t) \cdot A_{eff} \cdot 3600 \cdot \sqrt{\frac{C_{D}^2 \cdot g 
 \section*{Luftvolumenstrom aus Infiltration}
 
 Wie in Kapitel \ref{subsec:Sektion 312} dargelegt, hängt die Infiltration von der Umgebungstemperatur, der Windgeschwindigkeit sowie der Dichtheit des Gebäudes ab.
-In der Literatur konnte kein Ansatz gefunden werden, welcher mit den Eingabeparametern des Optimierungsprogramms einen Infiltrationsluftvolumenstrom mit diesen Einflussfaktoren bestimmt.
-Daher erfolgt die Berechnung des Luftvolumenstroms durch Infiltration mit Hilfe der Luftwechselrate bei 50\,Pa Differenzdruck.\\
+In der Literatur konnte kein Ansatz gefunden werden, welcher mit den Eingabeparametern des Optimierungsprogramms einen Infiltrationsluftvolumenstrom unter Berücksichtigung dieser Einflussfaktoren bestimmt.
+Daher erfolgt die Berechnung des Luftvolumenstroms durch Infiltration mit Hilfe der Luftwechselrate bei 50\,Pa Druckdifferenz.\\
 Als Grundlage dienen die Werte nach DIN V 4108-6, welche in Tabelle \ref{tab: Tabelle3122} zu finden sind.
 Hier wird die Luftdichtheit in die drei Klassen \textit{wenig dicht}, \textit{mittel dicht} und \textit{sehr dicht} eingeteilt.
 Nach DIN 1946-6 hängt die Luftdichtheit des Gebäudes hauptsächlich von den Fenstern und dem Dach ab.

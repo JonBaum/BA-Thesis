@@ -20,7 +20,7 @@ Dadurch wird ein minimaler Volumenstrom berechnet, welcher von einem hygienische
 Da in dem Optimierungsmodell dieser Aspekt keine Rolle spielt und nur die Wärmeverluste von Bedeutung sind, wird auf eine Modellierung des Fensterluftvolumenstroms nach Hall verzichtet.\\
 In dem Ansatz von Maas werden die Einflüsse der Temperatur und des Windes berücksichtigt.
 Allerdings werden Fitkoeffizienten benutzt, welche experimentell bestimmt werden und somit vom Anwendungsfall abhängen.
-Dies kann nur bedingt in dem Optimierungsprogramm, weshalb auf eine Modellierung des Fensterluftvolumenstroms nach Maas verzichtet wird.\\
+Dies ist schwer in dem Optimierungsprogramm zu modellieren, weshalb der Berechnungsansatz des Fensterluftvolumenstroms nach Maas keine Berücksichtigung findet.\\
 Folglich verbleibt der Berechnungsansatz der DIN EN 12831 zur Bestimmung des Luftvolumenstroms durch ein geöffnetes Fenster.
 Nach Gleichung \ref{eq:Gleichung3317} und \ref{eq:Gleichung3315} werden hierzu mehrere Parameter benötigt. 
 Ausgehend von einem Fenster mit Breite 1\,m und Höhe 1,2\,m ergibt sich die effektive Fensteröffnungsfläche (A\(_{eff}\)) bei einem Öffnungswinkel von 10° zu etwa 0,15\,m\(^2\).
@@ -28,7 +28,7 @@ Die meteorologischen Parameter der Temperaturdifferenz (\(\Delta \theta\)) und d
 Für den Rauheitsparameter z\(_0\) wird eine mittlere Abschirmung angenommen, womit sich der Wert zu 0,25 ergibt.
 Mit den bisher erläuterten Parametern wird der Luftvolumenstrom durch ein geöffnetes Fenster ohne Beachtung der Fassadenausrichtung berechnet.
 Durch Multiplikation mit der in Kapitel \ref{sec:Sektion 42} beschriebenen Fensteröffnungsprofilen wird der gesamte Volumenstrom der Luft durch alle Fenster des Gebäudes berechnet.
-Wird die Anzahl der geöffneten Fenster des Zeitpunkts t als F(t) benannt, ergibt sich der Luftvolumenstrom durch alle Fenster eines Gebäudes zu
+Wird die Anzahl der geöffneten Fenster des Zeitpunkts t mit F(t) parametrisiert, ergibt sich der Luftvolumenstrom durch alle Fenster eines Gebäudes zu
 \begin{equation}
 \label{eq:Gleichung511}
 q_{V,open}(t) = F(t) \cdot A_{eff} \cdot 3600 \cdot \sqrt{\frac{C_{D}^2 \cdot g \cdot h_m \cdot ( \theta_{int} - \theta_{e}(t))}{9 \cdot \theta_{e}(t)} + 0,0025 \cdot v_{fac}^2(t)} \qquad \text{.}
@@ -40,8 +40,8 @@ Wie in Kapitel \ref{subsec:Sektion 312} dargelegt, hängt die Infiltration von d
 In der Literatur konnte kein Ansatz gefunden werden, welcher mit den Eingabeparametern des Optimierungsprogramms einen Infiltrationsluftvolumenstrom mit diesen Einflussfaktoren bestimmt.
 Daher erfolgt die Berechnung des Luftvolumenstroms durch Infiltration mit Hilfe der Luftwechselrate bei 50\,Pa Differenzdruck.\\
 Als Grundlage dienen die Werte nach DIN V 4108-6, welche in Tabelle \ref{tab: Tabelle3122} zu finden sind.
-Hier wird die Luftdichtheit in die drei Klassen \textit{wenig dicht}, \textit{mittel dicht} und\textit{sehr dicht} eingeteilt.
-Nach DIN 1946-6 hängt die Luftdichtheit des Gebäudes hauptsächlich von den Fenstern und des Daches ab.
+Hier wird die Luftdichtheit in die drei Klassen \textit{wenig dicht}, \textit{mittel dicht} und \textit{sehr dicht} eingeteilt.
+Nach DIN 1946-6 hängt die Luftdichtheit des Gebäudes hauptsächlich von den Fenstern und dem Dach ab.
 Daher wird die Annahme getroffen, dass sich die Luftdichheitsklassen in Abhängigkeit des gewählten Sanierungsszenarios der Fenster und des Daches darstellen lassen.
 Hierbei entspricht die Klasse \textit{wenig dicht} dem Standard-Zustand der Bauteile im Bestand.
 Wird mindestens eines der beiden Bauteile auf einen Standard nach EnEV 2014 saniert, wird die Dichtheitsklasse \textit{mittel dicht} angenommen.
@@ -49,4 +49,19 @@ Darüber hinaus wird die Luftdichtheit zu \textit{sehr dicht} bestimmt, wenn sow
 Innerhalb der jeweiligen Dichtheitsklassen gibt die DIN V 4108-6 ein Intervall der n\(_{50}\)-Werte an.
 Um den Einfluss der Gebäudedichtheit verschiedener Baujahre besser abzubilden, werden für die älteren Jahrgänge von 1860 bis 1957 die obere Grenze des Intervalls angenommen und für die jüngeren Baujahre von 1969 bis 1994 die untere Grenze. 
 Der n\(_{50}\)-Wert der Gebäudealtersgruppe von 1958 bis 1968 wird mit dem Median des Intervalls abgeschätzt.
+Außerdem fließen die Vorgaben der DIN 1946-6 und DIN V 4108-7 bezüglich des maximalen und minimalen Infiltrationsluftwechsel in die Annahmen des n\(_{50}\)-Wertes mit ein.
+Nach Gleichung \ref{eq:Gleichung3121} wird zur Umrechnung zwischen dem Volumenstrom bei 50\,Pa Druckdifferenz und dem bei Normaldruck der Volumenstromkoeffizient e\(_Z\) benötigt.
+Nach DIN 1946-6 nimmt dieser in Abhängigkeit der Geschosshöhe des Gebäudes und der Windstärke des Windgebiets Werte zwischen 0,04 und 0,09 an.
+Vereinfacht wird e\(_Z\) im Rahmen des Optimierungsprogramms mit 0,05 angenommen.
+
+\section*{Luftvolumenstrom aus maschineller Lüftung}
+
+Da das Optimierungsprogramm die Sanierung von Altbauten betrachtet, werden die dafür vorteilhafteren dezentralen Anlagen berücksichtigt.
+Weiterhin konnte in der Literatur keine Berechnung einer Kombination von natürlicher und maschineller Lüftung gefunden werden.
+Eine Implementierung einer mit Kosten verbundenen maschinellen Lüftungsanlage in das Optimierungsprogramm bei gleichzeitiger Beibehaltung der Verluste aus Fensterlüftung und Infiltration ist nicht sinnvoll.
+Daher wird eine bedarfsgeführte Anlage angenommen, bei welcher der Frischluftbedarf als der Luftvolumenstrom der Fensterlüftung abgeschätzt wird.
+Die in Tabelle \ref{tab: Tabelle3131} angegebenen Werte zur Rückwärmezahl werden hierbei konservativ abgeschätzt und weiterhin um 10\,\% gemindert, sodass die Rückwärmezahl mit \(\Phi\) = 60\,\%  abgeschätzt wird.
+Da davon auszugehen ist, dass die Nutzung einer maschinellen Lüftungsanlage die Fensterlüftung nicht ausschließt, soll durch die Abschätzung der Rückwärmezahl die Wärmerückgewinnung unter Gleichzeitiger Beachtung der Fensterlüftung abbilden.
+
+
 

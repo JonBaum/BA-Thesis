@@ -58,10 +58,51 @@ Vereinfacht wird e\(_Z\) im Rahmen des Optimierungsprogramms mit 0,05 angenommen
 
 Da das Optimierungsprogramm die Sanierung von Altbauten betrachtet, werden die dafür vorteilhafteren dezentralen Anlagen berücksichtigt.
 Weiterhin konnte in der Literatur keine Berechnung einer Kombination von natürlicher und maschineller Lüftung gefunden werden.
-Eine Implementierung einer mit Kosten verbundenen maschinellen Lüftungsanlage in das Optimierungsprogramm bei gleichzeitiger Beibehaltung der Verluste aus Fensterlüftung und Infiltration ist nicht sinnvoll.
-Daher wird eine bedarfsgeführte Anlage angenommen, bei welcher der Frischluftbedarf als der Luftvolumenstrom der Fensterlüftung abgeschätzt wird.
-Die in Tabelle \ref{tab: Tabelle3131} angegebenen Werte zur Rückwärmezahl werden hierbei konservativ abgeschätzt und weiterhin um 10\,\% gemindert, sodass die Rückwärmezahl mit \(\Phi\) = 60\,\%  abgeschätzt wird.
+Eine Implementierung einer mit Kosten verbundenen maschinellen Lüftungsanlage in das Optimierungsprogramm bei gleichzeitiger Beibehaltung der Wärmeverluste aus Fensterlüftung und Infiltration ist nicht sinnvoll.
+Daher wird eine bedarfsgeführte Anlage angenommen, bei welcher der Frischluftbedarf als der Luftvolumenstrom der Fensterlüftung aufgefasst wird.
+Die in Tabelle \ref{tab: Tabelle3131} angegebenen Werte zur Rückwärmezahl werden hierbei konservativ abgeschätzt und weiterhin um 10\,\% gemindert, sodass sich die Rückwärmezahl zu \(\Phi\) = 60\,\%  ergibt.
 Da davon auszugehen ist, dass die Nutzung einer maschinellen Lüftungsanlage die Fensterlüftung nicht ausschließt, soll durch die Abschätzung der Rückwärmezahl die Wärmerückgewinnung unter Gleichzeitiger Beachtung der Fensterlüftung abbilden.
+
+In Abbildung XXXX ist ein Vergleich der Lüftungswärmeverluste in statischer Form, was der Berechnung aus dem Optimierungsprogramm vor Beginn der Arbeit entspricht, sowie die dynamische Modellierung nach Implementierung der zuvor genannten Volumenströme zu sehen.
+
+XXXX Abbildung Lüftungswärmeverluste im Vergleich XXXX
+
+\section{Wahl der Eingabeparameter zur Gebäudeenergiesystemoptimierung}
+\label{sec:Sektion52}
+
+Wie in Kapitel \ref{sec:Sektion 32} vorgestellt, muss vor Ablauf des Optimierungsprozess das zu optimierende Gebäude parametrisiert werden.
+Für den Gebäudetyp sowie das Gebäudealter wird die neue Kategorisierung aus Kapitel \ref{sec:Sektion 41} genutzt.
+Hierbei wird je Altersgruppe und Gebäudetyp eine Optimierung vorgenommen.\\
+Weiter wird der Standort an das Optimierungsprogramm übergeben.
+Zur besseren Bewertung des klimatischen Einflusses auf das Optimierungsergebnis werden hierzu drei verschiedene Repräsentanzstationen ausgewählt.
+Diese repräsentieren mit Mannheim einen warmen, mit Hamburg einen gemäßigten und mit Fichtelberg einen kalten Standort.
+In Tabelle \ref{tab: Tabelle521} sind die ausgewählten Stationen mit ihren klimatologischen Angaben zu finden.
+\begin{table}[H]\centering
+\begin{tabular}{|l|c|c|l|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\cellcolor[HTML]{C0C0C0} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}Temperatur} & \cellcolor[HTML]{C0C0C0} \\ \cline{2-3}
+\rowcolor[HTML]{C0C0C0} 
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Repräsentanzstation} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}tiefstes Monatsmittel} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}höchstes Monatsmittel} & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Durchlüftung} \\ \hline
+Hamburg & 2,5°C & 18,1°C & gut \\ \hline
+\rowcolor[HTML]{EFEFEF} 
+Mannheim & 2,5°C & 20,4°C & gering \\ \hline
+Fichtelberg & -3,5°C & 12,3°C & sehr gut \\ \hline
+\end{tabular}
+\caption{Wahl der Standorte und deren Charakteristiken bezüglich Temperatur und Durchlüftung \cite{try}}
+\label{tab: Tabelle521}
+\end{table}
+
+Schließlich wird das zu optimierende Gebäude auch anhand der Wohnungsanzahl, der Wohnungsgröße und der Haushaltsgröße beschrieben.
+Zu beachten ist hierbei, dass die Wohnungsanzahl für die Gebäude der Cluster A immer 1 beträgt.
+Außerdem wird die anhand der Haushaltsgröße nur für Gebäude des Clusters A Energiebedarfsprofile eingelesen und die Größe besitzt für Gebäude des Clusters B keine Relevanz.\\
+Zur Festlegung der Parameter Wohnungsanzahl, -größe sowie Haushaltsgröße wird sich an den durchschnittlichen Werte auf Basis des dena-Gebäudereports 2016 orientiert \cite{Bigalke.2016}.
+Auf Basis dieser Daten wird der durchschnittliche Haushalt der Gebäudegruppe Cluster A zu einem Dreipersonenhaushalt festgelegt.
+Weiterhin wird die durchschnittliche Wohnfläche eines Gebäudes des Clusters A zu 110\,m\(^2\) festgelegt. 
+Diesen Wert erhält man aus Interpolation der Angaben aus dem dena-Gebäudereport mit der Anzahl der Wohneinheiten auf Basis der IWU-Berechnungen \cite{Diefenbach.12.11.2007}.
+Für die Gebäude der Cluster B werden die Anzahl an Wohneinheiten in Intervalle eingeteilt, sodass sich die durchschnittliche Wohnungsanzahl und -größe nur schwierig zu berechnen lässt.
+Hier wird als Abschätzung ein Mehrfamilienhaus mit 10 Wohnungen und je 70 m\(^2\) parametrisiert.
+
 
 
 

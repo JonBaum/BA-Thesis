@@ -1,4 +1,52 @@
-\chapter{Modellerweiterung}
+\chapter{Modellerweiterung und Parameterwahl}
 
-\section{Lüftungswärmeverluste}
+Aus Basis der im vorherigen Kapitel beschriebenen Parametern wird das Optimierungsprogramm um einen dynamischen Modellierungsansatz der Lüftungswärmeverluste erweitert.
+Weiterhin werden Annahmen für Inputparameter getroffen und diese näher erläutert.
+
+\section{Modellierung dynamischer Lüftungswärmeverluste}
 \label{sec:Sektion 51}
+
+In Kapitel \ref{sec:Sektion 32} wird die Berechnung der Lüftungswärmeverlust in dem Optimierungsprogramm vorgestellt.
+Aus Gleichung \ref{eq:Gleichung3291} geht hervor, dass diese Verluste statisch modelliert werden.
+Um den in Kapitel XXXX erläuterten Rebound-Effekt zu verringern, wird die Berechnung der Lüftungswärmeverluste hin zu einem dynamischen Ansatz angepasst.
+Dafür werden die Lüftungswärmeverluste in die Anteile der Fensterlüftung, der Infiltration und der maschinellen Lüftung zerlegt.
+
+\section*{Luftvolumenstrom aus Fensterlüftung}
+
+Zunächst werden die Lüftungswärmeverluste aufgrund eines Luftvolumenstroms durch ein geöffnetes Fenster betrachtet.
+Hierfür stehen die in Tabelle \ref{tab: Tabelle3313} dargestellten Berechnungsansätze zur Verfügung.\\
+Die Formel von Hall berücksichtigt keinen Einfluss des Windes und wird zur Berechnung des thermisch induzierten Luftvolumenstromes durch ein Fenster genutzt.
+Dadurch wird ein minimaler Volumenstrom berechnet, welcher von einem hygienischen und bauphysikalischen Blickpunkt aus sichergestellt werden muss.
+Da in dem Optimierungsmodell dieser Aspekt keine Rolle spielt und nur die Wärmeverluste von Bedeutung sind, wird auf eine Modellierung des Fensterluftvolumenstroms nach Hall verzichtet.\\
+In dem Ansatz von Maas werden die Einflüsse der Temperatur und des Windes berücksichtigt.
+Allerdings werden Fitkoeffizienten benutzt, welche experimentell bestimmt werden und somit vom Anwendungsfall abhängen.
+Dies kann nur bedingt in dem Optimierungsprogramm, weshalb auf eine Modellierung des Fensterluftvolumenstroms nach Maas verzichtet wird.\\
+Folglich verbleibt der Berechnungsansatz der DIN EN 12831 zur Bestimmung des Luftvolumenstroms durch ein geöffnetes Fenster.
+Nach Gleichung \ref{eq:Gleichung3317} und \ref{eq:Gleichung3315} werden hierzu mehrere Parameter benötigt. 
+Ausgehend von einem Fenster mit Breite 1\,m und Höhe 1,2\,m ergibt sich die effektive Fensteröffnungsfläche (A\(_{eff}\)) bei einem Öffnungswinkel von 10° zu etwa 0,15\,m\(^2\).
+Die meteorologischen Parameter der Temperaturdifferenz (\(\Delta \theta\)) und der Windgeschwindigkeit in 10\,m Höhe (v\(_{meteo}\)) werden über die standortabhängigen Klimaprofile eingelesen.
+Für den Rauheitsparameter z\(_0\) wird eine mittlere Abschirmung angenommen, womit sich der Wert zu 0,25 ergibt.
+Mit den bisher erläuterten Parametern wird der Luftvolumenstrom durch ein geöffnetes Fenster ohne Beachtung der Fassadenausrichtung berechnet.
+Durch Multiplikation mit der in Kapitel \ref{sec:Sektion 42} beschriebenen Fensteröffnungsprofilen wird der gesamte Volumenstrom der Luft durch alle Fenster des Gebäudes berechnet.
+Wird die Anzahl der geöffneten Fenster des Zeitpunkts t als F(t) benannt, ergibt sich der Luftvolumenstrom durch alle Fenster eines Gebäudes zu
+\begin{equation}
+\label{eq:Gleichung511}
+q_{V,open}(t) = F(t) \cdot A_{eff} \cdot 3600 \cdot \sqrt{\frac{C_{D}^2 \cdot g \cdot h_m \cdot ( \theta_{int} - \theta_{e}(t))}{9 \cdot \theta_{e}(t)} + 0,0025 \cdot v_{fac}^2(t)} \qquad \text{.}
+\end{equation}
+
+\section*{Luftvolumenstrom aus Infiltration}
+
+Wie in Kapitel \ref{subsec:Sektion 312} dargelegt, hängt die Infiltration von der Umgebungstemperatur, der Windgeschwindigkeit sowie der Dichtheit des Gebäudes ab.
+In der Literatur konnte kein Ansatz gefunden werden, welcher mit den Eingabeparametern des Optimierungsprogramms einen Infiltrationsluftvolumenstrom mit diesen Einflussfaktoren bestimmt.
+Daher erfolgt die Berechnung des Luftvolumenstroms durch Infiltration mit Hilfe der Luftwechselrate bei 50\,Pa Differenzdruck.\\
+Als Grundlage dienen die Werte nach DIN V 4108-6, welche in Tabelle \ref{tab: Tabelle3122} zu finden sind.
+Hier wird die Luftdichtheit in die drei Klassen \textit{wenig dicht}, \textit{mittel dicht} und\textit{sehr dicht} eingeteilt.
+Nach DIN 1946-6 hängt die Luftdichtheit des Gebäudes hauptsächlich von den Fenstern und des Daches ab.
+Daher wird die Annahme getroffen, dass sich die Luftdichheitsklassen in Abhängigkeit des gewählten Sanierungsszenarios der Fenster und des Daches darstellen lassen.
+Hierbei entspricht die Klasse \textit{wenig dicht} dem Standard-Zustand der Bauteile im Bestand.
+Wird mindestens eines der beiden Bauteile auf einen Standard nach EnEV 2014 saniert, wird die Dichtheitsklasse \textit{mittel dicht} angenommen.
+Darüber hinaus wird die Luftdichtheit zu \textit{sehr dicht} bestimmt, wenn sowohl Dach als auch Fenster energetisch ertüchtigt werden und mindestens eines der beiden Bauteile die Vorgaben eines Passivhaus-Standard erfüllt.\\
+Innerhalb der jeweiligen Dichtheitsklassen gibt die DIN V 4108-6 ein Intervall der n\(_{50}\)-Werte an.
+Um den Einfluss der Gebäudedichtheit verschiedener Baujahre besser abzubilden, werden für die älteren Jahrgänge von 1860 bis 1957 die obere Grenze des Intervalls angenommen und für die jüngeren Baujahre von 1969 bis 1994 die untere Grenze. 
+Der n\(_{50}\)-Wert der Gebäudealtersgruppe von 1958 bis 1968 wird mit dem Median des Intervalls abgeschätzt.
+

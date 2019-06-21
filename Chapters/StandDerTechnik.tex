@@ -378,7 +378,11 @@ berechnet.
 Hierbei ist 0,024 der Umrechenfaktor von Tag zu Stunde und Kilowatt zu Watt.
 
 Diese jährliche Energiemenge der Lüftungswärmeverluste wird gleichmäßig auf die 8760 betrachteten Zeitpunkte des Jahres aufgeteilt.
-Somit sind diese Verluste in dem Modell konstant und werden als statisch betrachtet.
+\begin{equation}
+\label{eq:Gleichung3291}
+Q_l = \frac{\Phi_{V,build}}{8760}
+\end{equation}
+Somit sind diese Verluste in dem Modell für jeden betrachteten Zeitpunkt konstant und werden als statisch angesehen.
 
 \newpage
 
@@ -511,17 +515,18 @@ Gleichzeitig reagiert ein Nutzer mit kurzen Fensteröffnungszeiten aufgrund der 
 
 Zur Bestimmung des Volumenstromes durch ein Fenster existieren verschiedene Ansätze in der Literatur.
 
+\section*{Modell nach Maas}
 Auf Basis von experimentellen Untersuchungen unter realen meteorologischen Bedingungen ermittelt Maas \cite{Maas.1995} eine Formel zur Berechnung des Luftvolumenstroms durch ein Fenster.
-Hierbei werden neben der Windgeschwindigkeit (u) und der Temperaturdifferenz zwischen Innen und Außen (\(\Delta \theta\)) auch die lichte Fensteröffnungsfläche (A\(_l\)) und das Durchflussverhältnis (\(\Theta\)) beachtet. 
+Hierbei werden neben der Windgeschwindigkeit (u) und der Temperaturdifferenz zwischen Innen und Außen (\(\Delta \theta\)) auch die effektive Fensteröffnungsfläche (A\(_{eff}\)) beachtet. 
 Letzteres ist abhängig von der Öffnungsweite des Fensters und bildet Turbulenzeffekte ab.
 Somit ergibt sich nach Maas der Volumenstrom zu
 \begin{equation}
 \label{eq:Gleichung3311}
-q_{V, Fenster} = 3600 \cdot \frac{A_l}{2} \cdot \Theta \cdot \sqrt{(C_1 \cdot u^2 + C_2 \cdot H \cdot \Delta \theta + C_3)} \quad \text{.}
+q_{V, Fenster} = 3600 \cdot \frac{A_{eff}}{2} \cdot \sqrt{(C_1 \cdot u^2 + C_2 \cdot H \cdot \Delta \theta + C_3)} \quad \text{.}
 \end{equation}
-Hierbei wird A\(_l\) halbiert, da sich bei einem geöffneten Fenster der ein- und ausströmender Volumenstrom die Öffnungsfläche des Fensters teilen.
+Hierbei wird A\(_{eff}\) halbiert, da sich bei einem geöffneten Fenster der ein- und ausströmender Volumenstrom die Öffnungsfläche des Fensters teilen.
 Der Faktor 3600 wird zum Umrechnen des sekündlichen Volumenstroms in einen stündlichen genutzt.
-Die Koeffizienten C\(_1\), C\(_2\) und C\(_3\) werden experimentell bestimmt.
+Die Koeffizienten C\(_1\), C\(_2\) und C\(_3\) werden experimentell bestimmt und stellen Fitkoeffizienten dar.
 Ihre nummerischen Ausprägungen sind Tabelle \ref{tab: Tabelle3312} zu entnehmen.
 
 \begin{table}[H] \centering
@@ -538,6 +543,7 @@ C\(_2\) & Turbulenzkoeffizient & 0,012 & \(\frac{m^2}{s^2}\) \\ \hline
 \label{tab: Tabelle3312}
 \end{table}
 
+\section*{Modell nach Hall}
 Einen weiteren Ansatz zur Modellierung des Luftvolumenstroms durch ein Fenster liefert Hall \cite{Hall.2004}.
 Hierbei werden die Einflüsse des Windes vernachlässigt und nur die Temperaturabhängigkeit des Luftwechsels betrachtet.
 Zwar bildet der durch Wind induzierte Luftvolumenstrom durch ein Fenster den größeren Anteil des Gesamtvolumenstroms ab, allerdings wird gezielt ein minimaler Volumenstrom ermittelt, der aus bauphysikalischer und hygienischer Sicht sichergestellt werden muss, um Schäden der Bausubstanz zu vermeiden.
@@ -556,6 +562,7 @@ Mit der Erdbeschleunigung (g) ergibt sich der einströmende Luftvolumenstrom zu
 q_{V, Fenster} = C_d \cdot A_{eff} \cdot \Biggl( 2 \cdot g \cdot H \cdot Z \cdot \frac{\Delta\theta}{\theta_i}\Biggr)^n \quad \text{.}
 \end{equation}
 
+\section*{Modell nach DIN EN 12831}
 Ein weiterer Berechnungsansatz zur Bestimmung des Luftvolumenstroms durch ein geöffnetes Fenster bietet die DIN EN 12831 \cite{DINDeutschesInstitutfurNormunge.V..September2017}.
 Hierbei wird nach ein- oder zweiseitiger Lüftung und der Fassadenausrichtung des Fensters unterschieden.
 Bei zweiseitiger Lüftung wird von zwei sich gegenüber befindenden Fenstern ausgegangen.
@@ -587,7 +594,7 @@ q_{V,open,w} = 0,05 \cdot A_{eff} \cdot v_{fac} \cdot 3600 \quad \text{.}
 Werden Gleichung \ref{eq:Gleichung3316} und \ref{eq:Gleichung3314} in \ref{eq:Gleichung3313} zusammengefasst, wird der einströmende Luftvolumenstrom nach DIN EN 12831 ausgedrückt als
 \begin{equation}
 \label{eq:Gleichung3317}
-q_{V,open} = A_{eff} \cdot 3600 \cdot \sqrt{\frac{C_{D}^2 \cdot g \cdot h_m \cdot \Delta \theta}{9 \cdot \theta_e} + 0,05 \cdot v_{fac}} \quad \text{.}
+q_{V,open} = A_{eff} \cdot 3600 \cdot \sqrt{\frac{C_{D}^2 \cdot g \cdot h_m \cdot \Delta \theta}{9 \cdot \theta_e} + 0,0025 \cdot v_{fac}^2} \quad \text{.}
 \end{equation}
 Die vorgestellten Berechnungsansätze von Maas, Hall und der DIN EN 12831 sind in Tabelle \ref{tab: Tabelle3313} zu finden.
 \begin{table}[H]\centering
@@ -595,10 +602,10 @@ Die vorgestellten Berechnungsansätze von Maas, Hall und der DIN EN 12831 sind i
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Autor & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0} Formel für q\(_{V,open}\)} & Besonderheit \\ \hline
-Maas & \(3600 \cdot \frac{1}{2} \cdot A_l \cdot \Theta \cdot \sqrt{(C_1 \cdot u^2 + C_2 \cdot H \cdot \Delta \theta + C_3)}\) & \begin{tabular}[c]{@{}l@{}}Ergebnis experimenteller \\ Untersuchungen\end{tabular} \\ \hline
+Maas & \(3600 \cdot \frac{A_{eff}}{2} \cdot \sqrt{(C_1 \cdot u^2 + C_2 \cdot H \cdot \Delta \theta + C_3)}\) & \begin{tabular}[c]{@{}l@{}}Ergebnis experimenteller \\ Untersuchungen\end{tabular} \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Hall & \(C_d \cdot A_{eff} \cdot \Biggl( 2 \cdot g \cdot H \cdot Z \cdot \frac{\Delta\theta}{\theta_i}\Biggr)^n\) & \begin{tabular}[c]{@{}l@{}}Nur thermisch induzierter \\ Volumenstrom\end{tabular} \\ \hline
-DIN EN 12831 & \(A_{eff} \cdot 3600 \cdot \sqrt{\frac{C_{D}^2 \cdot g \cdot h_m \cdot \Delta \theta}{9 \cdot \theta_e} + 0,05 \cdot v_{fac}}\) & \begin{tabular}[c]{@{}l@{}}Berücksichtigt Temperatur- und \\ Windeinfluss\end{tabular} \\ \hline
+DIN EN 12831 & \(A_{eff} \cdot 3600 \cdot \sqrt{\frac{C_{D}^2 \cdot g \cdot h_m \cdot \Delta \theta}{9 \cdot \theta_e} + 0,0025 \cdot v_{fac}^2}\) & \begin{tabular}[c]{@{}l@{}}Berücksichtigt Temperatur- und \\ Windeinfluss\end{tabular} \\ \hline
 \end{tabular}
 \caption{Berechnungsansätze zur Bestimmung des Luftvolumenstroms durch ein geöffnetes Fenster}
 \label{tab: Tabelle3313}
@@ -652,8 +659,7 @@ Druckdifferenz nach DIN V 4108-6}
 \label{tab: Tabelle3122}
 \end{table}
 
-Zur Umwandlung der unter Über- oder Unterdruck gemessenen n\(_{50}\) Luftwechselrate wird diese nach DIN 1946-6 mit einem Volumenstromkoeffizienten (e\(_Z\)) verrechnet.
-Dieser nimmt in Abhängigkeit der Geschossanzahl des Gebäudes und der Windstärke des Standortes Werte zwischen 0,04 und 0,09 an.
+Zur Umwandlung des unter Über- oder Unterdruck gemessenen n\(_{50}\)-Wertes zur Infiltrationsluftwechselrate wird diese nach DIN 1946-6 mit einem Volumenstromkoeffizienten (e\(_Z\)) verrechnet.
 
 \subsection{Maschinelle Lüftung}
 \label{subsec:Sektion 313}

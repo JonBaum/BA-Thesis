@@ -1,4 +1,4 @@
-\chapter{Parameterwahl und -beschaffung}
+\chapter{Parameterbeschaffung}
 
 Zur Bestimmung einer besonders effizienter Strategie, um den deutschen Wohngebäudebestand emissionsärmer zu gestalten, wird das in Kapitel \ref{sec:Sektion 32} vorgestellte Optimierungsmodell erweitert.
 Hierbei werden in \ref{sec:Sektion 41} die Gebäudeklassen des Bestandes möglichst repräsentativ zusammengefasst.
@@ -116,8 +116,6 @@ In Tabelle \ref{tab: TabelleA411} sind die neuen Klassen mitsamt der jeweiligen 
 \label{tab: TabelleA411}
 \end{table}
 
-\newpage
-
 \section{Parameter zur Modellierung von Lüftungswärmeverlusten}
 \label{sec:Sektion 42}
 
@@ -133,7 +131,7 @@ Somit verbleiben die Tageszeit und die Außentemperatur als relevante Faktoren, 
 
 Als Grundlage der Fensteröffnungsprofile dienen die Monitoring-Daten eines Forschungsprojekts an drei Mehrfamilienhäusern in Karlsruhe-Rintheim.
 Bei diesem Projekt wurden die Auswirkungen von Sanierungsmaßnahmen und unterschiedlicher Anlagentechnik auf den Energieverbrauch analysiert.
-In den drei Häusern befinden sich je 10 Wohnungen mit jeweils 66 m\(^2\).
+Die drei Häusern sind in jeweils drei Riegel unterteilt, in welchen sich jeweils 10 Wohnungen mit je 72 m\(^2\) befinden.
 Die vorgenommenen Sanierungsmaßnahmen und die genutzte Anlagentechnik inklusive der Lüftungskonzepte sind Tabelle AXXXX zu entnehmen.
 Da nach Osterhage \cite{Osterhage.2018} kein signifikanter Unterschied des Nutzerverhaltens in den Wohnungen mit maschinellen Lüftungsanlagen im Vergleich zu denen mit freier Lüftung besteht, werden die Daten aller Wohnungen in Betracht gezogen.
 
@@ -156,7 +154,7 @@ Als Beispiel sagt der Wert 1 aus, dass ein Fenster die ganze Stunde geöffnet is
 Da von Fenstern mit gleicher Geometrie und nur einem möglichen Öffnungswinkel ausgegangen wird, gibt es zwischen den zwei Beispielfällen keinen Unterschied im Bezug auf die Lüftungswärmeverluste.
 Das Ergebnis dieser Rechenschritte beschreibt stundenweise Fensteröffnungsprofile einer Wohnung, die über ein Jahr aufgetragen sind.\\
 Die stündlichen Werte werden über alle Wohnungen des Datensatzes gemittelt.
-Somit wird aus den 20 Wohnungen des Forschungsprojekts ein Jahresprofil erzeugt, welches die Öffnungsdauer einer unbekannten Menge an Fenstern je Stunde des Jahres beschreibt.
+Somit wird aus den 60 Wohnungen des Forschungsprojekts ein Jahresprofil erzeugt, welches die Öffnungsdauer einer unbekannten Menge an Fenstern je Stunde des Jahres beschreibt.
 Um sowohl die Außentemperatur als auch die Tageszeit in den Fensteröffnungsprofilen zu berücksichtigen, werden Temperaturintervalle mit ähnlichem Nutzerverhalten gebildet. XXXX Tanjas Aussage zu Klassen XXXX
 Für Tage, an welchen sich die durchschnittliche Tagestemperatur in demselben Temperaturintervall befindet, werden die hypothetischen Fensteröffnungsdauern je Tageszeitpunkt gemittelt.
 Somit werden Tagesprofile der Fensteröffnungszeiten für unterschiedliche Temperaturintervalle einer Wohnung erzeugt.
@@ -168,8 +166,6 @@ Diese umfassen unter anderem die Windgeschwindigkeit in 10\,m Höhe für 15 vers
 Diese Klimaregionen werden durch eine Repräsentanzstation vertreten, welche den möglichen Gebäudelagen des Optimierungsprogramms entsprechen (s. Tabelle \ref{tab: TabelleA4}.
 Somit werden für die jeweiligen Standorte Profile des Windes in 10\,m Höhe für 8760 Zeitpunkte eines Jahres generiert.
 
-\section{Parameterwahl}
-\label{sec:Sektion 43}
 
 
 

@@ -1,95 +1,65 @@
 \chapter{Parameterbeschaffung}
 
-Zur Bestimmung einer besonders effizienter Strategie, um den deutschen Wohngebäudebestand emissionsärmer zu gestalten, wird das in Kapitel \ref{sec:Sektion 32} vorgestellte Optimierungsmodell erweitert.
-Hierbei werden in \ref{sec:Sektion 41} die Gebäudeklassen des Bestandes möglichst repräsentativ zusammengefasst.
-Weiterhin wird die Berechnung der Lüftungswärmeverluste des Programms in einen dynamischen Ansatz überführt, um diese somit genauer abzubilden.
-Hierfür werden in \ref{sec:Sektion 42} die Generierung weiterer Daten, welche zur dynamischen Modellierung der Wärmeverluste durch Lüftung benötigt werden, beschrieben.
+Zur Bestimmung einer besonders effizienten Strategie um den deutschen Wohngebäudebestand emissionsärmer zu gestalten, wird das in Kapitel \ref{sec:Sektion 32} vorgestellte Optimierungsmodell erweitert.
+Hierbei werden in \ref{sec:Sektion 41} die Gebäudeklassen des Bestandes repräsentativ zusammengefasst, um dadurch weniger Optimierungsergebnisse mit geringer Einbuße an Aussagekraft zu erhalten.
+Weiterhin wird die Berechnung der Lüftungswärmeverluste des Programms in einen dynamischen Ansatz überführt, um diese genauer abzubilden.
+Hierfür werden in \ref{sec:Sektion 42} die Generierung weiterer Daten beschrieben, welche zur dynamischen Modellierung der Wärmeverluste durch Lüftung benötigt werden.
 
 \section{Kategorisierung des Gebäudebestandes}
 \label{sec:Sektion 41}
 
-Nach TABULA wird der deutsche Wohngebäudebestand in 43 Klassen unterteilt.
-Diese unterscheiden sich nach Baujahr und Gebäudeart.
-Wie in Tabelle \ref{tab: TabelleA0} zu sehen ist, existieren nicht für alle Gebäudetypen und Zeiträume Daten zur Wohneinheitenanzahl.
+Die Einteilung des deutschen Wohngebäudebestandes nach TABULA sieht 43 Klassen vor, welche die Gebäude nach Baujahr und Gebäudeart unterscheiden.
+Dies ist in Tabelle \ref{tab: TabelleA0} zu sehen, aus welcher zudem hervorgeht, dass nicht für alle Baujahre und Gebäudetypen Daten der Wohneinheitenanzahl hinterlegt sind.
 Außerdem unterscheiden sich die Anteile der einzelnen Gruppen am gesamten Wohneinheitenbestand.
-So bilden beispielsweise die Klasse der Hochhäuser in den alten Bundesländer nur 1\,\% des Bestandes ab, wohingegen der Anteil bei den Mehrfamilienhäuser zu 38\,\% beträgt.
-Mit dieser Datenlage werden bei der Optimierung viele Ergebnisse erzeugt, was die Auswertung komplex gestaltet.
+So bilden beispielsweise die Klasse der Hochhäuser in den alten Bundesländer nur 1\,\% des Bestandes ab, wohingegen der Anteil der Mehrfamilienhäuser 38\,\% beträgt.
+Eine einzelne Optimierung aller Gebäudetypen führt zu einer Vielzahl an Ergebnissen, wodurch die Auswertung kompliziert gestaltet wird.
 
-Um aus dieser inhomogenen Verteilung eine vereinfachte Kategorisierung zu gewinnen, mit welcher sich Gebäudeenergiesysteme für weniger Klassen optimieren lassen, werden die Anzahl der Wohneinheiten der jeweiligen Gebäudetypen betrachtet.
-Neben diesem Kriterium fließt weiterhin die energetische Qualität der Bestandteile der Gebäudehülle mit in die Betrachtung ein.
-Da als Ziel dieser Arbeit das Aufweisen von Einsparpotentialen definiert ist, werden Baualtersklassen zusammengefasst, in welchen sich die U-Wert der Gebäudehülle für die Gebäudetypen ähneln.
+Um aus dieser inhomogenen Verteilung eine vereinfachte Kategorisierung zu gewinnen, werden die Wärmedurchgangskoeffizienten der Gebäudehülle betrachtet.
+Neben diesem Kriterium fließen weiterhin die Wohnfläche und die Anzahl der Wohneinheiten der jeweiligen Gebäudetypen mit in die Betrachtung ein.
+Da als Ziel dieser Arbeit das Aufweisen von Einsparpotentialen definiert ist, werden Gebäudetypen zusammengefasst, in welchen sich die U-Wert der Gebäudehülle gleichen.
 
-Zunächst werden Gebäudetypen des deutschen Wohngebäudebestandes zusammengefasst.
-Dafür werden die Wärmedurchgangskoeffizienten der Außenwand, der Fenster, des Bodens und des Dachs betrachtet..
-Gleichen sich die U-Werte der Bauteile für zwei Gebäudetypen, werden diese in einer neuen Gruppe zusammengefasst.\\
-Der Gebäudetyp der Einfamilienhäuser bildet mit 42\,\% den größten Anteil des Wohneinheitenbestandes ab und wird deshalb als Referenz definiert.
-W
+Zunächst werden die Einfamilienhäuser mit den Reihenhäusern verglichen.
+Diese Gebäudetypen besitzen beiden zwischen 1 bis 2 Wohnungen.
+Die Wohnflächen der Einfamilienhäuser betragen für die TABULA-Referenzgebäude zwischen 100 bis 200\,m\(^2\) und die der Reihenhäuser zwischen 90 und 130\,m\(^2\).\\
+Bis auf wenige Ausnahmen gleichen sich die U-Werte der Einfamilien- und Reihenhäuser.
+Solch eine Ausnahme wird bei den Fenstern der Altersgruppe mit Baujahr von 1979 bis 1983 gefunden.
+Den Einbaustandard in den Einfamilienhäusern dieser Jahrgänge bildet die Zweischeiben-Verglasung mit Metallrahmen.
+Aufgrund dessen schlechten Wärmeübertragungsverhaltens besitzt die Verglasung der Einfamilienhäuser der Baualtersklasse von 1979 bis 1983 einen U\(_w\)-Wert in Höhe von 4,3 \(\frac{W}{m^2 \cdot K}\).
+Im Vergleich dazu liegt bei den Reihenhäuser derselben Jahrgänge mit gleicher Verglasung jedoch mit Holzrahmen anstelle des Metallrahmens ein U\(_w\)-Wert von 2,8 \(\frac{W}{m^2 \cdot K}\) vor.\\
+Weiterhin weichen die Wärmedurchgangskoeffizienten der Dächer für die Baualtersklassen von 1860 bis 1968 voneinander ab.
+Der U-Wert des Referenzgebäudes bewegt sich in diesem Zeitraum zwischen 1,4 und 0,8 \(\frac{W}{m^2 \cdot K}\), wohingegen dieser bei den Reihenhäusern mit Werten zwischen 1,0 und 0,6 \(\frac{W}{m^2 \cdot K}\) leicht besser vorliegt.\\
+Da bis auf die zwei erläuterten Unterschiede die U-Werte nahezu identisch vorliegen, werden die Gebäudetypen der Einfamilien- und Reihenhäuser zusammengefasst.
+Durch lineare Interpolation der unterschiedlichen U-Werte anhand der Wohneinheitenanzahl der jeweiligen Gebäudetypen, wird der Einfluss der besseren Wärmedämmung beachtet.\\
+Die aus den Einfamilien- und Reihenhäuser neu entstandene Gruppe wird im Weiteren als \mbox{\textit{Cluster A}} bezeichnet. \cite{.2015}
 
+Als nächstes werden die Mehrfamilienhäuser mit der Klasse der großen Mehrfamilienhäuser in den neuen und alten Bundesländer verglichen.
+Betrachtet man hier zunächst die Wärmedurchgangskoeffizienten der Gebäudehülle, lassen sich nur vereinzelt leichte Unterschiede festmachen.
+So unterscheidet sich beispielsweise der Wärmedurchgang durch die Außenwand in den Jahren 1979 bis 1983 zwischen dem Gebäudetyp der Mehrfamilienhäuser und dem der großen Mehrfamilienhäuser in den neuen Bundesländern um eine Differenz von 0,1 \(\frac{W}{m^2 \cdot K}\) und somit 11\,\%. \\
+Hinsichtlich der Wohnfläche je Wohnung und der Wohnungsanzahl variieren die drei Gebäudetypen der Mehrfamilienhäuser.
+Allerdings unterscheiden sich diese Faktoren auch innerhalb des Gebäudetyps der Mehrfamilienhäuser.
+So definiert TABULA als Referenzgebäude der Mehrfamilienhäuser der Jahrgänge 1949 bis 1957 ein dreigeschossiges Wohngebäude mit 9 Wohnungen und 575\,m\(^2\) beheizter Wohnfläche. 
+Die darauffolgende Altersklasse von 1958 bis 1968 desselben Gebäudetypes wird durch ein viergeschossiges Wohngebäude mit 32 Wohnungen und 2845\,m\(^2\) beheizter Wohnfläche beschrieben.
+Um die Gebäudetypen der Mehrfamilienhäuser und der großen Mehrfamilienhäuser in den neuen und alten Bundesländer zusammenzufassen, werden die Wohnfläche sowie die Faktoren zur Bestimmung der Dach-, Außenwand-, Fenster- und Bodenfläche anhand der Wohneinheitenanzahl linear interpoliert.
+Dadurch wird eine neue Klasse generiert, welche im Folgenden mit \mbox{\textit{Cluster B}} bezeichnet wird.
 
-
-
-
-
-
-
-
-
-
-
-
-
-Wird der deutsche Wohngebäudebestand nach der Einteilung von TABULA betrachtet, lassen sich insgesamt 43 Klassen erkennen.
-Diese unterscheiden sich nach Baujahr und Gebäudeart.
-Wie in Tabelle \ref{tab: TabelleA0} zu sehen ist, existieren nicht für alle Klassen Daten zur Wohneinheitenanzahl bei verschiedenen Baujahren.
-Außerdem unterscheiden sich die Anteile der einzelnen Gruppen am gesamten Wohneinheitenbestand.
-So bilden beispielsweise die Klasse der Hochhäuser in den alten Bundesländer nur 1\,\% des Bestandes ab, wohingegen sich der Anteil bei den Mehrfamilienhäuser zu 38\,\% ergibt.
-
-Um aus dieser inhomogenen Verteilung eine vereinfachte Kategorisierung zu generieren, mit welcher sich Gebäudeenergiesysteme für wenige Klassen bestimmen lassen, wird eine ABC-Analyse des Bestandes durchgeführt.
-Hierbei handelt es sich um ein betriebswirtschaftlichen Analyseverfahren zur Bewertung von Objekten einer Menge.
-Es stehen die drei Kategorien A, B und C zur Auswahl, welche nach absteigender Reihenfolge den Objekten eine Wertung zuteilen.
-
-Im Falle des Gebäudebestandes werden die TABULA-Klassen danach untersucht, inwieweit diese den Bestand repräsentieren und Potenzial für eine energetische Verbesserung besitzen.
-Betrachtet wird daher die Wohneinheintenanzahl, beziehungsweise der Anteil am Bestand, sowie die U-Werte als Kriterium des energetischen Einsparpotenzials.
-Weiter werden anhand des Wärmedurchgangskoeffizient ähnliche Klassen zusammengefasst.
-Da die Analyse darauf abzielt eine Entscheidung zu treffen, ob die Klasse zur Repräsentation des Bestandes relevant ist, wird auf eine Bewertung mit B verzichtet.
-Eine A-Wertung bedeutet schließlich, dass die Klasse repräsentativ wichtig für den Bestand ist.
-Analog dazu werden C-gewertete Typen nicht weiter untersucht.
-
-Aus der Analyse des deutschen Wohngebäudebestandes in Kapitel \ref{sec:Sektion 21} geht hervor, dass der größte Anteil der Gebäude vor 1978 errichtet wurde.
-XXXX
-
-
-Zunächst werden die Hochhäuser in neuen und alten Bundesländern betrachtet. 
-Deren Anteil am gesamten Wohnungsbestand ist mit unter 2\,\% gering.
-Zudem weicht die Geometrie der Gebäude stark von anderen Klassen ab, sodass ein Zusammenfassen der Hochhäuser mit einem anderen Gebäudetypen  Schwierigkeit bereitet.
-Somit erhalten die Hochhäuser ein C-Wertung.\\
-Weiterhin werden für die Gebäudetypen der Einfamilien- und Mehrfamilienhäuser die Baualtersklassen der Gebäuden vor 1856 angeschaut.
-Hier ist auffällig, dass die U-Werte für alle Bauteile deutlich von denen der nächsten Baualtersklasse abweichen.
-So verbessern sich beispielsweise die Dächer in dem Zeitraum vor 1856 im Vergleich zu den Baujahren von 1857 bis 1919 von 2,60 auf 1,30 \(\frac{W}{m^2 \cdot K}\).
-Außerdem handelt es sich bei diesen oftmals um denkmalgeschützte Bauten, bei denen nicht jede energetische Sanierung aufgrund des Denkmalschutz zulässig ist.
-Daher erhalten auch die Klassen der Einfamilien- und Mehrfamilienhäuser vor 1856 eine C-Wertung.\\
-Bei den Baujahren nach 1994 weicht die energetische Qualität der Hülle im Vergleich zu denen der Baujahre zuvor ebenfalls ab.
-Im Zuge der 3. WschV wurden die Anforderungen an die Gebäudehülle verschärft.
-Daher lässt sich eine sprunghafte Verbesserung der U-Werte beobachten.
-Zwar handelt es sich bei dieser Klasse um Gebäude, welche mitunter 20 Jahre  oder älter sind und somit Sanierungsbedarf aufweisen, allerdings ist deren energetisches Einsparpotenzial nicht sehr hoch, weswegen Gebäude mit Baujahr jünger als 1994 ebenfalls eine C-Wertung erhalten.\\
-Somit verbleiben die Gebäudetypen der Einfamilien-, Reihen-, Mehrfamilien- und großen Mehrfamilienhäuser der Jahrgänge von 1856 bis 1994, welche eine A-Wertung erhalten.
-
-Bei einem Vergleich der Einfamilien- und Reihenhäuser fällt auf, dass alle U-Werte außer dem des Daches nahezu identisch sind.
-Da auch die Größe und Dimensionierung der beiden Gebäudetypen Ähnlichkeiten aufweisen, werden diese zusammengefasst und im Weiteren als \textit{Cluster A} bezeichnet.\\
-Ebenso lassen sich vergleichbare Wärmedurchgangskoeffizienten bei den Mehrfamilien- und großen Mehrfamilienhäuser erkennen.
-Sogar bei einem Vergleich der alten und neuen Bundesländer weichen U-Werte der TABULA-Typgebäuden nur leicht voneinander ab.
-So besitzen beispielsweise die Fenster der Mehrfamilienhäuser von 1919 bis bis 1994 einen U\(_g\)-Wert von 3 \(\frac{W}{m^2 \cdot K}\) und die der großen Mehrfamilienhäuser von 1969 bis 1983 aufgrund des vorteilhafteren Holzrahmens 2,7 \(\frac{W}{m^2 \cdot K}\).
-Daher werden diese Gebäudetypen unter der Bezeichnung \textit{Cluster B} zusammengefasst.
+In Tabelle \ref{tab: TabelleA0} sind außer den nun in Cluster A und Cluster B integrierten Gebäudetypen noch Hochhäuser in den neuen und alten Bundesländer zu finden.
+Deren Anteil an allen Wohneinheiten in Deutschland beträgt weniger als 2\,\%. 
+Außerdem ist deren Wohnfläche und Wohnungsanzahl je Gebäude um ein Vielfaches größer als die der Mehrfamilienhäuser.
+Somit sind die Hochhäuser zur Betrachtung eines energetischen Einsparpotenzials weniger relevant und werden nicht weiter berücksichtigt.
 
 Im Bezug auf die Baujahre lassen sich ebenfalls Jahrgänge mit ähnlichen energetischen Eigenschaften der Gebäudehülle erkennen.
-Nach Eicke-Henning \cite{EickeHenning.2011} und Tabelle \ref{tab: TabelleA0} weisen die U-Werte der Bauteile mit Jahrgang 1856 bis 1957 aufgrund ähnliche Baustoffe und Bauweisen Ähnlichkeiten auf.
-Nach 1957 verbessern sich diese bis zur 1. WschV 1978 aufgrund der Wahl anderer Baustoffe und dem Fortschritt im Hochbau.
+Auf eine Betrachtung von Wohngebäuden mit Baujahr älter als 1860 wird verzichtet, da diese zum einen keinen relevanten Anteil am Bestand besitzen und zum anderen deren U-Werte stark von der darauffolgenden Baualtersklasse abweichen.\\
+Weiterhin werden Gebäude mit einem Neubau-Standard nach der 3. WschV vernächlassigt.
+Zwar handelt es sich hierbei um Gebäude, welche mitunter 25 Jahre alt sind und somit Sanierungsbedarf besteht, jedoch bergen diese Wohngebäude aufgrund der relativ guten energetischen Bauweisen ein geringes Einsparpotential an CO\(_2\).
+
+Nach Eicke-Henning \cite{EickeHenning.2011} und Tabelle \ref{tab: TabelleA0} weisen die U-Werte der Bauteile mit Jahrgang 1860 bis 1957 aufgrund ähnliche Baustoffe und Bauweisen Gemeinsamkeiten auf.
+Nach 1957 verbessern sich diese bis zur 1. WschV 1978 aufgrund der Wahl anderer Baustoffe und dem technologischem Fortschritt im Hochbau.
 Im Zuge der 1. und 2. WschV lassen sich Verbesserungen der energetischen Qualität der Hülle im Zeitraum von 1978 bis 1994 erkennen.
-Somit werden die Jahrgänge von 1856 bis 1994 in drei Epochen unterteilt.
-Die Älteste umfasst alle Baujahre inklusive der Nachkriegszeit und daher 1856 - 1957.
+Somit werden die Jahrgänge von 1860 bis 1994 in drei Epochen unterteilt.
+Die älteste Epoche umfasst alle Baujahre inklusive der Nachkriegszeit und daher 1860 - 1957.
 Die nächste beschreibt die Jahrgänge von 1958 bis 1978 und beinhaltet somit den Zeitraum nach der Nachkriegszeit, in der ohne Regulation durch den Gesetzgeber die Gebäudehülle verbessert wurde.
-Zuletzt charakterisieren die dritte Epoche von 1979 bis 1994 Bauten mit Baustandard der 1. und 2. WschV.
-Zur Bestimmung der U-Werte der neu generierten Klassen werden die Wärmedurchgangskoeffizienten der ursprünglichen Gebäudetypen anhand ihrer Anzahl linear interpoliert.
+Zuletzt charakterisiert die dritte Epoche von 1979 bis 1994 Bauten mit Baustandard der 1. und 2. WschV.\\
+Zur Bestimmung der U-Werte der neu generierten Klassen werden die Wärmedurchgangskoeffizienten der ursprünglichen Gebäudetypen auf Basis ihrer Wohneinheitenanzahl linear interpoliert.
 In Tabelle \ref{tab: TabelleA411} sind die neuen Klassen mitsamt der jeweiligen U-Werte der Hüllenbestandteile aufgeführt.
 
 \begin{table}[H]\centering

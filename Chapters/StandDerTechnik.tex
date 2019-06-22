@@ -80,7 +80,7 @@ Die Energiespeicherung erfolgt durch einen sensiblen Wasserspeicher und eine Bat
 Ein Teil der nicht-linearen Gleichungen werden linearisiert. 
 Da jedoch weiterhin nicht-lineare Zusammenhänge in dem Programm existieren, handelt es sich bei dem Modell um ein MINLP, welches Energiesysteme auf Gebäudeebene optimiert.
 Als Zielfunktion des übergeordneten Modells wird die Minimierung der jährlichen Gesamtkosten festgelegt.
-und als das der untergeordneten Optimierung die jährlichen Betriebskosten der Energieerzeuger.
+Das untergeordnete Optimierungsmodell minimiert die jährlichen Betriebskosten der Energieerzeuger.
 
 Eine glechzeitige Betrachtung von Anlagentechnik und Gebäudehülle ist in Asadi et al. zu finden \cite{Asadi.2012}.
 Hierbei handelt es sich zum einen um ein MINLP und zum anderen um eine multikriterielle Optimierung, bei welcher dem Programm mehrere Zielfunktionen übergeben werden.
@@ -113,16 +113,16 @@ In Tabelle \ref{tab: Tabelle311} sind die zuvor vorgestellten Programme der Ener
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Autor & \begin{tabular}[c]{@{}l@{}}Art der\\ Optimierung \end{tabular} & \begin{tabular}[c]{@{}l@{}}Ebene/ \\ Betrachtung \end{tabular} & Energiesysteme & \begin{tabular}[c]{@{}l@{}}Zielfunktion\\ (Minimierung von...)\end{tabular} \\ \hline
-Iturriaga et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung\end{tabular} & XXXX & Jährliche Kosten \\ \hline
+Iturriaga et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung\end{tabular} & XXXX & Jährlichen Kosten \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Pinzon et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Betrieb\end{tabular} & PV, ES,Klimageräte & \begin{tabular}[c]{@{}l@{}}Jährliche Elektri-\\ zitätskosten\end{tabular} \\ \hline
-Risbeck et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Betrieb\end{tabular} & Lüftungssysteme & \begin{tabular}[c]{@{}l@{}}Jährliche Betriebs-\\ kosten\end{tabular} \\ \hline
+Pinzon et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Betrieb\end{tabular} & PV, ES,Klimageräte & \begin{tabular}[c]{@{}l@{}}Jährlichen Elektri-\\ zitätskosten\end{tabular} \\ \hline
+Risbeck et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Betrieb\end{tabular} & Lüftungssysteme & \begin{tabular}[c]{@{}l@{}}Jährlichen Betriebs-\\ kosten\end{tabular} \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Zhu et al. & MINLP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung und\\ Betrieb\end{tabular} & PV, WP, ES & \begin{tabular}[c]{@{}l@{}}Jährliche Betriebs-\\ kosten\end{tabular} \\ \hline
+Zhu et al. & MINLP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung und\\ Betrieb\end{tabular} & PV, WP, ES & \begin{tabular}[c]{@{}l@{}}Jährlichen Betriebs-\\ kosten\end{tabular} \\ \hline
 Asadi et al. & MINLP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Sanierung von Wand, \\ Dach, Fenster/\\ Solarkollektoren\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kosten und\\ Emissionen\end{tabular} \\ \hline
 \rowcolor[HTML]{EFEFEF} 
-Wouters et al. & MILP & \begin{tabular}[c]{@{}l@{}}Quartier\\ Auslegung und \\ Betrieb\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kessel, BHKW, ES, \\ PV, WKA\end{tabular} & Jährliche Kosten \\ \hline
-Harb et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude/\\ Quartier\\Auslegung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mikro-BHKW, WP,\\ EHS, PV, \\ thermische ES, Kessel, \\ Nahwärmenetz\end{tabular} & Jährliche Kosten \\ \hline
+Wouters et al. & MILP & \begin{tabular}[c]{@{}l@{}}Quartier\\ Auslegung und \\ Betrieb\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kessel, BHKW, ES, \\ PV, WKA\end{tabular} & Jährlichen Kosten \\ \hline
+Harb et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude/\\ Quartier\\Auslegung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mikro-BHKW, WP,\\ EHS, PV, \\ thermische ES, Kessel, \\ Nahwärmenetz\end{tabular} & Jährlichen Kosten \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Schütz et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung und \\ Betrieb\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kessel, BHKW, \\ EHS, WP, Solarthermie, \\ PV, ES/\\ Sanierung von Wand, \\ Dach, Fenster, Boden\end{tabular} & \begin{tabular}[c]{@{}l@{}}Kosten und/\\ oder Emissionen\end{tabular} \\ \hline
 \end{tabular}
@@ -203,13 +203,14 @@ Weiter werden betriebswirtschaftliche Parameter eingelesen.
 Hierbei werden neben allgemeinen Faktoren wie dem Betrachtungszeitraum, der Mehrwertsteuer, dem internen Zinssatz und der Inflationsrate auch energieträgerspezifische Kennwerte übergeben.
 Bei letzteren handelt es sich zum einen um Preisänderungsfaktoren, welche zukünftige Preisänderungen der Energieträger abbilden und zum anderen um Einspeisevergütung von PV- oder BHKW-Strom und um die Energiesteuer.
 In Tabelle \ref{tab: TabelleA6} sind die Parameter mit ihren jeweiligen Werten aufgeführt.\\
-Außerdem werden Daten zur Modellierung von Förderprogrammen, welche die Verbesserung des Gebäudeenergiesystems subventionieren, mitaufgenommen.
+Außerdem werden Daten zur Modellierung von Förderprogrammen mitaufgenommen, welche die Verbesserung des Gebäudeenergiesystems subventionieren.
 Die Fördergelder beeinflussen die Wirtschaftlichkeit verschiedener Technologien und energetischen Sanierungsmaßnahmen.
-Daher werden die leistungsabhängigen Förderhöhen mit in das Modell aufgenommen.
+Daher werden die leistungsabhängigen Förderhöhen in das Modell mitaufgenommen.
 Ferner gibt es für alle Programme Bedingungen, welche für eine Auszahlung erfüllt seien müssen und monetäre Grenzen, in denen sich die Fördersumme minimal und maximal bewegt.
 Einen Überblick über die Förderkonditionen und -grenzen werden in Tabelle XXXX dargelegt.\\
 Um die Förderungen im Rahmen des KfW-Effizienzhaus-Programms zu erhalten, wird die Sanierungsmaßnahme mit einem EnEV-Referenzgebäude verglichen.
-Das Referenzgebäude wird mit derselben Geometrie wie die des parametrisierten Gebäudes ausgeführt, die Gebäudehülle besitzt allerdings eine energetische Qualität nach EnEV-Vorgaben.
+Das Referenzgebäude wird mit derselben Geometrie wie die des parametrisierten Gebäudes ausgeführt.
+Allerdings besitzt die Gebäudehülle eine energetische Qualität nach EnEV-Vorgaben.
 Die U-Werte der jeweiligen Bauteile nach EnEV sind in Tabelle \ref{tab: Tabelle322} aufgeführt.
 
 \begin{table}[H]\centering

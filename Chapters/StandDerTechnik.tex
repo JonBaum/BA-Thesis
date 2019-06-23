@@ -113,7 +113,7 @@ In Tabelle \ref{tab: Tabelle311} sind die zuvor vorgestellten Programme der Ener
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Autor & \begin{tabular}[c]{@{}l@{}}Art der\\ Optimierung \end{tabular} & \begin{tabular}[c]{@{}l@{}}Ebene/ \\ Betrachtung \end{tabular} & Energiesysteme & \begin{tabular}[c]{@{}l@{}}Zielfunktion\\ (Minimierung von...)\end{tabular} \\ \hline
-Iturriaga et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung\end{tabular} & XXXX & Jährlichen Kosten \\ \hline
+Iturriaga et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Auslegung\end{tabular} & alle & Jährlichen Kosten \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Pinzon et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Betrieb\end{tabular} & PV, ES,Klimageräte & \begin{tabular}[c]{@{}l@{}}Jährlichen Elektri-\\ zitätskosten\end{tabular} \\ \hline
 Risbeck et al. & MILP & \begin{tabular}[c]{@{}l@{}}Gebäude\\ Betrieb\end{tabular} & Lüftungssysteme & \begin{tabular}[c]{@{}l@{}}Jährlichen Betriebs-\\ kosten\end{tabular} \\ \hline
@@ -299,60 +299,75 @@ Strom & 0,566 \\
 \label{tab: Tabelle321}
 \end{table}
 
-Die Kombinationsmöglichkeiten zur Erfüllung der Zielfunktionen wird durch den Lösungsraum, welcher durch Restriktionen definiert wird, beschränkt.
+Die Kombinationsmöglichkeiten zur Erfüllung der Zielfunktionen wird durch den Lösungsraum beschränkt, welcher durch Restriktionen definiert wird.
 So wird beispielsweise die Anzahl der PV-Module durch die zur Verfügung stehende Dachfläche limitiert.
-Eine zentrale Nebenbedingung stellt die Berechnung der Heizlast dar.
+Eine zentrale Nebenbedingung stellt die Berechnung des Jahres-Heizenergiebedarf dar.
 Diese beschreibt die Wärmemenge, welche durch die Anlagentechnik bereitgestellt werden muss, um das Gebäude auf die Innentemperatur in Höhe von 20\,°C zu heizen.
-Als Berechnungsgrundlage dient die DIN V 4108.
-Diese definiert den Jahres-Heizenergiebedarf (Q) als Summe des Jahres-Heizwärmebedarfs (Q\(_h\), des Jahreswärmebedarfs zur Warmwasseraufbereitung (Q\(_W\) und den Wärmeverlusten der Anlagentechnik zur Wärme- und Warmwasserbereitstellung (Q\(_t\) abzüglich der Energiemenge, welche aus regenerativen Quellen gewonnen wird (Q\(_r\).
+Zur Berechnung des Jahres-Heizwärmebedarfs wird die DIN V 4701-10 \cite{DeutschesInstitutfurNormunge.V..082003} genutzt.
+Wie in Abbildung \ref{fig: Abbildung321} zu erkennen ist, setzt sich der Heizwärmebedarf zusammen aus den Transmissionwärmeverlusten (Q\(_T\)), den Lüftungswärmeverlusten (Q\(_V\)), den solaren Gewinnen (Q\(_S\)) und den internen Gewinnen (Q\(_i\)).
+Somit wird der Heizwärmebedarf berechnet als
 \begin{equation}
-\label{eq:Gleichung323}
-Q = Q_h + Q_W + Q_t - Q_r
+\label{eq:Gleichung3292}
+Q_h = Q_T + Q_V - Q_S - Q_i
 \end{equation}
 
+\begin{figure}[H] \centering
+	\centering
+		\includegraphics{Pictures/DIN_V_4701_10.png}
+	\caption{Schematische Darstellung der Berechnung des Energiebedarfs nach DIN V 4701-10 \cite{DeutschesInstitutfurNormunge.V..082003}}
+	\label{fig: Abbildung321} 
+\end{figure}
 
+Die Ermittlung der Transmissionswärmeverluste erfolgt anhand des Monatsbilanzverfahrens der DIN V 4108-6.
+Hier wird der spezifische Transmissionwärmeverlust (H\(_T\)) anhand von Gleichung \ref{eq:Gleichung3293} berechnet.
+\begin{equation}
+\label{eq:Gleichung3293}
+H_T = \sum U_i \cdot A_i + H_u + L_S + H_{WB} + \Delta H_{T,FH}
+\end{equation}
+Hierbei wird die Fläche (A) eines Bauteils i mit dessen U-Wert multipliziert, um den Wärmeverlust aufgrund des Wärmedurchgangs durch das Bauteil zu bestimmen.
+Weiter wird der Einfluss durch Wärmebrücken mittels H\(_{WB}\) und der Wärmeverlust bei anderer Temperaturdifferenz anstatt Innen- und Außentemperatur durch den thermischen Leitwert L\(_S\) berücksichtigt.
+Da in dem Optimierungsmodell keine Unterteilung in Räume geschieht und von einer durchweg konstanten Innentemperatur ausgegangen wird, entfällt der spezifische Transmissionswärmeverlust durch unbeheizte Räume (H\(_u\)).
+Ebenso wird der spezifische Wärmeverlust durch Bauteile mit Flächenheizung (\(\Delta\)H\(_{T,FH}\)) nicht betrachtet.
+Nach DIN V 4108-6 werden L\(_S\) und H\(_{WB}\) mit
+\begin{equation}
+\label{eq:Gleichung3294}
+L_{S,i} = F_i \cdot U_i \cdot A_i
+\end{equation}
+\begin{equation}
+\label{eq:Gleichung3295}
+H_{WB} = \Delta U_{WB} \cdot A
+\end{equation}
+bestimmt. 
+Der Temperaturkorrekturfaktor (F\(_i\)) definiert einen abweichenden Temperaturunterschied zwischen Innen- und Außentemperatur des Bauteils i und \(\Delta\) U\(_{WB}\) den Wärmebrückeneinfluss.
+Durch Einsetzen von Gleichung \ref{eq:Gleichung3295} und \ref{eq:Gleichung3294} in \ref{eq:Gleichung3293} wird der spezifische Transmissionswärmeverlust mit
+\begin{equation}
+\label{eq:Gleichung3296}
+H_T = \sum_{i} A_i \cdot F_i \cdot (U_i + \Delta U_{WB}) \quad \text{mit i} \in \text{[standard, retrofit, advanced retrofit]}
+\end{equation}
+berechnet.
+Die nummerischen Werte der Faktoren F\(_i\) und \(\Delta\) U\(_{WB}\) werden in Tabelle XXXX wiedergegeben.\\
+Die U-Werte der Gebäudehülle hängen von der Wahl des Sanierungsszenarios ab.
+Mit x\(_{i,k}\) als binäre Entscheidungsvariable des Bauteils i und Szenarios k wird die spezifischen Transmissionswärmeverluste somit im Optimierungsprogramm als
+\begin{equation}
+\label{eq:Gleichung3297}
+H_T = \sum_{k} \sum_{i}  A_i \cdot F_i \cdot (U_{k,i} + \Delta U_{WB}) \cdot x_{k,i} \quad \text{mit k}  \in \text{[Außenwand, Boden, Fenster, Dach]}
+\end{equation}
 
-Diese definiert die Norm-Heizlast \(\Phi_{HL, build}\) als Summe der Transmissionswärmeverlusten \(\Phi_T\), Lüftungswärmeverlusten \(\Phi_{V, build}\), der Aufheizleistung \(\Phi_{hu}\) und abzüglich der internen Gewinne \(\Phi_{gain}\).
+Weiterhin werden Profile der inneren Gewinne eingelesen und somit Q\(_i\) bestimmt.
+Die solaren Gewinne werden anhand der DIN V 4108-6 bestimmt durch
 \begin{equation}
-\label{eq:Gleichung323}
-\Phi_{HL, build} = \Phi_T + \Phi_{V, build} + \Phi_{hu} - \Phi_{gain}
+\label{eq:Gleichung3298}
+Q_s = \sum_j I_{s,j} \sum_{i}^{n} A_{s,ji} \quad \text{.}
 \end{equation}
-Die internen Gewinne werden aufgeteilt in solare Gewinne aus Sonneneinstrahlung und internen Wärmequellen wie beispielsweise Küchengeräte oder anwesenden Personen.
-Diese werden durch eingelesene Profile bestimmt und sind somit für das parametrisierte Gebäude für einen Zeitabschnitt konstant.
-Da das Modell keine Gebäudemasse abbildet, kann die Aufheizleistung nicht berechnet werden.
-Laut Norm ist \(\Phi_{hu}\) optional und wird somit vernachlässigt.
+Hierbei wird die effektive Kollektorfläche (A\(_s\)) anhand diverser Abminderungsfaktoren (F\(_s\), F\(_c\), F\(_F\), F\(_W\)) und dem wirksamen Gesamtenergiedurchlassgrad (g) berechnet.
+Der Gesamtenergiedurchlassgrad wird als G-Wert bezeichnet und hängt von dem energetischen Standard der Verglasung ab.
+Mit den eingelesenen solaren Einstrahlungsprofilen, welche für jede Himmelsrichtung j eingelesen werden und der Binärvariable zur Auswahl eines Sanierungsszenarios i der Fenster (x\(_{Fenster}\)) ergeben sich die solaren Gewinne zu
+\begin{equation}
+\label{eq:Gleichung3299}
+Q_s = F_s \cdot F_c \cdot F_F \cdot F_W \cdot \sum_{i} (x_{Fenster, i} \cdot g_i \cdot \sum_{j} ( A_{Fenster, j} \cdot I_{s,j} ))
+\end{equation}
 
-Die Transmissionswärmeverluste \(\Phi_T\) beschreiben Wärmeverluste aufgrund des Wärmeüberganges an der Gebäudehülle und lassen sich als Produkt der Temperaturdifferenz zwischen der Innen- (\(\theta_{int, i}\)) und Außentemperatur (\(\theta_e\)) mit dem Transmissionswärmetransferkoeffizienten (H\(_t\)) bestimmen und sind in Gleichung \ref{eq:Gleichung324} wiedergegeben.
-Zur Berechnung von H\(_t\) werden die Bauteilfläche (A\(_k\)), der U-Wert (U\(_k\)) und der Temperaturkorrekturfaktor (f\(_{U,k}\)) für jedes Bauteil k multipliziert und die Summe der Produkte gebildet.
-Außerdem werden Wärmebrücken mit dem zusätzlichen Wärmedurchgangskoeffizient (\(\Delta\) U\(_{TB}\)) berücksichtigt.
-Die Formel zur Berechnung von H\(_t\) ist in \ref{eq:Gleichung325} zu finden.
-\begin{equation}
-\label{eq:Gleichung324}
-\Phi_T = H_t \cdot (\theta_{int, i} - \theta_e)
-\end{equation}
-\begin{equation}
-\label{eq:Gleichung325}
-H_t = \sum_{k} A_k \cdot (U_k + \Delta U_{TB}) \cdot f_{U,k} \qquad \text{mit k }\in \{\text{Außenwand, Boden, Fenster, Dach}\}
-\end{equation}
-Hierbei wird \(\Delta U_{TB}\) laut Norm vereinfacht mit 0,05 \(\frac{W}{m^2\cdot K}\) angenommen.
-Der Temperaturkorrekturfaktor berücksichtigt einen Unterschied zwischen Innentemperatur und Außentemperatur.
-Da in dem Programm keine Unterscheidung der Raumnutzung erfolgt, gibt es nur im Falle des Bodens aufgrund des Kontakts mit dem Erdreich einen solchen Unterschied.
-Daher wird \(f_{U, Boden}\) nach Norm mit 0,6 bestimmt.
-Die verschiedenen Kombinationsmöglichkeiten der Sanierungsszenarien werden durch Multiplikation mit einer binären Entscheidungsvariablen (\(x_{k, i}\)) in das Programm mit aufgenommen, wobei k \(\in\) \{Außenwand, Boden, Dach Fenster\} und i \(\in\) \{standard, retrofit, advanced retrofit\}.
-\begin{equation}
-\label{eq:Gleichung326}
-H_t = \sum_{k} \sum_{i} A_k \cdot (U_k + \Delta U_{TB}) \cdot f_{U,k} \cdot x_{k, i}
-\end{equation}
-Im Falle \(x_{k, i} = 1\), wird das Szenario gekauft und die Transmissionswärmeverluste werden gesenkt.
-Analog hierzu entspricht \(x_{k, i} = 0\) einer Ablehnung für das Bauteil k das Szenario i zu kaufen.
-Logischerweise können je Gebäudehüllenkomponente nicht mehr als eine Sanierungsmaßnahme vorgenommen werden, sodass das Modell durch die Nebenbedingung 
-\begin{equation}
-\label{eq:Gleichung327}
-\sum_{i} x_{k, i} = 1 \qquad \text{mit i } \in \{\text{standard, retrofit, advanced retrofit}\}
-\end{equation}
-beschränkt wird.
-
-Schließlich wird die Heizlast auch durch die Lüftungswärmeverluste beeinflusst.
+Schließlich wird der Jahres-Heizenergiebedarf auch durch die Lüftungswärmeverluste beeinflusst.
 Eine wichtige Kenngröße der Lüftungswärmeverluste stellt die Luftwechselrate (n) dar.
 Diese beschreibt, wie oft pro Stunde das Volumen einer Zone durch Frischluft ausgetauscht wird.
 Die Luftwechselrate ist definiert als
@@ -360,8 +375,7 @@ Die Luftwechselrate ist definiert als
 \label{eq:Gleichun330}
 n = \frac{\Dot{V}_{Luft}}{V_z} \cdot 3600 \quad,
 \end{equation}
-wobei \(\Dot{V}_{Luft}\) den eintretenden Luftvolumenstrom und V\(_Z\) das Volumen der Zone beschreibt.
-
+wobei \(\Dot{V}_{Luft}\) den eintretenden Luftvolumenstrom und V\(_Z\) das Volumen der Zone beschreibt.\\
 Die Lüftungswärmeverluste werden in dem Optimierungsprogramm durch das Heizperiodenverfahren in DIN V 4108-6 \cite{DeutschesInstitutfurNormunge.V..Juni2003} modelliert.
 Hierzu wird laut Norm von einer Luftwechselrate für ein nicht-luftdichtheitsgeprüftes Gebäude von n = 0,7\,h\(^{-1}\) ausgegangen. 
 Des Weiteren wird das Netto-Volumen (V) in der Norm als 0,76-fachen des Brutto-Volumens (V\(_e\)) bestimmt.
@@ -373,15 +387,14 @@ H_V = 0,76 \cdot V_e \cdot \rho_{Luft} \cdot c_{p, Luft} \cdot n \quad \text{.}
 Zuletzt wird durch Berücksichtigung des Korrekturfaktor aufgrund von Nachtabschaltung der Heizung (f\(_{NA}\)) und des Gradtagzahlfaktor (G\(_t\)) die jährlichen Lüftungswärmeverluste zu
 \begin{equation}
 \label{eq:Gleichung329}
-\Phi_{V, build} = H_V \cdot G_t \cdot f_{NA} \cdot 0,024
+Q_{V} = H_V \cdot G_t \cdot f_{NA} \cdot 0,024
 \end{equation}
 berechnet.
-Hierbei ist 0,024 der Umrechenfaktor von Tag zu Stunde und Kilowatt zu Watt.
-
+Hierbei ist 0,024 der Umrechenfaktor von Tag zu Stunde und Kilowatt zu Watt.\\
 Diese jährliche Energiemenge der Lüftungswärmeverluste wird gleichmäßig auf die 8760 betrachteten Zeitpunkte des Jahres aufgeteilt.
 \begin{equation}
 \label{eq:Gleichung3291}
-Q_l = \frac{\Phi_{V,build}}{8760}
+Q_l = \frac{Q_{V}}{8760}
 \end{equation}
 Somit sind diese Verluste in dem Modell für jeden betrachteten Zeitpunkt konstant und werden als statisch angesehen.
 
@@ -401,7 +414,13 @@ Analog hierzu liegt der relative Anteil der Lüftungs- an den Gesamtwärmeverlus
 In diesen Fällen steigt der Anteil der Lüftungswärmeverlusten an den Gesamtwärmeverlusten des Gebäudes auf 50 bis 70\,\% \cite{Milles.2011}.
 So beispielsweise in Niedrigenergiehäusern oder Altbauten mit energetisch ertüchtigter Gebäudehülle. \cite{BorschLaaks.2011}
 
-XXXX Grafik: Lüftung im Wohngebäude XXXX
+\begin{figure}[H]
+	\centering
+		\includegraphics{Pictures/LueftungswaermeverlusteWohngebaeude.jpg}
+	\caption{Anteil der Lüftungs- und Transmissionwärmeverluste an den Gesamtwärmeverlusten für unterschiedliche Gebäudestandards \cite{BorschLaaks.2011}}
+	\label{fig: Abbildung331} 
+\end{figure}
+
 
 Den Lüftungswärmeverlusten stehen hygienische Aspekte und die Luftqualität gegenüber.
 Einerseits muss in einem Gebäude ein Luftaustausch geschehen um Luftfeuchtigkeit und Kohlenstoffdioxid aus den Räumen abzutransportieren.

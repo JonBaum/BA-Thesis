@@ -125,9 +125,20 @@ Da von Fenstern mit gleicher Geometrie und nur einem möglichen Öffnungswinkel 
 Das Ergebnis dieser Rechenschritte beschreibt stundenweise Fensteröffnungsprofile einer Wohnung, die über ein Jahr aufgetragen sind.\\
 Die stündlichen Werte werden über alle Wohnungen des Datensatzes gemittelt.
 Somit wird aus den 60 Wohnungen des Forschungsprojekts ein Jahresprofil erzeugt, welches die Öffnungsdauer einer unbekannten Menge an Fenstern je Stunde des Jahres beschreibt.
-Um sowohl die Außentemperatur als auch die Tageszeit in den Fensteröffnungsprofilen zu berücksichtigen, werden Temperaturintervalle mit ähnlichem Nutzerverhalten gebildet. XXXX Tanjas Aussage zu Klassen XXXX
+Um sowohl die Außentemperatur als auch die Tageszeit in den Fensteröffnungsprofilen zu berücksichtigen, werden Temperaturintervalle mit ähnlichem Nutzerverhalten gebildet. 
+Bei ähnlichen Außentemperaturen zeigt das Lüftungsverhalten der Bewohner Gemeinsamkeiten unabhängig der Jahreszeit \cite{Osterhage.2018}.
+Temperaturen kleiner \mbox{0°C} werden mit dem Temperaturintervall \mbox{-5°C} und dem Intervall \mbox{[-5°C, 0°C)} abgebildet.
+Für Temperaturen größer als \mbox{0°C} werden die Intervalle in 3\,K Schritten bis \mbox{15°C} gebildet und somit die Intervalle \mbox{[0°C, 3°C)}, \mbox{[3°C, 6°C)}, \mbox{[6°C, 9°C)}, \mbox{[9°C, 12°C)} und \mbox{[12°C, 15°C)} festgelegt.
 Für Tage, an welchen sich die durchschnittliche Tagestemperatur in demselben Temperaturintervall befindet, werden die hypothetischen Fensteröffnungsdauern je Tageszeitpunkt gemittelt.
 Somit werden Tagesprofile der Fensteröffnungszeiten für unterschiedliche Temperaturintervalle einer Wohnung erzeugt.
+In Abbildung \ref{fig: Abbildung421} sind exemplarische Fensteröffnungsprofile der Temperaturintervalle [9,12) und [12,15) dargestellt.
+
+\begin{figure}[H]
+	\centering
+		\includegraphics{Pictures/Fensteroeffnungsprofile.jpg}
+	\caption{tba}
+	\label{fig: Abbildung421} 
+\end{figure}
 
 Neben dem geöffneten oder geschlossenen Zustand eines Fensters beeinflussen die Temperaturdifferenz zwischen Innen- und Außentemperatur sowie die Windgeschwindigkeit den durch ein Fenster einströmenden Luftvolumenstrom.
 Die Temperaturdifferenz kann durch Temperaturprofile gebildet werden, welche bereits in das Optimierungsprogramm eingelesen werden.

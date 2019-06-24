@@ -1,6 +1,6 @@
 \chapter{Tabellen}
 
-\section{Anzahl an Wohneinheiten nach Alter und Gebäudetyp (IWU Berechnungen)}
+\section{Anzahl an Wohneinheiten nach Alter und Gebäudetyp}
 
 \begin{table}[H]\centering
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|r|}
@@ -69,7 +69,7 @@ Dreischeiben-Wärmedämmglas & 48,9 & 8 & 0,7 \\ \hline
 Unbeschichtetes Isolierglas & 207,3 & 34 & 2,8 \\ \hline
 Zweischeiben-Wärmedämmglas & 284,2 & 47 & 1,4 - 1,1 \\ \hline
 \end{tabular}
-\caption{Bestand an Fenstern in Deutschland im Jahr 2015. \cite{Bigalke.2016}}
+\caption{Bestand an Fensterntypen in Deutschland im Jahr 2015 \cite{Bigalke.2016}}
 \label{tab: TabelleA2}
 \end{table}
 
@@ -94,7 +94,7 @@ Inflationsrate & 1,4 & \% \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Energiesteuer & 0,0055 & \(\frac{\text{\euro}}{\text{kWh}}\) \\ \hline
 \end{tabular}
-\caption{.....}
+\caption{Eingelesene, ökonomische ParameterXXXXQuelle}
 \label{tab: TabelleA6}
 \end{table}
 
@@ -125,17 +125,18 @@ bis 1859 & 1979 - 1983 & Bad Marienberg & Garmisch & Potsdam \\ \hline
 \begin{tabular}{|l|c|c|r|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-\cellcolor[HTML]{C0C0C0} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Kostenkennlinie\\ K = a \(\cdot\)x \(+\) b\\ mit x als Dämmstärke {[} cm\}\end{tabular}} & Nutzungsdauer \\ \cline{2-4} 
+\cellcolor[HTML]{C0C0C0} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Kostenkennlinie\\ K = a \(\cdot\)x \(+\) b\\ mit x als Dämmstärke {[}cm{]}\end{tabular}} &  {\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}\\ \\ Nutzungsdauer \end{tabular}} \\ \cline{2-4} 
 \rowcolor[HTML]{C0C0C0} 
-\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}Komponente} & \begin{tabular}[c]{@{}c@{}}a\\ {[}\(\frac{\text{\euro}}{m^2 \cdot cm}\){]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}b\\ {[}\(\frac{\text{\euro}}{m^2}\){]}\end{tabular} & in Jahren \\ \hline
+\multirow{-3}{*}{\cellcolor[HTML]{C0C0C0}Komponente} & \begin{tabular}[c]{@{}c@{}}a \(\bigl[ \text{\euro}/(\text{m}^2 \cdot \text{cm}) \bigr]\)\end{tabular} & \begin{tabular}[c]{@{}c@{}}b \( \bigl[\text{\euro}/\text{m}^2 \bigr] \)\end{tabular} & in Jahren \\ \hline
 Außenwand & 2,81 & 96,88 & 40 \\ \hline
 \rowcolor[HTML]{EFEFEF} 
 Boden & 1,55 & 54,25 & 50 \\ \hline
-Dach & 2,37 & 33,44 & 50 \\ \hline
+Dach & 2,37 & 33,44 & 50 \\ 
+\hline \hline
 \rowcolor[HTML]{C0C0C0} 
-\cellcolor[HTML]{C0C0C0} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}mit x als U-Wert {[}\(\frac{W}{m^2 \cdot K}\){]}} &  \\ \cline{2-4} 
+\cellcolor[HTML]{C0C0C0} & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}mit x als U-Wert \( \biggl[ \frac{W}{m^2 \cdot K} \biggr] \)} &  \\ \cline{2-4} 
 \rowcolor[HTML]{C0C0C0} 
-\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}} & \begin{tabular}[c]{@{}c@{}}a\\ {[}\(\frac{\text{\euro}}{\frac{W}{m^2 \cdot K}}\){]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}b\\ {[}\(\text{\euro}\){]}\end{tabular} & in Jahren \\ \hline
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}} & \begin{tabular}[c]{@{}c@{}}a \( \biggl[ \text{\euro}/ \frac{W}{m^2 \cdot K} \biggr] \)\end{tabular} & \begin{tabular}[c]{@{}c@{}}b  \( \bigl[ \text{\euro} \bigr] \)\end{tabular} &  \\ \hline
 Fenster & -242 & 785 & 30 \\ \hline
 \end{tabular}
 \caption{y-Achsenabschnitt und Steigung der Kostenkennlinie sowie Nutzungsdauer der Bauteile Außenwand, Boden, Dach und Fenster \cite{Hinz.10.08.2015}}

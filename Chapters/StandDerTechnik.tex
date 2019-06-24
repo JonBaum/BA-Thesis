@@ -56,10 +56,6 @@ Das Modell wird so lange verzweigt und beschränkt bis eine optimale Lösung gef
 Schließlich können zur Lösungsfindung von Optimierungsproblemen auch kombinierte Verfahren genutzt werden.
 Abbildung \ref{fig: Abbildung311} fasst die erläuterten Lösungsverfahren mit ihren Merkmalen zusammen.
 
-
-
-
-
 \begin{figure}[H]
 	\centering
 		\includegraphics{Pictures/Loesungsverfahren.jpg}
@@ -308,7 +304,7 @@ Somit setzt sich die Berechnung der Emission aus der Verbrennung von Holz-Pellet
 E_{total} = E_{Pellet} + E_{Gas} + E_{Netz}
 \end{equation}
 Die jeweiligen Summanden ergeben sich als Produkt aus dem Bedarf der Bezugsgröße und der leistungsspezifischen Emission der Emissionsquelle.
-In Tabelle \ref{tab: Tabelle321} sind die Werte für die Energiequellen Holz-Pellets, Gas und Strom aufgeführt.
+In Tabelle \ref{tab: Tabelle323} sind die Werte für die Energiequellen Holz-Pellets, Gas und Strom aufgeführt.
 
 \begin{table}[H]\centering
 \begin{tabular}{|l|c|}
@@ -325,7 +321,7 @@ Strom & 0,566 \\
 \hline
 \end{tabular}
 \caption{Leistungsspezifische Emission der Energieträger \cite{InstitutfurTechnischeGebaudeausrustungDresden.2017}}
-\label{tab: Tabelle321}
+\label{tab: Tabelle323}
 \end{table}
 
 Die Kombinationsmöglichkeiten zur Erfüllung der Zielfunktionen wird durch den Lösungsraum beschränkt, welcher durch Restriktionen definiert wird.
@@ -333,7 +329,7 @@ So wird beispielsweise die Anzahl der PV-Module durch die zur Verfügung stehend
 Eine zentrale Nebenbedingung stellt die Berechnung des Jahres-Heizenergiebedarf dar.
 Diese beschreibt die Wärmemenge, welche durch die Anlagentechnik bereitgestellt werden muss, um das Gebäude auf die Innentemperatur in Höhe von 20\,°C zu heizen.
 Zur Berechnung des Jahres-Heizwärmebedarfs wird die \mbox{DIN V 4701-10} \cite{DeutschesInstitutfurNormunge.V..082003} genutzt.
-Wie in Abbildung \ref{fig: Abbildung321} zu erkennen ist, setzt sich der Heizwärmebedarf zusammen aus den Transmissionwärmeverlusten (Q\(_T\)), den Lüftungswärmeverlusten (Q\(_V\)), den solaren Gewinnen (Q\(_S\)) und den internen Gewinnen (Q\(_i\)).
+Wie in Abbildung \ref{fig: Abbildung322} zu erkennen ist, setzt sich der Heizwärmebedarf zusammen aus den Transmissionwärmeverlusten (Q\(_T\)), den Lüftungswärmeverlusten (Q\(_V\)), den solaren Gewinnen (Q\(_S\)) und den internen Gewinnen (Q\(_i\)).
 Somit wird der Heizwärmebedarf berechnet als
 \begin{equation}
 \label{eq:Gleichung3292}
@@ -344,7 +340,7 @@ Q_h = Q_T + Q_V - Q_S - Q_i \quad \text{.}
 	\centering
 		\includegraphics{Pictures/DIN_V_4701_10.png}
 	\caption{Schematische Darstellung der Berechnung des Energiebedarfs nach \mbox{DIN V 4701-10} \cite{DeutschesInstitutfurNormunge.V..082003}}
-	\label{fig: Abbildung321} 
+	\label{fig: Abbildung322} 
 \end{figure}
 
 Die Ermittlung der Transmissionswärmeverluste erfolgt anhand des Monatsbilanzverfahrens der \mbox{DIN V 4108-6.}
@@ -576,7 +572,7 @@ q_{V, Fenster} = 3600 \cdot \frac{A_{eff}}{2} \cdot \sqrt{(C_1 \cdot u^2 + C_2 \
 Hierbei wird A\(_{eff}\) halbiert, da sich bei einem geöffneten Fenster der ein- und ausströmender Volumenstrom die Öffnungsfläche des Fensters teilen.
 Der Faktor 3600 wird zum Umrechnen des sekündlichen Volumenstroms in einen stündlichen genutzt.
 Die Koeffizienten C\(_1\), C\(_2\) und C\(_3\) werden experimentell bestimmt und stellen Fitkoeffizienten dar.
-Ihre nummerischen Ausprägungen sind Tabelle \ref{tab: Tabelle3312} zu entnehmen.
+Ihre nummerischen Ausprägungen sind Tabelle \ref{tab: Tabelle3313} zu entnehmen.
 
 \begin{table}[H] \centering
 \begin{tabular}{|l|l|r|l|}
@@ -589,7 +585,7 @@ C\(_2\) & Temperaturkoeffizient & 0,0037 & \(\frac{m}{s^2 \cdot K}\) \\ \hline
 C\(_2\) & Turbulenzkoeffizient & 0,012 & \(\frac{m^2}{s^2}\) \\ \hline
 \end{tabular}
 \caption{Nummerische Werte der Fitkoeffizienten nach Maas \cite{Maas.1995}}
-\label{tab: Tabelle3312}
+\label{tab: Tabelle3313}
 \end{table}
 
 \section*{Modell nach Hall}
